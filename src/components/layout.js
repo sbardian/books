@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
-import { container, header, content, footer } from './cssgrid.js';
+import { css } from 'react-emotion';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,12 +27,40 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div className={container}>
-          <div className={header}>
+        <div
+          className={css`
+            display: grid;
+            grid-gap: 20px;
+            height: 100vh;
+            grid-template-rows: auto 1fr auto;
+            /* grid-template-columns: 100%; */
+          `}
+        >
+          <div
+            className={css`
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: 1fr 200px;
+              background: rgb(221, 151, 85);
+              color: white;
+              justify-content: center;
+              align-items: center;
+              padding: 20px;
+            `}
+          >
             <h1>{data.site.siteMetadata.title}</h1>
             <span>another</span>
           </div>
-          <div className={content}>
+          <div
+            className={css`
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: 200px 1fr 200px;
+              grid-template-rows: 1fr;
+              margin-left: 20px;
+              margin-right: 20px;
+            `}
+          >
             <div />
             <div>
               <span>main content</span>
@@ -40,7 +68,17 @@ const Layout = ({ children }) => (
             </div>
             <div />
           </div>
-          <div className={footer}>
+          <div
+            className={css`
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: 1fr;
+              justify-items: center;
+              align-items: center;
+              background: rgb(161, 103, 103);
+              padding: 20px;
+            `}
+          >
             <span>link 1</span>
             <span>link 2</span>
           </div>
