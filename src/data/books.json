@@ -10,5 +10,17 @@
     "title": "Book 2",
     "imageUrl": "https://source.unsplash.com/collection/357786/2",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+  },
+  {
+    "bookId": 3,
+    "title": "Book 3",
+    "imageUrl": "https://source.unsplash.com/collection/357786/3",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+  },
+  {
+    "bookId": 4,
+    "title": "Book 4",
+    "imageUrl": "https://source.unsplash.com/collection/357786/4",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
   }
 ]
