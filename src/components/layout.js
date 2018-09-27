@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 // import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import '../../node_modules/tachyons/css/tachyons.min.css'
-
-import './cssgrid.css'
+import { StaticQuery, graphql } from 'gatsby';
+import 'normalize.css';
+import { container, header, content, footer } from './cssgrid.js';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,20 +28,20 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
          */}
-        <div className="container">
-          <div className="header">
+        <div className={container}>
+          <div className={header}>
             <h1>{data.site.siteMetadata.title}</h1>
             <span>another</span>
           </div>
-          <div className="content">
-            <div className="left-side" />
-            <div className="main-content">
+          <div className={content}>
+            <div />
+            <div>
               <span>main content</span>
               {children}
             </div>
-            <div className="right-side" />
+            <div />
           </div>
-          <div className="footer">
+          <div className={footer}>
             <span>link 1</span>
             <span>link 2</span>
           </div>
@@ -50,10 +49,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
