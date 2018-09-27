@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Helmet from 'react-helmet'
+import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import { container, header, content, footer } from './cssgrid.js';
@@ -18,16 +18,15 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        {/* <Helmet
+        <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'Books', content: 'Books I have read' },
+            { name: 'good books', content: 'good books' },
           ]}
         >
           <html lang="en" />
         </Helmet>
-         */}
         <div className={container}>
           <div className={header}>
             <h1>{data.site.siteMetadata.title}</h1>
