@@ -1,15 +1,42 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 
-import Layout from '../components/layout'
+import Layout from '../components/layout';
+import Book from '../components/Book';
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Books I have read</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = ({
+  data: {
+    allBooksJson: { edges },
+  },
+}) => {
+  return (
+    <Layout>
+      <h1>Books I have read</h1>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <div>
+        {edges.map(book => {
+          return <Book key={book.node.bookId} book={book.node} />;
+        })}
+      </div>
+      <Link to="/page-2/">Go to page 2</Link>
+    </Layout>
+  );
+};
 
-export default IndexPage
+export default IndexPage;
+
+export const bookQuery = graphql`
+  {
+    allBooksJson {
+      edges {
+        node {
+          bookId
+          title
+          imageUrl
+          description
+        }
+      }
+    }
+  }
+`;

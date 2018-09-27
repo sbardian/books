@@ -37,3 +37,13 @@ export const footer = css`
   background: rgb(161, 103, 103);
   padding: 20px;
 `;
+
+export const bookStyle = css`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 200px 1fr 300px;
+`;
+
+export const bookImg = css`
+  width: 300px;
+`;
