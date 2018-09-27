@@ -33,7 +33,6 @@ const Layout = ({ children }) => (
             grid-gap: 20px;
             height: 100vh;
             grid-template-rows: auto 1fr auto;
-            /* grid-template-columns: 100%; */
           `}
         >
           <div
@@ -62,10 +61,7 @@ const Layout = ({ children }) => (
             `}
           >
             <div />
-            <div>
-              <span>main content</span>
-              {children}
-            </div>
+            <div>{children}</div>
             <div />
           </div>
           <div
