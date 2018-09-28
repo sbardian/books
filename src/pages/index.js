@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { css } from 'react-emotion';
 import Layout from '../components/layout';
 import Book from '../components/Book';
@@ -21,7 +21,6 @@ const IndexPage = ({
           return <Book key={book.node.bookId} book={book.node} />;
         })}
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
     </Layout>
   );
 };
