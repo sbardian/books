@@ -35,7 +35,7 @@ const Book = ({ book }) => {
           display: grid;
           grid-gap: 20px;
           grid-template-columns: 1fr;
-          ${mq.sm(css`
+          ${mq.md(css`
             grid-template-columns: 300px 1fr;
           `)} grid-gap: 20px;
           color: #1f1f20;
