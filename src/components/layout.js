@@ -10,7 +10,7 @@ body {
   color: #d3dbe8;
 }
 a {
-  color: #567EBB;
+  color: #DCE0E6;
 }
 `;
 
@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
             grid-gap: 20px;
             min-height: 100vh;
             grid-template-rows: auto 1fr auto;
-            background: #567ebb;
+            background: #606d80;
           `}
         >
           <div
@@ -50,7 +50,7 @@ const Layout = ({ children }) => (
               display: grid;
               grid-gap: 20px;
               grid-template-columns: 1fr;
-              background: #2b4c7e;
+              background: #1f1f20;
               justify-content: center;
               padding: 20px;
             `}
@@ -78,7 +78,7 @@ const Layout = ({ children }) => (
               grid-template-columns: 1fr;
               justify-items: center;
               align-items: center;
-              background: #606d80;
+              background: #1f1f20;
               padding: 20px;
             `}
           />
