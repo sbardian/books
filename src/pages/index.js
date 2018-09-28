@@ -14,7 +14,7 @@ const IndexPage = ({
       <div
         className={css`
           display: grid;
-          grid-gap: 20px;
+          grid-gap: 40px;
         `}
       >
         {edges.map(book => {
