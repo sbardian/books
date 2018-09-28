@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'react-emotion';
+import mq from './mediaQueries';
 
 const Book = ({ book }) => {
   return (
@@ -8,8 +9,10 @@ const Book = ({ book }) => {
       className={css`
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 300px 1fr;
-        background: #dce0e6;
+        grid-template-columns: 1fr;
+        ${mq.lg(css`
+          grid-template-columns: 300px 1fr;
+        `)} background: #dce0e6;
         padding: 20px;
       `}
     >
@@ -25,7 +28,10 @@ const Book = ({ book }) => {
           color: #1f1f20;
         `}
       >
-        <h1>{book.title}</h1>
+        <h1>
+          <a href={book.amazonUrl}>{book.title}</a>
+        </h1>
+        <h2>{book.author}</h2>
         <h3>{book.description}</h3>
       </div>
     </div>
@@ -35,8 +41,10 @@ const Book = ({ book }) => {
 Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
+    author: PropTypes.string,
     description: PropTypes.string,
     imageUrl: PropTypes.string,
+    amazonUrl: PropTypes.string,
   }),
 };
 
