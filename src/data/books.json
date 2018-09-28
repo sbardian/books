@@ -1,26 +1,42 @@
 [
   {
+    "bookId": 0,
+    "author": "Jordan Peterson",
+    "amazonUrl": "http://a.co/d/8CGwooV",
+    "title": "12 Rules for Life: An Antidote to Chaos",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/412z30W2N-L._SX330_BO1,204,203,200_.jpg",
+    "description": "What does everyone in the modern world need to know? Renowned psychologist Jordan B. Peterson's answer to this most difficult of questions uniquely combines the hard-won truths of ancient tradition with the stunning revelations of cutting-edge scientific research. Humorous, surprising and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street. What does the nervous system of the lowly lobster have to tell us about standing up straight (with our shoulders back) and about success in life? Why did ancient Egyptians worship the capacity to pay careful attention as the highest of gods? What dreadful paths do people tread when they become resentful, arrogant and vengeful? Dr. Peterson journeys broadly, discussing discipline, freedom, adventure and responsibility, distilling the world's wisdom into 12 practical and profound rules for life. 12 Rules for Life shatters the modern commonplaces of science, faith and human nature, while transforming and ennobling the mind and spirit of its readers."
+  },
+  {
     "bookId": 1,
-    "title": "Book 1",
-    "imageUrl": "https://source.unsplash.com/collection/357786/1",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+    "author": "Alfred W. McCoy",
+    "amazonUrl": "http://a.co/d/fmdXPdq",
+    "title": "In the Shadows of the American Century: The Rise and Decline of US Global Power",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41pYQvu9bFL._SX331_BO1,204,203,200_.jpg",
+    "description": "In a completely original analysis, prize-winning historian Alfred W. McCoy explores America’s rise as a world power—from the 1890s through the Cold War—and its bid to extend its hegemony deep into the twenty-first century through a fusion of cyberwar, space warfare, trade pacts, and military alliances. McCoy then analyzes the marquee instruments of US hegemony—covert intervention, client elites, psychological torture, and worldwide surveillance. Peeling back layers of secrecy, McCoy exposes a military and economic battle for global domination fought in the shadows, largely unknown to those outside the highest rungs of power. Can the United States extend the “American Century” or will China guide the globe for the next hundred years? McCoy devotes his final chapter to these questions, boldly laying out a series of scenarios that could lead to the end of Washington’s world domination by 2030."
   },
   {
     "bookId": 2,
-    "title": "Book 2",
-    "imageUrl": "https://source.unsplash.com/collection/357786/2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+    "author": "Christopher R. Browning",
+    "amazonUrl": "http://a.co/d/7rvidrD",
+    "title": "Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51LEkLnM3RL._SX330_BO1,204,203,200_.jpg",
+    "description": "Christopher R. Browning’s shocking account of how a unit of average middle-aged Germans became the cold-blooded murderers of tens of thousands of Jews—now with a new afterword and additional photographs. Ordinary Men is the true story of Reserve Police Battalion 101 of the German Order Police, which was responsible for mass shootings as well as round-ups of Jewish people for deportation to Nazi death camps in Poland in 1942. Browning argues that most of the men of  RPB 101 were not fanatical Nazis but, rather, ordinary middle-aged, working-class men who committed these atrocities out of a mixture of motives, including the group dynamics of conformity, deference to authority, role adaptation, and the altering of moral norms to justify their actions. Very quickly three groups emerged within the battalion: a core of eager killers, a plurality who carried out their duties reliably but without initiative, and a small minority who evaded participation in the acts of killing without diminishing the murderous efficiency of the battalion whatsoever. While this book discusses a specific Reserve Unit during WWII, the general argument Browning makes is that most people succumb to the pressures of a group setting and commit actions they would never do of their own volition.  "
   },
   {
     "bookId": 3,
-    "title": "Book 3",
-    "imageUrl": "https://source.unsplash.com/collection/357786/3",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+    "author": "John Stuart Mill",
+    "amazonUrl": "http://a.co/d/8mqT3Bj",
+    "title": "On Liberty",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31x1mgxjA9L._SX311_BO1,204,203,200_.jpg",
+    "description": "'A person may cause evil to others not only by his actions but by his inaction, and in either case he is justly accountable to them for the injury.' ― John Stuart Mill, On Liberty"
   },
   {
     "bookId": 4,
-    "title": "Book 4",
-    "imageUrl": "https://source.unsplash.com/collection/357786/4",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates delectus perspiciatis alias dolorem tenetur architecto mollitia natus dolore magni! Soluta, alias temporibus illum iusto blanditiis enim tenetur optio repellat!"
+    "author": "George Orwell",
+    "amazonUrl": "http://a.co/d/gvrKYjL",
+    "title": "1984",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/31lWUHDG7uL._SX282_BO1,204,203,200_.jpg",
+    "description": "Written in 1948, 1984 was George Orwell’s chilling prophecy about the future. And while 1984 has come and gone, his dystopian vision of a government that will do anything to control the narrative is timelier than ever...  •Nominated as one of America’s best-loved novels by PBS’s The Great American Read•  'The Party told you to reject the evidence of your eyes and ears. It was their final, most essential command.'  Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother is always watching... A startling and haunting vision of the world, 1984 is so powerful that it is completely convincing from start to finish. No one can deny the influence of this novel, its hold on the imaginations of multiple generations of readers, or the resiliency of its admonitions—a legacy that seems only to grow with the passage of time."
   }
 ]
