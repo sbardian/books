@@ -11,6 +11,7 @@ const Book = ({ book }) => {
         grid-gap: 20px;
         grid-template-rows: auto 1fr;
         background: #dce0e6;
+        box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
       `}
     >
       <div
