@@ -9,6 +9,9 @@ injectGlobal`
 body {
   color: #d3dbe8;
 }
+a {
+  color: #567EBB;
+}
 `;
 
 const Layout = ({ children }) => (
@@ -58,7 +61,7 @@ const Layout = ({ children }) => (
             className={css`
               display: grid;
               grid-gap: 20px;
-              grid-template-columns: 200px 1fr 200px;
+              grid-template-columns: auto 1fr auto;
               grid-template-rows: 1fr;
               margin-left: 20px;
               margin-right: 20px;
@@ -78,10 +81,7 @@ const Layout = ({ children }) => (
               background: #606d80;
               padding: 20px;
             `}
-          >
-            <span>link 1</span>
-            <span>link 2</span>
-          </div>
+          />
         </div>
       </>
     )}
