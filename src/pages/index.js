@@ -11,7 +11,6 @@ const IndexPage = ({
 }) => {
   return (
     <Layout>
-      <h1>Books I have read</h1>
       <div
         className={css`
           display: grid;

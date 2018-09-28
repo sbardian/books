@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
-import { css } from 'react-emotion';
+import { injectGlobal, css } from 'react-emotion';
+
+injectGlobal`
+body {
+  color: #d3dbe8;
+}
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,24 +37,22 @@ const Layout = ({ children }) => (
           className={css`
             display: grid;
             grid-gap: 20px;
-            height: 100vh;
+            min-height: 100vh;
             grid-template-rows: auto 1fr auto;
+            background: #567ebb;
           `}
         >
           <div
             className={css`
               display: grid;
               grid-gap: 20px;
-              grid-template-columns: 1fr 200px;
-              background: rgb(221, 151, 85);
-              color: white;
+              grid-template-columns: 1fr;
+              background: #2b4c7e;
               justify-content: center;
-              align-items: center;
               padding: 20px;
             `}
           >
             <h1>{data.site.siteMetadata.title}</h1>
-            <span>another</span>
           </div>
           <div
             className={css`
@@ -71,7 +75,7 @@ const Layout = ({ children }) => (
               grid-template-columns: 1fr;
               justify-items: center;
               align-items: center;
-              background: rgb(161, 103, 103);
+              background: #606d80;
               padding: 20px;
             `}
           >

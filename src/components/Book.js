@@ -8,11 +8,11 @@ const Book = ({ book }) => {
       className={css`
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 200px 1fr 300px;
+        grid-template-columns: 300px 1fr;
+        background: #dce0e6;
+        padding: 20px;
       `}
     >
-      <p>{book.title}</p>
-      <p>{book.description}</p>
       <img
         className={css`
           width: 300px;
@@ -20,6 +20,14 @@ const Book = ({ book }) => {
         src={book.imageUrl}
         alt={book.title}
       />
+      <div
+        className={css`
+          color: #1f1f20;
+        `}
+      >
+        <h1>{book.title}</h1>
+        <h3>{book.description}</h3>
+      </div>
     </div>
   );
 };
