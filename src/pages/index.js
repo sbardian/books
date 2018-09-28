@@ -35,7 +35,9 @@ export const bookQuery = graphql`
         node {
           bookId
           title
+          author
           imageUrl
+          amazonUrl
           description
         }
       }
