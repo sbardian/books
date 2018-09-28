@@ -39,7 +39,7 @@ const Book = ({ book }) => {
             grid-template-columns: 300px 1fr;
           `)} grid-gap: 20px;
           color: #1f1f20;
-          padding: 20px;
+          padding: 0 20px 20px 20px;
         `}
       >
         <img
