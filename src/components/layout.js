@@ -61,7 +61,7 @@ const Layout = ({ children }) => (
             className={css`
               display: grid;
               grid-gap: 20px;
-              grid-template-columns: minmax(0, 200px) minmax(300px, 1000px) minmax(
+              grid-template-columns: minmax(0, 200px) minmax(300px, 1fr) minmax(
                   0,
                   200px
                 );
