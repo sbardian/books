@@ -79,6 +79,10 @@ class Layout extends Component {
                     className={css`
                       font-size: 18pt;
                       height: 40px;
+                      border: none;
+                      background: transparent;
+                      border-bottom: 2px solid white;
+                      color: #dce0e6;
                     `}
                   />
                   <img
