@@ -37,7 +37,7 @@ const Book = ({ book }) => {
           grid-gap: 20px;
           grid-template-columns: 1fr;
           ${mq.lg(css`
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 200px 1fr;
           `)} grid-gap: 20px;
           color: #1f1f20;
           padding: 0 20px 20px 20px;
@@ -45,7 +45,7 @@ const Book = ({ book }) => {
       >
         <img
           className={css`
-            width: 300px;
+            width: 200px;
           `}
           src={book.imageUrl}
           alt={book.title}

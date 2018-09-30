@@ -49,7 +49,6 @@ const Layout = ({ children }) => (
             className={css`
               display: grid;
               grid-gap: 20px;
-              grid-template-columns: 1fr;
               background: #1f1f20;
               justify-content: center;
               padding: 20px;
@@ -61,18 +60,9 @@ const Layout = ({ children }) => (
             className={css`
               display: grid;
               grid-gap: 20px;
-              grid-template-columns: minmax(0, 200px) minmax(300px, 1fr) minmax(
-                  0,
-                  200px
-                );
-              grid-template-rows: 1fr;
-              margin-left: 20px;
-              margin-right: 20px;
             `}
           >
-            <div />
             <div>{children}</div>
-            <div />
           </div>
           <div
             className={css`
