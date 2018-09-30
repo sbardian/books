@@ -16,8 +16,6 @@ const IndexPage = ({
           display: grid;
           grid-gap: 20px;
           grid-template-columns: 1fr;
-          justify-content: center;
-          align-content: center;
           margin: 0 20px 0 20px;
         `}
       >
@@ -37,6 +35,7 @@ export const bookQuery = graphql`
       edges {
         node {
           bookId
+          isbn
           title
           author
           imageUrl

@@ -16,20 +16,29 @@ const Book = ({ book }) => {
     >
       <div
         className={css`
+          display: grid;
+          grid-gap: 20px;
+          grid-template-columns: 1fr auto;
+          align-items: center;
           background: #567ebb;
-          padding-left: 20px;
+          padding: 0 20px 0 20px;
         `}
       >
-        <h1>
-          <a
+        <h1>{book.title}</h1>
+        <a
+          className={css`
+            text-decoration: none;
+          `}
+          href={book.amazonUrl}
+        >
+          <img
             className={css`
-              text-decoration: none;
+              width: 40px;
             `}
-            href={book.amazonUrl}
-          >
-            {book.title}
-          </a>
-        </h1>
+            src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
+            alt="amazon"
+          />
+        </a>
       </div>
       <div
         className={css`
@@ -51,7 +60,8 @@ const Book = ({ book }) => {
           alt={book.title}
         />
         <div>
-          <h2>{book.author}</h2>
+          <h2>Author: {book.author}</h2>
+          <h3>ISBN: {book.isbn}</h3>
           <h3>{book.description}</h3>
         </div>
       </div>
@@ -62,6 +72,7 @@ const Book = ({ book }) => {
 Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
+    isbn: PropTypes.string,
     author: PropTypes.string,
     description: PropTypes.string,
     imageUrl: PropTypes.string,

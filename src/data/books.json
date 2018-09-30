@@ -1,6 +1,7 @@
 [
   {
     "bookId": 0,
+    "isbn": "978-0345816023",
     "author": "Jordan Peterson",
     "amazonUrl": "http://a.co/d/8CGwooV",
     "title": "12 Rules for Life: An Antidote to Chaos",
@@ -9,6 +10,7 @@
   },
   {
     "bookId": 1,
+    "isbn": "978-1608467730",
     "author": "Alfred W. McCoy",
     "amazonUrl": "http://a.co/d/fmdXPdq",
     "title": "In the Shadows of the American Century: The Rise and Decline of US Global Power",
@@ -17,6 +19,7 @@
   },
   {
     "bookId": 2,
+    "isbn": "978-0062303028",
     "author": "Christopher R. Browning",
     "amazonUrl": "http://a.co/d/7rvidrD",
     "title": "Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland",
@@ -25,6 +28,7 @@
   },
   {
     "bookId": 3,
+    "isbn": "978-1717881540",
     "author": "John Stuart Mill",
     "amazonUrl": "http://a.co/d/8mqT3Bj",
     "title": "On Liberty",
@@ -33,6 +37,7 @@
   },
   {
     "bookId": 4,
+    "isbn": "978-0451524935",
     "author": "George Orwell",
     "amazonUrl": "http://a.co/d/gvrKYjL",
     "title": "1984",
@@ -41,6 +46,7 @@
   },
   {
     "bookId": 5,
+    "isbn": "978-0140449280",
     "author": "Plato",
     "amazonUrl": "http://a.co/d/022Rvvy",
     "title": "The Last Days of Socrates",

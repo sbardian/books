@@ -50,7 +50,6 @@ const Layout = ({ children }) => (
               display: grid;
               grid-gap: 20px;
               background: #1f1f20;
-              justify-content: center;
               padding: 20px;
             `}
           >
