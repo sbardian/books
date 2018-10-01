@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { css } from 'react-emotion';
 import Layout from '../components/layout';
 import Book from '../components/Book';
+import SearchBox from '../components/SearchBox';
 
 class IndexPage extends Component {
   constructor(props) {
@@ -37,15 +38,17 @@ class IndexPage extends Component {
     const { edges } = this.state;
 
     return (
-      <Layout onSearch={this.handleSearch}>
+      <Layout location="header" onSearch={this.handleSearch}>
         <div
           className={css`
             display: grid;
             grid-gap: 20px;
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr repeat(auto-fit);
             margin: 0 20px 0 20px;
           `}
         >
+          <SearchBox onSearch={this.handleSearch} />
           {edges.map(book => {
             return <Book key={book.node.bookId} book={book.node} />;
           })}
