@@ -44,12 +44,13 @@ const Book = ({ book }) => {
         className={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-columns: 1fr;
-          ${mq.lg(css`
-            grid-template-columns: 200px 1fr;
-          `)} grid-gap: 20px;
+          grid-template-columns: 200px 1fr;
+          grid-gap: 20px;
           color: #1f1f20;
           padding: 0 20px 20px 20px;
+          ${mq.sm(css`
+            grid-template-columns: 1fr;
+          `)};
         `}
       >
         <img

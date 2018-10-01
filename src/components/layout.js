@@ -4,6 +4,8 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import { injectGlobal, css } from 'react-emotion';
+import mq from './mediaQueries';
+import SearchBox from '../components/SearchBox';
 
 injectGlobal`
 body {
@@ -15,12 +17,9 @@ a {
 `;
 
 class Layout extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const { children, onSearch } = this.props;
+
     return (
       <StaticQuery
         query={graphql`
@@ -56,43 +55,13 @@ class Layout extends Component {
                 className={css`
                   display: grid;
                   grid-gap: 20px;
-                  grid-template-columns: 1fr 400px;
+                  grid-template-columns: 1fr;
                   background: #1f1f20;
                   align-items: center;
                   padding: 20px;
                 `}
               >
                 <h1>{data.site.siteMetadata.title}</h1>
-                <div
-                  className={css`
-                    display: grid;
-                    grid-gap: 20px;
-                    grid-template-columns: 1fr 400px;
-                    background: #1f1f20;
-                    align-items: center;
-                    padding: 20px;
-                  `}
-                >
-                  <input
-                    type="text"
-                    onChange={onSearch}
-                    className={css`
-                      font-size: 18pt;
-                      height: 40px;
-                      border: none;
-                      background: transparent;
-                      border-bottom: 2px solid white;
-                      color: #dce0e6;
-                    `}
-                  />
-                  <img
-                    className={css`
-                      height: 40px;
-                      width: 40px;
-                    `}
-                    src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png"
-                  />
-                </div>
               </div>
               <div
                 className={css`
