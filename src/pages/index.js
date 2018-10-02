@@ -28,8 +28,12 @@ class IndexPage extends Component {
     } else {
       const { originalEdges } = this.state;
       this.setState({
-        edges: originalEdges.filter(book =>
-          book.node.title.toLowerCase().includes(target.value.toLowerCase())
+        edges: originalEdges.filter(
+          book =>
+            book.node.title
+              .toLowerCase()
+              .includes(target.value.toLowerCase()) ||
+            book.node.author.toLowerCase().includes(target.value.toLowerCase())
         ),
       });
     }
