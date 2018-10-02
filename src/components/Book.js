@@ -61,7 +61,7 @@ const Book = ({ book }) => {
           alt={book.title}
         />
         <div>
-          <h2>Author: {book.author}</h2>
+          <h2 className={css(`margin-top: 0;`)}>Author: {book.author}</h2>
           <h3>ISBN: {book.isbn}</h3>
           <h3>{book.description}</h3>
         </div>
