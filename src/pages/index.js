@@ -4,6 +4,7 @@ import { css } from 'react-emotion';
 import Layout from '../components/layout';
 import Book from '../components/Book';
 import SearchBox from '../components/SearchBox';
+import mq from '../components/mediaQueries';
 
 class IndexPage extends Component {
   constructor(props) {
@@ -45,7 +46,12 @@ class IndexPage extends Component {
             grid-gap: 20px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr repeat(auto-fit);
-            margin: 0 20px 0 20px;
+            margin: 0 200px 0 200px;
+            ${mq.md(
+              css`
+                margin: 0 20px 0 20px;
+              `
+            )};
           `}
         >
           <SearchBox onSearch={this.handleSearch} />
