@@ -4,8 +4,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import { injectGlobal, css } from 'react-emotion';
-import mq from './mediaQueries';
-import SearchBox from '../components/SearchBox';
 
 injectGlobal`
 body {
