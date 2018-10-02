@@ -16,7 +16,7 @@ a {
 
 class Layout extends Component {
   render() {
-    const { children, onSearch } = this.props;
+    const { children } = this.props;
 
     return (
       <StaticQuery
