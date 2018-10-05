@@ -3215,13 +3215,13 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
-emotion-server@^9.2.10:
+emotion-server@9.2.10:
   version "9.2.10"
   resolved "https://registry.yarnpkg.com/emotion-server/-/emotion-server-9.2.10.tgz#c34090b280706a9839ffd18e3dd8b3e600ba15ee"
   dependencies:
     create-emotion-server "^9.2.10"
 
-emotion@^9.2.10:
+emotion@9.2.10:
   version "9.2.10"
   resolved "https://registry.yarnpkg.com/emotion/-/emotion-9.2.10.tgz#9ba8e33d3dff1352af03f92d761ac6889cb0c545"
   dependencies:
@@ -4075,13 +4075,13 @@ gatsby-link@^2.0.2:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
-gatsby-plugin-emotion@^2.0.5:
+gatsby-plugin-emotion@2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-2.0.5.tgz#e44d0ee58fc07bb49889a28ca51e0cb4690aeeb4"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-manifest@^2.0.2:
+gatsby-plugin-manifest@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.4.tgz#c53ed4181bf1f6fef621469ab2b43c67081c76df"
   dependencies:
@@ -4089,7 +4089,7 @@ gatsby-plugin-manifest@^2.0.2:
     bluebird "^3.5.0"
     sharp "^0.20.2"
 
-gatsby-plugin-offline@^2.0.5:
+gatsby-plugin-offline@2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.5.tgz#11cd7941116ea3f7d3127a4343ce880ca1d10497"
   dependencies:
@@ -4111,7 +4111,7 @@ gatsby-plugin-page-creator@^2.0.0:
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
-gatsby-plugin-react-helmet@^3.0.0:
+gatsby-plugin-react-helmet@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.0.tgz#d833a7f7f65b6d2c5adb2d99095a7bd3882d33cd"
   dependencies:
@@ -4125,7 +4125,7 @@ gatsby-react-router-scroll@^2.0.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-filesystem@^2.0.1:
+gatsby-source-filesystem@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.1.tgz#27aa5393a8e50fe160e65bb88b5e62f28dafa6de"
   dependencies:
@@ -4142,14 +4142,14 @@ gatsby-source-filesystem@^2.0.1:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-json@^2.1.2:
+gatsby-transformer-json@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-2.1.2.tgz#c561b813c55ac517ccbdefe43063a0782e997f70"
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
 
-gatsby@^2.0.0:
+gatsby@2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.9.tgz#bf35f4de1cb0596ab952a6fd6a038c0c5e9caea0"
   dependencies:
@@ -6116,7 +6116,7 @@ normalize-url@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
 
-normalize.css@^8.0.0:
+normalize.css@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
 
@@ -6947,7 +6947,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.14.2:
+prettier@1.14.3:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.3.tgz#90238dd4c0684b7edce5f83b0fb7328e48bd0895"
 
@@ -7172,7 +7172,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.5.1:
+react-dom@16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   dependencies:
@@ -7181,7 +7181,7 @@ react-dom@^16.5.1:
     prop-types "^15.6.2"
     schedule "^0.5.0"
 
-react-emotion@^9.2.10:
+react-emotion@9.2.10:
   version "9.2.10"
   resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-9.2.10.tgz#a90f8ce4509ba1e33e70ffe2240fb25e73cedfc7"
   dependencies:
@@ -7192,7 +7192,7 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-helmet@^5.2.0:
+react-helmet@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"
   dependencies:
@@ -7223,7 +7223,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@^16.5.1:
+react@16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
   dependencies:
