@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "books",
+  "description": "List your recommended books",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Brian Andrews <sbardian@gmail.com>",
   "dependencies": {
     "emotion": "9.2.10",
     "emotion-server": "9.2.10",
@@ -34,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/sbardian/books"
   }
 }
