@@ -35,7 +35,7 @@ const Book = ({ book }) => {
             className={css`
               width: 40px;
             `}
-            src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
+            src="https://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
             alt="amazon"
           />
         </a>
