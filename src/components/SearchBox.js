@@ -17,6 +17,7 @@ class SearchBox extends Component {
         `}
       >
         <input
+          id="books-search-input"
           type="text"
           onChange={onSearch}
           className={css`
@@ -34,6 +35,7 @@ class SearchBox extends Component {
             height: 40px;
             width: 40px;
           `}
+          alt="Search"
           src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png"
         />
       </div>

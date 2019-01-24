@@ -18,12 +18,15 @@ const Book = ({ book }) => {
         className={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-columns: 1fr auto;
+          grid-template-columns: 30px 1fr  auto;
           align-items: center;
           background: #567ebb;
           padding: 0 20px 0 20px;
         `}
       >
+        <span>
+          {book.yearRead}
+        </span>
         <h1>{book.title}</h1>
         <a
           className={css`

@@ -1,6 +1,7 @@
 [
   {
     "bookId": 0,
+    "yearRead": "2018",
     "isbn": "978-0345816023",
     "author": "Jordan Peterson",
     "amazonUrl": "https://a.co/d/8CGwooV",
@@ -10,6 +11,7 @@
   },
   {
     "bookId": 1,
+    "yearRead": "2018",
     "isbn": "978-1608467730",
     "author": "Alfred W. McCoy",
     "amazonUrl": "https://a.co/d/fmdXPdq",
@@ -19,6 +21,7 @@
   },
   {
     "bookId": 2,
+    "yearRead": "2018",
     "isbn": "978-0062303028",
     "author": "Christopher R. Browning",
     "amazonUrl": "https://a.co/d/7rvidrD",
@@ -28,6 +31,7 @@
   },
   {
     "bookId": 3,
+    "yearRead": "2018",
     "isbn": "978-1717881540",
     "author": "John Stuart Mill",
     "amazonUrl": "https://a.co/d/8mqT3Bj",
@@ -37,6 +41,7 @@
   },
   {
     "bookId": 4,
+    "yearRead": "2018",
     "isbn": "978-0451524935",
     "author": "George Orwell",
     "amazonUrl": "https://a.co/d/gvrKYjL",
@@ -46,6 +51,7 @@
   },
   {
     "bookId": 5,
+    "yearRead": "2018",
     "isbn": "978-0140449280",
     "author": "Plato",
     "amazonUrl": "https://a.co/d/022Rvvy",
@@ -55,6 +61,7 @@
   },
   {
     "bookId": 6,
+    "yearRead": "2018",
     "isbn": "978-0486454115",
     "author": "Fyodor Dostoyevsky",
     "amazonUrl": "https://read.amazon.com/kp/embed?asin=B075CR4G91&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_fWejCbVN0TJSQ",
@@ -64,6 +71,7 @@
   },
   {
     "bookId": 7,
+    "yearRead": "2019",
     "isbn": "978-0765365279",
     "author": "Brandon Sanderson",
     "amazonUrl": "https://read.amazon.com/kp/embed?asin=B003P2WO5E&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_mpGsCbNHDXY2Q",

@@ -4,6 +4,7 @@ import { css } from 'react-emotion';
 import Layout from '../components/layout';
 import Book from '../components/Book';
 import SearchBox from '../components/SearchBox';
+import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 
 class IndexPage extends Component {
@@ -19,6 +20,29 @@ class IndexPage extends Component {
       originalEdges: edges,
     };
   }
+
+  handleClearSearchBox = () => {
+    const input = document.querySelector('#books-search-input');
+    input.value = '';
+  };
+
+  handleClearYearFilter = () => {
+    this.handleClearSearchBox();
+    this.setState({
+      edges: this.state.originalEdges,
+    });
+  };
+
+  handleYearFilter = year => {
+    this.handleClearSearchBox();
+    this.setState({
+      edges: this.state.originalEdges,
+    });
+    const { originalEdges } = this.state;
+    this.setState({
+      edges: originalEdges.filter(book => book.node.yearRead === year),
+    });
+  };
 
   handleSearch = ({ target }) => {
     if (!target.value || target.value === '') {
@@ -40,10 +64,45 @@ class IndexPage extends Component {
   };
 
   render() {
-    const { edges } = this.state;
+    const { edges, originalEdges } = this.state;
+    const years = originalEdges.map(book => book.node.yearRead);
+    const yearFilters = years.filter(
+      (year, index) => years.indexOf(year) >= index
+    );
 
     return (
-      <Layout location="header" onSearch={this.handleSearch}>
+      <Layout location="header">
+        <div
+          className={css`
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, 150px);
+            justify-content: center;
+          `}
+        >
+          <button
+            type="button"
+            className={css`
+              height: 30px;
+              background: white;
+              color: black;
+              text-align: center;
+              align-items: center;
+            `}
+            onClick={() => this.handleClearYearFilter()}
+          >
+            All
+          </button>
+          {yearFilters.map(year => {
+            return (
+              <YearFilterButton
+                key={Math.random()}
+                onYearFilter={this.handleYearFilter}
+                year={year}
+              />
+            );
+          })}
+        </div>
         <div
           className={css`
             display: grid;
@@ -76,6 +135,7 @@ export const bookQuery = graphql`
       edges {
         node {
           bookId
+          yearRead
           isbn
           title
           author
