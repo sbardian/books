@@ -16,7 +16,7 @@
     "normalize.css": "8.0.1",
     "react": "16.7.0",
     "react-dom": "16.7.0",
-    "react-emotion": "9.2.12",
+    "react-emotion": "10.0.0",
     "react-helmet": "5.2.0"
   },
   "keywords": [
