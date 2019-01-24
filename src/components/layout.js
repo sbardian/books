@@ -59,7 +59,13 @@ class Layout extends Component {
                   padding: 20px;
                 `}
               >
-                <h1>{data.site.siteMetadata.title}</h1>
+                <h1
+                  className={css`
+                    margin: 0.67em 200px;
+                  `}
+                >
+                  {data.site.siteMetadata.title}
+                </h1>
               </div>
               <div
                 className={css`
