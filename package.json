@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "prettier": "1.16.1"
+    "prettier": "1.16.3"
   },
   "repository": {
     "type": "git",
