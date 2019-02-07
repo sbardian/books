@@ -21,7 +21,7 @@
     "gatsby-transformer-json": "2.1.8",
     "normalize.css": "8.0.1",
     "react": "16.8.1",
-    "react-dom": "16.7.0",
+    "react-dom": "16.8.1",
     "react-emotion": "9.2.12",
     "react-helmet": "5.2.0"
   },
