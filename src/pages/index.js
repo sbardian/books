@@ -111,7 +111,7 @@ class IndexPage extends Component {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr repeat(auto-fit);
             margin: 0 200px 0 200px;
-            ${mq.md(
+            ${mq.lg(
               css`
                 margin: 0 20px 0 20px;
               `
