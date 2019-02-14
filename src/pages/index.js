@@ -76,7 +76,7 @@ class IndexPage extends Component {
           className={css`
             display: grid;
             grid-gap: 20px;
-            grid-template-columns: repeat(auto-fit, 150px);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 335px));
             justify-content: center;
           `}
         >
@@ -84,10 +84,11 @@ class IndexPage extends Component {
             type="button"
             className={css`
               height: 30px;
-              background: white;
-              color: black;
+              background: #4b4545b3;
+              color: #c2c2c2;
               text-align: center;
               align-items: center;
+              border: none;
             `}
             onClick={() => this.handleClearYearFilter()}
           >

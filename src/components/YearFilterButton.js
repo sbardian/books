@@ -6,10 +6,11 @@ export default ({ onYearFilter, year }) => (
     type="button"
     className={css`
       height: 30px;
-      background: white;
-      color: black;
+      background: #4b4545b3;
+      color: #c2c2c2;
       text-align: center;
       align-items: center;
+      border: none;
     `}
     onClick={() => onYearFilter(year)}
   >

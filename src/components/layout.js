@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import { injectGlobal, css } from 'react-emotion';
+import mq from './mediaQueries';
 
 injectGlobal`
 body {
@@ -62,9 +63,19 @@ class Layout extends Component {
                 <h1
                   className={css`
                     margin: 0.67em 200px;
+                    ${mq.sm(css`
+                      margin: 0 20px 0 20px;
+                    `)};
                   `}
                 >
-                  {data.site.siteMetadata.title}
+                  <a
+                    className={css`
+                      text-decoration: none;
+                    `}
+                    href="/"
+                  >
+                    {data.site.siteMetadata.title}
+                  </a>
                 </h1>
               </div>
               <div

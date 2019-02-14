@@ -18,36 +18,61 @@ const Book = ({ book }) => {
         className={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-columns: 30px 1fr  auto;
+          grid-template-columns: 1fr auto;
           align-items: center;
           background: #567ebb;
           padding: 0 20px 0 20px;
+          ${mq.sm(css`
+            grid-template-columns: 1fr;
+            grid-gap: 0px;
+          `)}
         `}
       >
-        <span>
-          {book.yearRead}
-        </span>
         <h1>{book.title}</h1>
-        <a
+        <div
           className={css`
-            text-decoration: none;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            ${mq.sm(css`
+              grid-template-columns: 1fr 1fr;
+
+              grid-template-rows: none;
+            `)}
           `}
-          href={book.amazonUrl}
         >
-          <img
+          <a
             className={css`
-              width: 40px;
+              text-decoration: none;
+              padding: 20px;
+              align-self: center;
+              justify-self: center;
             `}
-            src="https://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
-            alt="amazon"
-          />
-        </a>
+            href={book.amazonUrl}
+          >
+            <img
+              className={css`
+                width: 40px;
+              `}
+              src="https://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
+              alt="amazon"
+            />
+          </a>
+          <span
+            className={css`
+              align-self: center;
+              justify-self: center;
+            `}
+          >
+            {book.yearRead}
+          </span>
+        </div>
       </div>
       <div
         className={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-columns: 200px 1fr;
+          grid-template-columns: minmax(200px, 300px) minmax(300px, 1fr);
           grid-gap: 20px;
           color: #1f1f20;
           padding: 0 20px 20px 20px;
@@ -58,7 +83,9 @@ const Book = ({ book }) => {
       >
         <img
           className={css`
-            width: 200px;
+            object-fit: cover;
+            width: 100%;
+            max-height: 100%;
           `}
           src={book.imageUrl}
           alt={book.title}
