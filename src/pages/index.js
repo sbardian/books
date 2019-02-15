@@ -16,7 +16,7 @@ class IndexPage extends Component {
       },
     } = this.props;
     this.state = {
-      edges: edges,
+      edges,
       originalEdges: edges,
     };
   }
@@ -69,6 +69,10 @@ class IndexPage extends Component {
     const yearFilters = years.filter(
       (year, index) => years.indexOf(year) >= index
     );
+    const {
+      data: { allImagesJson },
+    } = this.props;
+    const [amazonImage] = allImagesJson.edges;
 
     return (
       <Layout location="header">
@@ -120,7 +124,13 @@ class IndexPage extends Component {
         >
           <SearchBox onSearch={this.handleSearch} />
           {edges.map(book => {
-            return <Book key={book.node.id} book={book.node} />;
+            return (
+              <Book
+                key={book.node.id}
+                book={book.node}
+                amazonImage={amazonImage}
+              />
+            );
           })}
         </div>
       </Layout>
@@ -132,6 +142,23 @@ export default IndexPage;
 
 export const bookQuery = graphql`
   {
+    allImagesJson(filter: { imageName: { eq: "amazonLink" } }) {
+      edges {
+        node {
+          id
+          imageName
+          siteImage {
+            id
+            name
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
     allBooksJson {
       edges {
         node {

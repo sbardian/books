@@ -22,7 +22,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data`,
+        name: 'books',
+        path: `./src/data/books/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'images',
+        path: `./src/data/images/`,
       },
     },
     'gatsby-transformer-sharp',
@@ -32,6 +40,14 @@ module.exports = {
       options: {
         nodeType: 'BooksJson',
         imagePath: 'imageUrl',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'ImagesJson',
+        imagePath: 'url',
+        name: 'siteImage',
       },
     },
     'gatsby-plugin-offline',

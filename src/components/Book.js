@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import { css } from 'react-emotion';
 import mq from './mediaQueries';
 
-const Book = ({ book }) => {
+const Book = ({ book, amazonImage }) => {
   return (
     <div
       className={css`
@@ -50,11 +50,11 @@ const Book = ({ book }) => {
             `}
             href={book.amazonUrl}
           >
-            <img
+            <Img
               className={css`
                 width: 40px;
               `}
-              src="https://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png"
+              fluid={amazonImage.node.siteImage.childImageSharp.fluid}
               alt="amazon"
             />
           </a>
@@ -74,6 +74,7 @@ const Book = ({ book }) => {
           grid-gap: 20px;
           grid-template-columns: minmax(300px, 300px) minmax(300px, 1fr);
           grid-gap: 20px;
+          align-items: start;
           color: #1f1f20;
           padding: 0 20px 20px 20px;
           ${mq.md(css`
