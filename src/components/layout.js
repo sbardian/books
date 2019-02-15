@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
@@ -15,95 +15,91 @@ a {
 }
 `;
 
-class Layout extends Component {
-  render() {
-    const { children } = this.props;
-
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
+const Layout = ({ children }) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
             }
           }
-        `}
-        render={data => (
-          <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'Books', content: 'Books I have read' },
-                { name: 'good books', content: 'good books' },
-              ]}
-            >
-              <html lang="en" />
-            </Helmet>
+        }
+      `}
+      render={data => (
+        <>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'Books', content: 'Books I have read' },
+              { name: 'good books', content: 'good books' },
+            ]}
+          >
+            <html lang="en" />
+          </Helmet>
+          <div
+            className={css`
+              display: grid;
+              grid-gap: 20px;
+              min-height: 100vh;
+              grid-template-rows: auto 1fr auto;
+              background: #606d80;
+            `}
+          >
             <div
               className={css`
                 display: grid;
                 grid-gap: 20px;
-                min-height: 100vh;
-                grid-template-rows: auto 1fr auto;
-                background: #606d80;
+                grid-template-columns: 1fr;
+                background: #1f1f20;
+                align-items: center;
+                padding: 20px;
               `}
             >
-              <div
+              <h1
                 className={css`
-                  display: grid;
-                  grid-gap: 20px;
-                  grid-template-columns: 1fr;
-                  background: #1f1f20;
-                  align-items: center;
-                  padding: 20px;
+                  margin: 0.67em 200px;
+                  ${mq.sm(css`
+                    margin: 0 20px 0 20px;
+                  `)};
                 `}
               >
-                <h1
+                <a
                   className={css`
-                    margin: 0.67em 200px;
-                    ${mq.sm(css`
-                      margin: 0 20px 0 20px;
-                    `)};
+                    text-decoration: none;
                   `}
+                  href="/"
                 >
-                  <a
-                    className={css`
-                      text-decoration: none;
-                    `}
-                    href="/"
-                  >
-                    {data.site.siteMetadata.title}
-                  </a>
-                </h1>
-              </div>
-              <div
-                className={css`
-                  display: grid;
-                  grid-gap: 20px;
-                `}
-              >
-                <div>{children}</div>
-              </div>
-              <div
-                className={css`
-                  display: grid;
-                  grid-gap: 20px;
-                  grid-template-columns: 1fr;
-                  justify-items: center;
-                  align-items: center;
-                  background: #1f1f20;
-                  padding: 20px;
-                `}
-              />
+                  {data.site.siteMetadata.title}
+                </a>
+              </h1>
             </div>
-          </>
-        )}
-      />
-    );
-  }
-}
+            <div
+              className={css`
+                display: grid;
+                grid-gap: 20px;
+              `}
+            >
+              <div>{children}</div>
+            </div>
+            <div
+              className={css`
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-items: center;
+                background: #1f1f20;
+                padding: 20px;
+              `}
+            />
+          </div>
+        </>
+      )}
+    />
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
