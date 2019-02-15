@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import { css } from 'react-emotion';
 import mq from './mediaQueries';
 
 const Book = ({ book }) => {
+  console.log('Book>>> ', book);
   return (
     <div
       className={css`
@@ -36,7 +38,6 @@ const Book = ({ book }) => {
             justify-content: center;
             ${mq.sm(css`
               grid-template-columns: 1fr 1fr;
-
               grid-template-rows: none;
             `)}
           `}
@@ -72,22 +73,23 @@ const Book = ({ book }) => {
         className={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-columns: minmax(200px, 300px) minmax(300px, 1fr);
+          grid-template-columns: minmax(300px, 300px) minmax(300px, 1fr);
           grid-gap: 20px;
           color: #1f1f20;
           padding: 0 20px 20px 20px;
-          ${mq.sm(css`
+          ${mq.md(css`
             grid-template-columns: 1fr;
           `)};
+          ${mq.lg(
+            css`
+              maxheight: '460px';
+            `
+          )}
         `}
       >
-        <img
-          className={css`
-            object-fit: cover;
-            width: 100%;
-            max-height: 100%;
-          `}
-          src={book.imageUrl}
+        <Img
+          fluid={book.localImage.childImageSharp.fluid}
+          fadeIn
           alt={book.title}
         />
         <div>

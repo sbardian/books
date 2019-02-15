@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-json',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,14 +18,22 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
     'gatsby-plugin-emotion',
-    'gatsby-transformer-json',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data`,
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: 'BooksJson',
+        imagePath: 'imageUrl',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 };

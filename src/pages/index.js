@@ -111,16 +111,16 @@ class IndexPage extends Component {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr repeat(auto-fit);
             margin: 0 200px 0 200px;
-            ${mq.lg(
+            ${mq.xl(
               css`
                 margin: 0 20px 0 20px;
               `
-            )};
+            )}
           `}
         >
           <SearchBox onSearch={this.handleSearch} />
           {edges.map(book => {
-            return <Book key={book.node.bookId} book={book.node} />;
+            return <Book key={book.node.id} book={book.node} />;
           })}
         </div>
       </Layout>
@@ -135,14 +135,21 @@ export const bookQuery = graphql`
     allBooksJson {
       edges {
         node {
-          bookId
+          id
           yearRead
           isbn
           title
           author
-          imageUrl
           amazonUrl
           description
+          localImage {
+            id
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
