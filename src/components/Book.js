@@ -5,7 +5,6 @@ import { css } from 'react-emotion';
 import mq from './mediaQueries';
 
 const Book = ({ book }) => {
-  console.log('Book>>> ', book);
   return (
     <div
       className={css`
@@ -91,6 +90,7 @@ const Book = ({ book }) => {
           fluid={book.localImage.childImageSharp.fluid}
           fadeIn
           alt={book.title}
+          imgStyle={{ objectFit: 'contain' }}
         />
         <div>
           <h2 className={css(`margin-top: 0;`)}>Author: {book.author}</h2>
