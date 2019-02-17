@@ -1,21 +1,11 @@
 import React from 'react';
-import { css } from 'react-emotion';
+import { Button } from './styled/button';
+import { css } from '@emotion/core';
 
 export default ({ onYearFilter, year }) => (
-  <button
-    type="button"
-    className={css`
-      height: 30px;
-      background: #4b4545b3;
-      color: #c2c2c2;
-      text-align: center;
-      align-items: center;
-      border: none;
-    `}
-    onClick={() => onYearFilter(year)}
-  >
+  <Button type="button" onClick={() => onYearFilter(year)}>
     <span
-      className={css`
+      css={css`
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,5 +13,5 @@ export default ({ onYearFilter, year }) => (
     >
       {year}
     </span>
-  </button>
+  </Button>
 );

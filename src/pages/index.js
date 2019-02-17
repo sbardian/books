@@ -1,11 +1,13 @@
+/** @jsx jsx */
 import React from 'react';
 import { graphql } from 'gatsby';
-import { css } from 'react-emotion';
+import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
 import Book from '../components/Book';
 import SearchBox from '../components/SearchBox';
 import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
+import { Button } from '../components/styled/button';
 
 const IndexPage = ({ data: { allBooksJson, allImagesJson } }) => {
   const [edges, setEdges] = React.useState(allBooksJson.edges);
@@ -52,27 +54,16 @@ const IndexPage = ({ data: { allBooksJson, allImagesJson } }) => {
   return (
     <Layout location="header">
       <div
-        className={css`
+        css={css`
           display: grid;
           grid-gap: 20px;
           grid-template-columns: repeat(auto-fit, minmax(200px, 335px));
           justify-content: center;
         `}
       >
-        <button
-          type="button"
-          className={css`
-            height: 30px;
-            background: #4b4545b3;
-            color: #c2c2c2;
-            text-align: center;
-            align-items: center;
-            border: none;
-          `}
-          onClick={() => handleClearYearFilter()}
-        >
+        <Button type="button" onClick={() => handleClearYearFilter()}>
           All
-        </button>
+        </Button>
         {yearFilters.map(year => {
           return (
             <YearFilterButton
@@ -84,7 +75,7 @@ const IndexPage = ({ data: { allBooksJson, allImagesJson } }) => {
         })}
       </div>
       <div
-        className={css`
+        css={css`
           display: grid;
           grid-gap: 20px;
           grid-template-columns: 1fr;

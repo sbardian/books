@@ -1,19 +1,13 @@
+/** @jsx jsx */
+// eslint-disable-next-line
 import React from 'react';
+import { jsx, css, Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
-import { injectGlobal, css } from 'react-emotion';
 import mq from './mediaQueries';
-
-injectGlobal`
-body {
-  color: #d3dbe8;
-}
-a {
-  color: #DCE0E6;
-}
-`;
+import { Footer } from './styled/footer';
 
 const Layout = ({ children }) => {
   return (
@@ -29,6 +23,16 @@ const Layout = ({ children }) => {
       `}
       render={data => (
         <>
+          <Global
+            styles={css`
+              body {
+                color: #d3dbe8;
+              }
+              a {
+                color: #dce0e6;
+              }
+            `}
+          />
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
@@ -39,7 +43,7 @@ const Layout = ({ children }) => {
             <html lang="en" />
           </Helmet>
           <div
-            className={css`
+            css={css`
               display: grid;
               grid-gap: 20px;
               min-height: 100vh;
@@ -48,7 +52,7 @@ const Layout = ({ children }) => {
             `}
           >
             <div
-              className={css`
+              css={css`
                 display: grid;
                 grid-gap: 20px;
                 grid-template-columns: 1fr;
@@ -58,7 +62,7 @@ const Layout = ({ children }) => {
               `}
             >
               <h1
-                className={css`
+                css={css`
                   margin: 0.67em 200px;
                   ${mq.sm(css`
                     margin: 0 20px 0 20px;
@@ -66,7 +70,7 @@ const Layout = ({ children }) => {
                 `}
               >
                 <a
-                  className={css`
+                  css={css`
                     text-decoration: none;
                   `}
                   href="/"
@@ -76,24 +80,20 @@ const Layout = ({ children }) => {
               </h1>
             </div>
             <div
-              className={css`
+              css={css`
                 display: grid;
                 grid-gap: 20px;
               `}
             >
               <div>{children}</div>
             </div>
-            <div
-              className={css`
-                display: grid;
-                grid-gap: 20px;
-                grid-template-columns: 1fr;
-                justify-items: center;
-                align-items: center;
-                background: #1f1f20;
-                padding: 20px;
-              `}
-            />
+            <Footer>
+              <div
+                css={css`
+                  height: 150px;
+                `}
+              />
+            </Footer>
           </div>
         </>
       )}

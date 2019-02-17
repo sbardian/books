@@ -1,13 +1,15 @@
+/** @jsx jsx */
+// eslint-disable-next-line
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import { css } from 'react-emotion';
+import { jsx, css } from '@emotion/core';
 import mq from './mediaQueries';
 
 const Book = ({ book, amazonImage }) => {
   return (
     <div
-      className={css`
+      css={css`
         display: grid;
         grid-gap: 20px;
         grid-template-rows: auto 1fr;
@@ -16,7 +18,7 @@ const Book = ({ book, amazonImage }) => {
       `}
     >
       <div
-        className={css`
+        css={css`
           display: grid;
           grid-gap: 20px;
           grid-template-columns: 1fr auto;
@@ -31,7 +33,7 @@ const Book = ({ book, amazonImage }) => {
       >
         <h1>{book.title}</h1>
         <div
-          className={css`
+          css={css`
             display: grid;
             grid-template-rows: 1fr 1fr;
             justify-content: center;
@@ -42,7 +44,7 @@ const Book = ({ book, amazonImage }) => {
           `}
         >
           <a
-            className={css`
+            css={css`
               text-decoration: none;
               padding: 20px;
               align-self: center;
@@ -51,7 +53,7 @@ const Book = ({ book, amazonImage }) => {
             href={book.amazonUrl}
           >
             <Img
-              className={css`
+              css={css`
                 width: 40px;
               `}
               fluid={amazonImage.node.siteImage.childImageSharp.fluid}
@@ -59,7 +61,7 @@ const Book = ({ book, amazonImage }) => {
             />
           </a>
           <span
-            className={css`
+            css={css`
               align-self: center;
               justify-self: center;
             `}
@@ -69,7 +71,7 @@ const Book = ({ book, amazonImage }) => {
         </div>
       </div>
       <div
-        className={css`
+        css={css`
           display: grid;
           grid-gap: 20px;
           grid-template-columns: minmax(300px, 300px) minmax(300px, 1fr);
@@ -94,7 +96,7 @@ const Book = ({ book, amazonImage }) => {
           imgStyle={{ objectFit: 'contain' }}
         />
         <div>
-          <h2 className={css(`margin-top: 0;`)}>Author: {book.author}</h2>
+          <h2 css={css(`margin-top: 0;`)}>Author: {book.author}</h2>
           <h3>ISBN: {book.isbn}</h3>
           <h3>{book.description}</h3>
         </div>

@@ -1,10 +1,13 @@
+/** @jsx jsx */
+// eslint-disable-next-line
 import React from 'react';
-import { css } from 'react-emotion';
+import { jsx, css } from '@emotion/core';
+import { SearchInput } from './styled/searchInput';
 
 const SearchBox = ({ onSearch }) => {
   return (
     <div
-      className={css`
+      css={css`
         display: grid;
         grid-gap: 20px;
         grid-template-columns: auto auto;
@@ -13,22 +16,9 @@ const SearchBox = ({ onSearch }) => {
         padding: 20px;
       `}
     >
-      <input
-        id="books-search-input"
-        type="text"
-        onChange={onSearch}
-        className={css`
-          font-size: 18pt;
-          height: 40px;
-          border: none;
-          background: transparent;
-          border-bottom: 2px solid gray;
-          color: #dce0e6;
-          min-width: 100px;
-        `}
-      />
+      <SearchInput id="books-search-input" type="text" onChange={onSearch} />
       <img
-        className={css`
+        css={css`
           height: 40px;
           width: 40px;
         `}

@@ -1,11 +1,13 @@
+/** @jsx jsx */
+// eslint-disable-next-line
 import React from 'react';
-import { css } from 'react-emotion';
+import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
 
 const NotFoundPage = () => (
   <Layout>
     <div
-      className={css`
+      css={css`
         text-align: 'center';
       `}
     >

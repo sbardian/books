@@ -1,5 +1,6 @@
 // Adapted from https://emotion.sh/docs/media-queries
-import { css } from 'react-emotion';
+/** @jsx jsx */
+import { css } from '@emotion/core';
 
 const breakpoints = {
   // mobile-first, so there is no 'xs' for portrait phones
