@@ -22,13 +22,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'books',
-        path: `./src/data/books/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: 'images',
         path: `./src/data/images/`,
       },
@@ -43,16 +36,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-remote-images`,
       options: {
-        nodeType: 'BooksJson',
-        imagePath: 'imageUrl',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-remote-images`,
-      options: {
         nodeType: 'ImagesJson',
         imagePath: 'url',
         name: 'siteImage',
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: 'xothad89',
+        dataset: 'books',
       },
     },
     'gatsby-plugin-offline',

@@ -90,7 +90,7 @@ const Book = ({ book, amazonImage }) => {
         `}
       >
         <Img
-          fluid={book.localImage.childImageSharp.fluid}
+          fluid={book.image.asset.fluid}
           fadeIn
           alt={book.title}
           imgStyle={{ objectFit: 'contain' }}

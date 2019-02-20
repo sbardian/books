@@ -9,9 +9,9 @@ import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
 
-const IndexPage = ({ data: { allBooksJson, allImagesJson } }) => {
-  const [edges, setEdges] = React.useState(allBooksJson.edges);
-  const [originalEdges] = React.useState(allBooksJson.edges);
+const IndexPage = ({ data: { allSanityBook, allImagesJson } }) => {
+  const [edges, setEdges] = React.useState(allSanityBook.edges);
+  const [originalEdges] = React.useState(allSanityBook.edges);
 
   const years = originalEdges.map(book => book.node.yearRead);
   const yearFilters = years.filter(
@@ -124,21 +124,22 @@ export const bookQuery = graphql`
         }
       }
     }
-    allBooksJson {
+    allSanityBook {
       edges {
         node {
           id
-          yearRead
-          isbn
+          amazonUrl
           title
+          isbn
+          description
           author
           amazonUrl
-          description
-          localImage {
-            id
-            childImageSharp {
+          imageUrl
+          yearRead
+          image {
+            asset {
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbySanityImageFluid
               }
             }
           }
