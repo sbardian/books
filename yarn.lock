@@ -4681,10 +4681,10 @@ gatsby-source-filesystem@2.0.20, gatsby-source-filesystem@^2.0.11:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-source-sanity@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-1.1.0.tgz#576667a79eeffcf38e3e38f11542ee0aa21130f1"
-  integrity sha512-87QtrV8Pe6WOcBcP7A1YJAAFcvK0X0Ixwecf0CLEHGP6t7fDbt6LJkx9bhvzyKKhUgC71bs1GhrvYl2zUZtmdw==
+gatsby-source-sanity@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-1.1.1.tgz#66551fe798b0bff070bcd76c623fc81178b3f667"
+  integrity sha512-aFMY+y4kuVQu/MYfS/bu13BU7vYLiPaochau7L1Yy1/EZnD1g2c5xqm/MkHRHrzwixkKDfWvdIY3i7Fyju+CJA==
   dependencies:
     "@sanity/client" "^0.138.0"
     "@sanity/image-url" "^0.138.0"
@@ -5186,6 +5186,7 @@ graphql-type-json@^0.2.1:
 graphql@^14.0.2, graphql@^14.1.1:
   version "14.1.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
+  integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
   dependencies:
     iterall "^1.2.2"
 
