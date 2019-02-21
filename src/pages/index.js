@@ -124,7 +124,7 @@ export const bookQuery = graphql`
         }
       }
     }
-    allSanityBook {
+    allSanityBook(sort: { fields: title, order: ASC }) {
       edges {
         node {
           id
