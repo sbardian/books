@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
 import Book from '../components/Book';
@@ -9,7 +9,7 @@ import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
 
-const IndexPage = ({ data: { allSanityBook, allSanitySiteImage } }) => {
+const IndexPage = ({ data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
   const [originalEdges] = React.useState(allSanityBook.edges);
 
@@ -17,7 +17,6 @@ const IndexPage = ({ data: { allSanityBook, allSanitySiteImage } }) => {
   const yearFilters = years.filter(
     (year, index) => years.indexOf(year) >= index
   );
-  const [amazonImage] = allSanitySiteImage.edges;
 
   const handleClearSearchBox = () => {
     const input = document.querySelector('#books-search-input');
@@ -74,30 +73,52 @@ const IndexPage = ({ data: { allSanityBook, allSanitySiteImage } }) => {
           );
         })}
       </div>
-      <div
-        css={css`
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr repeat(auto-fit);
-          margin: 0 200px 0 200px;
-          ${mq.xl(
-            css`
-              margin: 0 20px 0 20px;
-            `
-          )}
-        `}
-      >
+      <div>
         <SearchBox onSearch={handleSearch} />
-        {edges.map(book => {
-          return (
-            <Book
-              key={book.node.id}
-              book={book.node}
-              amazonImage={amazonImage}
-            />
-          );
-        })}
+        <div
+          css={css`
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+            color: #1f1f20;
+            ${mq.md(css`
+              grid-template-columns: 1fr;
+            `)};
+            ${mq.lg(
+              css`
+                maxheight: '460px';
+              `
+            )}
+          `}
+        >
+          {edges.map(book => {
+            return (
+              <div
+                css={css`
+                  display: grid;
+                  grid-gap: 20px;
+                  grid-template-rows: 1fr;
+                `}
+              >
+                <button
+                  css={css`
+                    padding: 20px;
+                    border: none;
+                    background: #606d80;
+                    &:hover {
+                      background: #607d80;
+                      cursor: pointer;
+                    }
+                  `}
+                  onClick={() => navigate(`/book/${book.node.id}`)}
+                >
+                  <Book key={book.node.id} book={book.node} />
+                </button>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Layout>
   );
@@ -107,21 +128,6 @@ export default IndexPage;
 
 export const bookQuery = graphql`
   {
-    allSanitySiteImage(filter: { name: { eq: "amazonLogo" } }) {
-      edges {
-        node {
-          image {
-            asset {
-              assetId
-              label
-              fluid(maxWidth: 40) {
-                ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
-      }
-    }
     allSanityBook(sort: { fields: title, order: ASC }) {
       edges {
         node {
@@ -136,7 +142,7 @@ export const bookQuery = graphql`
           yearRead
           image {
             asset {
-              fluid {
+              fluid(maxHeight: 500) {
                 ...GatsbySanityImageFluid
               }
             }

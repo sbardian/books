@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
           grid-gap: 20px;
           min-height: 100vh;
           grid-template-rows: auto 1fr auto;
-          background: #606d80;
+          background: #636080;
         `}
       >
         <div
@@ -84,7 +84,22 @@ const Layout = ({ children }) => {
             grid-gap: 20px;
           `}
         >
-          <div>{children}</div>
+          <div
+            css={css`
+              display: grid;
+              grid-gap: 20px;
+              grid-template-columns: 1fr;
+              grid-template-rows: 1fr repeat(auto-fit);
+              margin: 0 200px 0 200px;
+              ${mq.xl(
+                css`
+                  margin: 0 20px 0 20px;
+                `
+              )}
+            `}
+          >
+            {children}
+          </div>
         </div>
         <Footer>
           <div
