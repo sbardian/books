@@ -1,10 +1,49 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path');
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ node, actions, graphql }) => {
+  // TODO: probably no reason to query books with graphql, pull it from nodes
+  const { createPage } = actions;
+  const bookPageTemplate = path.resolve('src/templates/bookPage.js');
 
-// exports.onCreateNode = async ({ node, actions }) => {
-//   const { createNodeField } = actions;
+  return graphql(`
+    query {
+      allSanityBook {
+        edges {
+          node {
+            id
+            amazonUrl
+            title
+            isbn
+            description
+            author
+            amazonUrl
+            imageUrl
+            yearRead
+            image {
+              asset {
+                fluid {
+                  src
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors);
+    }
+    const books = result.data.allSanityBook.edges;
+
+    books.forEach(book => {
+      createPage({
+        path: `/book/${book.node.id}`,
+        component: bookPageTemplate,
+        context: {
+          id: book.node.id,
+        },
+      });
+    });
+  });
+};
