@@ -623,9 +623,9 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@^0.140.8":
+"@sanity/base@0.140.8":
   version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-0.140.8.tgz#fa409db42da71636414fb91323de11b8368301db"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.8.tgz#fa409db42da71636414fb91323de11b8368301db"
   dependencies:
     "@sanity/client" "0.140.8"
     "@sanity/document-store" "0.140.0"
@@ -679,9 +679,9 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@^0.140.8":
+"@sanity/components@0.140.8":
   version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/components/-/components-0.140.8.tgz#b94ae6aeb2a95bf642268538e4a6449f59e08496"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.140.8.tgz#b94ae6aeb2a95bf642268538e4a6449f59e08496"
   dependencies:
     "@sanity/date-input" "0.140.3"
     "@sanity/imagetool" "0.140.0"
@@ -709,9 +709,9 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@^0.140.8":
+"@sanity/core@0.140.8":
   version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-0.140.8.tgz#2328c261e48bc09a221386fe793a4554bd82ac00"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.8.tgz#2328c261e48bc09a221386fe793a4554bd82ac00"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
@@ -790,9 +790,9 @@
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/rich-date-input" "0.140.3"
 
-"@sanity/default-layout@^0.140.8":
+"@sanity/default-layout@0.140.8":
   version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-0.140.8.tgz#703a5e67d9856059bed5f241c5d103a71e28661d"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.140.8.tgz#703a5e67d9856059bed5f241c5d103a71e28661d"
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     is-hotkey "^0.1.4"
@@ -803,17 +803,17 @@
     react-tippy "^1.2.3"
     rxjs "^6.1.0"
 
-"@sanity/default-login@^0.140.3":
+"@sanity/default-login@0.140.3":
   version "0.140.3"
-  resolved "https://registry.npmjs.org/@sanity/default-login/-/default-login-0.140.3.tgz#b2073b55348fb7e1478ecb8d8ba6199f5d2a1b8f"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.140.3.tgz#b2073b55348fb7e1478ecb8d8ba6199f5d2a1b8f"
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     in-publish "^2.0.0"
     prop-types "^15.6.0"
 
-"@sanity/desk-tool@^0.140.8":
+"@sanity/desk-tool@0.140.8":
   version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-0.140.8.tgz#6d9dde57468bb593ac27c5b1c2c1a08484dbcabd"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.8.tgz#6d9dde57468bb593ac27c5b1c2c1a08484dbcabd"
   dependencies:
     "@sanity/data-aspects" "0.140.3"
     "@sanity/form-builder" "0.140.8"
@@ -5551,7 +5551,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
@@ -5720,7 +5720,7 @@ react-datepicker@^1.8.0:
     react-onclickoutside "^6.7.1"
     react-popper "^1.0.2"
 
-react-dom@^16.2, react-dom@^16.6.3:
+react-dom@16.8.2, react-dom@^16.6.3:
   version "16.8.2"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-16.8.2.tgz#7c8a69545dd554d45d66442230ba04a6a0a3c3d3"
   dependencies:
@@ -5852,7 +5852,7 @@ react-tippy@^1.2.3:
   dependencies:
     popper.js "^1.11.1"
 
-react@^16.2, react@^16.6.3:
+react@16.8.2, react@^16.6.3:
   version "16.8.2"
   resolved "https://registry.npmjs.org/react/-/react-16.8.2.tgz#83064596feaa98d9c2857c4deae1848b542c9c0c"
   dependencies:
