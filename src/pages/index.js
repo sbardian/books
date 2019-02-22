@@ -50,6 +50,7 @@ const IndexPage = ({ data: { allSanityBook } }) => {
     }
   };
 
+  console.log('navigate: ', navigate);
   return (
     <Layout location="header">
       <div
@@ -95,6 +96,7 @@ const IndexPage = ({ data: { allSanityBook } }) => {
           {edges.map(book => {
             return (
               <div
+                key={book.node.id}
                 css={css`
                   display: grid;
                   grid-gap: 20px;
@@ -113,7 +115,7 @@ const IndexPage = ({ data: { allSanityBook } }) => {
                   `}
                   onClick={() => navigate(`/book/${book.node.id}`)}
                 >
-                  <Book key={book.node.id} book={book.node} />
+                  <Book book={book.node} />
                 </button>
               </div>
             );
