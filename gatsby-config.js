@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-transformer-json',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -15,30 +14,14 @@ module.exports = {
         theme_color: '#606d80',
         display: 'minimal-ui',
         display: 'standalone',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/gatsby-icon.png',
       },
     },
     'gatsby-plugin-emotion',
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'images',
-        path: `./src/data/images/`,
-      },
-    },
-    'gatsby-transformer-sharp',
-    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaultQuality: 75,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-remote-images`,
-      options: {
-        nodeType: 'ImagesJson',
-        imagePath: 'url',
-        name: 'siteImage',
       },
     },
     {

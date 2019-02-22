@@ -56,7 +56,7 @@ const Book = ({ book, amazonImage }) => {
               css={css`
                 width: 40px;
               `}
-              fluid={amazonImage.node.siteImage.childImageSharp.fluid}
+              fluid={amazonImage.node.image.asset.fluid}
               alt="amazon"
             />
           </a>

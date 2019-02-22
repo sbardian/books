@@ -62,5 +62,22 @@ export default createSchema({
         },
       ],
     },
+    {
+      title: 'Site Image',
+      name: 'siteImage',
+      type: 'document',
+      fields: [
+        {
+          title: 'Image',
+          name: 'image',
+          type: 'image',
+        },
+        {
+          title: 'Name',
+          name: 'name',
+          type: 'string',
+        },
+      ],
+    },
   ]),
 });

@@ -9,7 +9,7 @@ import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
 
-const IndexPage = ({ data: { allSanityBook, allImagesJson } }) => {
+const IndexPage = ({ data: { allSanityBook, allSanitySiteImage } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
   const [originalEdges] = React.useState(allSanityBook.edges);
 
@@ -17,7 +17,7 @@ const IndexPage = ({ data: { allSanityBook, allImagesJson } }) => {
   const yearFilters = years.filter(
     (year, index) => years.indexOf(year) >= index
   );
-  const [amazonImage] = allImagesJson.edges;
+  const [amazonImage] = allSanitySiteImage.edges;
 
   const handleClearSearchBox = () => {
     const input = document.querySelector('#books-search-input');
@@ -107,17 +107,15 @@ export default IndexPage;
 
 export const bookQuery = graphql`
   {
-    allImagesJson(filter: { imageName: { eq: "amazonLink" } }) {
+    allSanitySiteImage(filter: { name: { eq: "amazonLogo" } }) {
       edges {
         node {
-          id
-          imageName
-          siteImage {
-            id
-            name
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+          image {
+            asset {
+              assetId
+              label
+              fluid(maxWidth: 40) {
+                ...GatsbySanityImageFluid
               }
             }
           }
