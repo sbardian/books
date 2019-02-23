@@ -21,7 +21,7 @@
     "gatsby-plugin-sharp": "2.0.20",
     "gatsby-source-sanity": "1.1.1",
     "normalize.css": "8.0.1",
-    "react": "16.8.2",
+    "react": "16.8.3",
     "react-dom": "16.8.2",
     "react-emotion": "9.2.12",
     "react-helmet": "5.2.0"
