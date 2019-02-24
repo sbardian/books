@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
-import { graphql, navigate } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { navigate } from '@reach/router';
 import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
 import Book from '../components/Book';
@@ -8,8 +9,10 @@ import SearchBox from '../components/SearchBox';
 import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
+import { useBreadcrumb } from '../components/useBreadcrumb';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-const IndexPage = ({ data: { allSanityBook } }) => {
+const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
   const [originalEdges] = React.useState(allSanityBook.edges);
 
@@ -50,7 +53,9 @@ const IndexPage = ({ data: { allSanityBook } }) => {
     }
   };
 
-  console.log('navigate: ', navigate);
+  const { crumb, updateCrumb } = useBreadcrumb(location);
+  console.log('crumb in index: ', crumb);
+
   return (
     <Layout location="header">
       <div
@@ -61,6 +66,8 @@ const IndexPage = ({ data: { allSanityBook } }) => {
           justify-content: center;
         `}
       >
+        <Link to="/test">test</Link>
+        <Link to="/test2">test2</Link>
         <Button type="button" onClick={() => handleClearYearFilter()}>
           All
         </Button>
@@ -76,6 +83,7 @@ const IndexPage = ({ data: { allSanityBook } }) => {
       </div>
       <div>
         <SearchBox onSearch={handleSearch} />
+        <Breadcrumb breadcrumb={crumb} />
         <div
           css={css`
             display: grid;

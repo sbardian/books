@@ -1,18 +1,19 @@
 import React from 'react';
+import { BreadcrumbContext } from 'gatsby-plugin-breadcrumb';
 
-export default currentPath => {
-  const [history, updateHistory] = React.useState([]);
+export const useBreadcrumb = currentPath => {
+  const { crumb, updateCrumb } = React.useContext(BreadcrumbContext);
 
-  console.log('currentPath = ', currentPath);
+  console.log('crumb in use by hook: ', crumb);
 
-  React.useEffect(() => {
-    updateHistory([
-      {
-        ...currentPath,
-      },
-      ...history,
-    ]);
-  }, [currentPath]);
+  if (currentPath && currentPath.pathname) {
+    if (!crumb.find(c => c.value === currentPath.pathname)) {
+      updateCrumb(currentPath.pathname);
+    }
+  }
 
-  return history;
+  return {
+    crumb,
+    updateCrumb,
+  };
 };

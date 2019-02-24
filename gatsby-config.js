@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-breadcrumb',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

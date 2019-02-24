@@ -8,7 +8,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import 'normalize.css';
 import mq from './mediaQueries';
 import { Footer } from './styled/footer';
-import useBreadCrumb from './useBreadCrumb';
 
 const Layout = ({ children, location }) => {
   const { site } = useStaticQuery(graphql`
@@ -20,10 +19,6 @@ const Layout = ({ children, location }) => {
       }
     }
   `);
-
-  console.log('location = ', location);
-
-  const breadCrumb = useBreadCrumb(location);
 
   return (
     <>
@@ -103,12 +98,6 @@ const Layout = ({ children, location }) => {
               )}
             `}
           >
-            <div id="breadcrumb">
-              {breadCrumb.map(pages => {
-                console.log('pages = ', pages);
-                return <div key={Math.random()}>{pages.pathname}</div>;
-              })}
-            </div>
             {children}
           </div>
         </div>
