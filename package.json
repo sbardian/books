@@ -36,5 +36,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sbardian/books"
+  },
+  "eslintConfig": {
+    "rules": {
+      "strict": "off"
+    }
   }
 }
