@@ -9,8 +9,8 @@ import SearchBox from '../components/SearchBox';
 import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
-// import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb, useBreadcrumb } from 'gatsby-plugin-breadcrumb';
+import { useBreadcrumb } from '../components/useBreadcrumb';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
@@ -58,6 +58,9 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
 
   return (
     <Layout location="header">
+      <Breadcrumb breadcrumb={crumb} />
+      <Link to="/test">test</Link>
+      <Link to="/test2">test2</Link>
       <div
         css={css`
           display: grid;
@@ -66,8 +69,6 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
           justify-content: center;
         `}
       >
-        <Link to="/test">test</Link>
-        <Link to="/test2">test2</Link>
         <Button type="button" onClick={() => handleClearYearFilter()}>
           All
         </Button>
@@ -83,7 +84,6 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
       </div>
       <div>
         <SearchBox onSearch={handleSearch} />
-        <Breadcrumb breadcrumb={crumb} />
         <div
           css={css`
             display: grid;

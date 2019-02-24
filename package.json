@@ -38,6 +38,7 @@
     "url": "https://github.com/sbardian/books"
   },
   "eslintConfig": {
+    "parser": "babel-eslint",
     "rules": {
       "strict": "off"
     }

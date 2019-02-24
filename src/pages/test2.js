@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
-// import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb, useBreadcrumb } from 'gatsby-plugin-breadcrumb';
+import { useBreadcrumb } from '../components/useBreadcrumb';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
 export default ({ location }) => {
   const { crumb } = useBreadcrumb(location);
