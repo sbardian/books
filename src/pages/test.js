@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+// import { useBreadcrumb } from '../components/useBreadcrumb';
+import { Breadcrumb, useBreadcrumb } from 'gatsby-plugin-breadcrumb';
 
 export default ({ location }) => {
-  const { crumb, updateCrumb } = useBreadcrumb(location);
+  const { crumb } = useBreadcrumb(location);
   console.log('crumb in test: ', crumb);
 
   return (

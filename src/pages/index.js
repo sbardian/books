@@ -9,8 +9,8 @@ import SearchBox from '../components/SearchBox';
 import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
-import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+// import { useBreadcrumb } from '../components/useBreadcrumb';
+import { Breadcrumb, useBreadcrumb } from 'gatsby-plugin-breadcrumb';
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
@@ -53,7 +53,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
     }
   };
 
-  const { crumb, updateCrumb } = useBreadcrumb(location);
+  const { crumb } = useBreadcrumb(location);
   console.log('crumb in index: ', crumb);
 
   return (
