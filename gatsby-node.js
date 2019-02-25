@@ -38,7 +38,7 @@ exports.createPages = async ({ node, actions, graphql }) => {
 
     books.forEach(book => {
       createPage({
-        path: `/book/${book.node.id}`,
+        path: `/book/${book.node.title}`,
         component: bookPageTemplate,
         context: {
           id: book.node.id,
