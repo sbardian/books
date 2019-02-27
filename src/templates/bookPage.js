@@ -2,13 +2,17 @@
 // eslint-disable-next-line
 import React from 'react';
 import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
 import mq from '../components/mediaQueries';
+// import Breadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/Breadcrumb';
+// import useBreadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/useBreadcrumb';
 
 const BookPage = ({
   pageContext,
+  location,
   data: {
     allSanityBook: { edges },
     allSanitySiteImage,
@@ -18,7 +22,9 @@ const BookPage = ({
   const [amazonImage] = allSanitySiteImage.edges;
 
   return (
-    <Layout location="header">
+    <Layout location={location} crumbLabel={book.node.title}>
+      {/* <Breadcrumb location={location} crumbLabel={book.node.title} /> */}
+      <Helmet title={book.node.title} />
       <div
         css={css`
           display: grid;

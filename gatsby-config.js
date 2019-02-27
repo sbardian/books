@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: 'Books',
+    siteUrl: 'http://localhost:9000',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-breadcrumb',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/my-site-map.xml`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,6 +25,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-emotion',
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        sitemapPath: `/my-site-map.xml`,
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

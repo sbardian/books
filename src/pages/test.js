@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
 import Layout from '../components/layout';
-import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+// import Breadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/Breadcrumb';
+// import useBreadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/useBreadcrumb';
 
-export default ({ location }) => {
-  const { crumb } = useBreadcrumb(location);
-  console.log('crumb in test: ', crumb);
-
+export default ({ pageContext, location }) => {
   return (
-    <Layout>
-      <Breadcrumb breadcrumb={crumb} />
+    <Layout location={location} crumbLabel="Contact">
+      <Helmet title="Contact" />
+      <div style={{ fontSize: '24pt' }}>test</div>
+      {/* <Breadcrumb location={location} crumbLabel="Contact" /> */}
+      <Link to="/test">test</Link>
       <Link to="/test2">test2</Link>
       <div>this is a test page</div>
     </Layout>

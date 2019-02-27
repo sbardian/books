@@ -8,8 +8,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import 'normalize.css';
 import mq from './mediaQueries';
 import { Footer } from './styled/footer';
+// import Breadcrumb from '../../plugins/gatsby-plugin-breadcrumb/src/components/Breadcrumb';
+// import Breadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/Breadcrumb';
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, crumbLabel }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -98,6 +100,11 @@ const Layout = ({ children, location }) => {
               )}
             `}
           >
+            {/* <Breadcrumb
+              useSitemap={false}
+              location={location}
+              crumbLabel={crumbLabel}
+            /> */}
             {children}
           </div>
         </div>

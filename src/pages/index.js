@@ -7,10 +7,11 @@ import Layout from '../components/layout';
 import Book from '../components/Book';
 import SearchBox from '../components/SearchBox';
 import YearFilterButton from '../components/YearFilterButton';
+import Helmet from 'react-helmet';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
-import { useBreadcrumb } from '../components/useBreadcrumb';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import Breadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/Breadcrumb';
+// import useBreadcrumb from '../../plugins/gatsby-plugin-breadcrumb/components/useBreadcrumb';
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
@@ -53,12 +54,11 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
     }
   };
 
-  const { crumb } = useBreadcrumb(location);
-  console.log('crumb in index: ', crumb);
-
   return (
-    <Layout location="header">
-      <Breadcrumb breadcrumb={crumb} />
+    <Layout location={location} crumbLabel="Home">
+      <Helmet title="Home" />
+      <Breadcrumb crumbLabel="Home" location={location} />
+      {/* <Breadcrumb location={location} crumbLabel="Home" /> */}
       <Link to="/test">test</Link>
       <Link to="/test2">test2</Link>
       <div
@@ -121,7 +121,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
                       cursor: pointer;
                     }
                   `}
-                  onClick={() => navigate(`/book/${book.node.id}`)}
+                  onClick={() => navigate(`/book/${book.node.title}`)}
                 >
                   <Book book={book.node} />
                 </button>
