@@ -4404,7 +4404,7 @@ gatsby-link@^2.0.13:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-breadcrumb@^2.0.1:
+gatsby-plugin-breadcrumb@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-2.0.1.tgz#ded232123aa7f57811117fcdb24a3fed7b478537"
   integrity sha512-sRcVWBKCskPOiXpuhGTdcpbtud259NoGhDB3BjFWUbLpmle4rQWJHFbDhxJQr/ZYIF1njZeHSBsVgVd5xdYD5w==
