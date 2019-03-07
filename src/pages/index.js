@@ -9,7 +9,7 @@ import YearFilterButton from '../components/YearFilterButton';
 import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
 
-const IndexPage = ({ data: { allSanityBook } }) => {
+const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [edges, setEdges] = React.useState(allSanityBook.edges);
   const [originalEdges] = React.useState(allSanityBook.edges);
 
@@ -52,7 +52,7 @@ const IndexPage = ({ data: { allSanityBook } }) => {
 
   console.log('navigate: ', navigate);
   return (
-    <Layout location="header">
+    <Layout location="header" pageLocation={location} crumbLabel="Home">
       <div
         css={css`
           display: grid;

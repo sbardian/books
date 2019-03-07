@@ -17,6 +17,7 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png',
       },
     },
+    `gatsby-plugin-breadcrumb`,
     'gatsby-plugin-emotion',
     {
       resolve: `gatsby-plugin-sharp`,

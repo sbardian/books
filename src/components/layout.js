@@ -5,11 +5,12 @@ import { jsx, css, Global } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import 'normalize.css';
 import mq from './mediaQueries';
 import { Footer } from './styled/footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageLocation, crumbLabel }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -98,6 +99,7 @@ const Layout = ({ children }) => {
               )}
             `}
           >
+            <Breadcrumb location={pageLocation} crumbLabel={crumbLabel} />
             {children}
           </div>
         </div>

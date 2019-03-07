@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import mq from '../components/mediaQueries';
 
 const BookPage = ({
+  location,
   pageContext,
   data: {
     allSanityBook: { edges },
@@ -18,7 +19,11 @@ const BookPage = ({
   const [amazonImage] = allSanitySiteImage.edges;
 
   return (
-    <Layout location="header">
+    <Layout
+      location="header"
+      pageLocation={location}
+      crumbLabel={book.node.title}
+    >
       <div
         css={css`
           display: grid;
