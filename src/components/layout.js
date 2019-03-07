@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
               display: grid;
               grid-gap: 20px;
               grid-template-columns: 1fr;
-              grid-template-rows: 1fr repeat(auto-fit);
+              align-content: start;
               margin: 0 200px 0 200px;
               ${mq.xl(
                 css`
