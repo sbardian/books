@@ -13,7 +13,7 @@ const SearchBox = ({ onSearch }) => {
         grid-template-columns: auto auto;
         align-items: center;
         justify-content: center;
-        padding: 20px;
+        padding-bottom: 20px;
       `}
     >
       <SearchInput id="books-search-input" type="text" onChange={onSearch} />
