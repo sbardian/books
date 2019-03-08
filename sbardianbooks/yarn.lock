@@ -709,9 +709,9 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.8":
-  version "0.140.8"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.8.tgz#2328c261e48bc09a221386fe793a4554bd82ac00"
+"@sanity/core@0.140.9":
+  version "0.140.9"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.9.tgz#42d14716ecfd1e473f3161a4b251150c61938760"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
@@ -724,7 +724,7 @@
     "@sanity/mutator" "0.140.0"
     "@sanity/plugin-loader" "0.140.3"
     "@sanity/resolver" "0.140.3"
-    "@sanity/schema" "0.140.3"
+    "@sanity/schema" "0.140.9"
     "@sanity/server" "0.140.3"
     "@sanity/util" "0.140.3"
     "@sanity/uuid" "0.140.0"
