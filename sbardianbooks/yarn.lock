@@ -649,9 +649,9 @@
     semver-compare "^1.0.0"
     shallow-equals "^1.0.0"
 
-"@sanity/block-tools@0.140.3":
-  version "0.140.3"
-  resolved "https://registry.npmjs.org/@sanity/block-tools/-/block-tools-0.140.3.tgz#c28c610fb08a0a58969df87f4999d660355527ea"
+"@sanity/block-tools@0.140.9":
+  version "0.140.9"
+  resolved "https://registry.yarnpkg.com/@sanity/block-tools/-/block-tools-0.140.9.tgz#1bf0d05ed3925d1d6740e914daa97fc6740fe0a4"
   dependencies:
     get-random-values "^1.2.0"
     lodash "^4.17.4"
@@ -811,12 +811,12 @@
     in-publish "^2.0.0"
     prop-types "^15.6.0"
 
-"@sanity/desk-tool@0.140.8":
-  version "0.140.8"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.8.tgz#6d9dde57468bb593ac27c5b1c2c1a08484dbcabd"
+"@sanity/desk-tool@0.140.9":
+  version "0.140.9"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.9.tgz#4545fd22618fb203df069866966729460b7666da"
   dependencies:
     "@sanity/data-aspects" "0.140.3"
-    "@sanity/form-builder" "0.140.8"
+    "@sanity/form-builder" "0.140.9"
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/mutator" "0.140.0"
     "@sanity/structure" "0.140.0"
@@ -866,16 +866,16 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.140.8":
-  version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-0.140.8.tgz#c112aad843ec5852855e11a8a0ac174fa0e572a1"
+"@sanity/form-builder@0.140.9":
+  version "0.140.9"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.140.9.tgz#ce90c70bb83181184583fc0dac46c60c5c5bdea3"
   dependencies:
-    "@sanity/block-tools" "0.140.3"
+    "@sanity/block-tools" "0.140.9"
     "@sanity/generate-help-url" "0.140.0"
-    "@sanity/image-url" "0.140.8"
+    "@sanity/image-url" "0.140.9"
     "@sanity/imagetool" "0.140.0"
     "@sanity/mutator" "0.140.0"
-    "@sanity/schema" "0.140.3"
+    "@sanity/schema" "0.140.9"
     "@sanity/util" "0.140.3"
     attr-accept "^1.1.0"
     canvas-to-blob "^0.0.0"
@@ -911,10 +911,6 @@
 "@sanity/generate-help-url@0.140.0":
   version "0.140.0"
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-0.140.0.tgz#f60ab75be5fdc346b9f0d1c2a0858aa3c2870109"
-
-"@sanity/image-url@0.140.8":
-  version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-0.140.8.tgz#74abc8cc25cd4d12894f0187de370fd49afc36b2"
 
 "@sanity/image-url@0.140.9":
   version "0.140.9"
@@ -1006,18 +1002,6 @@
     moment-timezone "^0.5.11"
     prop-types "^15.6.0"
     react-datepicker "^1.8.0"
-
-"@sanity/schema@0.140.3":
-  version "0.140.3"
-  resolved "https://registry.npmjs.org/@sanity/schema/-/schema-0.140.3.tgz#3690cfe820e116191633965606f01c14c87e1573"
-  dependencies:
-    "@sanity/generate-help-url" "0.140.0"
-    arrify "^1.0.1"
-    humanize-list "^1.0.1"
-    json-reduce "^1.0.0"
-    leven "^2.1.0"
-    lodash "^4.17.4"
-    object-inspect "^1.3.0"
 
 "@sanity/schema@0.140.9":
   version "0.140.9"
