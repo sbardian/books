@@ -4445,10 +4445,10 @@ gatsby-link@^2.0.14:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-breadcrumb@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-2.0.1.tgz#ded232123aa7f57811117fcdb24a3fed7b478537"
-  integrity sha512-sRcVWBKCskPOiXpuhGTdcpbtud259NoGhDB3BjFWUbLpmle4rQWJHFbDhxJQr/ZYIF1njZeHSBsVgVd5xdYD5w==
+gatsby-plugin-breadcrumb@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-2.1.0.tgz#0cec40360636684f2380a75e4320273cac9a707e"
+  integrity sha512-ALFRi0H2b2S8N3pjOe/Pob1uCgZ6oUodCxZijMyOIfqg4+xLB7+aXeTDEF3QtEhab9FKU4Rb4qXNnFVEVw1p/A==
   dependencies:
     "@babel/runtime" "^7.3.4"
     fs-extra "^7.0.1"
