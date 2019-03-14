@@ -58,7 +58,7 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
             grid-template-columns: 1fr;
             background: #1f1f20;
             align-items: center;
-            padding: 20px;
+            padding: 20px 0 20px 0;
           `}
         >
           <h1
