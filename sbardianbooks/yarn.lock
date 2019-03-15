@@ -623,11 +623,12 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.9":
-  version "0.140.9"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.9.tgz#b5cea53b7ad9a2ea1530432a0a6beeb7cc5ae22f"
+"@sanity/base@0.140.11":
+  version "0.140.11"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.11.tgz#74fe9247e88e72c314a89b290710757f0ce40bf6"
+  integrity sha512-nZNg1BL1foCfIKHyPeoxlHUHAaCJcE8vVrnJbA0UNt6Y8ZvIBh6fsthuVP9z+kp+n0uISLGkDFJ7BfwjkKipeQ==
   dependencies:
-    "@sanity/client" "0.140.8"
+    "@sanity/client" "0.140.11"
     "@sanity/document-store" "0.140.0"
     "@sanity/image-url" "0.140.9"
     "@sanity/observable" "0.140.0"
@@ -667,15 +668,16 @@
     in-publish "^2.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/client@0.140.8":
-  version "0.140.8"
-  resolved "https://registry.npmjs.org/@sanity/client/-/client-0.140.8.tgz#1ac916ffcfbd1fdad0611774aa1f0535931c2d6d"
+"@sanity/client@0.140.11":
+  version "0.140.11"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.11.tgz#505abc729db82e6d2eb935d7440a4fdaf751870d"
+  integrity sha512-yWE3ST68IJKUq9KWwmOlKpwyjQM11dD9gBqxDF+lxCyd41fekGSnRTmNtvfTUGtAYN0AeH12tLlPMaVq8J5lVw==
   dependencies:
     "@sanity/eventsource" "0.140.0"
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/observable" "0.140.0"
     deep-assign "^2.0.0"
-    get-it "^4.1.3"
+    get-it "^5.0.0"
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
@@ -3127,9 +3129,10 @@ get-document@1:
   version "1.0.0"
   resolved "https://registry.npmjs.org/get-document/-/get-document-1.0.0.tgz#4821bce66f1c24cb0331602be6cb6b12c4f01c4b"
 
-get-it@^4.1.3:
-  version "4.1.4"
-  resolved "https://registry.npmjs.org/get-it/-/get-it-4.1.4.tgz#440f837226de99abb5ecfe10e6597ca7cb8947c2"
+get-it@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-5.0.0.tgz#d63d93fc95ed11f7f68c035284b8fafcd2467384"
+  integrity sha512-0MY3Fhil9kPO9BhPKczhlsA8Et3MgowoyU296O/Z5Q72h9FpIijfWnv6p+lX0tHdHXwvFxA3i9tWX9Xq7gdpQw==
   dependencies:
     create-error-class "^3.0.2"
     debug "^2.6.8"
