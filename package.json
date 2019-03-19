@@ -20,7 +20,7 @@
     "gatsby-plugin-offline": "2.0.25",
     "gatsby-plugin-react-helmet": "3.0.10",
     "gatsby-plugin-sharp": "2.0.29",
-    "gatsby-source-sanity": "1.1.1",
+    "gatsby-source-sanity": "1.1.3",
     "normalize.css": "8.0.1",
     "react": "16.8.4",
     "react-dom": "16.8.4",
