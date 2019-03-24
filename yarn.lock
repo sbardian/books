@@ -4703,10 +4703,10 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-breadcrumb@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-2.1.0.tgz#0cec40360636684f2380a75e4320273cac9a707e"
-  integrity sha512-ALFRi0H2b2S8N3pjOe/Pob1uCgZ6oUodCxZijMyOIfqg4+xLB7+aXeTDEF3QtEhab9FKU4Rb4qXNnFVEVw1p/A==
+gatsby-plugin-breadcrumb@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-2.1.1.tgz#97bfbbd2ce67fcd8c47583a93ec97054aeaa1a64"
+  integrity sha512-ZV+/54yOfP0VMH/O06n4oVhJ/MC3xXH9r70pNU8AlZq7+Djqpx2oapvFdDz0dyjq6gvAkbSymHaf1C97Ixpm3w==
   dependencies:
     "@babel/runtime" "^7.3.4"
     fs-extra "^7.0.1"
