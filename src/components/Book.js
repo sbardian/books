@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 const Book = ({ book }) => {
-  return <Img fluid={book.image.asset.fluid} fadeIn alt={book.title} />;
+  return <Img fixed={book.image.asset.fixed} fadeIn alt={book.title} />;
 };
 
 Book.propTypes = {
