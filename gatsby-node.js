@@ -1,7 +1,6 @@
 const path = require('path');
 
-exports.createPages = async ({ node, actions, graphql }) => {
-  // TODO: probably no reason to query books with graphql, pull it from nodes
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const bookPageTemplate = path.resolve('src/templates/bookPage.js');
 
