@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql, navigate } from 'gatsby';
 import { jsx, css } from '@emotion/core';
 import Layout from '../components/layout';
@@ -10,10 +11,11 @@ import mq from '../components/mediaQueries';
 import { Button } from '../components/styled/button';
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
-  const [edges, setEdges] = React.useState(allSanityBook.edges);
-  const [originalEdges] = React.useState(allSanityBook.edges);
+  const [bookEdges, setBookEdges] = React.useState(allSanityBook.edges);
+  const [initialBookEdges] = React.useState(allSanityBook.edges);
 
-  const years = originalEdges.map(book => book.node.yearRead);
+  const years = initialBookEdges.map(book => book.node.yearRead);
+
   const yearFilters = years.filter(
     (year, index) => years.indexOf(year) >= index
   );
@@ -25,33 +27,33 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
 
   const handleClearYearFilter = () => {
     handleClearSearchBox();
-    setEdges(originalEdges);
+    setBookEdges(initialBookEdges);
   };
 
   const handleYearFilter = year => {
     handleClearSearchBox();
-    setEdges(originalEdges);
-    setEdges(originalEdges.filter(book => book.node.yearRead === year));
+    setBookEdges(initialBookEdges);
+    setBookEdges(initialBookEdges.filter(book => book.node.yearRead === year));
   };
 
-  const handleSearch = ({ target }) => {
-    if (!target.value || target.value === '') {
-      setEdges(originalEdges);
+  const handleSearch = ({ target: search }) => {
+    if (!search.value || search.value === '') {
+      setBookEdges(initialBookEdges);
     } else {
-      setEdges(
-        originalEdges.filter(
+      setBookEdges(
+        initialBookEdges.filter(
           book =>
             book.node.title
               .toLowerCase()
-              .includes(target.value.toLowerCase()) ||
-            book.node.author.toLowerCase().includes(target.value.toLowerCase())
+              .includes(search.value.toLowerCase()) ||
+            book.node.author.toLowerCase().includes(search.value.toLowerCase())
         )
       );
     }
   };
 
   return (
-    <Layout location="header" pageLocation={location} crumbLabel="Home">
+    <Layout pageLocation={location} crumbLabel="Home">
       <div
         css={css`
           display: grid;
@@ -92,7 +94,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
             )}
           `}
         >
-          {edges.map(book => {
+          {bookEdges.map(book => {
             return (
               <div
                 key={book.node.id}
@@ -103,6 +105,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
                 `}
               >
                 <button
+                  type="button"
                   css={css`
                     padding: 20px;
                     border: none;
@@ -124,6 +127,41 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
     </Layout>
   );
 };
+
+IndexPage.propTypes = {
+  location: PropTypes.shape().isRequired,
+  data: PropTypes.shape({
+    allSanityBook: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            id: PropTypes.string,
+            amazonUrl: PropTypes.string,
+            author: PropTypes.string,
+            description: PropTypes.string,
+            isbn: PropTypes.string,
+            imageUrl: PropTypes.string,
+            yearRead: PropTypes.string,
+            image: PropTypes.shape({
+              asset: PropTypes.shape({
+                fixed: PropTypes.shape({
+                  base64: PropTypes.string,
+                  aspectRatio: PropTypes.number,
+                  src: PropTypes.string,
+                  srcSet: PropTypes.string,
+                  srcWebp: PropTypes.string,
+                  srcSetWebp: PropTypes.string,
+                  width: PropTypes.number,
+                  height: PropTypes.number,
+                }),
+              }),
+            }),
+          }),
+        })
+      ),
+    }),
+}).isRequired,
+}
 
 export default IndexPage;
 
