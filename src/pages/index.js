@@ -50,7 +50,6 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
     }
   };
 
-  console.log('navigate: ', navigate);
   return (
     <Layout location="header" pageLocation={location} crumbLabel="Home">
       <div
