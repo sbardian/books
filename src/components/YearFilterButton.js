@@ -1,9 +1,16 @@
 import React from "react"
-import Button from "./styled/button"
+import PropTypes from "prop-types"
 import { css } from "@emotion/core"
+import Button from "./styled/button"
 
-export default ({ onYearFilter, year }) => (
-  <Button type="button" onClick={() => onYearFilter(year)}>
+const YearFilterButton = ({ onYearFilter, year }) => (
+  <Button
+    css={css`
+      cursor: pointer;
+    `}
+    type="button"
+    onClick={() => onYearFilter(year)}
+  >
     <span
       css={css`
         display: flex;
@@ -15,3 +22,10 @@ export default ({ onYearFilter, year }) => (
     </span>
   </Button>
 )
+
+YearFilterButton.propTypes = {
+  onYearFilter: PropTypes.func.isRequired,
+  year: PropTypes.number.isRequired,
+}
+
+export default YearFilterButton
