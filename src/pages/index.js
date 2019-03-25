@@ -6,7 +6,7 @@ import { jsx, css } from "@emotion/core"
 import Layout from "../components/layout"
 import Book from "../components/book"
 import SearchBox from "../components/search-box"
-import YearFilterButton from "../components/YearFilterButton"
+import YearFilterButton from "../components/year-filter-button"
 import mq from "../components/mediaQueries"
 import Button from "../components/styled/button"
 
