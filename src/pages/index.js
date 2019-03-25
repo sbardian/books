@@ -1,44 +1,44 @@
 /** @jsx jsx */
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql, navigate } from 'gatsby';
-import { jsx, css } from '@emotion/core';
-import Layout from '../components/layout';
-import Book from '../components/Book';
-import SearchBox from '../components/SearchBox';
-import YearFilterButton from '../components/YearFilterButton';
-import mq from '../components/mediaQueries';
-import { Button } from '../components/styled/button';
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql, navigate } from "gatsby"
+import { jsx, css } from "@emotion/core"
+import Layout from "../components/layout"
+import Book from "../components/Book"
+import SearchBox from "../components/SearchBox"
+import YearFilterButton from "../components/YearFilterButton"
+import mq from "../components/mediaQueries"
+import { Button } from "../components/styled/button"
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
-  const [bookEdges, setBookEdges] = React.useState(allSanityBook.edges);
-  const [initialBookEdges] = React.useState(allSanityBook.edges);
+  const [bookEdges, setBookEdges] = React.useState(allSanityBook.edges)
+  const [initialBookEdges] = React.useState(allSanityBook.edges)
 
-  const years = initialBookEdges.map(book => book.node.yearRead);
+  const years = initialBookEdges.map(book => book.node.yearRead)
 
   const yearFilters = years.filter(
     (year, index) => years.indexOf(year) >= index
-  );
+  )
 
   const handleClearSearchBox = () => {
-    const input = document.querySelector('#books-search-input');
-    input.value = '';
-  };
+    const input = document.querySelector("#books-search-input")
+    input.value = ""
+  }
 
   const handleClearYearFilter = () => {
-    handleClearSearchBox();
-    setBookEdges(initialBookEdges);
-  };
+    handleClearSearchBox()
+    setBookEdges(initialBookEdges)
+  }
 
   const handleYearFilter = year => {
-    handleClearSearchBox();
-    setBookEdges(initialBookEdges);
-    setBookEdges(initialBookEdges.filter(book => book.node.yearRead === year));
-  };
+    handleClearSearchBox()
+    setBookEdges(initialBookEdges)
+    setBookEdges(initialBookEdges.filter(book => book.node.yearRead === year))
+  }
 
   const handleSearch = ({ target: search }) => {
-    if (!search.value || search.value === '') {
-      setBookEdges(initialBookEdges);
+    if (!search.value || search.value === "") {
+      setBookEdges(initialBookEdges)
     } else {
       setBookEdges(
         initialBookEdges.filter(
@@ -48,9 +48,9 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
               .includes(search.value.toLowerCase()) ||
             book.node.author.toLowerCase().includes(search.value.toLowerCase())
         )
-      );
+      )
     }
-  };
+  }
 
   return (
     <Layout pageLocation={location} crumbLabel="Home">
@@ -72,7 +72,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
               onYearFilter={handleYearFilter}
               year={year}
             />
-          );
+          )
         })}
       </div>
       <div>
@@ -89,7 +89,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
             `)};
             ${mq.lg(
               css`
-                maxheight: '460px';
+                maxheight: "460px";
               `
             )}
           `}
@@ -120,13 +120,13 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
                   <Book book={book.node} />
                 </button>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   location: PropTypes.shape().isRequired,
@@ -160,10 +160,10 @@ IndexPage.propTypes = {
         })
       ),
     }),
-}).isRequired,
+  }).isRequired,
 }
 
-export default IndexPage;
+export default IndexPage
 
 export const bookQuery = graphql`
   {
@@ -190,4 +190,4 @@ export const bookQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled"
 
 export const Footer = styled.div`
   display: grid;
@@ -9,4 +9,4 @@ export const Footer = styled.div`
   background: #1f1f20;
   padding: 20px;
   height: 200px;
-`;
+`

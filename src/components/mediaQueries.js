@@ -1,6 +1,6 @@
 // Adapted from https://emotion.sh/docs/media-queries
 /** @jsx jsx */
-import { css } from '@emotion/core';
+import { css } from "@emotion/core"
 
 const breakpoints = {
   // mobile-first, so there is no 'xs' for portrait phones
@@ -8,18 +8,18 @@ const breakpoints = {
   md: 768, // tablets
   lg: 992, // landscape tablets and desktops
   xl: 1200, // extra large desktops
-};
+}
 
 const mq = Object.keys(breakpoints).reduce((accumulator, label) => {
-  const prefix = typeof breakpoints[label] === 'string' ? '' : 'max-width:';
-  const suffix = typeof breakpoints[label] === 'string' ? '' : 'px';
+  const prefix = typeof breakpoints[label] === "string" ? "" : "max-width:"
+  const suffix = typeof breakpoints[label] === "string" ? "" : "px"
   accumulator[label] = cls =>
     css`
       @media (${prefix + breakpoints[label] + suffix}) {
         ${cls};
       }
-    `;
-  return accumulator;
-}, {});
+    `
+  return accumulator
+}, {})
 
-export default mq;
+export default mq

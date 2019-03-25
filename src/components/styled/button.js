@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled"
 
 export const Button = styled.button`
   height: 30px;
@@ -7,4 +7,4 @@ export const Button = styled.button`
   text-align: center;
   align-items: center;
   border: none;
-`;
+`

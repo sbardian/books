@@ -1,11 +1,11 @@
 /** @jsx jsx */
 // eslint-disable-next-line
-import React from 'react';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import { jsx, css } from '@emotion/core';
-import Layout from '../components/layout';
-import mq from '../components/mediaQueries';
+import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import { jsx, css } from "@emotion/core"
+import Layout from "../components/layout"
+import mq from "../components/mediaQueries"
 
 const BookPage = ({
   location,
@@ -15,8 +15,8 @@ const BookPage = ({
     allSanitySiteImage,
   },
 }) => {
-  const [book] = edges;
-  const [amazonImage] = allSanitySiteImage.edges;
+  const [book] = edges
+  const [amazonImage] = allSanitySiteImage.edges
 
   return (
     <Layout
@@ -100,7 +100,7 @@ const BookPage = ({
             `)};
             ${mq.lg(
               css`
-                maxheight: '460px';
+                maxheight: "460px";
               `
             )}
           `}
@@ -109,7 +109,7 @@ const BookPage = ({
             fluid={book.node.image.asset.fluid}
             fadeIn
             alt={book.node.title}
-            imgStyle={{ objectFit: 'contain' }}
+            imgStyle={{ objectFit: "contain" }}
           />
           <div>
             <h2 css={css(`margin-top: 0;`)}>Author: {book.node.author}</h2>
@@ -119,8 +119,8 @@ const BookPage = ({
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const bookQuery = graphql`
   query($id: String) {
@@ -162,6 +162,6 @@ export const bookQuery = graphql`
       }
     }
   }
-`;
+`
 
-export default BookPage;
+export default BookPage

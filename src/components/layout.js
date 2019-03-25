@@ -1,14 +1,14 @@
 /** @jsx jsx */
 // eslint-disable-next-line
-import React from 'react';
-import { jsx, css, Global } from '@emotion/core';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import 'normalize.css';
-import mq from './mediaQueries';
-import { Footer } from './styled/footer';
+import React from "react"
+import { jsx, css, Global } from "@emotion/core"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+import "normalize.css"
+import mq from "./mediaQueries"
+import { Footer } from "./styled/footer"
 
 const Layout = ({ children, pageLocation, crumbLabel }) => {
   const { site } = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <>
@@ -36,8 +36,8 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
       <Helmet
         title={site.siteMetadata.title}
         meta={[
-          { name: 'Books', content: 'Books I have read' },
-          { name: 'good books', content: 'good books' },
+          { name: "Books", content: "Books I have read" },
+          { name: "good books", content: "good books" },
         ]}
       >
         <html lang="en" />
@@ -112,11 +112,11 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
         </Footer>
       </div>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout

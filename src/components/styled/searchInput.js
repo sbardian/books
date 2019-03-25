@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled"
 
 export const SearchInput = styled.input`
   font-size: 18pt;
@@ -8,4 +8,4 @@ export const SearchInput = styled.input`
   border-bottom: 2px solid gray;
   color: #dce0e6;
   min-width: 100px;
-`;
+`

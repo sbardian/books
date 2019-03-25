@@ -1,8 +1,8 @@
 /** @jsx jsx */
 // eslint-disable-next-line
-import React from 'react';
-import { jsx, css } from '@emotion/core';
-import { SearchInput } from './styled/searchInput';
+import React from "react"
+import { jsx, css } from "@emotion/core"
+import { SearchInput } from "./styled/searchInput"
 
 const SearchBox = ({ onSearch }) => {
   return (
@@ -26,7 +26,7 @@ const SearchBox = ({ onSearch }) => {
         src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png"
       />
     </div>
-  );
-};
+  )
+}
 
-export default SearchBox;
+export default SearchBox
