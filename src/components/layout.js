@@ -8,7 +8,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import "normalize.css"
 import mq from "./mediaQueries"
-import { Footer } from "./styled/footer"
+import Footer from "./styled/footer"
 
 const Layout = ({ children, pageLocation, crumbLabel }) => {
   const { site } = useStaticQuery(graphql`

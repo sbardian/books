@@ -8,7 +8,7 @@ import Book from "../components/Book"
 import SearchBox from "../components/SearchBox"
 import YearFilterButton from "../components/YearFilterButton"
 import mq from "../components/mediaQueries"
-import { Button } from "../components/styled/button"
+import Button from "../components/styled/button"
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [bookEdges, setBookEdges] = React.useState(allSanityBook.edges)

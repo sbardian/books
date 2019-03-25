@@ -2,7 +2,7 @@
 // eslint-disable-next-line
 import React from "react"
 import { jsx, css } from "@emotion/core"
-import { SearchInput } from "./styled/searchInput"
+import SearchInput from "./styled/searchInput"
 
 const SearchBox = ({ onSearch }) => {
   return (

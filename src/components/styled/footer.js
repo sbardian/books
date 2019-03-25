@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const Footer = styled.div`
+const Footer = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
@@ -10,3 +10,5 @@ export const Footer = styled.div`
   padding: 20px;
   height: 200px;
 `
+
+export default Footer
