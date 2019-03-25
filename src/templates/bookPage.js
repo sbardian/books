@@ -1,6 +1,7 @@
 /** @jsx jsx */
 // eslint-disable-next-line
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
@@ -9,7 +10,6 @@ import mq from "../components/mediaQueries"
 
 const BookPage = ({
   location,
-  pageContext,
   data: {
     allSanityBook: { edges },
     allSanitySiteImage,
@@ -120,6 +120,41 @@ const BookPage = ({
       </div>
     </Layout>
   )
+}
+
+BookPage.propTypes = {
+  location: PropTypes.shape().isRequired,
+  data: PropTypes.shape({
+    allSanityBook: PropTypes.shape({
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            id: PropTypes.string,
+            amazonUrl: PropTypes.string,
+            author: PropTypes.string,
+            description: PropTypes.string,
+            isbn: PropTypes.string,
+            imageUrl: PropTypes.string,
+            yearRead: PropTypes.string,
+            image: PropTypes.shape({
+              asset: PropTypes.shape({
+                fixed: PropTypes.shape({
+                  base64: PropTypes.string,
+                  aspectRatio: PropTypes.number,
+                  src: PropTypes.string,
+                  srcSet: PropTypes.string,
+                  srcWebp: PropTypes.string,
+                  srcSetWebp: PropTypes.string,
+                  width: PropTypes.number,
+                  height: PropTypes.number,
+                }),
+              }),
+            }),
+          }),
+        })
+      ),
+    }),
+  }).isRequired,
 }
 
 export const bookQuery = graphql`
