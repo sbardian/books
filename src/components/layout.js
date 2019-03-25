@@ -115,8 +115,14 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
   )
 }
 
+Layout.defaultProps = {
+  crumbLabel: undefined,
+}
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pageLocation: PropTypes.shape().isRequired,
+  crumbLabel: PropTypes.string,
 }
 
 export default Layout
