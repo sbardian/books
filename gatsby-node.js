@@ -44,5 +44,6 @@ exports.createPages = async ({ actions, graphql }) => {
         },
       })
     })
+    return null
   })
 }
