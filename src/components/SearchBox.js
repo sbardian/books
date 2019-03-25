@@ -1,6 +1,7 @@
 /** @jsx jsx */
 // eslint-disable-next-line
 import React from "react"
+import PropTypes from "prop-types"
 import { jsx, css } from "@emotion/core"
 import SearchInput from "./styled/searchInput"
 
@@ -27,6 +28,10 @@ const SearchBox = ({ onSearch }) => {
       />
     </div>
   )
+}
+
+SearchBox.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 }
 
 export default SearchBox
