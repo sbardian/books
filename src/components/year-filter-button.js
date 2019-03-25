@@ -25,7 +25,7 @@ const YearFilterButton = ({ onYearFilter, year }) => (
 
 YearFilterButton.propTypes = {
   onYearFilter: PropTypes.func.isRequired,
-  year: PropTypes.number.isRequired,
+  year: PropTypes.string.isRequired,
 }
 
 export default YearFilterButton
