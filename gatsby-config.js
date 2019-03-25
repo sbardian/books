@@ -1,23 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: 'Books',
+    title: "Books",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Sbardian Books',
-        short_name: 'sbardian-books',
-        start_url: '/',
-        background_color: '#606d80',
-        theme_color: '#606d80',
-        display: 'standalone',
-        icon: 'src/images/gatsby-icon.png',
+        name: "Sbardian Books",
+        short_name: "sbardian-books",
+        start_url: "/",
+        background_color: "#606d80",
+        theme_color: "#606d80",
+        display: "standalone",
+        icon: "src/images/gatsby-icon.png",
       },
     },
-    `gatsby-plugin-breadcrumb`,
-    'gatsby-plugin-emotion',
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        defaultCrumb: {
+          location: {
+            state: { crumbClicked: false },
+            pathname: "/",
+          },
+          crumbLabel: "Home",
+          crumbSeparator: " / ",
+        },
+      },
+    },
+    "gatsby-plugin-emotion",
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -27,10 +39,10 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: 'xothad89',
-        dataset: 'books',
+        projectId: "xothad89",
+        dataset: "books",
       },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
-};
+}
