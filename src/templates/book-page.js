@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
 import Layout from "../components/layout"
-import mq from "../components/mediaQueries"
+import mq from "../components/media-queries"
 
 const BookPage = ({
   location,

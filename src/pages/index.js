@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import Book from "../components/book"
 import SearchBox from "../components/search-box"
 import YearFilterButton from "../components/year-filter-button"
-import mq from "../components/mediaQueries"
+import mq from "../components/media-queries"
 import Button from "../components/styled/button"
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
