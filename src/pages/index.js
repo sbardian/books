@@ -62,7 +62,13 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
           justify-content: center;
         `}
       >
-        <Button type="button" onClick={() => handleClearYearFilter()}>
+        <Button
+          css={css`
+            cursor: pointer;
+          `}
+          type="button"
+          onClick={() => handleClearYearFilter()}
+        >
           All
         </Button>
         {yearFilters.map(year => {
