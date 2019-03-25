@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require("path")
 
 exports.createPages = async ({ actions, graphql }) => {
-  const { createPage } = actions;
-  const bookPageTemplate = path.resolve('src/templates/bookPage.js');
+  const { createPage } = actions
+  const bookPageTemplate = path.resolve("src/templates/book-page.js")
 
   return graphql(`
     query {
@@ -31,9 +31,9 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `).then(result => {
     if (result.errors) {
-      return Promise.reject(result.errors);
+      return Promise.reject(result.errors)
     }
-    const books = result.data.allSanityBook.edges;
+    const books = result.data.allSanityBook.edges
 
     books.forEach(book => {
       createPage({
@@ -42,7 +42,7 @@ exports.createPages = async ({ actions, graphql }) => {
         context: {
           id: book.node.id,
         },
-      });
-    });
-  });
-};
+      })
+    })
+  })
+}
