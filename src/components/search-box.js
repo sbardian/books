@@ -3,7 +3,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { jsx, css } from "@emotion/core"
-import SearchInput from "./styled/searchInput"
+import SearchInput from "./styled/search-input"
 
 const SearchBox = ({ onSearch }) => {
   return (
