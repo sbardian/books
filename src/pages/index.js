@@ -21,6 +21,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
   )
 
   const handleClearSearchBox = () => {
+    /* eslint-disable-next-line */
     const input = document.querySelector("#books-search-input")
     input.value = ""
   }
