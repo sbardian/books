@@ -20,19 +20,19 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
     (year, index) => years.indexOf(year) >= index
   )
 
-  const handleClearSearchBox = () => {
+  const handleClearSearchInput = () => {
     /* eslint-disable-next-line */
-    const input = document.querySelector("#books-search-input")
-    input.value = ""
+    const searchInput = document.querySelector("#books-search-input")
+    searchInput.value = ""
   }
 
   const handleClearYearFilter = () => {
-    handleClearSearchBox()
+    handleClearSearchInput()
     setBookEdges(initialBookEdges)
   }
 
-  const handleYearFilter = year => {
-    handleClearSearchBox()
+  const handleFilterByYear = year => {
+    handleClearSearchInput()
     setBookEdges(initialBookEdges)
     setBookEdges(initialBookEdges.filter(book => book.node.yearRead === year))
   }
@@ -76,7 +76,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
           return (
             <YearFilterButton
               key={Math.random()}
-              onYearFilter={handleYearFilter}
+              onFilterByYear={handleFilterByYear}
               year={year}
             />
           )

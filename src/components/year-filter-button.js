@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import Button from "./styled/button"
 
-const YearFilterButton = ({ onYearFilter, year }) => (
+const YearFilterButton = ({ onFilterByYear, year }) => (
   <Button
     css={css`
       cursor: pointer;
     `}
     type="button"
-    onClick={() => onYearFilter(year)}
+    onClick={() => onFilterByYear(year)}
   >
     <span
       css={css`
@@ -24,7 +24,7 @@ const YearFilterButton = ({ onYearFilter, year }) => (
 )
 
 YearFilterButton.propTypes = {
-  onYearFilter: PropTypes.func.isRequired,
+  onFilterByYear: PropTypes.func.isRequired,
   year: PropTypes.string.isRequired,
 }
 
