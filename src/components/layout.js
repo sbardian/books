@@ -6,12 +6,16 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
-import "normalize.css"
 import mq from "./media-queries"
 import Footer from "./styled/footer"
+import "normalize.css"
 
 const Layout = ({ children, pageLocation, crumbLabel }) => {
-  const { site } = useStaticQuery(graphql`
+  const {
+    site: {
+      siteMetadata: { title },
+    },
+  } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -34,7 +38,7 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
         `}
       />
       <Helmet
-        title={site.siteMetadata.title}
+        title={title}
         meta={[
           { name: "Books", content: "Books I have read" },
           { name: "good books", content: "good books" },
@@ -75,7 +79,7 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
               `}
               href="/"
             >
-              {site.siteMetadata.title}
+              {title}
             </a>
           </h1>
         </div>
