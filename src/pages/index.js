@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { graphql, navigate } from "gatsby"
 import { jsx, css } from "@emotion/core"
 import Layout from "../components/layout"
-import Book from "../components/book"
+import BookImage from "../components/book-image"
 import SearchBox from "../components/search-box"
 import YearFilterButton from "../components/year-filter-button"
 import mq from "../components/media-queries"
@@ -124,7 +124,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
                   `}
                   onClick={() => navigate(`/book/${book.node.id}`)}
                 >
-                  <Book book={book.node} />
+                  <BookImage book={book.node} />
                 </button>
               </div>
             )

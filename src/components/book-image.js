@@ -3,11 +3,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-const Book = ({ book }) => {
+const BookImage = ({ book }) => {
   return <Img fixed={book.image.asset.fixed} fadeIn alt={book.title} />
 }
 
-Book.propTypes = {
+BookImage.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
     isbn: PropTypes.string,
@@ -18,8 +18,8 @@ Book.propTypes = {
   }),
 }
 
-Book.defaultProps = {
+BookImage.defaultProps = {
   book: {},
 }
 
-export default Book
+export default BookImage
