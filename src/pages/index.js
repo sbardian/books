@@ -11,10 +11,10 @@ import mq from "../components/media-queries"
 import Button from "../components/styled/button"
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
-  const [bookEdges, setBookEdges] = React.useState(allSanityBook.edges)
-  const [initialBookEdges] = React.useState(allSanityBook.edges)
+  const [books, setBooks] = React.useState(allSanityBook.edges)
+  const allBooks = allSanityBook.edges
 
-  const years = initialBookEdges.map(book => book.node.yearRead)
+  const years = allBooks.map(book => book.node.yearRead)
 
   const yearFilters = years.filter(
     (year, index) => years.indexOf(year) >= index
@@ -28,21 +28,21 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
 
   const handleClearYearFilter = () => {
     handleClearSearchInput()
-    setBookEdges(initialBookEdges)
+    setBooks(allBooks)
   }
 
   const handleFilterByYear = year => {
     handleClearSearchInput()
-    setBookEdges(initialBookEdges)
-    setBookEdges(initialBookEdges.filter(book => book.node.yearRead === year))
+    setBooks(allBooks)
+    setBooks(allBooks.filter(book => book.node.yearRead === year))
   }
 
   const handleSearch = ({ target: search }) => {
     if (!search.value || search.value === "") {
-      setBookEdges(initialBookEdges)
+      setBooks(allBooks)
     } else {
-      setBookEdges(
-        initialBookEdges.filter(
+      setBooks(
+        allBooks.filter(
           book =>
             book.node.title
               .toLowerCase()
@@ -101,7 +101,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
             )}
           `}
         >
-          {bookEdges.map(book => {
+          {books.map(book => {
             return (
               <div
                 key={book.node.id}
