@@ -3,7 +3,7 @@ module.exports = {
     title: "Books",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,7 +29,7 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-emotion",
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -43,6 +43,6 @@ module.exports = {
         dataset: "books",
       },
     },
-    "gatsby-plugin-offline",
+    `gatsby-plugin-offline`,
   ],
 }
