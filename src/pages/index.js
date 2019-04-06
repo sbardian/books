@@ -188,8 +188,8 @@ export const bookQuery = graphql`
           yearRead
           image {
             asset {
-              fixed(height: 400, width: 250) {
-                ...GatsbySanityImageFixed
+              fluid {
+                ...GatsbySanityImageFluid
               }
             }
           }
