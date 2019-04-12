@@ -810,10 +810,10 @@
     react-tippy "^1.2.3"
     rxjs "^6.1.0"
 
-"@sanity/default-login@0.140.14":
-  version "0.140.14"
-  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.140.14.tgz#5ff317c79cdb2200166992eb46ce40f9ac0a11ec"
-  integrity sha512-ibKQ6LmlNpsYeQJSGmXCoNWw5chDkLxc117y8dlAbgMy/gJM443U790UfZ8HCY0rP6+t5Gt+0e7JPAus6tavwA==
+"@sanity/default-login@0.140.15":
+  version "0.140.15"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.140.15.tgz#e1e6c8c447d645e110bca5f1216b843bd69e1174"
+  integrity sha512-TZ1zr9MrGOxPKRbW1GgZK5ltjR/jw9HAyoBejvvwzTs5/Bpgvv8o2/BuZ3IywFHrnZxcckul5apqiFb/+n6iRw==
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     in-publish "^2.0.0"
