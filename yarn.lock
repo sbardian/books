@@ -1174,44 +1174,50 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@sanity/client@^0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.138.0.tgz#e78360dba969265bdaab2da26f5f77e39afb99d0"
+"@sanity/client@^0.140.11":
+  version "0.140.11"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.11.tgz#505abc729db82e6d2eb935d7440a4fdaf751870d"
+  integrity sha512-yWE3ST68IJKUq9KWwmOlKpwyjQM11dD9gBqxDF+lxCyd41fekGSnRTmNtvfTUGtAYN0AeH12tLlPMaVq8J5lVw==
   dependencies:
-    "@sanity/eventsource" "0.138.0"
-    "@sanity/generate-help-url" "0.138.0"
-    "@sanity/observable" "0.138.0"
+    "@sanity/eventsource" "0.140.0"
+    "@sanity/generate-help-url" "0.140.0"
+    "@sanity/observable" "0.140.0"
     deep-assign "^2.0.0"
-    get-it "^4.0.1"
+    get-it "^5.0.0"
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/eventsource@0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/eventsource/-/eventsource-0.138.0.tgz#9a90b6b8d0e4a9a5ce34e2c6d7cb30cd016cb665"
+"@sanity/eventsource@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@sanity/eventsource/-/eventsource-0.140.0.tgz#79aa5ea3e7c2339ac1b8667269371e46d9583084"
+  integrity sha512-ZyeDo3kl2peeCw8V4po/iY9pCjszKnRxgdPPs8E6NwIw6/VJaFWuvjIyzOvoiJv+Gp7qTR1P+OiJK/SYcGiJYg==
   dependencies:
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/generate-help-url@0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-0.138.0.tgz#a4f10213251b4ec9f08a11e5077f4238b80bb316"
+"@sanity/generate-help-url@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-0.140.0.tgz#f60ab75be5fdc346b9f0d1c2a0858aa3c2870109"
+  integrity sha512-H/G/WA9S22TXcXST52CIiTsHx3S2hH0gvK7LnI5w76vfKS0obnDPh8jrPg4xeNRYGPuV9MHYRlyERGpRGoo4Qw==
 
-"@sanity/image-url@^0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.138.0.tgz#092b2beb55f1089cb0f27c7ae1289c435828914c"
+"@sanity/image-url@^0.140.9":
+  version "0.140.12"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.140.12.tgz#f882ad18f32b2e724c01ff692e62ae9f99702821"
+  integrity sha512-/f+k4oibAgWVJ4rytCtvI09Frgl+xQJerYMn8CnBLofJEDq/3zHB+YBwS53ffCIHDpi/I5FL70zBGtUx64ZAnA==
 
-"@sanity/mutator@^0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-0.138.0.tgz#3b9d6f981106d1b1aab61e8a09f49bf58f334bcb"
+"@sanity/mutator@^0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-0.140.0.tgz#f593d582df7e10562b17557ae1d1eb876be3ba40"
+  integrity sha512-aX5L1l9XOIRIwFCdyDT0QDLrWwMVu0g/sL+vB9+roCoBVW7tUv3YJFeTcMEYYXMWxI/+Y8WwJHnHNH7eZ5K5FA==
   dependencies:
     debug "^3.1.0"
     diff-match-patch "^1.0.0"
     lodash "^4.17.4"
 
-"@sanity/observable@0.138.0":
-  version "0.138.0"
-  resolved "https://registry.yarnpkg.com/@sanity/observable/-/observable-0.138.0.tgz#2897f528dfa7569b955c096d34b3cc583bebfec1"
+"@sanity/observable@0.140.0":
+  version "0.140.0"
+  resolved "https://registry.yarnpkg.com/@sanity/observable/-/observable-0.140.0.tgz#6c7f51932d7fa446154bb127b24d64f4c9bd46c4"
+  integrity sha512-RsMcnHFxA2Y2Tf4QfjfeKj6JvRezvuiLl82PxQlcUkgT9z7ATWEm6KikE+XNovKU8I7K+XQtU4WqfgHS7/7xgA==
   dependencies:
     object-assign "^4.1.1"
     rxjs "^6.1.0"
@@ -1297,6 +1303,11 @@
 "@types/tmp@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
+
+"@types/url-parse@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@types/url-parse/-/url-parse-1.4.3.tgz#fba49d90f834951cb000a674efee3d6f20968329"
+  integrity sha512-4kHAkbV/OfW2kb5BLVUuUMoumB3CP8rHqlw48aHvFy5tf9ER0AfOonBlX29l/DD68G70DmyhRlSYfQPSYpC5Vw==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
@@ -1582,20 +1593,6 @@ anymatch@^2.0.0:
   dependencies:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
-
-apollo-link@^1.2.2:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.2.3.tgz#9bd8d5fe1d88d31dc91dae9ecc22474d451fb70d"
-  dependencies:
-    apollo-utilities "^1.0.0"
-    zen-observable-ts "^0.8.10"
-
-apollo-utilities@^1.0.0, apollo-utilities@^1.0.1:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.21.tgz#cb8b5779fe275850b16046ff8373f4af2de90765"
-  dependencies:
-    fast-json-stable-stringify "^2.0.0"
-    fclone "^1.0.11"
 
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
@@ -2552,10 +2549,6 @@ chalk@^2.4.2:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
-
-chance@^1.0.16:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/chance/-/chance-1.0.18.tgz#79788fe6fca4c338bf404321c347eecc80f969ee"
 
 chardet@^0.4.0:
   version "0.4.2"
@@ -3538,10 +3531,6 @@ depd@~1.1.1, depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
-deprecated-decorator@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/deprecated-decorator/-/deprecated-decorator-0.1.6.tgz#00966317b7a12fe92f3cc831f7583af329b86c37"
-
 des.js@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/des.js/-/des.js-1.0.0.tgz#c074d2e2aa6a8a9a07dbd61f9a15c2cd83ec8ecc"
@@ -3780,20 +3769,6 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
-
-easygraphql-mock@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/easygraphql-mock/-/easygraphql-mock-0.1.11.tgz#5bb0b270b378a6cacbe5d7060267fcf237d22030"
-  dependencies:
-    chance "^1.0.16"
-    easygraphql-parser "^0.0.7"
-
-easygraphql-parser@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/easygraphql-parser/-/easygraphql-parser-0.0.7.tgz#1686088182178c0f5092bd6c038e90d6255ff07c"
-  dependencies:
-    graphql "^14.0.2"
-    lodash.mergewith "^4.6.1"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -4654,10 +4629,6 @@ fbjs@^1.0.0:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
 
-fclone@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"
-
 fd-slicer@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.1.0.tgz#25c7c89cb1f9077f8891bbe61d8f390eae256f1e"
@@ -5130,26 +5101,25 @@ gatsby-react-router-scroll@^2.0.7:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-sanity@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-1.1.3.tgz#8dbeb5a5784ab0891eac4b5c8f6da52c151be959"
-  integrity sha512-S9vSwoh/kYX32CUfU/upWQ4b0Kq+1WEiDBQtFq3pwCtLzvlRIJqUKrTLZm1/fYGfrce1kZ6KvEKHfP5TdD2B1g==
+gatsby-source-sanity@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-2.0.3.tgz#f017ee00504abd62cbd17554d131672f68ecde3b"
+  integrity sha512-btKNZZURFsjbKVRdq/wwskNL4/A4jaPcMbbe8nvLbSzgdV5xOtxoEw7bmEm33tsxCHaqVlY84mlTz6I7uSjxdQ==
   dependencies:
-    "@sanity/client" "^0.138.0"
-    "@sanity/image-url" "^0.138.0"
-    "@sanity/mutator" "^0.138.0"
+    "@sanity/client" "^0.140.11"
+    "@sanity/image-url" "^0.140.9"
+    "@sanity/mutator" "^0.140.0"
+    "@types/url-parse" "^1.4.3"
     axios "^0.18.0"
     debug "^4.1.0"
-    easygraphql-mock "^0.1.11"
-    flatted "^2.0.0"
     fs-extra "^7.0.1"
-    graphql-tools "^3.0.4"
     lodash "^4.17.11"
     oneline "^1.0.2"
     pump "^3.0.0"
     rxjs "^6.3.3"
-    split2 "^3.1.0"
-    through2 "^3.0.0"
+    split2 "^3.1.1"
+    through2 "^3.0.1"
+    url-parse "^1.4.4"
 
 gatsby-telemetry@^1.0.7:
   version "1.0.7"
@@ -5317,9 +5287,10 @@ get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
 
-get-it@^4.0.1:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/get-it/-/get-it-4.1.4.tgz#440f837226de99abb5ecfe10e6597ca7cb8947c2"
+get-it@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-5.0.0.tgz#d63d93fc95ed11f7f68c035284b8fafcd2467384"
+  integrity sha512-0MY3Fhil9kPO9BhPKczhlsA8Et3MgowoyU296O/Z5Q72h9FpIijfWnv6p+lX0tHdHXwvFxA3i9tWX9Xq7gdpQw==
   dependencies:
     create-error-class "^3.0.2"
     debug "^2.6.8"
@@ -5599,21 +5570,11 @@ graphql-request@^1.5.0:
   dependencies:
     cross-fetch "2.2.2"
 
-graphql-tools@^3.0.4:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-3.1.1.tgz#d593358f01e7c8b1671a17b70ddb034dea9dbc50"
-  dependencies:
-    apollo-link "^1.2.2"
-    apollo-utilities "^1.0.1"
-    deprecated-decorator "^0.1.6"
-    iterall "^1.1.3"
-    uuid "^3.1.0"
-
 graphql-type-json@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.2.1.tgz#d2c177e2f1b17d87f81072cd05311c0754baa420"
 
-graphql@^14.0.2, graphql@^14.1.1:
+graphql@^14.1.1:
   version "14.1.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
   dependencies:
@@ -6569,7 +6530,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iterall@^1.1.3, iterall@^1.2.2:
+iterall@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
 
@@ -6923,10 +6884,6 @@ lodash.memoize@^4.1.2:
 lodash.merge@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
-
-lodash.mergewith@^4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
 lodash.template@^4.4.0:
   version "4.4.0"
@@ -9874,9 +9831,10 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-split2@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/split2/-/split2-3.1.0.tgz#064bbfac70cdb66f77827870d42f159a8b442201"
+split2@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/split2/-/split2-3.1.1.tgz#c51f18f3e06a8c4469aaab487687d8d956160bb6"
+  integrity sha512-emNzr1s7ruq4N+1993yht631/JH+jaj0NYBosuKmLcq+JkGQ9MmTw1RB1fGaTCzUuseRIClrlSLHRNYGwWQ58Q==
   dependencies:
     readable-stream "^3.0.0"
 
@@ -10310,12 +10268,12 @@ through2@^2.0.0, through2@^2.0.1:
     readable-stream "^2.1.5"
     xtend "~4.0.1"
 
-through2@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.0.tgz#468b461df9cd9fcc170f22ebf6852e467e578ff2"
+through2@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
   dependencies:
     readable-stream "2 || 3"
-    xtend "~4.0.1"
 
 through2@~2.0.3:
   version "2.0.5"
@@ -10647,6 +10605,14 @@ url-parse@^1.1.8, url-parse@^1.4.3:
 url-parse@^1.1.9:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.4.tgz#cac1556e95faa0303691fec5cf9d5a1bc34648f8"
+  dependencies:
+    querystringify "^2.0.0"
+    requires-port "^1.0.0"
+
+url-parse@^1.4.4:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.6.tgz#baf91d6e6783c8a795eb476892ffef2737fc0456"
+  integrity sha512-/B8AD9iQ01seoXmXf9z/MjLZQIdOoYl/+gvsQF6+mpnxaTfG9P7srYaiqaDMyKkR36XMXfhqSHss5MyFAO8lew==
   dependencies:
     querystringify "^2.0.0"
     requires-port "^1.0.0"
@@ -11242,13 +11208,3 @@ yurnalist@^1.0.2:
     rimraf "^2.5.0"
     semver "^5.1.0"
     strip-bom "^3.0.0"
-
-zen-observable-ts@^0.8.10:
-  version "0.8.10"
-  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-0.8.10.tgz#18e2ce1c89fe026e9621fd83cc05168228fce829"
-  dependencies:
-    zen-observable "^0.8.0"
-
-zen-observable@^0.8.0:
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.9.tgz#0475c760ff0eda046bbdfa4dc3f95d392807ac53"
