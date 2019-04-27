@@ -713,10 +713,10 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.12":
-  version "0.140.12"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.12.tgz#a8f4faaeb34049ff696295e967642a9d305ae431"
-  integrity sha512-6YcXVTazYBbrWfqo/EOA6QlJswnr7g06crJi97cMz2qy2q7xP1U92qJGRUxzDsbe18I1QQMRObUmVuCNHHHzfQ==
+"@sanity/core@0.140.16":
+  version "0.140.16"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.16.tgz#8ac0122c24ea580a784e50593f0e939a24dbd434"
+  integrity sha512-BnUCHNY3UFSxMf12ZF/zcYT4gmaaAiP/VZ4OhYlBgxgXxR/0iNApVBohabKmIKw5mZm/gidxk4lJPJKB+1hKzQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
