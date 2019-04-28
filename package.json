@@ -13,8 +13,8 @@
   "dependencies": {
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.10",
-    "gatsby": "2.3.25",
-    "gatsby-image": "2.0.39",
+    "gatsby": "2.3.32",
+    "gatsby-image": "2.0.40",
     "gatsby-plugin-breadcrumb": "2.1.1",
     "gatsby-plugin-emotion": "4.0.6",
     "gatsby-plugin-manifest": "2.0.29",
