@@ -623,19 +623,19 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.12":
-  version "0.140.12"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.12.tgz#28e7c1bb8d5a73c0b46ebe9b20cb0a7137ebc1e0"
-  integrity sha512-4OQI4KCIdmJtzPD6Jh32NzfL6FFJTEqEgDkR8sbOWBLsGry/PnbhzCLZZPYaH2KeiJ/TYJKlAL6hBK0TZwHfbw==
+"@sanity/base@0.140.17":
+  version "0.140.17"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.17.tgz#292ad3d1510161b65e5b398d79e15e47c90792bb"
+  integrity sha512-mx9leG3t1prXsTYGhzmeC6ps8ERv1UBJlHIOrfM+MgHR4sylb6WuXYzqpT8SKJLYvVKUb+e3HsU4wdJiIHA0LA==
   dependencies:
-    "@sanity/client" "0.140.11"
+    "@sanity/client" "0.140.17"
     "@sanity/document-store" "0.140.0"
     "@sanity/image-url" "0.140.12"
     "@sanity/observable" "0.140.0"
     "@sanity/preview" "0.140.12"
-    "@sanity/schema" "0.140.9"
+    "@sanity/schema" "0.140.17"
     "@sanity/state-router" "0.140.0"
-    "@sanity/validation" "0.140.3"
+    "@sanity/validation" "0.140.17"
     history "^4.6.3"
     in-publish "^2.0.0"
     lodash "^4.17.4"
@@ -669,10 +669,10 @@
     in-publish "^2.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/client@0.140.11":
-  version "0.140.11"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.11.tgz#505abc729db82e6d2eb935d7440a4fdaf751870d"
-  integrity sha512-yWE3ST68IJKUq9KWwmOlKpwyjQM11dD9gBqxDF+lxCyd41fekGSnRTmNtvfTUGtAYN0AeH12tLlPMaVq8J5lVw==
+"@sanity/client@0.140.17":
+  version "0.140.17"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.17.tgz#7d2deb79c838a3e361d7122b7e8e83e0fa29cfc9"
+  integrity sha512-SrfpGoG7swnV3Vj7Z0r5i/YG1Ke79byLuwLrUj/pnkV91rAk0MXW6unPFYSejgzWPnQzEJkGx/BXvZxOhfEh+w==
   dependencies:
     "@sanity/eventsource" "0.140.0"
     "@sanity/generate-help-url" "0.140.0"
@@ -1018,6 +1018,19 @@
     prop-types "^15.6.0"
     react-datepicker "^1.8.0"
 
+"@sanity/schema@0.140.17":
+  version "0.140.17"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.140.17.tgz#7b5fa865b2d6ee4a75c57ffb6f5d7c3580017097"
+  integrity sha512-Pc76QISZ8pLHUVo8yjO4EsO2uWdbAj1cfLI18wkwoIzfGY+9g3UnlAa95QDYEe0Ku3svE9gbUKm0h3Y2TpV1Bw==
+  dependencies:
+    "@sanity/generate-help-url" "0.140.0"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.4"
+    object-inspect "^1.3.0"
+
 "@sanity/schema@0.140.9":
   version "0.140.9"
   resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.140.9.tgz#955a3aec6af7de38c89015c23006fbe170894ba1"
@@ -1095,6 +1108,15 @@
   resolved "https://registry.npmjs.org/@sanity/uuid/-/uuid-0.140.0.tgz#31e23c209e340f88a061cd034e0f8fb4b4f24f3f"
   dependencies:
     uuid "3.1.0"
+
+"@sanity/validation@0.140.17":
+  version "0.140.17"
+  resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.17.tgz#2868ed492e0e9a421b2b408aab260c68109c62aa"
+  integrity sha512-Zto9fCMaq6csFXuM3QLvzF7MC97tvMfkO32bCrN0rklUr0dm9wPMbGrseB8Yc5X65ITSxFlLOAbenWtaQtB4aA==
+  dependencies:
+    clone-deep "^2.0.1"
+    es6-error "^4.0.2"
+    type-of-is "^3.5.1"
 
 "@sanity/validation@0.140.3":
   version "0.140.3"
