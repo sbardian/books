@@ -713,17 +713,17 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.17":
-  version "0.140.17"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.17.tgz#9ef4c3c7239f309060a0dd5f8e96886496533360"
-  integrity sha512-FlPHj+heI8E3D4LvOG7AXaIfMmtGI7EYGAMmJhX6RB39l7XGtqtIyyYV4jgG8p0hPc5qUvViz7DucmGPTX2/4A==
+"@sanity/core@0.140.18":
+  version "0.140.18"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.18.tgz#79b84d344ded9a35645b70345ffddf20a4cce6ba"
+  integrity sha512-TuUdA6WFxAanJ+7qNytE6sY2wUsQhEIvL1XIldsf501kIDeH2yZpSGZ8r+OBrjxx/Q9KXKZY0T0JnwnTk2/r5A==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
     "@babel/preset-react" "^7.0.0"
     "@babel/register" "^7.0.0"
     "@sanity/check" "0.140.3"
-    "@sanity/export" "0.140.17"
+    "@sanity/export" "0.140.18"
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/import" "0.140.17"
     "@sanity/mutator" "0.140.0"
@@ -862,10 +862,10 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@0.140.17":
-  version "0.140.17"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.140.17.tgz#bf8e3983df693024cf1f9318d54d5a78d54a0cf6"
-  integrity sha512-o2EyC0AaXl3QRJA7O1JuN8d6qXv1x6+Itf1Zb1UtN+DaM1qo4kzxZLsAGT9iI635goWou1Ec4klV+1OUNG3HjQ==
+"@sanity/export@0.140.18":
+  version "0.140.18"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.140.18.tgz#4ffc2d50489a80ce894443cdf633fe22d20e0267"
+  integrity sha512-V15ZCn+ZZ71MusoWFPQAhwXxia3EWmM/ROAk9K7wofdMlxwDNU+bqu8MXsOTZGnTe7PHLejSHZKsVmxCKJT+eA==
   dependencies:
     archiver "^2.1.1"
     debug "^3.1.0"
