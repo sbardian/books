@@ -713,10 +713,10 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.18":
-  version "0.140.18"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.18.tgz#79b84d344ded9a35645b70345ffddf20a4cce6ba"
-  integrity sha512-TuUdA6WFxAanJ+7qNytE6sY2wUsQhEIvL1XIldsf501kIDeH2yZpSGZ8r+OBrjxx/Q9KXKZY0T0JnwnTk2/r5A==
+"@sanity/core@0.140.20":
+  version "0.140.20"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.20.tgz#80eb3f535e92bcbc81059869c4cfd029a0d7b0f9"
+  integrity sha512-0GQbNuItgS6k7KIredJK2NB/vY5ZGYC6+lopwb1nWxGwh22TffMOz5gwYzqzKOqZ1IJAfacKNmB2IS4mX7j2eQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
@@ -725,7 +725,7 @@
     "@sanity/check" "0.140.3"
     "@sanity/export" "0.140.18"
     "@sanity/generate-help-url" "0.140.0"
-    "@sanity/import" "0.140.17"
+    "@sanity/import" "0.140.20"
     "@sanity/mutator" "0.140.0"
     "@sanity/plugin-loader" "0.140.10"
     "@sanity/resolver" "0.140.3"
@@ -936,10 +936,10 @@
     dom-event "1.0.0"
     lodash "^4.17.4"
 
-"@sanity/import@0.140.17":
-  version "0.140.17"
-  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.17.tgz#3c8e562b9bc669260f9894152b2ee5019210d5ba"
-  integrity sha512-FvdIoObno9QUj1vYWDL36E8mcz0KGhrFsR7M1j4AEZKrpn73VSd+zL4m/VOTaItgh8UYID8MAb/IIASzUsUHcw==
+"@sanity/import@0.140.20":
+  version "0.140.20"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.20.tgz#5377544afaa43b6de10a7b115783b4e3d70dc80a"
+  integrity sha512-Z0hQ3lpxNL+xnDgKvwazWg/Ix7o8VgfZMZMGO8xTBGDY/pasIlZvrRgxmkYiB/0s6DketVWz6flJXC+KOXmvOw==
   dependencies:
     "@sanity/mutator" "0.140.0"
     "@sanity/uuid" "0.140.0"
@@ -956,6 +956,7 @@
     peek-stream "^1.1.2"
     split2 "^2.1.1"
     tar-fs "^1.16.0"
+    tempy "^0.3.0"
     whatwg-url "^7.0.0"
 
 "@sanity/mutator@0.140.0":
@@ -7091,6 +7092,20 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
 
+temp-dir@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"
+  integrity sha1-CnwOom06Oa+n4OvqnB/AvE2qAR0=
+
+tempy@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/tempy/-/tempy-0.3.0.tgz#6f6c5b295695a16130996ad5ab01a8bd726e8bf8"
+  integrity sha512-WrH/pui8YCwmeiAoxV+lpRH9HpRtgBhSR2ViBPgpGb/wnYDzp21R4MN45fsCGvLROvY67o3byhJRYRONJyImVQ==
+  dependencies:
+    temp-dir "^1.0.0"
+    type-fest "^0.3.1"
+    unique-string "^1.0.0"
+
 terser@^3.10.11:
   version "3.16.1"
   resolved "https://registry.npmjs.org/terser/-/terser-3.16.1.tgz#5b0dd4fa1ffd0b0b43c2493b2c364fd179160493"
@@ -7214,6 +7229,11 @@ type-check@~0.3.2:
   resolved "https://registry.npmjs.org/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
   dependencies:
     prelude-ls "~1.1.2"
+
+type-fest@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
+  integrity sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==
 
 type-is@~1.6.16:
   version "1.6.16"
