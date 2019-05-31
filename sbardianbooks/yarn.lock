@@ -623,19 +623,19 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.17":
-  version "0.140.17"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.17.tgz#292ad3d1510161b65e5b398d79e15e47c90792bb"
-  integrity sha512-mx9leG3t1prXsTYGhzmeC6ps8ERv1UBJlHIOrfM+MgHR4sylb6WuXYzqpT8SKJLYvVKUb+e3HsU4wdJiIHA0LA==
+"@sanity/base@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.30.tgz#f03a2e2a479127cba9daae534260beadfa1b0291"
+  integrity sha512-hrgGQ79fEr94z7LTfwbwrI9FKk5SROfOFYUhMDhoPV30P+TLSMH6St6Ph7BhuGRK7JzZL7PoZziDz84KuArezQ==
   dependencies:
     "@sanity/client" "0.140.17"
-    "@sanity/document-store" "0.140.0"
+    "@sanity/document-store" "0.140.30"
     "@sanity/image-url" "0.140.12"
     "@sanity/observable" "0.140.0"
     "@sanity/preview" "0.140.12"
-    "@sanity/schema" "0.140.17"
+    "@sanity/schema" "0.140.30"
     "@sanity/state-router" "0.140.0"
-    "@sanity/validation" "0.140.17"
+    "@sanity/validation" "0.140.30"
     history "^4.6.3"
     in-publish "^2.0.0"
     lodash "^4.17.4"
@@ -846,11 +846,12 @@
     rxjs "^6.1.0"
     shallow-equals "^1.0.0"
 
-"@sanity/document-store@0.140.0":
-  version "0.140.0"
-  resolved "https://registry.npmjs.org/@sanity/document-store/-/document-store-0.140.0.tgz#fb9e606a095f5e7c2a4e10dfb45f22caa2b2e4a0"
+"@sanity/document-store@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/document-store/-/document-store-0.140.30.tgz#fb62f6b000cff3b36a3a3dc4613f2c3aebf76333"
+  integrity sha512-lLquF9Z9GIWxCT9ZoEXvt0rTbOKKDwGo7mm3+Z8vHvefOdOTd4HueMfKGmdmBg3FV9uedDaBw2rtR0Ytjlfvbg==
   dependencies:
-    "@sanity/mutator" "0.140.0"
+    "@sanity/mutator" "0.140.30"
     lodash "^4.17.4"
     nano-pubsub "^1.0.2"
     rxjs "^6.1.0"
@@ -967,6 +968,15 @@
     diff-match-patch "^1.0.0"
     lodash "^4.17.4"
 
+"@sanity/mutator@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-0.140.30.tgz#04fea5333faa4ad23ac7538549e48ad7960f14e5"
+  integrity sha512-QEaiefXQRl00Gme9ibyAnTPYwTyxblI3vsv3hnEE/+pWRs4UQfTTvOCZCptT7kBeghRyA5qeZfzqyT8i/JLW1g==
+  dependencies:
+    debug "^3.1.0"
+    diff-match-patch "^1.0.0"
+    lodash "^4.17.4"
+
 "@sanity/observable@0.140.0":
   version "0.140.0"
   resolved "https://registry.npmjs.org/@sanity/observable/-/observable-0.140.0.tgz#6c7f51932d7fa446154bb127b24d64f4c9bd46c4"
@@ -1023,6 +1033,19 @@
   version "0.140.17"
   resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.140.17.tgz#7b5fa865b2d6ee4a75c57ffb6f5d7c3580017097"
   integrity sha512-Pc76QISZ8pLHUVo8yjO4EsO2uWdbAj1cfLI18wkwoIzfGY+9g3UnlAa95QDYEe0Ku3svE9gbUKm0h3Y2TpV1Bw==
+  dependencies:
+    "@sanity/generate-help-url" "0.140.0"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.4"
+    object-inspect "^1.3.0"
+
+"@sanity/schema@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.140.30.tgz#4324b1aebb1164df6ec88b3658d8a3b94d763532"
+  integrity sha512-J9cZE+iCnOxBSD5mzHT0eYAtQAXqq7hEvzI0l2xxujnkqS2qf1AKZNKCsHbvNluQmfmo4z7aWa/5oPxFzVeRiw==
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     arrify "^1.0.1"
@@ -1102,6 +1125,15 @@
   version "0.140.17"
   resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.17.tgz#2868ed492e0e9a421b2b408aab260c68109c62aa"
   integrity sha512-Zto9fCMaq6csFXuM3QLvzF7MC97tvMfkO32bCrN0rklUr0dm9wPMbGrseB8Yc5X65ITSxFlLOAbenWtaQtB4aA==
+  dependencies:
+    clone-deep "^2.0.1"
+    es6-error "^4.0.2"
+    type-of-is "^3.5.1"
+
+"@sanity/validation@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.30.tgz#fe8c75ea64427b2fbddf794ef448ae1130c80248"
+  integrity sha512-H1PzXGgjZe4PFhR5DhMumnnRV0ZBQs1AlCYDSdcyxFyBLRIQgvW7KoBJ4SI+4z136cZB1kcqXkqH/WFBGtEjcg==
   dependencies:
     clone-deep "^2.0.1"
     es6-error "^4.0.2"
