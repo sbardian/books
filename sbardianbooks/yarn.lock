@@ -712,10 +712,10 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.25":
-  version "0.140.25"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.25.tgz#41e8af836dc83066136d520d66ff941192e0a0bb"
-  integrity sha512-5FiUUBJW43Goj/2/cTArO72xpYnyMXNbzWzCFdHLCFrgyUmLi7gnJ+N5OYNA7D9EPrPQI1s0SP+iu4EB+kYoVg==
+"@sanity/core@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.30.tgz#eece73843dac7cbc12fa3248297102282ff6974f"
+  integrity sha512-g0BFbTHN46nUHymbSRLq7Y/KaUzCDymfwDQW33F8Fu2DAQYO6bzbImubYf3T6g/6dAgNjEJJyg3ZfSZItysDYg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
@@ -724,11 +724,11 @@
     "@sanity/check" "0.140.3"
     "@sanity/export" "0.140.25"
     "@sanity/generate-help-url" "0.140.0"
-    "@sanity/import" "0.140.25"
-    "@sanity/mutator" "0.140.0"
+    "@sanity/import" "0.140.30"
+    "@sanity/mutator" "0.140.30"
     "@sanity/plugin-loader" "0.140.10"
     "@sanity/resolver" "0.140.3"
-    "@sanity/schema" "0.140.17"
+    "@sanity/schema" "0.140.30"
     "@sanity/server" "0.140.12"
     "@sanity/util" "0.140.3"
     "@sanity/uuid" "0.140.0"
@@ -945,12 +945,12 @@
     dom-event "1.0.0"
     lodash "^4.17.4"
 
-"@sanity/import@0.140.25":
-  version "0.140.25"
-  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.25.tgz#e4f2ebe971d4123fb77ea3f266be4bbd3497fbdf"
-  integrity sha512-LqQzsc/YDGx/RBSmg0Gh1DF8VmoIkz2Wk7lpjhm1HGIaTrB36FSY2OsJLbFkKXP45fZfsjZWqggFETXTL8kynw==
+"@sanity/import@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.30.tgz#fa6f533b6ddae9a29f8fe0b9e06c510a3c054d5c"
+  integrity sha512-RPPBUJNkoIJcrjF9OdltonmafpaFtsbpEMyN5Mf/T3m58lnwL1im2wK/ZTjvgkHsLDWvsykeabiL/au+KAkE7Q==
   dependencies:
-    "@sanity/mutator" "0.140.0"
+    "@sanity/mutator" "0.140.30"
     "@sanity/uuid" "0.140.0"
     debug "^3.1.0"
     file-url "^2.0.2"
