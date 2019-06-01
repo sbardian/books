@@ -682,16 +682,15 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@0.140.25":
-  version "0.140.25"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.140.25.tgz#0938b4b4e8c3f577c83257d564284bde808ee4a2"
-  integrity sha512-f8NpXqfkqytWfWqveWSnIP0hj12JIqshGaty9rFk1Rf+UWypyiB3p3yKSwuhni5Y2sy1AeNF5m1g+eDktkOjrw==
+"@sanity/components@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.140.30.tgz#c61838c4fbc565f1781c9deb387c0440ed90b45d"
+  integrity sha512-jCAxMp86InTv9b3N9pry9/ANQhMz6RANe7dCK39xULXQuwG4ADPtTE2v2CtVLMU9LR1oCULEjL0QRGMruVNLGQ==
   dependencies:
     "@sanity/date-input" "0.140.3"
-    "@sanity/imagetool" "0.140.0"
+    "@sanity/imagetool" "0.140.30"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
-    canvas-to-blob "^0.0.0"
     chance "^1.0.4"
     circular-at "^1.0.3"
     classnames "^2.2.5"
@@ -932,6 +931,15 @@
 "@sanity/imagetool@0.140.0":
   version "0.140.0"
   resolved "https://registry.npmjs.org/@sanity/imagetool/-/imagetool-0.140.0.tgz#b372d0718029e47f82a5d39937b78c10bb012bbd"
+  dependencies:
+    debug "^3.1.0"
+    dom-event "1.0.0"
+    lodash "^4.17.4"
+
+"@sanity/imagetool@0.140.30":
+  version "0.140.30"
+  resolved "https://registry.yarnpkg.com/@sanity/imagetool/-/imagetool-0.140.30.tgz#0edb825243e86035bf3846342051693db76d1ca5"
+  integrity sha512-27dpxdvx2HPiPcwjIA8gwEgknH6q21RbAmcNCe6F/5ucSi8aMNA5ZEL3DYStuDyVArfkxaf/yp2DRF3MLMBfLQ==
   dependencies:
     debug "^3.1.0"
     dom-event "1.0.0"
