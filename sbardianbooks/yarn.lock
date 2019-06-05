@@ -712,19 +712,19 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/core@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.30.tgz#eece73843dac7cbc12fa3248297102282ff6974f"
-  integrity sha512-g0BFbTHN46nUHymbSRLq7Y/KaUzCDymfwDQW33F8Fu2DAQYO6bzbImubYf3T6g/6dAgNjEJJyg3ZfSZItysDYg==
+"@sanity/core@0.140.32":
+  version "0.140.32"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.140.32.tgz#2c94fabdb2e8a252eb5e501f7073aee410d27c51"
+  integrity sha512-Jj0SsXsOjxz1cwn02LOrGYkxIWaTzk7LH9fD1gU5za55biwfvM2qUVc9wEBBAU5zqYmoQVQ4N0AVwpGB4ofxRA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/preset-env" "^7.1.0"
     "@babel/preset-react" "^7.0.0"
     "@babel/register" "^7.0.0"
     "@sanity/check" "0.140.3"
-    "@sanity/export" "0.140.25"
+    "@sanity/export" "0.140.32"
     "@sanity/generate-help-url" "0.140.0"
-    "@sanity/import" "0.140.30"
+    "@sanity/import" "0.140.32"
     "@sanity/mutator" "0.140.30"
     "@sanity/plugin-loader" "0.140.10"
     "@sanity/resolver" "0.140.3"
@@ -863,10 +863,10 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@0.140.25":
-  version "0.140.25"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.140.25.tgz#9c7bac9bcd495b368eff2a394eff9a8b9cae4f0f"
-  integrity sha512-CJsYtWGIJsE9FKn6q15sOpfN5TGZz2RnL+9ROYKQ9Z84vHONddJnDUp+ZOXjc8iwtxLMVf7iHbUC51rzdjemdQ==
+"@sanity/export@0.140.32":
+  version "0.140.32"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.140.32.tgz#668791820b217700c4980ff62c96b22b6c8a09e1"
+  integrity sha512-3lLKgfRUKeLjyTgx+DeocfjZiZG0Y85tS/MyHAmN2iJdzAwqxISv3d4E7+E2WKNJ0eqHDr8/CawVeT3G2NcyCA==
   dependencies:
     archiver "^2.1.1"
     debug "^3.1.0"
@@ -937,10 +937,10 @@
     dom-event "1.0.0"
     lodash "^4.17.4"
 
-"@sanity/import@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.30.tgz#fa6f533b6ddae9a29f8fe0b9e06c510a3c054d5c"
-  integrity sha512-RPPBUJNkoIJcrjF9OdltonmafpaFtsbpEMyN5Mf/T3m58lnwL1im2wK/ZTjvgkHsLDWvsykeabiL/au+KAkE7Q==
+"@sanity/import@0.140.32":
+  version "0.140.32"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.140.32.tgz#828c6fb606cc6867d84bc22d4f2ac30860c8ec99"
+  integrity sha512-39TbGkDU0/SIARqouaSVPXvc1bAsXEJ9OJ8cGjeEWcxrAP7+sZijUFjqDiBbo3zvUxJEiNQmKeaNRm3FG407UA==
   dependencies:
     "@sanity/mutator" "0.140.30"
     "@sanity/uuid" "0.140.0"
