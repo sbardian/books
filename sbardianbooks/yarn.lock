@@ -819,13 +819,13 @@
     in-publish "^2.0.0"
     prop-types "^15.6.0"
 
-"@sanity/desk-tool@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.30.tgz#d22251292997d2e3ff5a8d4c073aee713ca819d5"
-  integrity sha512-ic3rP65CEcd97u8CeSPvtEUGp7x8F41OzouoDtzC3DXYzoPCwZFatzo3n745ntT3LzHYsbd8OOHAp+agAVlEPQ==
+"@sanity/desk-tool@0.140.32":
+  version "0.140.32"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.32.tgz#8966ab5cfb708d7109f5e0ee75313bb214eea6ac"
+  integrity sha512-gSWy1EJSNqOoCDyoPVkja+J4+88hcNleAuHMZuHDyDn64ux76A2LjJC5MN38p8FLLjKv1UjgyWr6rptStxa90g==
   dependencies:
     "@sanity/data-aspects" "0.140.30"
-    "@sanity/form-builder" "0.140.30"
+    "@sanity/form-builder" "0.140.32"
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/mutator" "0.140.30"
     "@sanity/structure" "0.140.30"
@@ -877,10 +877,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.140.30.tgz#c0e0bf2d72c97a326b898cdb2e4a37036fec6061"
-  integrity sha512-LibJcXAZ57HYJXq2EBj5LlzIimR1q7onR8qX88VMGT5cTHSJ3qsAjnw8Vdy6OYkDgVOFRaNYXbR21kzBj3E1qw==
+"@sanity/form-builder@0.140.32":
+  version "0.140.32"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.140.32.tgz#d3c87d933d7586e32fb84b4fd0b8333188aab702"
+  integrity sha512-RqpHdap3zJmoc5kjuMBK057iGWBKykBNOYafF2yN2vLBTQM+7V7iVbdQTpeyP+6kanNeLId5SRDq/RQmhtV5Yw==
   dependencies:
     "@sanity/block-tools" "0.140.30"
     "@sanity/generate-help-url" "0.140.0"
