@@ -630,19 +630,19 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.33":
-  version "0.140.33"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.33.tgz#70278310fe8d7e28b87d1d0584a67b9f7d34d701"
-  integrity sha512-4kAwkoOdd4IIMGKbZ4vjQu/PX0Ew7F6DCoBk0hvkcodJxgZiunbM5bQEkvH/aspzcnmyU1qPCHBmntfmCtbP7A==
+"@sanity/base@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.34.tgz#e6cab51be78ee9183cd54bab2325cfaf177b1e9f"
+  integrity sha512-wybU6coMz6TdCwe7ZGSQVLI3qNAAvgbdk2/fjbCCYreyH3f6Atp2i/0kDEkxYrUtkEof8ZJ3VbNQ4UmSvY+W6g==
   dependencies:
     "@sanity/client" "0.140.32"
     "@sanity/document-store" "0.140.30"
     "@sanity/image-url" "0.140.12"
     "@sanity/observable" "0.140.0"
-    "@sanity/preview" "0.140.32"
+    "@sanity/preview" "0.140.34"
     "@sanity/schema" "0.140.30"
     "@sanity/state-router" "0.140.0"
-    "@sanity/validation" "0.140.30"
+    "@sanity/validation" "0.140.34"
     history "^4.6.3"
     in-publish "^2.0.0"
     lodash "^4.17.4"
@@ -995,10 +995,10 @@
     css-modules-require-hook "4.1.0"
     interop-require "^1.0.0"
 
-"@sanity/preview@0.140.32":
-  version "0.140.32"
-  resolved "https://registry.yarnpkg.com/@sanity/preview/-/preview-0.140.32.tgz#912eab3cf7978e7fb9b2d307cc029c780a82492b"
-  integrity sha512-x98/mXMptxA4yApn6R8PmmuUVmmpJ1CRPdsEJ1T22Gzo2FLKpcUn05MwS0Z3qRMqvXzNwoQSUdtgG9j7gSK/2Q==
+"@sanity/preview@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/preview/-/preview-0.140.34.tgz#118f62f249b7448eb13a2191b9cf5799dbca8d59"
+  integrity sha512-IbNfe+YsZ+J1/SJBMfsky+vXchQ4hAVvlUeoHeBeBkxXoGHNVEzvNSxxIpeSzR1DWyRDTEjnFt0zdEKgefMVSg==
   dependencies:
     "@sanity/image-url" "0.140.12"
     lodash "^4.17.4"
@@ -1113,6 +1113,15 @@
   version "0.140.30"
   resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.30.tgz#fe8c75ea64427b2fbddf794ef448ae1130c80248"
   integrity sha512-H1PzXGgjZe4PFhR5DhMumnnRV0ZBQs1AlCYDSdcyxFyBLRIQgvW7KoBJ4SI+4z136cZB1kcqXkqH/WFBGtEjcg==
+  dependencies:
+    clone-deep "^2.0.1"
+    es6-error "^4.0.2"
+    type-of-is "^3.5.1"
+
+"@sanity/validation@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.34.tgz#b444944fd6bbf540b160f3f294cefba7d1f073ca"
+  integrity sha512-71ulFe+igRD6A5xkoR9cTLdlJM8Lr0P0au36T4KU1KVI8LMcx8nkjYZjzompg5/CFwfZzo41NGZm6r9o2XFiOg==
   dependencies:
     clone-deep "^2.0.1"
     es6-error "^4.0.2"
