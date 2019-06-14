@@ -805,10 +805,10 @@
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/rich-date-input" "0.140.34"
 
-"@sanity/default-layout@0.140.33":
-  version "0.140.33"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.140.33.tgz#84d8a42a684c361b3a8c9b133352c52d37599df3"
-  integrity sha512-Rp/vp+7pabBKuTwZEkb/p3oPZW09cF+PQMm86MHKSJ2ZhsJ/gPwkca/sMKfWE4/jVZGURiUJOe3+QoX25oRc0g==
+"@sanity/default-layout@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.140.34.tgz#ca4454e21645ce267ec6c91258a2eb34d296e173"
+  integrity sha512-EmIeVsD/TyavEfaSmqzSuB0nAvoBouMd9pQhR2skDPpbS3zBrrH50tgYmO5nFzCQUG46NeE/+3f3FzFB5/j4Ow==
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     is-hotkey "^0.1.4"
