@@ -788,10 +788,10 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/data-aspects@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/data-aspects/-/data-aspects-0.140.30.tgz#c458aeb458ce88ebf92404ee79261154f2c25965"
-  integrity sha512-PzYTjnovZ1whacZvwJJr8j+lYwEhRCA8HA6qjE0eluNxy3KpMczSNbAh29VehYBw8dqthe3SnCZDBFXza4JhKQ==
+"@sanity/data-aspects@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/data-aspects/-/data-aspects-0.140.34.tgz#fb5659ec2c6960b0617943842d27d767179ec485"
+  integrity sha512-N1bWIo/PgIemXBXg9oHcv1Kgdzn6uoZpbEMTs1xP4vAxgSjI9GMNC1rMhGEEJkpG1MUYVP9lQaKMFFS+mN5ZRQ==
   dependencies:
     "@sanity/generate-help-url" "0.140.0"
     in-publish "^2.0.0"
@@ -828,18 +828,18 @@
     in-publish "^2.0.0"
     prop-types "^15.6.0"
 
-"@sanity/desk-tool@0.140.33":
-  version "0.140.33"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.33.tgz#317a1f8cf3fd54ae475f4e46191dbf6a231f80fc"
-  integrity sha512-4bEZex9jUft7ix63Jx8e3JJ5YO2Vte8rnlhmChYE0vFk1uc03moPy4xoQit14gla95uZQC//S9ZpnxUSUzKBJQ==
+"@sanity/desk-tool@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.140.34.tgz#576b62cb60dccbaf3e4ca2317b2d12eb62b34fae"
+  integrity sha512-8zhlkbXQOSXbQpd2FLmFjut51CHt1uuRHhFiOsl8NnI4BbNDdVEO3cQ4HnKh8nHPPB3ITIVND398HtUXXvyrIw==
   dependencies:
-    "@sanity/data-aspects" "0.140.30"
-    "@sanity/form-builder" "0.140.33"
+    "@sanity/data-aspects" "0.140.34"
+    "@sanity/form-builder" "0.140.34"
     "@sanity/generate-help-url" "0.140.0"
     "@sanity/mutator" "0.140.30"
     "@sanity/structure" "0.140.30"
     "@sanity/uuid" "0.140.0"
-    "@sanity/validation" "0.140.30"
+    "@sanity/validation" "0.140.34"
     classnames "^2.2.5"
     date-fns "^1.29.0"
     diff "^3.2.0"
@@ -886,10 +886,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.140.33":
-  version "0.140.33"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.140.33.tgz#a59726d0f4e1924c5a4e528c7f86e3ed6e135a0e"
-  integrity sha512-LhLoubvDVwL+NB1a/ToCWjnFLKkSbXLE/F/I70ky+qLTxKV6WOBNUXI04E+of7iFcuEW/K2afU0cE8WQlYq0Lg==
+"@sanity/form-builder@0.140.34":
+  version "0.140.34"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.140.34.tgz#15760a8d3b9e3b446149918544c1ad5ed2cad8e2"
+  integrity sha512-0k+SEZ8zVWV+7jIbVAoic7DPvrFBeMPzj/H/kOKFLm4Gt1cZuF8Qdy24ABLzF6xLx5CchgTh5YnVFbuhNb6+Zg==
   dependencies:
     "@sanity/block-tools" "0.140.30"
     "@sanity/generate-help-url" "0.140.0"
@@ -897,7 +897,7 @@
     "@sanity/imagetool" "0.140.30"
     "@sanity/mutator" "0.140.30"
     "@sanity/schema" "0.140.30"
-    "@sanity/util" "0.140.3"
+    "@sanity/util" "0.140.34"
     attr-accept "^1.1.0"
     classnames "^2.2.5"
     date-fns "^1.29.0"
@@ -1099,14 +1099,6 @@
     lodash "^4.17.4"
     memoize-one "^3.1.1"
 
-"@sanity/util@0.140.3":
-  version "0.140.3"
-  resolved "https://registry.npmjs.org/@sanity/util/-/util-0.140.3.tgz#190e6e4a6f0192555398d5888ac591f1fbf29790"
-  dependencies:
-    fs-extra "^6.0.1"
-    lodash "^4.17.4"
-    resolve-from "^4.0.0"
-
 "@sanity/util@0.140.34":
   version "0.140.34"
   resolved "https://registry.yarnpkg.com/@sanity/util/-/util-0.140.34.tgz#be2f9dbada51e8ebcb8256c85074409411a98ef9"
@@ -1121,15 +1113,6 @@
   resolved "https://registry.npmjs.org/@sanity/uuid/-/uuid-0.140.0.tgz#31e23c209e340f88a061cd034e0f8fb4b4f24f3f"
   dependencies:
     uuid "3.1.0"
-
-"@sanity/validation@0.140.30":
-  version "0.140.30"
-  resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-0.140.30.tgz#fe8c75ea64427b2fbddf794ef448ae1130c80248"
-  integrity sha512-H1PzXGgjZe4PFhR5DhMumnnRV0ZBQs1AlCYDSdcyxFyBLRIQgvW7KoBJ4SI+4z136cZB1kcqXkqH/WFBGtEjcg==
-  dependencies:
-    clone-deep "^2.0.1"
-    es6-error "^4.0.2"
-    type-of-is "^3.5.1"
 
 "@sanity/validation@0.140.34":
   version "0.140.34"
