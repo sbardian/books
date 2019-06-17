@@ -630,10 +630,10 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.34":
-  version "0.140.34"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.34.tgz#e6cab51be78ee9183cd54bab2325cfaf177b1e9f"
-  integrity sha512-wybU6coMz6TdCwe7ZGSQVLI3qNAAvgbdk2/fjbCCYreyH3f6Atp2i/0kDEkxYrUtkEof8ZJ3VbNQ4UmSvY+W6g==
+"@sanity/base@0.140.35":
+  version "0.140.35"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.35.tgz#cb9f6db1e1a844ad7db7b617c8b6d864beeafb12"
+  integrity sha512-vvlhoTdGstzl0zJt0ffyyUqwEJvDj1jwaesyjsy2aHRTjarF34y8Yt1qLhz6Ze9TcTgqACfR4aSDwYdxcA1H6A==
   dependencies:
     "@sanity/client" "0.140.32"
     "@sanity/document-store" "0.140.30"
