@@ -630,16 +630,16 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.140.35":
-  version "0.140.35"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.35.tgz#cb9f6db1e1a844ad7db7b617c8b6d864beeafb12"
-  integrity sha512-vvlhoTdGstzl0zJt0ffyyUqwEJvDj1jwaesyjsy2aHRTjarF34y8Yt1qLhz6Ze9TcTgqACfR4aSDwYdxcA1H6A==
+"@sanity/base@0.140.36":
+  version "0.140.36"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.140.36.tgz#e9b1dd3e38fd0eb575df709cd3faa4d0858004d9"
+  integrity sha512-MdKALkJtNWbQT7K0avYOJI1hSwC+8W+Kypy02eQumoUe7r4S2fdep5O8uwgNcwzgN7QXJHo5zAqu0LPaHhp83Q==
   dependencies:
-    "@sanity/client" "0.140.32"
+    "@sanity/client" "0.140.36"
     "@sanity/document-store" "0.140.30"
     "@sanity/image-url" "0.140.12"
     "@sanity/observable" "0.140.0"
-    "@sanity/preview" "0.140.34"
+    "@sanity/preview" "0.140.36"
     "@sanity/schema" "0.140.30"
     "@sanity/state-router" "0.140.0"
     "@sanity/validation" "0.140.34"
@@ -677,10 +677,10 @@
     in-publish "^2.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/client@0.140.32":
-  version "0.140.32"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.32.tgz#78c9a792932c865f9525d4b1307df92ecded63a6"
-  integrity sha512-KHLFcp7SvWMWdKTQO/lyg/9v8c9+UHg6Ay2u2Ck1OM+hufylMEFmU4IiLgp3tj8h/6jnvePGyXuoz6nAWFA41w==
+"@sanity/client@0.140.36":
+  version "0.140.36"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-0.140.36.tgz#7f12016b4731f7bb39701e581fb1cec4bc3d6270"
+  integrity sha512-uMJn0De1ulivlwJhyArqC8prH0pDMwd7Wnm4Xly749dH4Op1xrgsSgJna/G4nTGxWTL2Iva9iqqOaN3wCLK3ww==
   dependencies:
     "@sanity/eventsource" "0.140.0"
     "@sanity/generate-help-url" "0.140.0"
@@ -997,10 +997,10 @@
     css-modules-require-hook "4.1.0"
     interop-require "^1.0.0"
 
-"@sanity/preview@0.140.34":
-  version "0.140.34"
-  resolved "https://registry.yarnpkg.com/@sanity/preview/-/preview-0.140.34.tgz#118f62f249b7448eb13a2191b9cf5799dbca8d59"
-  integrity sha512-IbNfe+YsZ+J1/SJBMfsky+vXchQ4hAVvlUeoHeBeBkxXoGHNVEzvNSxxIpeSzR1DWyRDTEjnFt0zdEKgefMVSg==
+"@sanity/preview@0.140.36":
+  version "0.140.36"
+  resolved "https://registry.yarnpkg.com/@sanity/preview/-/preview-0.140.36.tgz#47ee03ee8c65e72518a2421e0dfd0b5f8d23fd86"
+  integrity sha512-4XpJ5CZB79SzQLFBgIzm16lZtngUGRw8Z7pn3uTcpHXHN4aPxkp6yblYJZN4rOIqOSJHz34t9aAmnBIRB8qFWw==
   dependencies:
     "@sanity/image-url" "0.140.12"
     lodash "^4.17.4"
