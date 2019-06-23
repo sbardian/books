@@ -5224,10 +5224,10 @@ gatsby-react-router-scroll@^2.1.0:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-sanity@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-4.0.3.tgz#372e2e62e87d50b47f7d8283ccaae4443e30b25e"
-  integrity sha512-s1CIVYXIBa2z9YH+KfW5RIGVztvH+BMmu7hMSswxLGd4VWBvqbnkRXClci1j11CYOnYBBpRCyA6DP6snqiNsFw==
+gatsby-source-sanity@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-4.0.4.tgz#b2a3aecd35d904d66f98d35898d0fc5d1659571b"
+  integrity sha512-4DRRQJ5SPedSZH9WbICzgiBOGuoP0B2vUgEx2AWj2svWlCWUXAJY2AhVmir0kfLtiQQj3LZrNpvxRDuaw19vlg==
   dependencies:
     "@sanity/client" "^0.140.11"
     "@sanity/image-url" "^0.140.9"
