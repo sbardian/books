@@ -690,10 +690,10 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@0.140.36":
-  version "0.140.36"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.140.36.tgz#04fdaa4f860ace1ba09677df53a0f8ca0e58916c"
-  integrity sha512-FDkRzDbf7TVfyYGTFr/akLHSHIEhIrczHJd/1MYRdlZRmia9a0N8qhs8ou7U+S5+YBs7fy7MTbX4YMfFFdUEeA==
+"@sanity/components@0.140.38":
+  version "0.140.38"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.140.38.tgz#0b03d931b17779ab8c069a8661f9b86b3584d108"
+  integrity sha512-lurKHqqUHeysFbL+GORmqtW6r/qibq2BvCgTN4xk1mdUPqJp3A3w7SoXjsrXORHqsFjo69vyFuLwZFryB/qcBg==
   dependencies:
     "@sanity/date-input" "0.140.34"
     "@sanity/imagetool" "0.140.30"
