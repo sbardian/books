@@ -823,12 +823,12 @@
     react-tippy "^1.2.3"
     rxjs "^6.1.0"
 
-"@sanity/default-login@0.140.34":
-  version "0.140.34"
-  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.140.34.tgz#f332a9a4fcec4c976124c0ad6b3bca606a41d041"
-  integrity sha512-cm/R6sLNEcnSprO3stJSt2jK88ESlMv6hl+kLN370ur5EoGGzo2Hbf5bpZB5qktaYiM5Gv0IGBHMBsWjTFinLw==
+"@sanity/default-login@0.141.1":
+  version "0.141.1"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.141.1.tgz#da87d3aa3005d3744ee210ae3a11d768d8ec2987"
+  integrity sha512-jMXq1u+gDkudKspQ9iEl4KNJyFiV7/P22f6eeqfKahUjOAM2fWiIm10de3+5FpLeQxr/3fJPr3/xlbH1jeCYkw==
   dependencies:
-    "@sanity/generate-help-url" "0.140.0"
+    "@sanity/generate-help-url" "0.141.1"
     in-publish "^2.0.0"
     prop-types "^15.6.0"
 
@@ -935,10 +935,6 @@
     slate-react "^0.21.16"
     slate-soft-break "^0.9.0"
     speakingurl "^13.0.0"
-
-"@sanity/generate-help-url@0.140.0":
-  version "0.140.0"
-  resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-0.140.0.tgz#f60ab75be5fdc346b9f0d1c2a0858aa3c2870109"
 
 "@sanity/generate-help-url@0.141.1":
   version "0.141.1"
