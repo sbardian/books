@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, navigate } from "gatsby"
+import { graphql } from "gatsby"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
-import BookImage from "../components/book-image"
+import Book from "../components/book"
 import SearchBox from "../components/search-box"
 import YearFilterButton from "../components/year-filter-button"
 import mq from "../components/media-queries"
@@ -18,6 +18,29 @@ const Button = styled.button`
   align-items: center;
   border: none;
   cursor: pointer;
+`
+
+const SortButtonWrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 335px));
+  justify-content: center;
+`
+
+const BooksWrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  color: #1f1f20;
+  ${mq.md(css`
+    grid-template-columns: 1fr;
+  `)};
+  ${mq.lg(
+    css`
+      maxheight: "460px";
+    `
+  )}
 `
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
@@ -65,14 +88,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
 
   return (
     <Layout pageLocation={location} crumbLabel="Home">
-      <div
-        css={css`
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 335px));
-          justify-content: center;
-        `}
-      >
+      <SortButtonWrapper>
         <Button type="button" onClick={() => handleClearYearFilter()}>
           All
         </Button>
@@ -85,56 +101,13 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
             />
           )
         })}
-      </div>
-      <div>
-        <SearchBox onSearch={handleSearch} />
-        <div
-          css={css`
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: repeat(auto-fit, 300px);
-            justify-content: center;
-            color: #1f1f20;
-            ${mq.md(css`
-              grid-template-columns: 1fr;
-            `)};
-            ${mq.lg(
-              css`
-                maxheight: "460px";
-              `
-            )}
-          `}
-        >
-          {books.map(book => {
-            return (
-              <div
-                key={book.node.id}
-                css={css`
-                  display: grid;
-                  grid-gap: 20px;
-                  grid-template-rows: 1fr;
-                `}
-              >
-                <button
-                  type="button"
-                  css={css`
-                    padding: 20px;
-                    border: none;
-                    background: #606d80;
-                    &:hover {
-                      background: #607d80;
-                      cursor: pointer;
-                    }
-                  `}
-                  onClick={() => navigate(`/book/${book.node.id}`)}
-                >
-                  <BookImage book={book.node} />
-                </button>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      </SortButtonWrapper>
+      <SearchBox onSearch={handleSearch} />
+      <BooksWrapper>
+        {books.map(book => (
+          <Book key={book.node.id} book={book} />
+        ))}
+      </BooksWrapper>
     </Layout>
   )
 }
