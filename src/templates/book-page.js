@@ -154,6 +154,25 @@ BookPage.propTypes = {
         })
       ),
     }),
+    allSanitySiteImage: PropTypes.shape({
+      edges: PropTypes.shape({
+        node: PropTypes.shape({
+          image: PropTypes.shape({
+            asset: PropTypes.shape({
+              fluid: PropTypes.shape({
+                base64: PropTypes.string,
+                aspectRatio: PropTypes.number,
+                src: PropTypes.string,
+                srcSet: PropTypes.string,
+                srcWebp: PropTypes.string,
+                srcSetWebp: PropTypes.string,
+                sizes: PropTypes.string,
+              }),
+            }),
+          }),
+        }),
+      }),
+    }),
   }).isRequired,
 }
 
