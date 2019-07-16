@@ -1,7 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
-import Button from "./styled/button"
+import styled from "@emotion/styled"
+
+const Button = styled.button`
+  height: 30px;
+  background: #4b4545b3;
+  color: #c2c2c2;
+  text-align: center;
+  align-items: center;
+  border: none;
+`
 
 const YearFilterButton = ({ onFilterByYear, year }) => (
   <Button

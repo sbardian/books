@@ -2,13 +2,24 @@
 // eslint-disable-next-line
 import React from "react"
 import { jsx, css, Global } from "@emotion/core"
+import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import mq from "./media-queries"
-import Footer from "./styled/footer"
 import "normalize.css"
+
+const Footer = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  background: #1f1f20;
+  padding: 20px;
+  height: 200px;
+`
 
 const Layout = ({ children, pageLocation, crumbLabel }) => {
   const {

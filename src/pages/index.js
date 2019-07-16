@@ -3,12 +3,21 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql, navigate } from "gatsby"
 import { jsx, css } from "@emotion/core"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import BookImage from "../components/book-image"
 import SearchBox from "../components/search-box"
 import YearFilterButton from "../components/year-filter-button"
 import mq from "../components/media-queries"
-import Button from "../components/styled/button"
+
+const Button = styled.button`
+  height: 30px;
+  background: #4b4545b3;
+  color: #c2c2c2;
+  text-align: center;
+  align-items: center;
+  border: none;
+`
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
   const [books, setBooks] = React.useState(allSanityBook.edges)
