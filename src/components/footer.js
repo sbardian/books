@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // eslint-disable-next-line
 import React from "react"
-import { jsx, css } from "@emotion/core"
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import gatsby from "../images/gatsby-icon.png"
 
@@ -15,17 +15,14 @@ const Footer = styled.div`
   padding: 20px;
 `
 
+const GatsbyImage = styled.img`
+  height: 3em;
+`
+
 export default () => (
   <Footer>
     <a href="https://gatsby.com">
-      <img
-        css={css`
-          height: 3em;
-        `}
-        src={gatsby}
-        alt="Gatsby"
-        title="Built with Gatsby"
-      />
+      <GatsbyImage src={gatsby} alt="Gatsby" title="Built with Gatsby" />
     </a>
   </Footer>
 )
