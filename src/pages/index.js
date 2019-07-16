@@ -174,7 +174,7 @@ export default IndexPage
 
 export const bookQuery = graphql`
   {
-    allSanityBook(sort: { fields: title, order: ASC }) {
+    allSanityBook(sort: { fields: author, order: ASC }) {
       edges {
         node {
           id
