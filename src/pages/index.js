@@ -17,6 +17,7 @@ const Button = styled.button`
   text-align: center;
   align-items: center;
   border: none;
+  cursor: pointer;
 `
 
 const IndexPage = ({ location, data: { allSanityBook } }) => {
@@ -72,13 +73,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
           justify-content: center;
         `}
       >
-        <Button
-          css={css`
-            cursor: pointer;
-          `}
-          type="button"
-          onClick={() => handleClearYearFilter()}
-        >
+        <Button type="button" onClick={() => handleClearYearFilter()}>
           All
         </Button>
         {yearFilters.map(year => {

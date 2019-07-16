@@ -10,16 +10,11 @@ const Button = styled.button`
   text-align: center;
   align-items: center;
   border: none;
+  cursor: pointer;
 `
 
 const YearFilterButton = ({ onFilterByYear, year }) => (
-  <Button
-    css={css`
-      cursor: pointer;
-    `}
-    type="button"
-    onClick={() => onFilterByYear(year)}
-  >
+  <Button type="button" onClick={() => onFilterByYear(year)}>
     <span
       css={css`
         display: flex;
