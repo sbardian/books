@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 const Button = styled.button`
@@ -13,17 +12,15 @@ const Button = styled.button`
   cursor: pointer;
 `
 
+const ButtonText = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 const YearFilterButton = ({ onFilterByYear, year }) => (
   <Button type="button" onClick={() => onFilterByYear(year)}>
-    <span
-      css={css`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      `}
-    >
-      {year}
-    </span>
+    <ButtonText>{year}</ButtonText>
   </Button>
 )
 
