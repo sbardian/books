@@ -35,6 +35,10 @@ const Title = styled.h1`
   `)};
 `
 
+const TitleLink = styled.a`
+  text-decoration: none;
+`
+
 const BreadcrumbWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -87,14 +91,7 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
       <PageContainer>
         <PageTitleWrapper>
           <Title>
-            <a
-              css={css`
-                text-decoration: none;
-              `}
-              href="/"
-            >
-              {title}
-            </a>
+            <TitleLink href="/">{title}</TitleLink>
           </Title>
         </PageTitleWrapper>
         <BreadcrumbWrapper>
