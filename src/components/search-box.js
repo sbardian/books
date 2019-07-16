@@ -2,8 +2,18 @@
 // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-import { jsx, css } from "@emotion/core"
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
+import { FaSearch } from "react-icons/fa"
+
+const SearchWrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+`
 
 const SearchInput = styled.input`
   font-size: 18pt;
@@ -17,26 +27,10 @@ const SearchInput = styled.input`
 
 const SearchBox = ({ onSearch }) => {
   return (
-    <div
-      css={css`
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: auto auto;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-      `}
-    >
+    <SearchWrapper>
       <SearchInput id="books-search-input" type="text" onChange={onSearch} />
-      <img
-        css={css`
-          height: 40px;
-          width: 40px;
-        `}
-        alt="Search"
-        src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png"
-      />
-    </div>
+      <FaSearch size="1.5em" />
+    </SearchWrapper>
   )
 }
 
