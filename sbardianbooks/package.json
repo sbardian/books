@@ -21,7 +21,7 @@
     "@sanity/default-login": "0.141.5",
     "@sanity/desk-tool": "0.141.6",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-dom": "16.8.6"
   },
   "devDependencies": {},
