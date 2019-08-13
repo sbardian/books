@@ -5448,10 +5448,10 @@ gatsby-react-router-scroll@^2.1.3:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-sanity@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-5.0.1.tgz#d772ff89e084b23481311ceaf98d309c1d775ac6"
-  integrity sha512-zBcSVcNpKcYY7hF9wx2hkDAzICrhcoEtZTlmaLqsRfrlo3G2BejRg/bYACZJEqjQUu2nSxPOgTwjQvoQqBQGwg==
+gatsby-source-sanity@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-5.0.2.tgz#961f3f3b3fe5cadb3dc5ab2f256d5598d1799628"
+  integrity sha512-8+7ePq6r9DgyXbN3jp/Mtu0NGCIVES3X1AgX8XUZM7fE7GEf9nG46NvMdwfwbvSTrooecA9pEX36znX92aQYvw==
   dependencies:
     "@sanity/client" "^0.140.11"
     "@sanity/image-url" "^0.140.9"
@@ -5460,7 +5460,7 @@ gatsby-source-sanity@5.0.1:
     axios "^0.19.0"
     debug "^4.1.0"
     fs-extra "^8.0.1"
-    lodash "^4.17.11"
+    lodash "^4.17.15"
     oneline "^1.0.2"
     pump "^3.0.0"
     rxjs "^6.3.3"
@@ -7389,7 +7389,7 @@ lodash@^4.11.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.1
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
-lodash@^4.17.12:
+lodash@^4.17.12, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
