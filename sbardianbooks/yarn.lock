@@ -827,13 +827,13 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@0.141.6":
-  version "0.141.6"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.141.6.tgz#249345da3877c1b48e9cb56e20d267285c8ab6fe"
-  integrity sha512-1NqSizP4hK81lDYx5wV9Du/jAZgilq7JyryYryeK5QzVkXgEylZdVR2AVDrux2ZGty5lqGMbuZFl9mPo7Cd2Kw==
+"@sanity/components@0.142.0":
+  version "0.142.0"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.142.0.tgz#c5bd0656589315f2ae83e2f92864949efc98de17"
+  integrity sha512-ARNrliurCo1razVmE3ufMs5dHlbznzahQmc23xfRHT2B0vRCcSHuDKYfx0ODLGK9atySWabLAkCHWZzc+Rok+A==
   dependencies:
-    "@sanity/date-input" "0.141.5"
-    "@sanity/imagetool" "0.141.5"
+    "@sanity/date-input" "0.142.0"
+    "@sanity/imagetool" "0.142.0"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -937,13 +937,13 @@
     in-publish "^2.0.0"
     lodash "^4.17.4"
 
-"@sanity/date-input@0.141.5":
-  version "0.141.5"
-  resolved "https://registry.yarnpkg.com/@sanity/date-input/-/date-input-0.141.5.tgz#f75bdf62d610a52d5b4238916e4ded4289400e4f"
-  integrity sha512-wONIuG3M5hFjYzwAk0fnaBykdD/48OQYKfim42psUt4/CMfnC1ggYihRYG6Iov4fZ2fwHiAfaJmSJok/SQyW+g==
+"@sanity/date-input@0.142.0":
+  version "0.142.0"
+  resolved "https://registry.yarnpkg.com/@sanity/date-input/-/date-input-0.142.0.tgz#36e9799aef449651a52f93663a1d8d202289fb1f"
+  integrity sha512-I53PqOag8qz5aeoiNG/ZgD7R9Hnn/dnjrQhCj/gOff0tzrPVN7nATHJ4II4NDpx33dq8nhpBL4MaeQjpdFoliQ==
   dependencies:
-    "@sanity/generate-help-url" "0.141.5"
-    "@sanity/rich-date-input" "0.141.5"
+    "@sanity/generate-help-url" "0.142.0"
+    "@sanity/rich-date-input" "0.142.0"
 
 "@sanity/default-layout@0.141.6":
   version "0.141.6"
@@ -1096,6 +1096,15 @@
     dom-event "1.0.0"
     lodash "^4.17.4"
 
+"@sanity/imagetool@0.142.0":
+  version "0.142.0"
+  resolved "https://registry.yarnpkg.com/@sanity/imagetool/-/imagetool-0.142.0.tgz#54b46b1acb8877298e88164177fd5b3235f01e2b"
+  integrity sha512-j26rMgEREcsO3XtAjb8mPgs/BSKt8e4IuU3jCmOEye2nZJtrnixqRqoQJifGlBmXotXwED+7ZFCw54DEqWUiFw==
+  dependencies:
+    debug "^3.1.0"
+    dom-event "1.0.0"
+    lodash "^4.17.4"
+
 "@sanity/import@0.141.6":
   version "0.141.6"
   resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.141.6.tgz#3e25a82cae453659743ba937f9e8bae7dc32ab6f"
@@ -1180,12 +1189,12 @@
     path-exists "^3.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/rich-date-input@0.141.5":
-  version "0.141.5"
-  resolved "https://registry.yarnpkg.com/@sanity/rich-date-input/-/rich-date-input-0.141.5.tgz#6c57db9c1b0206afea714f564f7c35b1df17f5f2"
-  integrity sha512-GtzniPSUJgnevli5aFELPdoeWEfr29gjCHAXsrMs8SHAYXvhEJfwkL3Y9GTfX5pIsV29P71TGUyCwQaDtm9mSA==
+"@sanity/rich-date-input@0.142.0":
+  version "0.142.0"
+  resolved "https://registry.yarnpkg.com/@sanity/rich-date-input/-/rich-date-input-0.142.0.tgz#b47e1263f1aa7c9577399517b3596575f24e1e56"
+  integrity sha512-leautpFGTZJQy/lHX5H4selogKq3I+2mRheUs1Rb7cnoVy16Np+ewtqXbnpAQ8CrbMd3sPfSCmFTcOr6sgSAeg==
   dependencies:
-    "@sanity/generate-help-url" "0.141.5"
+    "@sanity/generate-help-url" "0.142.0"
     lodash "^4.17.4"
     moment "^2.19.1"
     moment-timezone "^0.5.11"
