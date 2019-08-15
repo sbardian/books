@@ -16,7 +16,7 @@
   "dependencies": {
     "@sanity/base": "0.142.0",
     "@sanity/components": "0.142.0",
-    "@sanity/core": "0.141.6",
+    "@sanity/core": "0.142.0",
     "@sanity/default-layout": "0.141.6",
     "@sanity/default-login": "0.141.5",
     "@sanity/desk-tool": "0.141.6",
