@@ -5354,10 +5354,10 @@ gatsby-page-utils@^0.0.5:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-breadcrumb@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-3.0.0.tgz#2888df12ef8ee3c88296395d4c905970105fa7d9"
-  integrity sha512-rAlryNOEmNmV91UUs+pixP2FMTtEMitdKf8/sPJ4R5rlzke622rwEukNx9cLX/TjzP2tVExFOGpUULGyexYVnw==
+gatsby-plugin-breadcrumb@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-3.2.0.tgz#fb40e122fd328f7b0ad69bc7065608d65c085db6"
+  integrity sha512-hGG9PqfODRNQYqT2gQuOt2CME+AKR0mQNHdGJVKhH2d41S59lk0BkBNbOMWuyZKyTDw66NRdfFxdv4B0sEu2vA==
   dependencies:
     "@babel/runtime" "^7.3.4"
     "@testing-library/jest-dom" "^4.0.0"
