@@ -870,10 +870,10 @@
     scroll "^2.0.0"
     string-hash "^1.1.3"
 
-"@sanity/core@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.142.0.tgz#a81d1dedfa95a319d85ffbf00c1fc446ec32cd2b"
-  integrity sha512-c6RA8gjytgP5iYp/bionBOP7mJ8ATcdxwXLQ+A1Qaxfu4FcBaHiz4ZHT0kK0MLkni7o8gNFcqeHRs9/7qk281A==
+"@sanity/core@0.142.1":
+  version "0.142.1"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.142.1.tgz#3c6974df83abcdab0fcb7abcecfbcef687a84830"
+  integrity sha512-uZ0Z4Hj2r8uBFU6A8ArHvxsMoO/bV25LFDLC/4uqvtlCS1ULlaf+uH8wpHRMYo26bHZhfAwEYBqVz3S3BmkBiA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.4"
     "@babel/preset-env" "^7.4.5"
