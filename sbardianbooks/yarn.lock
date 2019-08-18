@@ -979,13 +979,13 @@
     prop-types "^15.6.0"
     rxjs "^6.5.2"
 
-"@sanity/desk-tool@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.142.0.tgz#0613852e9101c148d2544d3c6fb0a2db506e7229"
-  integrity sha512-J0ApHivrfnzGa1M4GCyRRmrTfEYZX87LGRxPTAYQkC/KqVF8Ecoi1fW0+DXkU3yVz77uf2vajgyiqUYRvzNAQA==
+"@sanity/desk-tool@0.142.1":
+  version "0.142.1"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.142.1.tgz#c62d9e9d2afee7391ca9470106407441cc4b529d"
+  integrity sha512-40QA0oTk9wj9NeU0n0CHq64FqwEdj1DAW+eeU4BJeAc4S9V0BN+BbdxhJ7GE6lwEvZyE0CsUctQ2ULuRXVcsAA==
   dependencies:
     "@sanity/data-aspects" "0.142.0"
-    "@sanity/form-builder" "0.142.0"
+    "@sanity/form-builder" "0.142.1"
     "@sanity/generate-help-url" "0.142.0"
     "@sanity/mutator" "0.142.0"
     "@sanity/structure" "0.142.0"
@@ -1040,10 +1040,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.142.0.tgz#a18019b50289fa561b75e6738056c7a51cde5e07"
-  integrity sha512-2nLi1xeywTKefxDYFkjHc275/vQ+/N9mK4YNfmQX3q8O9cloc5xKRKm2zsVPEaHG4Z3LedT+RLf+vE2rNOM9kQ==
+"@sanity/form-builder@0.142.1":
+  version "0.142.1"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.142.1.tgz#a0ffe18c4ea9ab63cf8fa5064fc4435af9fbbb2a"
+  integrity sha512-vcyGS6OC7RKxRalK4e2zPDnC+6AdZ1gGJtpIH/alidB0zLk35so+JIS59/SLnPtjrfwQ/YFITLBboK/YzjITwA==
   dependencies:
     "@sanity/block-tools" "0.142.0"
     "@sanity/generate-help-url" "0.142.0"
