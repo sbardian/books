@@ -871,10 +871,10 @@
     scroll "^2.0.0"
     string-hash "^1.1.3"
 
-"@sanity/core@0.142.1":
-  version "0.142.1"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.142.1.tgz#3c6974df83abcdab0fcb7abcecfbcef687a84830"
-  integrity sha512-uZ0Z4Hj2r8uBFU6A8ArHvxsMoO/bV25LFDLC/4uqvtlCS1ULlaf+uH8wpHRMYo26bHZhfAwEYBqVz3S3BmkBiA==
+"@sanity/core@0.142.2":
+  version "0.142.2"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.142.2.tgz#eece5d1eb62f853fc603b165448c1b51b400578e"
+  integrity sha512-j58j/AmcfAaiLXcuNvQqw5xLvLb+GxVQizx2N6kT/f3o/3n3OLua7nRVArLZdEgS6+j15Lp7ESUGPAZYqbRyrQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.4"
     "@babel/preset-env" "^7.4.5"
@@ -888,7 +888,7 @@
     "@sanity/plugin-loader" "0.142.0"
     "@sanity/resolver" "0.142.0"
     "@sanity/schema" "0.142.0"
-    "@sanity/server" "0.142.0"
+    "@sanity/server" "0.142.2"
     "@sanity/util" "0.142.0"
     "@sanity/uuid" "0.142.0"
     batch-stream-operation "^1.0.2"
@@ -1203,10 +1203,10 @@
     lodash "^4.17.4"
     object-inspect "^1.3.0"
 
-"@sanity/server@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-0.142.0.tgz#91732f362d2629431e4a86f2bf2f624507ff8184"
-  integrity sha512-XM8uF+296mBOvLj1INngbxaj9JSAF3hu4A5iLELjgIOFTqiWIaBlJW8aaS6g9pM62s5ybJqlwILT9Gd8+I/znA==
+"@sanity/server@0.142.2":
+  version "0.142.2"
+  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-0.142.2.tgz#1577d98d15b43b935312832ec3d3b9f1f3ef5433"
+  integrity sha512-Pq3W9WDnoxuD+1FlJLzurx5dAutQ7+ccNTVwE+A+rTEoY5bg33iR2U0u1PPdXSjwOj2THd62VPH0MdZY5xeYjQ==
   dependencies:
     "@babel/core" "^7.4.5"
     "@babel/plugin-proposal-class-properties" "^7.4.4"
