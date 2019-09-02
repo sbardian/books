@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@emotion/core": "10.0.16",
-    "@emotion/styled": "10.0.15",
+    "@emotion/core": "10.0.17",
+    "@emotion/styled": "10.0.17",
     "gatsby": "2.15.2",
     "gatsby-image": "2.2.16",
     "gatsby-plugin-breadcrumb": "3.2.0",
