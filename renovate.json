@@ -1,5 +1,6 @@
 {
   "extends": ["config:base"],
+  "commitMessageTopic": "{{depName}}",
   "commitMessage": "Update {{depName}} to {{newVersion}}",
   "automergeType": "branch-push",
   "automerge": true,
