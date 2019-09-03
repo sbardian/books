@@ -21,7 +21,7 @@ const GatsbyImage = styled.img`
 
 export default () => (
   <Footer>
-    <a href="https://gatsby.com">
+    <a data-testid="footer-link-test" href="https://gatsbyjs.org">
       <GatsbyImage src={gatsby} alt="Gatsby" title="Built with Gatsby" />
     </a>
   </Footer>
