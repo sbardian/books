@@ -980,16 +980,16 @@
     prop-types "^15.6.0"
     rxjs "^6.5.2"
 
-"@sanity/desk-tool@0.142.2":
-  version "0.142.2"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.142.2.tgz#28450673208dcf5e7876a880df39b9aa7cb0ec51"
-  integrity sha512-p70phf2gCvFzckR0pUvJgZk94+5MGtY8z0nVYnP5S8Ci3dVEX2qYEl77XfKycZASbE+PF1Q7KIuivg+593Noyw==
+"@sanity/desk-tool@0.142.4":
+  version "0.142.4"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.142.4.tgz#23a8e98ea81229d3cdffa4f2662cb209dae86814"
+  integrity sha512-tOYGfxHXDJlfDaYqv3OsmAHAt3MKkxqVCxEWaQzW4V0+Ba7GhZss3/EWmSbXV3hCeTcDzoMN7OISbnVwek7CGw==
   dependencies:
     "@sanity/data-aspects" "0.142.0"
-    "@sanity/form-builder" "0.142.2"
+    "@sanity/form-builder" "0.142.4"
     "@sanity/generate-help-url" "0.142.0"
     "@sanity/mutator" "0.142.0"
-    "@sanity/structure" "0.142.0"
+    "@sanity/structure" "0.142.3"
     "@sanity/uuid" "0.142.0"
     "@sanity/validation" "0.142.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1041,10 +1041,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.142.2":
-  version "0.142.2"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.142.2.tgz#de90d465f64185bb2248ac34552acb7cf5a254c6"
-  integrity sha512-BHmQmwki3BsFNbzjn+R3dW4+BdYiXf9OutWv5DRXizaoTVxFIzUPqtmffIp/JiZW8mmCREPovboyPtauKyK0ng==
+"@sanity/form-builder@0.142.4":
+  version "0.142.4"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.142.4.tgz#102e41e9a2115dace00c9091c6dfc528c11f723b"
+  integrity sha512-UwGoygsHvhc0yEzCqGDooVNIpC1CMlbWfuLEZOJWWWNVbxFELV2CACXaBLiFZrryeKnTuqqKwpTniViaXozZNA==
   dependencies:
     "@sanity/block-tools" "0.142.0"
     "@sanity/generate-help-url" "0.142.0"
@@ -1247,10 +1247,10 @@
     lodash "^4.17.4"
     nano-pubsub "^1.0.2"
 
-"@sanity/structure@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-0.142.0.tgz#b5c572698749bea4ee510146d56013a3a8c3b0f2"
-  integrity sha512-PLrkAshLNqNExPZdPh8QOK+q6xhMYYL+EaoJLhdjhy+R8NN2qwygHVoN36UNuUpiYR658xrYLUg2PnCF7Xwlcw==
+"@sanity/structure@0.142.3":
+  version "0.142.3"
+  resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-0.142.3.tgz#8bbfc877f444e2c1a2b0d67a65295e4c959cdcd2"
+  integrity sha512-D47gE2n/hTF/ToutOislr+mHPp7RuQMl/+C7JtYvRbZXqoCBfWzQsqjFDpRDkuoV+uzd4OWb+8WUXZhnMi2eKA==
   dependencies:
     "@types/lodash" "^4.14.116"
     "@types/memoize-one" "^3.1.1"
