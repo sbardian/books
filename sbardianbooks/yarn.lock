@@ -837,13 +837,13 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@0.142.5":
-  version "0.142.5"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.142.5.tgz#7a953122e4118646410e33a16f4caf403b238154"
-  integrity sha512-vlktlWNSgxogu2etSHj4sTHiGc5geX5o6ZrHZlgikzRuVfZWGJ2tsZL6usMRnXXQrqH2ldEcQHXStJZ5cQsy4w==
+"@sanity/components@0.142.6":
+  version "0.142.6"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.142.6.tgz#ba8e61a5e074e7e02b1faa84b31807e4c329dc46"
+  integrity sha512-1nM2kPIG2iNhfGrKGTHUMcadBh4I34+hx1f5RzGeagu3tgkvBJ5YoPpFSCPuhMYbG5yp5TJ2sXBPT5QQmQYzxA==
   dependencies:
-    "@sanity/date-input" "0.142.0"
-    "@sanity/imagetool" "0.142.0"
+    "@sanity/date-input" "0.142.6"
+    "@sanity/imagetool" "0.142.6"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -867,8 +867,7 @@
     react-sortable-hoc "^0.6.3"
     react-split-pane "^0.1.84"
     react-tippy "^1.2.3"
-    rxjs "^6.1.0"
-    scroll "^2.0.0"
+    rxjs "^6.5.2"
     string-hash "^1.1.3"
 
 "@sanity/core@0.142.5":
@@ -948,13 +947,13 @@
     in-publish "^2.0.0"
     lodash "^4.17.4"
 
-"@sanity/date-input@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/date-input/-/date-input-0.142.0.tgz#36e9799aef449651a52f93663a1d8d202289fb1f"
-  integrity sha512-I53PqOag8qz5aeoiNG/ZgD7R9Hnn/dnjrQhCj/gOff0tzrPVN7nATHJ4II4NDpx33dq8nhpBL4MaeQjpdFoliQ==
+"@sanity/date-input@0.142.6":
+  version "0.142.6"
+  resolved "https://registry.yarnpkg.com/@sanity/date-input/-/date-input-0.142.6.tgz#44a96e744ad6df410624f9d1ef7a41f3b214fef8"
+  integrity sha512-I1fR1dRisGBeFshE4v6UkKCnycvzWYe+nQUfu3Acl9cqP2/OVL2QpRroFZ9Aa9s5mHq+wDvTQ0Yw+EB468snUQ==
   dependencies:
     "@sanity/generate-help-url" "0.142.0"
-    "@sanity/rich-date-input" "0.142.0"
+    "@sanity/rich-date-input" "0.142.6"
 
 "@sanity/default-layout@0.142.5":
   version "0.142.5"
@@ -1103,6 +1102,15 @@
     dom-event "1.0.0"
     lodash "^4.17.4"
 
+"@sanity/imagetool@0.142.6":
+  version "0.142.6"
+  resolved "https://registry.yarnpkg.com/@sanity/imagetool/-/imagetool-0.142.6.tgz#c0723657ae6a7d4892705ddefb231cedad304815"
+  integrity sha512-i1FGqnahMtpBdDVu310iPk1iCirz/qj63fBF+IZIqByNUunP5RX45ZTwn+5VX9xVPsnKmHVik2N+vQMSkr58Jw==
+  dependencies:
+    debug "^3.1.0"
+    dom-event "1.0.0"
+    lodash "^4.17.4"
+
 "@sanity/import@0.142.0":
   version "0.142.0"
   resolved "https://registry.yarnpkg.com/@sanity/import/-/import-0.142.0.tgz#5d20faa712c05600b703fb7a4ba058dc7a022ee7"
@@ -1187,10 +1195,10 @@
     path-exists "^3.0.0"
     promise-props-recursive "^1.0.0"
 
-"@sanity/rich-date-input@0.142.0":
-  version "0.142.0"
-  resolved "https://registry.yarnpkg.com/@sanity/rich-date-input/-/rich-date-input-0.142.0.tgz#b47e1263f1aa7c9577399517b3596575f24e1e56"
-  integrity sha512-leautpFGTZJQy/lHX5H4selogKq3I+2mRheUs1Rb7cnoVy16Np+ewtqXbnpAQ8CrbMd3sPfSCmFTcOr6sgSAeg==
+"@sanity/rich-date-input@0.142.6":
+  version "0.142.6"
+  resolved "https://registry.yarnpkg.com/@sanity/rich-date-input/-/rich-date-input-0.142.6.tgz#82bb4379ab27ecc1792bef7441fd1614b2c243fc"
+  integrity sha512-THO2zxHPJx02FDAYnWosBnnx3o+/fK/0MJImEFQT/M+YkWuPkGw+VueQ8M276eP8QGqN3tlZ31wucdEGrgwiVA==
   dependencies:
     "@sanity/generate-help-url" "0.142.0"
     lodash "^4.17.4"
@@ -3670,7 +3678,7 @@ glob@^7.0.0, glob@^7.1.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global@^4.2.1, global@^4.3.0, global@~4.3.0:
+global@^4.2.1, global@^4.3.0:
   version "4.3.2"
   resolved "https://registry.npmjs.org/global/-/global-4.3.2.tgz#e76989268a6c74c38908b1305b10fc0e394e9d0f"
   dependencies:
@@ -6311,12 +6319,6 @@ raf@^3.1.0:
   dependencies:
     performance-now "^2.1.0"
 
-rafl@~1.2.1:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/rafl/-/rafl-1.2.2.tgz#fe930f758211020d47e38815f5196a8be4150740"
-  dependencies:
-    global "~4.3.0"
-
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
   resolved "https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -6978,12 +6980,6 @@ schema-utils@^0.4.0, schema-utils@^0.4.5:
   dependencies:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
-
-scroll@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/scroll/-/scroll-2.0.3.tgz#0951b785544205fd17753bc3d294738ba16fc2ab"
-  dependencies:
-    rafl "~1.2.1"
 
 scroll@^3.0.1:
   version "3.0.1"
