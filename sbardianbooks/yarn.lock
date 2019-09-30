@@ -1025,10 +1025,10 @@
     "@sanity/generate-help-url" "0.142.0"
     "@sanity/rich-date-input" "0.142.6"
 
-"@sanity/default-layout@0.142.5":
-  version "0.142.5"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.142.5.tgz#56ecac9b1fdcf76f04cea060c69059578bebbc87"
-  integrity sha512-hsW+etf29SX1V6labA1+NH2iqiL2FCnsY7JAkwulX1py9DSGFuXpR7o+mKmkz94+LGtSjjI75rjjOdXvSP/tSg==
+"@sanity/default-layout@0.142.6":
+  version "0.142.6"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.142.6.tgz#317bf693573daec4f6a7418e2356426b54e5439f"
+  integrity sha512-uZW2Pfpq/a5NCBNZrqFuqh/AUnSMw+Ae9FTZ2jb45Sar8X4L9mBSdEeWfmmfMwkL7NECruTrgBe76pReC5gYoA==
   dependencies:
     "@sanity/generate-help-url" "0.142.0"
     is-hotkey "^0.1.4"
@@ -1037,7 +1037,7 @@
     react-ink "^6.1.0"
     react-props-stream "^1.0.0"
     react-tippy "^1.2.3"
-    rxjs "^6.1.0"
+    rxjs "^6.5.2"
 
 "@sanity/default-login@0.142.3":
   version "0.142.3"
