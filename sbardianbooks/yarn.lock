@@ -1025,10 +1025,10 @@
     "@sanity/generate-help-url" "0.142.0"
     "@sanity/rich-date-input" "0.142.6"
 
-"@sanity/default-layout@0.142.6":
-  version "0.142.6"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.142.6.tgz#317bf693573daec4f6a7418e2356426b54e5439f"
-  integrity sha512-uZW2Pfpq/a5NCBNZrqFuqh/AUnSMw+Ae9FTZ2jb45Sar8X4L9mBSdEeWfmmfMwkL7NECruTrgBe76pReC5gYoA==
+"@sanity/default-layout@0.142.7":
+  version "0.142.7"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.142.7.tgz#2513517cda4e9692e2836fb6a0df81873000bca5"
+  integrity sha512-cHkT5Oc8HVg8tSsPjep+JV0OB7RQHlGli7H31Qv/sKJC18i3urBkep0QuZbQg2IVtztEMn+1B6CGkFnaatvdtw==
   dependencies:
     "@sanity/generate-help-url" "0.142.0"
     is-hotkey "^0.1.4"
