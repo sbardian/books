@@ -2015,7 +2015,19 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@testing-library/dom@6.4.1", "@testing-library/dom@^6.3.0":
+"@testing-library/dom@6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.5.0.tgz#9419fec57a544917bd5e398d40826425be50ee0a"
+  integrity sha512-3lQx248dhJzvV2a76F1VaqehX+iquSVVW27caDaLoQZdUHEZjB370n7FO2WoYwOQQ7NB10AvfPhrARYnNgvf1g==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    "@sheerun/mutationobserver-shim" "^0.3.2"
+    "@types/testing-library__dom" "^6.0.0"
+    aria-query "3.0.0"
+    pretty-format "^24.8.0"
+    wait-for-expect "^1.3.0"
+
+"@testing-library/dom@^6.3.0":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.4.1.tgz#4efd38d896b9b2255025acf9567e2360e1f4814f"
   integrity sha512-bjPHLO5NzlTvA57Tfz8txHEUmnOed3NuvObB2ttoKfO6A/utr7TZt9bDHHcYymcZIG2IsQZLix/m4ZKkedDDwQ==
