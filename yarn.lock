@@ -2054,21 +2054,6 @@
     pretty-format "^24.0.0"
     redent "^3.0.0"
 
-"@testing-library/jest-dom@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-4.0.0.tgz#56eee8dd183fe14a682fda7aca6413ec4e5303d2"
-  integrity sha512-YQA/LnRRfqHV5YRauawOGgMDgq43XfyqCz3whmxIPyrfvTdjLCNyY/BseGaa48y54yb3oiRo/NZT0oXNMQdkTA==
-  dependencies:
-    "@babel/runtime" "^7.5.1"
-    chalk "^2.4.1"
-    css "^2.2.3"
-    css.escape "^1.5.1"
-    jest-diff "^24.0.0"
-    jest-matcher-utils "^24.0.0"
-    lodash "^4.17.11"
-    pretty-format "^24.0.0"
-    redent "^3.0.0"
-
 "@testing-library/react@9.3.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-9.3.0.tgz#1dabf46d1ea018a1c89acecc0e7b86859b34c0f8"
@@ -6627,7 +6612,7 @@ fs-extra@^4.0.2:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^8.0.0, fs-extra@^8.0.1:
+fs-extra@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
   integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
@@ -6772,16 +6757,13 @@ gatsby-page-utils@^0.0.24:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-breadcrumb@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-3.2.1.tgz#2f7918c5dc24031e4405ea666f3f9545b1ea4b30"
-  integrity sha512-8SHBkBcTH4DWus7bLlf//H5qSwJU1PbY+OlT8dBmu24BDJyAh+N/c84c+woCtsDTN2y8dDx/vl5UUKlE2IBi9Q==
+gatsby-plugin-breadcrumb@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-5.1.0.tgz#d528f380f1b04c9dba8487b149e85e293f2aaca0"
+  integrity sha512-NvBK3CKko7MUy1UlrZxW+BVKipWReV2aocg1SnR3lSgH80TlTlJceRy6kYX3fclhoUDGnKw5Bc8p+ZAda3ykzQ==
   dependencies:
     "@babel/runtime" "^7.3.4"
-    "@testing-library/jest-dom" "^4.0.0"
-    fs-extra "^8.0.0"
     prop-types "^15.7.2"
-    xml2js "^0.4.19"
 
 gatsby-plugin-emotion@4.1.9:
   version "4.1.9"
@@ -14759,7 +14741,7 @@ xml-parse-from-string@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml-parse-from-string/-/xml-parse-from-string-1.0.1.tgz#a9029e929d3dbcded169f3c6e28238d95a5d5a28"
 
-xml2js@^0.4.19, xml2js@^0.4.5:
+xml2js@^0.4.5:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
   dependencies:
