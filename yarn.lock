@@ -6772,7 +6772,7 @@ gatsby-page-utils@^0.0.24:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-breadcrumb@^6.0.0:
+gatsby-plugin-breadcrumb@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-6.0.0.tgz#83fb410cd7ae217fd6360a88108c9c28312b8224"
   integrity sha512-7anuzwVcO1APh0qzup3mNNXFKVlpEhjQsP4dM44TqabKck6AIvzBHyw/k+85nWlTxkAPRZJIJ3hKB36w5g6E7w==
