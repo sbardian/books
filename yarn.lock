@@ -2015,10 +2015,10 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@testing-library/dom@6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.5.1.tgz#823cbdce85795b1c523b8ccf418ce8aa3f5817d2"
-  integrity sha512-Dd1HkQqSmg/vc+kFrTxj+yF0QK+VweAlTMaAo5dADI0IQJZRkuFhjZ8nIKFfvqAmeE4BX/c/+ejhdg6csOCj8A==
+"@testing-library/dom@6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.6.0.tgz#74139051e6b6743b244b2590bbba7387f51805c7"
+  integrity sha512-x9Uyww+Ub5d6cSsBixECrPlyNy5wSKXxPQToKdaLYa8KvDBDKXlqBPGo7QoFFTrMocQmOEnY/tHxZLN77+tzAA==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@sheerun/mutationobserver-shim" "^0.3.2"
