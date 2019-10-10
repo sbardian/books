@@ -2062,10 +2062,10 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@testing-library/dom@6.7.0":
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.7.0.tgz#74f0738734166cc2899b8322d3d93e60c92b4105"
-  integrity sha512-Ypqz7DLrsXWiVDbuItwNztzMtZTRLtq4l1OEvw5o4ho05+0a19Zm9Rm65XuXMe9UB8DuY6+pIrqJVxCvxBAxlw==
+"@testing-library/dom@6.7.1":
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.7.1.tgz#90985ab2524f712be695872714997a8b66958223"
+  integrity sha512-whU3jdiv18l+v+6P8I8aAt1phaZHx6LwJtCsxoWTEp8OD8rEZs8V4SOnCpK70SXUcpZVE/NWPY/d/lNAffpmtA==
   dependencies:
     "@babel/runtime" "^7.6.2"
     "@sheerun/mutationobserver-shim" "^0.3.2"
