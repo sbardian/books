@@ -9,7 +9,9 @@ import Layout from "../components/layout"
 import mq from "../components/media-queries"
 
 const BookPage = ({
-  location,
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
   data: {
     allSanityBook: { edges },
     allSanitySiteImage,
@@ -19,11 +21,7 @@ const BookPage = ({
   const [amazonImage] = allSanitySiteImage.edges
 
   return (
-    <Layout
-      location="header"
-      pageLocation={location}
-      crumbLabel={book.node.title}
-    >
+    <Layout location="header" crumbs={crumbs} crumbLabel={book.node.title}>
       <div
         css={css`
           display: grid;
@@ -123,7 +121,16 @@ const BookPage = ({
 }
 
 BookPage.propTypes = {
-  location: PropTypes.shape().isRequired,
+  pageContext: PropTypes.shape({
+    breadcrumb: PropTypes.shape({
+      crumbs: PropTypes.arrayOf(
+        PropTypes.shape({
+          location: PropTypes.shape().isRequired,
+          pathname: PropTypes.string.isRequired,
+        })
+      ).isRequired,
+    }),
+  }).isRequired,
   data: PropTypes.shape({
     allSanityBook: PropTypes.shape({
       edges: PropTypes.arrayOf(

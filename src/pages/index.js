@@ -43,7 +43,12 @@ const BooksWrapper = styled.div`
   )}
 `
 
-const IndexPage = ({ location, data: { allSanityBook } }) => {
+const IndexPage = ({
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
+  data: { allSanityBook },
+}) => {
   const [books, setBooks] = React.useState(allSanityBook.edges)
   const allBooks = allSanityBook.edges
 
@@ -87,7 +92,7 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
   }
 
   return (
-    <Layout pageLocation={location} crumbLabel="Home">
+    <Layout crumbs={crumbs}>
       <SortButtonWrapper>
         <Button type="button" onClick={() => handleClearYearFilter()}>
           All
@@ -113,7 +118,16 @@ const IndexPage = ({ location, data: { allSanityBook } }) => {
 }
 
 IndexPage.propTypes = {
-  location: PropTypes.shape().isRequired,
+  pageContext: PropTypes.shape({
+    breadcrumb: PropTypes.shape({
+      crumbs: PropTypes.arrayOf(
+        PropTypes.shape({
+          location: PropTypes.shape().isRequired,
+          pathname: PropTypes.string.isRequired,
+        })
+      ).isRequired,
+    }),
+  }).isRequired,
   data: PropTypes.shape({
     allSanityBook: PropTypes.shape({
       edges: PropTypes.arrayOf(

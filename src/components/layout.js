@@ -52,7 +52,7 @@ const BreadcrumbWrapper = styled.div`
   )}
 `
 
-const Layout = ({ children, pageLocation, crumbLabel }) => {
+const Layout = ({ children, crumbs, crumbLabel }) => {
   const {
     site: {
       siteMetadata: { title },
@@ -66,6 +66,8 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
       }
     }
   `)
+
+  const disableLinks = ["/book"]
 
   return (
     <>
@@ -95,7 +97,11 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
           </Title>
         </PageTitleWrapper>
         <BreadcrumbWrapper>
-          <Breadcrumb location={pageLocation} crumbLabel={crumbLabel} />
+          <Breadcrumb
+            crumbs={crumbs}
+            crumbLabel={crumbLabel}
+            disableLinks={disableLinks}
+          />
           {children}
         </BreadcrumbWrapper>
         <Footer />
@@ -105,12 +111,17 @@ const Layout = ({ children, pageLocation, crumbLabel }) => {
 }
 
 Layout.defaultProps = {
-  crumbLabel: undefined,
+  crumbLabel: "",
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  pageLocation: PropTypes.shape().isRequired,
+  crumbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      location: PropTypes.shape(),
+      pathname: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   crumbLabel: PropTypes.string,
 }
 
