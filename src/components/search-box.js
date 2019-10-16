@@ -4,12 +4,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
-import { FaSearch } from "react-icons/fa"
 
 const SearchWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
@@ -25,11 +24,17 @@ const SearchInput = styled.input`
   min-width: 100px;
 `
 
+const InputLabel = styled.label`
+  font-size: 18pt;
+  align-self: end;
+  color: "#d3dbe8";
+`
+
 const SearchBox = ({ onSearch }) => {
   return (
     <SearchWrapper>
       <SearchInput id="books-search-input" type="text" onChange={onSearch} />
-      <FaSearch size="1.5em" />
+      <InputLabel htmlFor="books-search-input">Search</InputLabel>
     </SearchWrapper>
   )
 }
