@@ -10,16 +10,6 @@ import SearchBox from "../components/search-box"
 import YearFilterButton from "../components/year-filter-button"
 import mq from "../components/media-queries"
 
-const Button = styled.button`
-  height: 30px;
-  background: #4b4545b3;
-  color: #c2c2c2;
-  text-align: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-`
-
 const SortButtonWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -58,6 +48,8 @@ const IndexPage = ({
     (year, index) => years.indexOf(year) >= index
   )
 
+  yearFilters.unshift("All")
+
   const handleClearSearchInput = () => {
     /* eslint-disable-next-line */
     const searchInput = document.querySelector("#books-search-input")
@@ -94,14 +86,13 @@ const IndexPage = ({
   return (
     <Layout crumbs={crumbs}>
       <SortButtonWrapper>
-        <Button type="button" onClick={() => handleClearYearFilter()}>
-          All
-        </Button>
         {yearFilters.map(year => {
           return (
             <YearFilterButton
               key={Math.random()}
-              onFilterByYear={handleFilterByYear}
+              onFilterByYear={
+                year === "All" ? handleClearYearFilter : handleFilterByYear
+              }
               year={year}
             />
           )
