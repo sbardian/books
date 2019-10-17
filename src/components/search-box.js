@@ -11,7 +11,7 @@ const SearchWrapper = styled.div`
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
 `
 
 const SearchInput = styled.input`

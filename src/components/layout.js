@@ -20,20 +20,18 @@ const PageContainer = styled.div`
 `
 
 const PageTitleWrapper = styled.div`
+  background: #1f1f20;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
-  background: #1f1f20;
-  align-items: center;
-  padding: 20px 0 20px 0;
-`
-
-const Title = styled.h1`
-  margin: 0.67em 2em;
+  align-content: start;
+  padding: 0.67em 2em;
   ${mq.sm(css`
-    margin: 0 0.67em 0 0.67em;
+    padding: 0 0.67em 0 0.67em;
   `)};
 `
+
+const Title = styled.h1``
 
 const TitleLink = styled.a`
   text-decoration: none;
