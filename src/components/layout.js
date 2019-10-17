@@ -15,7 +15,7 @@ const PageContainer = styled.div`
   display: grid;
   grid-gap: 20px;
   min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto auto;
   background: #636080;
 `
 
@@ -29,9 +29,9 @@ const PageTitleWrapper = styled.div`
 `
 
 const Title = styled.h1`
-  margin: 0.67em 200px;
+  margin: 0.67em 2em;
   ${mq.sm(css`
-    margin: 0 20px 0 20px;
+    margin: 0 0.67em 0 0.67em;
   `)};
 `
 
@@ -44,12 +44,17 @@ const BreadcrumbWrapper = styled.div`
   grid-gap: 20px;
   grid-template-columns: 1fr;
   align-content: start;
-  margin: 0 200px 0 200px;
-  ${mq.xl(
-    css`
-      margin: 0 20px 0 20px;
-    `
-  )}
+  margin: 0.67em 2em;
+  ${mq.sm(css`
+    margin: 0 0.67em 0 0.67em;
+  `)};
+`
+
+const MainWrapper = styled.div`
+  margin: 0.67em 2em;
+  ${mq.sm(css`
+    margin: 0 0.67em 0 0.67em;
+  `)};
 `
 
 const Layout = ({ children, crumbs, crumbLabel }) => {
@@ -102,8 +107,8 @@ const Layout = ({ children, crumbs, crumbLabel }) => {
             crumbLabel={crumbLabel}
             disableLinks={disableLinks}
           />
-          {children}
         </BreadcrumbWrapper>
+        <MainWrapper>{children}</MainWrapper>
         <Footer />
       </PageContainer>
     </>
