@@ -58,13 +58,16 @@ const MainWrapper = styled.div`
 const Layout = ({ children, crumbs, crumbLabel }) => {
   const {
     site: {
-      siteMetadata: { title },
+      siteMetadata: { title, description, author, keywords },
     },
   } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
+          description
+          author
+          keywords
         }
       }
     }
@@ -86,9 +89,16 @@ const Layout = ({ children, crumbs, crumbLabel }) => {
       />
       <Helmet
         title={title}
+        defer={false}
         meta={[
           { name: "Books", content: "Books I have read" },
           { name: "good books", content: "good books" },
+          { name: "description", content: description },
+          { name: "author", content: author },
+          { name: "keywords", content: keywords },
+          { property: "og:type", content: "website" },
+          { property: "og:title", content: title },
+          { property: "og:description", content: description },
         ]}
       >
         <html lang="en" />

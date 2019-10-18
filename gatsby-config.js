@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Books",
+    description: "Books I have read",
+    author: "Brian Andrews",
+    keywords: `gatsby, brian andrews, books`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
