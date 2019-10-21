@@ -7,13 +7,13 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Book from "../components/book"
 import SearchBox from "../components/search-box"
-import YearFilterButton from "../components/year-filter-button"
+import FilterButton from "../components/filter-button"
 import mq from "../components/media-queries"
 
 const SortButtonWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 335px));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
   justify-content: center;
 `
 
@@ -43,12 +43,17 @@ const IndexPage = ({
   const allBooks = allSanityBook.edges
 
   const years = allBooks.map(book => book.node.yearRead)
+  const tagSets = allBooks.map(book => book.node.tagsSet)
 
-  const yearFilters = years.filter(
-    (year, index) => years.indexOf(year) >= index
+  const tags = []
+
+  tagSets.map(currentTag =>
+    currentTag.forEach(tag => {
+      tags.push(tag)
+    })
   )
 
-  yearFilters.unshift("All")
+  const filters = [...new Set(["All", ...years, ...tags])]
 
   const handleClearSearchInput = () => {
     /* eslint-disable-next-line */
@@ -56,15 +61,21 @@ const IndexPage = ({
     searchInput.value = ""
   }
 
-  const handleClearYearFilter = () => {
+  const handleClearFilter = () => {
     handleClearSearchInput()
     setBooks(allBooks)
   }
 
-  const handleFilterByYear = year => {
+  const handleFilter = filter => {
     handleClearSearchInput()
     setBooks(allBooks)
-    setBooks(allBooks.filter(book => book.node.yearRead === year))
+    setBooks(
+      allBooks.filter(
+        book =>
+          book.node.yearRead === filter ||
+          book.node.tagsSet.some(tag => tag === filter)
+      )
+    )
   }
 
   const handleSearch = ({ target: search }) => {
@@ -86,14 +97,12 @@ const IndexPage = ({
   return (
     <Layout crumbs={crumbs}>
       <SortButtonWrapper>
-        {yearFilters.map(year => {
+        {filters.map(filter => {
           return (
-            <YearFilterButton
+            <FilterButton
               key={Math.random()}
-              onFilterByYear={
-                year === "All" ? handleClearYearFilter : handleFilterByYear
-              }
-              year={year}
+              onFilter={filter === "All" ? handleClearFilter : handleFilter}
+              filter={filter}
             />
           )
         })}
@@ -168,6 +177,7 @@ export const bookQuery = graphql`
           amazonUrl
           imageUrl
           yearRead
+          tagsSet
           image {
             asset {
               fluid {

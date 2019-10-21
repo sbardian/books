@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
 import Layout from "../components/layout"
+import Tags from "../components/tags"
 import mq from "../components/media-queries"
 
 const BookPage = ({
@@ -26,7 +27,7 @@ const BookPage = ({
         css={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-rows: auto 1fr;
+          grid-template-rows: auto 1fr 50px;
           background: #dce0e6;
           box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
         `}
@@ -115,6 +116,7 @@ const BookPage = ({
             <h3>{book.node.description}</h3>
           </div>
         </div>
+        <Tags tags={book.node.tagsSet} />
       </div>
     </Layout>
   )
@@ -212,6 +214,7 @@ export const bookQuery = graphql`
           amazonUrl
           imageUrl
           yearRead
+          tagsSet
           image {
             asset {
               fluid {

@@ -27,15 +27,15 @@ const ButtonText = styled.span`
   align-items: center;
 `
 
-const YearFilterButton = ({ onFilterByYear, year }) => (
-  <Button type="button" onClick={() => onFilterByYear(year)}>
-    <ButtonText>{year}</ButtonText>
+const FilterButton = ({ onFilter, filter }) => (
+  <Button type="button" onClick={() => onFilter(filter)}>
+    <ButtonText>{filter.charAt(0).toUpperCase() + filter.slice(1)}</ButtonText>
   </Button>
 )
 
-YearFilterButton.propTypes = {
-  onFilterByYear: PropTypes.func.isRequired,
-  year: PropTypes.string.isRequired,
+FilterButton.propTypes = {
+  onFilter: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 }
 
-export default YearFilterButton
+export default FilterButton

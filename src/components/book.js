@@ -32,6 +32,7 @@ Book.propTypes = {
   book: Proptypes.shape({
     node: Proptypes.shape({
       id: Proptypes.string.isRequired,
+      tagsSet: Proptypes.arrayOf(Proptypes.string),
     }),
   }).isRequired,
 }
