@@ -62,6 +62,26 @@ export default createSchema({
           name: "image",
           type: "image",
         },
+        {
+          title: "Tags",
+          name: "tagsSet",
+          type: "array",
+          of: [{ type: "string" }],
+          options: {
+            list: [
+              { title: "Fantasy", value: "Fantasy" },
+              { title: "Development", value: "Development" },
+              { title: "Science Fiction", value: "Science Fiction" },
+              { title: "History", value: "History" },
+              { title: "Politics", value: "Politics" },
+              { title: "Biography", value: "Biography" },
+              { title: "Self Help", value: "Self Help" },
+              { title: "Fiction", value: "Fiction" },
+              { title: "Classics", value: "Classics" },
+              { title: "Literature", value: "Literature" },
+            ],
+          },
+        },
       ],
     },
     {
