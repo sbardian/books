@@ -671,9 +671,9 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.142.9":
-  version "0.142.9"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.142.9.tgz#60a06fa9350347f6d8004c66e8e09a34916c9ff0"
+"@sanity/base@0.142.10":
+  version "0.142.10"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.142.10.tgz#87a278c34ba7527e8df53af55bb4af8e5895a40b"
   dependencies:
     "@sanity/client" "0.142.6"
     "@sanity/document-store" "0.142.6"
