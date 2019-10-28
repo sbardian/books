@@ -19,7 +19,7 @@
     "@sanity/core": "0.144.0",
     "@sanity/default-layout": "0.144.1",
     "@sanity/default-login": "0.144.0",
-    "@sanity/desk-tool": "0.144.0",
+    "@sanity/desk-tool": "0.144.1",
     "prop-types": "15.7.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"

@@ -877,17 +877,17 @@
     prop-types "^15.6.0"
     rxjs "^6.5.2"
 
-"@sanity/desk-tool@0.144.0":
-  version "0.144.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.144.0.tgz#0e210056301cf44494f10ee42feac805bbdf939a"
-  integrity sha512-kxhnx5Z5YJOIBJWRqQlljeK2qDc83Pqt6MY7L2QZ/CM7uBLE926/6+9Rko2pcQaUuZCaq7gMtdYG5oZJR2ketw==
+"@sanity/desk-tool@0.144.1":
+  version "0.144.1"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.144.1.tgz#03d897c631faa1f44af40d6f0771eba006510c37"
+  integrity sha512-Qc7DwwfxDk0nHsV7w2+06YUtQkiJQcYfaCe4rm0LGwq0RiERhTxQtxAz1Xin6BNc0LiLqDrsUFCZFIlrk5X41Q==
   dependencies:
     "@sanity/data-aspects" "0.144.0"
-    "@sanity/form-builder" "0.144.0"
+    "@sanity/form-builder" "0.144.1"
     "@sanity/generate-help-url" "0.144.0"
     "@sanity/mutator" "0.144.0"
     "@sanity/schema" "0.144.0"
-    "@sanity/structure" "0.144.0"
+    "@sanity/structure" "0.144.1"
     "@sanity/uuid" "0.144.0"
     "@sanity/validation" "0.144.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -939,10 +939,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.144.0":
-  version "0.144.0"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.144.0.tgz#efec58714aa38295e95d9770125caff4885ade2b"
-  integrity sha512-L2KtcXPfgUhGAljkLW1Ta+saeLlnHTdYNxoHuvszrsH3x3n4BEqvUtOWIqN68Skde24H/PAcr0hAShpsGsJXpw==
+"@sanity/form-builder@0.144.1":
+  version "0.144.1"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.144.1.tgz#1a3a0e22226c6c0ee40da0e7ccce8d5fef03a995"
+  integrity sha512-k+cUTMw20vju0aTFqmAtPL3rAlq5cXaFpF0FL0xEL9Yr7CfzK7tuuyJGIu7WWdPLqsB7Om+/Q3G38rafFK8dPw==
   dependencies:
     "@sanity/block-tools" "0.144.0"
     "@sanity/generate-help-url" "0.144.0"
@@ -1158,18 +1158,6 @@
   dependencies:
     lodash "^4.17.4"
     nano-pubsub "^1.0.2"
-
-"@sanity/structure@0.144.0":
-  version "0.144.0"
-  resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-0.144.0.tgz#6df21ddccb5911b06529d8c98012d020cdd54750"
-  integrity sha512-d10Yjy5Q1ubsP6oTO8H+12OTZbtHfaleqsNQmJqVUk45pmeE80jLzDP5TkqWD4GdhtSO+ITgJvXY9xjvoEpE6Q==
-  dependencies:
-    "@sanity/initial-value-templates" "0.144.0"
-    "@types/lodash" "^4.14.116"
-    "@types/memoize-one" "^3.1.1"
-    "@types/node" "^8.0.0"
-    lodash "^4.17.4"
-    memoize-one "^3.1.1"
 
 "@sanity/structure@0.144.1":
   version "0.144.1"
