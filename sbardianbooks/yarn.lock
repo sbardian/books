@@ -671,10 +671,10 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.144.0":
-  version "0.144.0"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.144.0.tgz#0d32fe16f303e8dbfc8d3ccd647fb600165f6ee3"
-  integrity sha512-Dqx1fwKaa3HTmf96DCCk0vAdiD3WKe1YTvBsJq8MkTbLMC++dd7G+baxwMgDKxz6v+VozMd/nhjdop4Sqrrp5w==
+"@sanity/base@0.144.1":
+  version "0.144.1"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.144.1.tgz#086feb2f1e8c5440bf9d24e09c3a49fc6913601f"
+  integrity sha512-l2WvIK6fegUnzyWbaa0m2AW9fy9sfWKOlAtCrdnB/+CGPkAPmOcg/AqqHgNPtYtwo9hdo9g8v6STtJK3H1JF9w==
   dependencies:
     "@sanity/client" "0.144.0"
     "@sanity/document-store" "0.144.0"
@@ -685,7 +685,7 @@
     "@sanity/preview" "0.144.0"
     "@sanity/schema" "0.144.0"
     "@sanity/state-router" "0.144.0"
-    "@sanity/structure" "0.144.0"
+    "@sanity/structure" "0.144.1"
     "@sanity/transaction-collator" "0.144.0"
     "@sanity/util" "0.144.0"
     "@sanity/validation" "0.144.0"
@@ -1163,6 +1163,18 @@
   version "0.144.0"
   resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-0.144.0.tgz#6df21ddccb5911b06529d8c98012d020cdd54750"
   integrity sha512-d10Yjy5Q1ubsP6oTO8H+12OTZbtHfaleqsNQmJqVUk45pmeE80jLzDP5TkqWD4GdhtSO+ITgJvXY9xjvoEpE6Q==
+  dependencies:
+    "@sanity/initial-value-templates" "0.144.0"
+    "@types/lodash" "^4.14.116"
+    "@types/memoize-one" "^3.1.1"
+    "@types/node" "^8.0.0"
+    lodash "^4.17.4"
+    memoize-one "^3.1.1"
+
+"@sanity/structure@0.144.1":
+  version "0.144.1"
+  resolved "https://registry.yarnpkg.com/@sanity/structure/-/structure-0.144.1.tgz#abd000c4cbeae99a3618a40be579bd6efe9901cd"
+  integrity sha512-B5tTM9eO/3FvMPTAie++Slt8ntKu1CGqhhRXmbulQZpzuJVrq7BuplAqTqkwxNWQaUTvQpUNkHaMu+7X95TSpA==
   dependencies:
     "@sanity/initial-value-templates" "0.144.0"
     "@types/lodash" "^4.14.116"
