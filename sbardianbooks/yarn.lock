@@ -736,10 +736,10 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@0.144.0":
-  version "0.144.0"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.144.0.tgz#7afa0abe5092b035ed30b3e4fc22b1ec4943bbfc"
-  integrity sha512-H2Qv9nkRzDN/U71rXKnnESn/2fRY6VCh+CMBvDf50oXNg8uRtrw03JzWrYJLsQ2oScbKREDl6a24ebDJ5NYNlg==
+"@sanity/components@0.144.1":
+  version "0.144.1"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-0.144.1.tgz#0173f527fe745ae4aba346f282c8ab658bafc820"
+  integrity sha512-oOlHGrkKLLEwM2Z2suTOkURns5mHh7J8Oxxae+rY4oUvQQnWDv9PxKifTxJUM2V2hXk9epV7h+HpCD4CNxtlaw==
   dependencies:
     "@sanity/date-input" "0.144.0"
     "@sanity/imagetool" "0.144.0"
