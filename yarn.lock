@@ -6839,10 +6839,10 @@ gatsby-page-utils@^0.0.28:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-breadcrumb@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-6.1.0.tgz#208d0087ad570810ac2dae5f7c2946b3c757858d"
-  integrity sha512-xw+4JRjfK8eCR+JTrxB9TmObDy02m2gwpJjr1EWCN8WSRmXeo92duE018pJL+nhLGuBZWr7SUwJqcoL+JytkpQ==
+gatsby-plugin-breadcrumb@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-6.2.0.tgz#661017cc11965333cb65c3e5eac6d7688141b45e"
+  integrity sha512-FdgjLXGaBxN2qzs1uzIMHAi/NfqdlcHI79tJd/0gb3D4nsJYtrmJXoauN1bkxu2a/C6G12YBZI3YoEx9MoYZYQ==
   dependencies:
     "@babel/runtime" "^7.3.4"
     prop-types "^15.7.2"
