@@ -877,10 +877,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.2"
 
-"@sanity/desk-tool@0.144.2":
-  version "0.144.2"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.144.2.tgz#f394db765b56d64139a342b7d953fb0f57e92b0b"
-  integrity sha512-jVlyuHkGsYr/srwPd+CET4Fy/11IBmgtzDo8gX8ln3FBNRVAEe7rf9ORnT6IQ/zYf5++hVG94orK18sZi5cz3g==
+"@sanity/desk-tool@0.144.3":
+  version "0.144.3"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.144.3.tgz#dd6262589b2d19dffbd4dc13a27d50d3937ba638"
+  integrity sha512-7eLTMw+BIS9WS26re5VRqZG0qO0Hjh5lkhhWFEPVrstzFxHLOvT6PjiSzCwLAWS8qE2HT0L2/dvo7THeOUbogQ==
   dependencies:
     "@sanity/data-aspects" "0.144.0"
     "@sanity/form-builder" "0.144.2"
