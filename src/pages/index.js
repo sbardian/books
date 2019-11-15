@@ -33,27 +33,25 @@ const BooksWrapper = styled.div`
   )}
 `
 
+const FilterHeading = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
 const IndexPage = ({
   pageContext: {
     breadcrumb: { crumbs },
   },
   data: { allSanityBook },
+  location,
 }) => {
   const [books, setBooks] = React.useState(allSanityBook.edges)
+  const [filterHeading, setFilterHeading] = React.useState("All")
   const allBooks = allSanityBook.edges
 
   const years = allBooks.map(book => book.node.yearRead)
-  const tagSets = allBooks.map(book => book.node.tagsSet)
 
-  const tags = []
-
-  tagSets.map(currentTag =>
-    currentTag.forEach(tag => {
-      tags.push(tag)
-    })
-  )
-
-  const filters = [...new Set(["All", ...years, ...tags])]
+  const filters = [...new Set(["All", ...years])]
 
   const handleClearSearchInput = () => {
     /* eslint-disable-next-line */
@@ -64,6 +62,7 @@ const IndexPage = ({
   const handleClearFilter = () => {
     handleClearSearchInput()
     setBooks(allBooks)
+    setFilterHeading("All")
   }
 
   const handleFilter = filter => {
@@ -76,6 +75,7 @@ const IndexPage = ({
           book.node.tagsSet.some(tag => tag === filter)
       )
     )
+    setFilterHeading(filter)
   }
 
   const handleSearch = ({ target: search }) => {
@@ -94,6 +94,13 @@ const IndexPage = ({
     }
   }
 
+  React.useEffect(() => {
+    if (location && location.state && location.state.filterState) {
+      handleFilter(location.state.filterState)
+      setFilterHeading(location.state.filterState)
+    }
+  }, [location])
+
   return (
     <Layout crumbs={crumbs}>
       <SortButtonWrapper>
@@ -108,6 +115,7 @@ const IndexPage = ({
         })}
       </SortButtonWrapper>
       <SearchBox onSearch={handleSearch} />
+      <FilterHeading>{filterHeading && <h1>{filterHeading}</h1>}</FilterHeading>
       <BooksWrapper>
         {books.map(book => (
           <Book key={book.node.id} book={book} />
@@ -117,13 +125,22 @@ const IndexPage = ({
   )
 }
 
+IndexPage.defaultProps = {
+  location: null,
+}
+
 IndexPage.propTypes = {
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      filterState: PropTypes.string,
+    }),
+  }),
   pageContext: PropTypes.shape({
     breadcrumb: PropTypes.shape({
       crumbs: PropTypes.arrayOf(
         PropTypes.shape({
-          location: PropTypes.shape().isRequired,
-          pathname: PropTypes.string.isRequired,
+          location: PropTypes.shape(),
+          pathname: PropTypes.string,
         })
       ).isRequired,
     }),

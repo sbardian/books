@@ -27,7 +27,7 @@ const BookPage = ({
         css={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-rows: auto 1fr 50px;
+          grid-template-rows: auto 1fr auto;
           background: #dce0e6;
           box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
         `}
