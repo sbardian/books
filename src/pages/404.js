@@ -1,11 +1,16 @@
 /** @jsx jsx */
 // eslint-disable-next-line
 import React from "react"
+import PropTypes from "prop-types"
 import { jsx, css } from "@emotion/core"
 import Layout from "../components/layout"
 
-const NotFoundPage = () => (
-  <Layout>
+const NotFoundPage = ({
+  pageContext: {
+    breadcrumb: { crumbs },
+  },
+}) => (
+  <Layout crumbs={crumbs}>
     <div
       css={css`
         text-align: "center";
@@ -16,5 +21,18 @@ const NotFoundPage = () => (
     </div>
   </Layout>
 )
+
+NotFoundPage.propTypes = {
+  pageContext: PropTypes.shape({
+    breadcrumb: PropTypes.shape({
+      crumbs: PropTypes.arrayOf(
+        PropTypes.shape({
+          location: PropTypes.shape(),
+          pathname: PropTypes.string,
+        })
+      ).isRequired,
+    }),
+  }).isRequired,
+}
 
 export default NotFoundPage

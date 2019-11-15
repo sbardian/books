@@ -23,6 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
+        exclude: [`/dev-404-page`, `/offline-plugin-app-shell-fallback`],
       },
     },
     `gatsby-plugin-emotion`,
