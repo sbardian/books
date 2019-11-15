@@ -23,14 +23,6 @@ module.exports = {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
-        // defaultCrumb: {
-        //   location: {
-        //     state: { crumbClicked: false },
-        //     pathname: "/",
-        //   },
-        //   crumbLabel: "Home",
-        //   crumbSeparator: " / ",
-        // },
       },
     },
     `gatsby-plugin-emotion`,
