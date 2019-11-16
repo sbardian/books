@@ -10,6 +10,9 @@ import SearchBox from "../components/search-box"
 import FilterButton from "../components/filter-button"
 import mq from "../components/media-queries"
 
+const ALL = "All"
+const SEARCH = "Search"
+
 const SortButtonWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -46,12 +49,12 @@ const IndexPage = ({
   location,
 }) => {
   const [books, setBooks] = React.useState(allSanityBook.edges)
-  const [filterHeading, setFilterHeading] = React.useState("All")
+  const [filterHeading, setFilterHeading] = React.useState(ALL)
   const allBooks = allSanityBook.edges
 
   const years = allBooks.map(book => book.node.yearRead)
 
-  const filters = [...new Set(["All", ...years])]
+  const filters = [...new Set([ALL, ...years])]
 
   const handleClearSearchInput = () => {
     /* eslint-disable-next-line */
@@ -62,7 +65,7 @@ const IndexPage = ({
   const handleClearFilter = () => {
     handleClearSearchInput()
     setBooks(allBooks)
-    setFilterHeading("All")
+    setFilterHeading(ALL)
   }
 
   const handleFilter = filter => {
@@ -79,7 +82,9 @@ const IndexPage = ({
   }
 
   const handleSearch = ({ target: search }) => {
+    setFilterHeading(SEARCH)
     if (!search.value || search.value === "") {
+      setFilterHeading(ALL)
       setBooks(allBooks)
     } else {
       setBooks(
