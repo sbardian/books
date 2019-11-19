@@ -48,6 +48,7 @@ const FilterHeading = styled.h1`
 const FilterCount = styled.span`
   align-self: center;
   justify-self: center;
+  font-size: 1.4rem;
 `
 
 const IndexPage = ({
