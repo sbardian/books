@@ -16,7 +16,7 @@
     "@emotion/styled": "10.0.23",
     "gatsby": "2.17.17",
     "gatsby-image": "2.2.33",
-    "gatsby-plugin-breadcrumb": "6.2.1",
+    "gatsby-plugin-breadcrumb": "6.2.2",
     "gatsby-plugin-emotion": "4.1.15",
     "gatsby-plugin-manifest": "2.2.29",
     "gatsby-plugin-offline": "3.0.22",
