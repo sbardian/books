@@ -36,9 +36,18 @@ const BooksWrapper = styled.div`
   )}
 `
 
-const FilterHeading = styled.div`
-  display: flex;
-  justify-content: center;
+const FilterHeadingWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+`
+
+const FilterHeading = styled.h1`
+  justify-self: center;
+`
+
+const FilterCount = styled.span`
+  align-self: center;
+  justify-self: center;
 `
 
 const IndexPage = ({
@@ -120,7 +129,12 @@ const IndexPage = ({
         })}
       </SortButtonWrapper>
       <SearchBox onSearch={handleSearch} />
-      <FilterHeading>{filterHeading && <h1>{filterHeading}</h1>}</FilterHeading>
+      {filterHeading && (
+        <FilterHeadingWrapper>
+          <FilterHeading>{filterHeading}</FilterHeading>
+          <FilterCount>{books.length}</FilterCount>
+        </FilterHeadingWrapper>
+      )}
       <BooksWrapper>
         {books.map(book => (
           <Book key={book.node.id} book={book} />
