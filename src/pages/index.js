@@ -102,7 +102,12 @@ const IndexPage = ({
             book.node.title
               .toLowerCase()
               .includes(search.value.toLowerCase()) ||
-            book.node.author.toLowerCase().includes(search.value.toLowerCase())
+            book.node.author
+              .toLowerCase()
+              .includes(search.value.toLowerCase()) ||
+            book.node.tagsSet.some(tag =>
+              tag.toLowerCase().includes(search.value.toLowerCase())
+            )
         )
       )
     }
