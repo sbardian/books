@@ -850,12 +850,12 @@
     "@sanity/generate-help-url" "0.146.0"
     "@sanity/rich-date-input" "0.146.0"
 
-"@sanity/default-layout@0.145.1":
-  version "0.145.1"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.145.1.tgz#3025a3830c886a5fb02195025cb82a5acd9e467a"
-  integrity sha512-VRS8qacgpxv2AMz8HX22Ezq1OcJ90D7jbFVTdIUS4Wq59ZG8cijaR/Mc1rf+gr59i+e2+wk69PpKcx88VdkP4w==
+"@sanity/default-layout@0.146.0":
+  version "0.146.0"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.146.0.tgz#f50e3c3c61aae7671f34b4d32ae75f889535353b"
+  integrity sha512-3xzAizsx6FUjWwM4TDMP0xAiKig1o7sh3wD1fpncnnW+ehMJQ+qLEcY7nPL4vEfKKTZizF0+sWgug3YDHegC6A==
   dependencies:
-    "@sanity/generate-help-url" "0.145.0"
+    "@sanity/generate-help-url" "0.146.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.4"
     react-click-outside "^3.0.0"
