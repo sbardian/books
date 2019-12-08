@@ -127,7 +127,7 @@ BookPage.propTypes = {
     breadcrumb: PropTypes.shape({
       crumbs: PropTypes.arrayOf(
         PropTypes.shape({
-          location: PropTypes.shape().isRequired,
+          location: PropTypes.shape(),
           pathname: PropTypes.string.isRequired,
         })
       ).isRequired,
@@ -164,23 +164,25 @@ BookPage.propTypes = {
       ),
     }),
     allSanitySiteImage: PropTypes.shape({
-      edges: PropTypes.shape({
-        node: PropTypes.shape({
-          image: PropTypes.shape({
-            asset: PropTypes.shape({
-              fluid: PropTypes.shape({
-                base64: PropTypes.string,
-                aspectRatio: PropTypes.number,
-                src: PropTypes.string,
-                srcSet: PropTypes.string,
-                srcWebp: PropTypes.string,
-                srcSetWebp: PropTypes.string,
-                sizes: PropTypes.string,
+      edges: PropTypes.arrayOf(
+        PropTypes.shape({
+          node: PropTypes.shape({
+            image: PropTypes.shape({
+              asset: PropTypes.shape({
+                fluid: PropTypes.shape({
+                  base64: PropTypes.string,
+                  aspectRatio: PropTypes.number,
+                  src: PropTypes.string,
+                  srcSet: PropTypes.string,
+                  srcWebp: PropTypes.string,
+                  srcSetWebp: PropTypes.string,
+                  sizes: PropTypes.string,
+                }),
               }),
             }),
           }),
-        }),
-      }),
+        })
+      ),
     }),
   }).isRequired,
 }
