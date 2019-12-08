@@ -33,7 +33,12 @@ const InputLabel = styled.label`
 const SearchBox = ({ onSearch }) => {
   return (
     <SearchWrapper>
-      <SearchInput id="books-search-input" type="text" onChange={onSearch} />
+      <SearchInput
+        id="books-search-input"
+        data-testid="books-search-input-testid"
+        type="text"
+        onChange={onSearch}
+      />
       <InputLabel htmlFor="books-search-input">Search</InputLabel>
     </SearchWrapper>
   )
