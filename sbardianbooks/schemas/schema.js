@@ -1,4 +1,5 @@
 /* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 
 // First, we must import the schema creator
 import createSchema from "part:@sanity/base/schema-creator"
