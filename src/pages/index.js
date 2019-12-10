@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
@@ -38,7 +38,8 @@ const BooksWrapper = styled.div`
 
 const FilterHeadingWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto minmax(40px, 75px);
+  justify-content: center;
 `
 
 const FilterHeading = styled.h1`
@@ -137,8 +138,10 @@ const IndexPage = ({
       <SearchBox onSearch={handleSearch} />
       {filterHeading && (
         <FilterHeadingWrapper>
-          <FilterHeading>{filterHeading}</FilterHeading>
-          <FilterCount>{books.length}</FilterCount>
+          <FilterHeading>
+            <Link to="/tags">{filterHeading}</Link>
+          </FilterHeading>
+          <FilterCount>({books.length})</FilterCount>
         </FilterHeadingWrapper>
       )}
       <BooksWrapper>
