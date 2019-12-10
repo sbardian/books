@@ -33,7 +33,9 @@ const PageTitleWrapper = styled.div`
   `)};
 `
 
-const Title = styled.h1``
+const Title = styled.h1`
+  margin: 0.67em auto;
+`
 
 const TitleLink = styled.a`
   text-decoration: none;
@@ -44,9 +46,9 @@ const BreadcrumbWrapper = styled.div`
   grid-gap: 20px;
   grid-template-columns: 1fr;
   align-content: start;
-  margin: 0.67em 2em;
+  margin: 0.67em auto;
   ${mq.sm(css`
-    margin: 0 0.67em 0 0.67em;
+    margin: 0.67em 2em;
   `)};
 `
 
