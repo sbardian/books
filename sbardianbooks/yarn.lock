@@ -856,17 +856,17 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@0.147.0":
-  version "0.147.0"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.147.0.tgz#c990623ca055c163790e198ddf615d191b45a227"
-  integrity sha512-duzzw+jj5JAk6dxLd+O/TAhXe5lFR8enugDAxHEqlyCF/VJbV51LotEwHAuKl7ju/+VH2WGkmM6EQ+rdqMY4Cg==
+"@sanity/core@0.147.2":
+  version "0.147.2"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.147.2.tgz#f461e5062405d539b7a1f0d5a6523ec9e4081655"
+  integrity sha512-AcAxdH7MqfS8Yf9bzj/MKvHG0vRq9BItIVn+4eue9jmUct4ljd/WZFht8Bzz0IRJydLLr1Hs8bk5+sKHqbzHWg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
     "@babel/preset-react" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "0.147.0"
-    "@sanity/export" "0.147.0"
+    "@sanity/export" "0.147.2"
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/import" "0.147.0"
     "@sanity/mutator" "0.147.0"
@@ -1014,10 +1014,10 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@0.147.0":
-  version "0.147.0"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.147.0.tgz#1db5e74a6d00ec0713ae95f5db7fd8cc3e980399"
-  integrity sha512-tckEH9yx1j1hMIsQFhBRqxfobnB+o2hTav+vfepnIgW6Dpf/yx3MIPlJdEVzXpcEo4k52XER1BN0RMeJWV7gpg==
+"@sanity/export@0.147.2":
+  version "0.147.2"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-0.147.2.tgz#34c2cfda0fb22e1bd4913944737bade6d4eb008c"
+  integrity sha512-pdxYVtqjJM5ts+rbmx4MXDsrxCQSODHR9fDoF4muMQuJIaeit8gIBeRe1RtETi7L8LcOtiWcTE64jO/X9XEMwA==
   dependencies:
     archiver "^2.1.1"
     debug "^3.1.0"
