@@ -942,19 +942,19 @@
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/rich-date-input" "0.147.0"
 
-"@sanity/default-layout@0.146.3":
-  version "0.146.3"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.146.3.tgz#56e565af1e7feb09f9f9ab245ab4c2a612094abe"
-  integrity sha512-eF20ml1PjNOAOgti6+x6jeyo4EYX/5CQR83o5ZF1gof/m3KRBtHokTjl1KS5WUUZ6I3J1AV+9Bx/1ggmJzmRSQ==
+"@sanity/default-layout@0.147.0":
+  version "0.147.0"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-0.147.0.tgz#9468d412380156732a0a768d56380b8afdc7fc2e"
+  integrity sha512-SvSzaiQiqaY97//r1GLvTknrK5oWcbIiQHqFbGPqfr6jppuEm+ycr9cBHmQ/L0Qd2X5W00B9lUEoAe21ncU+4Q==
   dependencies:
-    "@sanity/generate-help-url" "0.146.0"
+    "@sanity/generate-help-url" "0.147.0"
     is-hotkey "^0.1.4"
-    lodash "^4.17.4"
+    lodash "^4.17.15"
     react-click-outside "^3.0.0"
     react-ink "^6.1.0"
     react-props-stream "^1.0.0"
     react-tippy "^1.2.3"
-    rxjs "^6.5.2"
+    rxjs "^6.5.3"
 
 "@sanity/default-login@0.146.0":
   version "0.146.0"
