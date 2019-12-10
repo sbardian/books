@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
-import Tags from "../components/tags"
+import FullPageTags from "../components/full-page-tags"
 
 const TagsPage = ({
   pageContext: {
@@ -28,7 +28,7 @@ const TagsPage = ({
           crumb.crumbLabel[0].toUpperCase() + crumb.crumbLabel.slice(1),
       }))}
     >
-      <Tags tags={filteredTags} />
+      <FullPageTags tags={filteredTags} />
     </Layout>
   )
 }
