@@ -11,7 +11,7 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 5px 6px 0px rgba(26, 25, 26, 1);
+  box-shadow: 0px 1px 2px 0px rgba(26, 25, 26, 1);
   &:active {
     box-shadow: none;
   }
