@@ -23,7 +23,7 @@ const SortButtonWrapper = styled.div`
 const BooksWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(5, 300px);
   justify-content: center;
   color: #1f1f20;
   ${mq.md(css`
