@@ -956,14 +956,14 @@
     react-tippy "^1.2.3"
     rxjs "^6.5.3"
 
-"@sanity/default-login@0.146.0":
-  version "0.146.0"
-  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.146.0.tgz#627a2e6c4ff84ce67cc27c3709a15158967629cd"
-  integrity sha512-2+fsiQ+8gC9mjzdI8UHUkO/X9F3uGFftXYsJOZx1w6skdVP4QskpuwA44A6Z0iqR0IPOFkQ+xaHm9/O5K/FTKQ==
+"@sanity/default-login@0.147.0":
+  version "0.147.0"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-0.147.0.tgz#6177ab7df4475ff3950aa81ab4240f7274a6fc01"
+  integrity sha512-IiqLqvN7q8lT//g6w0fWhD0QGmiMorPScYmXk6XK6oKashlPPpxqIWCpcvEVqktAC6+pZ1h7AXopsTAmRTmnSg==
   dependencies:
-    "@sanity/generate-help-url" "0.146.0"
+    "@sanity/generate-help-url" "0.147.0"
     prop-types "^15.6.0"
-    rxjs "^6.5.2"
+    rxjs "^6.5.3"
 
 "@sanity/desk-tool@0.146.3":
   version "0.146.3"
