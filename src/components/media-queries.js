@@ -7,7 +7,7 @@ const breakpoints = {
   sm: 576, // landscape phones
   md: 768, // tablets
   lg: 992, // landscape tablets and desktops
-  xl: 1200, // extra large desktops
+  xl: 1275, // extra large desktops
 }
 
 const mq = Object.keys(breakpoints).reduce((accumulator, label) => {

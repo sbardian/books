@@ -23,17 +23,17 @@ const SortButtonWrapper = styled.div`
 const BooksWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, 300px);
+  grid-template-columns: repeat(4, 300px);
   justify-content: center;
   color: #1f1f20;
-  ${mq.md(css`
+  ${mq.xl(
+    css`
+      grid-template-columns: repeat(auto-fit, 300px);
+    `
+  )};
+  ${mq.sm(css`
     grid-template-columns: 1fr;
   `)};
-  ${mq.lg(
-    css`
-      maxheight: "460px";
-    `
-  )}
 `
 
 const FilterHeadingWrapper = styled.div`
