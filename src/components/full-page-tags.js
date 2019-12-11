@@ -6,7 +6,7 @@ import { navigate } from "gatsby"
 const FullPageTagWrapper = styled.div`
   display: grid;
   grid-gap: 1.2em;
-  grid-template-columns: repeat(5, 350px);
+  grid-template-columns: repeat(auto-fit, 350px);
   justify-content: center;
 `
 
