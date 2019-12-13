@@ -965,13 +965,13 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@0.147.2":
-  version "0.147.2"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.147.2.tgz#da5e57b9e20d35d9cd1bdbcfb403856d1b90cea2"
-  integrity sha512-HlsPCUiC6mZW3sw14eHSvjT4O2e0owe++NbPQMolBuzcKOH6nMLy2Imdtjvzd/6zRAKYmh7yYAdqISHCeb1ZKw==
+"@sanity/desk-tool@0.147.3":
+  version "0.147.3"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.147.3.tgz#4179df77e793c1f6df9965646a47b35cfc9e873e"
+  integrity sha512-In+dzKKnIcaSD0QyvU9MAc0GWfw2ZCBom10DUmMSNFCd8CazY2MeOHEaQUnBa//sH02s0s3COtXgwOFGUKE+ng==
   dependencies:
     "@sanity/data-aspects" "0.147.0"
-    "@sanity/form-builder" "0.147.2"
+    "@sanity/form-builder" "0.147.3"
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/mutator" "0.147.0"
     "@sanity/schema" "0.147.0"
@@ -992,6 +992,7 @@
     react-json-inspector "^7.1.1"
     react-tiny-virtual-list "^2.0.5"
     react-tippy "^1.2.3"
+    resize-observer "1.0.0"
     rxjs "^6.5.3"
     scroll "^3.0.1"
     shallow-equals "^1.0.0"
@@ -1028,10 +1029,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.147.2":
-  version "0.147.2"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.147.2.tgz#37e3b77c35fc961cbdb923c300eac7aa568898ca"
-  integrity sha512-su3AF/tgrzrQJY5zCHwmuRH9AFPlerF6yPMCa2oFkDFDis/AawYtn7CGV9AAJ8OrqPw2CAfeWwL58XHNl/IYNA==
+"@sanity/form-builder@0.147.3":
+  version "0.147.3"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-0.147.3.tgz#fc7e1269a3e101918065f6c98e829f6cca515c37"
+  integrity sha512-NuTDH0Ml0hfm/5tdSXGlUcq3b3U1J2sExI99PEpFpqEof8/sPK0MXyClPo1RssJVW0UxLiYzJg750iaKBjAlIg==
   dependencies:
     "@sanity/block-tools" "0.147.0"
     "@sanity/generate-help-url" "0.147.0"
@@ -6684,6 +6685,11 @@ resize-observer-lite@0.2.3:
 resize-observer-polyfill@^1.5.0:
   version "1.5.1"
   resolved "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+
+resize-observer@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/resize-observer/-/resize-observer-1.0.0.tgz#4f8380b73b411af4ed7d916fe85a2d59900e71ef"
+  integrity sha512-D7UFShDm2TgrEDEyeg+/tTEbvOgPWlvPAfJtxiKp+qutu6HowmcGJKjECgGru0PPDIj3SAucn3ZPpOx54fF7DQ==
 
 resolve-bin@^0.4.0:
   version "0.4.0"
