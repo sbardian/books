@@ -856,10 +856,10 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@0.147.3":
-  version "0.147.3"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.147.3.tgz#e8bbe51be0cde8d6c85850c2198236b16440520e"
-  integrity sha512-IdNk0BKAa4R2nkOPCwHWgk4WgJovy6od+yP5vZhIdiLMyA9xv/XZD/HkiPgVPC6jZKcw/40HbGxTL4LjQKToUg==
+"@sanity/core@0.147.6":
+  version "0.147.6"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-0.147.6.tgz#81a23ed5b6f24aca54a20450bf8e34aac24299e1"
+  integrity sha512-Q+OY8LJdpQgYVhXeuJuRidk24SrUlpqTEazRYQEjCvltX/+vFS08s+EFFN2rU7l3DBW77G41S7h6/1BSypcJeg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
@@ -872,7 +872,7 @@
     "@sanity/mutator" "0.147.0"
     "@sanity/plugin-loader" "0.147.0"
     "@sanity/resolver" "0.147.0"
-    "@sanity/schema" "0.147.0"
+    "@sanity/schema" "0.147.6"
     "@sanity/server" "0.147.0"
     "@sanity/util" "0.147.0"
     "@sanity/uuid" "0.147.0"
