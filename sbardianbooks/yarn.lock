@@ -761,10 +761,10 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
-"@sanity/base@0.147.3":
-  version "0.147.3"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.147.3.tgz#621ba0e2d087fb58e7127cc95b1a47f21b8367f7"
-  integrity sha512-sFOz+LiZEXatG2tATghgaM5wKEH2qLsv2ymtsKe/FjnH2jffWDYX3kIZGaAJTZvkfBFT6FyrffrT9efdSu1gBQ==
+"@sanity/base@0.147.6":
+  version "0.147.6"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-0.147.6.tgz#433129b8e65febc71057a2e743e848c867f818f4"
+  integrity sha512-qwt7kUvflmmX9zRavlNmlnUkly1FZ/WlRl9tCPATZsz5JTXr7U32O2uhhp1/j1YBLzQXHCzdzM9BTwmyN8clIw==
   dependencies:
     "@sanity/client" "0.147.3"
     "@sanity/document-store" "0.147.0"
@@ -772,7 +772,7 @@
     "@sanity/initial-value-templates" "0.147.0"
     "@sanity/observable" "0.147.0"
     "@sanity/preview" "0.147.0"
-    "@sanity/schema" "0.147.0"
+    "@sanity/schema" "0.147.6"
     "@sanity/state-router" "0.147.0"
     "@sanity/structure" "0.147.0"
     "@sanity/transaction-collator" "0.147.0"
@@ -1197,6 +1197,19 @@
   version "0.147.0"
   resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.147.0.tgz#e8ab3c79774ed56aeecbef9910871948ababdc22"
   integrity sha512-63lWnbtpPtA31HWsS8Sif+rsoed10BKTdjCvYTiIqvZff5FlT/H3n1NzINmaXxJJRjoEUaJCMVv9++yM8mtE9Q==
+  dependencies:
+    "@sanity/generate-help-url" "0.147.0"
+    arrify "^1.0.1"
+    humanize-list "^1.0.1"
+    json-reduce "^1.0.0"
+    leven "^2.1.0"
+    lodash "^4.17.15"
+    object-inspect "^1.6.0"
+
+"@sanity/schema@0.147.6":
+  version "0.147.6"
+  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-0.147.6.tgz#d85e6e1a33ed369de662660999aa11b59a3f5b6b"
+  integrity sha512-2kbPu1Rsvy40PcsCxR1pI75konsLpMf4zCLTorw2Fih3q4tOoBv+Ady8jxiPCWsaD6w9qP1WHZMHasK1V4q0dw==
   dependencies:
     "@sanity/generate-help-url" "0.147.0"
     arrify "^1.0.1"
