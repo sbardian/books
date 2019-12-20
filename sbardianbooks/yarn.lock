@@ -965,10 +965,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@0.147.6":
-  version "0.147.6"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.147.6.tgz#160f612496bf3653a40e09aa49f0b19af7e1a75c"
-  integrity sha512-Vcc65pVXhy/urK1o0yKVVTGvlYRjXW3/KkRRZVOg6jUBRoAPEtu347K7xpE44UPBla1Lgj0ePAHJ+HfoOsLwbg==
+"@sanity/desk-tool@0.147.7":
+  version "0.147.7"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-0.147.7.tgz#3d9e9f69ad6e335a4bd35410ee20bf05581ed4bf"
+  integrity sha512-SjPLrK1Vbs3n+OBJPHWXPG/grG4grc7GbsKxiupe6jUqQGIanEhsZhxNYy5pyKlOrQQbLXukh2Orf1PowrogpQ==
   dependencies:
     "@sanity/data-aspects" "0.147.0"
     "@sanity/form-builder" "0.147.6"
