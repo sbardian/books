@@ -1,56 +1,16 @@
 /** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import { graphql, Link } from "gatsby"
-import { jsx, css } from "@emotion/core"
-import styled from "@emotion/styled"
+import { graphql } from "gatsby"
+import { jsx } from "@emotion/core"
 import Layout from "../components/layout"
-import Book from "../components/book"
+import Books from "../components/books"
 import SearchBox from "../components/search-box"
-import FilterButton from "../components/filter-button"
-import mq from "../components/media-queries"
+import YearSortButtons from "../components/year-sort-buttons"
+import Filters from "../components/filter-heading"
 
 const ALL = "All"
 const SEARCH = "Search"
-
-const SortButtonWrapper = styled.div`
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
-  justify-content: center;
-`
-
-const BooksWrapper = styled.div`
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 300px);
-  justify-content: center;
-  color: #1f1f20;
-  ${mq.xl(
-    css`
-      grid-template-columns: repeat(auto-fit, 300px);
-    `
-  )};
-  ${mq.sm(css`
-    grid-template-columns: 1fr;
-  `)};
-`
-
-const FilterHeadingWrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto minmax(40px, 75px);
-  justify-content: center;
-`
-
-const FilterHeading = styled.h1`
-  justify-self: center;
-`
-
-const FilterCount = styled.span`
-  align-self: center;
-  justify-self: center;
-  font-size: 1.4rem;
-`
 
 const IndexPage = ({
   pageContext: {
@@ -73,20 +33,15 @@ const IndexPage = ({
     searchInput.value = ""
   }
 
-  const handleClearFilter = () => {
-    handleClearSearchInput()
-    setBooks(allBooks)
-    setFilterHeading(ALL)
-  }
-
-  const handleFilter = filter => {
+  const handleYearFilter = filter => {
     handleClearSearchInput()
     setBooks(allBooks)
     setBooks(
       allBooks.filter(
         book =>
           book.node.yearRead === filter ||
-          book.node.tagsSet.some(tag => tag === filter)
+          book.node.tagsSet.some(tag => tag === filter) ||
+          filter === "All"
       )
     )
     setFilterHeading(filter)
@@ -117,38 +72,19 @@ const IndexPage = ({
 
   React.useEffect(() => {
     if (location && location.state && location.state.filterState) {
-      handleFilter(location.state.filterState)
+      handleYearFilter(location.state.filterState)
       setFilterHeading(location.state.filterState)
     }
   }, [location])
 
   return (
     <Layout crumbs={crumbs}>
-      <SortButtonWrapper>
-        {filters.map(filter => {
-          return (
-            <FilterButton
-              key={Math.random()}
-              onFilter={filter === "All" ? handleClearFilter : handleFilter}
-              filter={filter}
-            />
-          )
-        })}
-      </SortButtonWrapper>
+      <YearSortButtons yearFilters={filters} onYearFilter={handleYearFilter} />
       <SearchBox onSearch={handleSearch} />
       {filterHeading && (
-        <FilterHeadingWrapper>
-          <FilterHeading>
-            <Link to="/tags">{filterHeading}</Link>
-          </FilterHeading>
-          <FilterCount>({books.length})</FilterCount>
-        </FilterHeadingWrapper>
+        <Filters filterHeading={filterHeading} count={books.length} />
       )}
-      <BooksWrapper>
-        {books.map(book => (
-          <Book key={book.node.id} book={book} />
-        ))}
-      </BooksWrapper>
+      <Books books={books} />
     </Layout>
   )
 }
