@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
-const YearSortButtonWrapper = styled.div`
+const YearFilterButtonsWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
@@ -34,26 +34,26 @@ const ButtonText = styled.span`
   align-items: center;
 `
 
-const YearSortButtons = ({ yearFilters, onYearFilter }) => (
-  <YearSortButtonWrapper>
+const YearFilterButtons = ({ yearFilters, onYearFilter }) => (
+  <YearFilterButtonsWrapper>
     {yearFilters.map(filter => (
-      <Button type="button" onClick={() => onYearFilter(filter)}>
+      <Button key={filter} type="button" onClick={() => onYearFilter(filter)}>
         <ButtonText>
           {filter.charAt(0).toUpperCase() + filter.slice(1)}
         </ButtonText>
       </Button>
     ))}
-  </YearSortButtonWrapper>
+  </YearFilterButtonsWrapper>
 )
 
-YearSortButtons.defaultProps = {
+YearFilterButtons.defaultProps = {
   yearFilters: [],
   onYearFilter: () => {},
 }
 
-YearSortButtons.propTypes = {
+YearFilterButtons.propTypes = {
   yearFilters: PropTypes.arrayOf(PropTypes.string),
   onYearFilter: PropTypes.func,
 }
 
-export default YearSortButtons
+export default YearFilterButtons

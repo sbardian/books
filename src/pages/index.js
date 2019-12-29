@@ -6,7 +6,7 @@ import { jsx } from "@emotion/core"
 import Layout from "../components/layout"
 import Books from "../components/books"
 import SearchBox from "../components/search-box"
-import YearSortButtons from "../components/year-sort-buttons"
+import YearFilterButtons from "../components/year-filter-buttons"
 import Filters from "../components/filter-heading"
 
 const ALL = "All"
@@ -79,7 +79,10 @@ const IndexPage = ({
 
   return (
     <Layout crumbs={crumbs}>
-      <YearSortButtons yearFilters={filters} onYearFilter={handleYearFilter} />
+      <YearFilterButtons
+        yearFilters={filters}
+        onYearFilter={handleYearFilter}
+      />
       <SearchBox onSearch={handleSearch} />
       {filterHeading && (
         <Filters filterHeading={filterHeading} count={books.length} />
