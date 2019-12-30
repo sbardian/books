@@ -27,14 +27,13 @@ const IndexPage = ({
 
   const filters = [...new Set([ALL, ...years])]
 
-  const handleClearSearchInput = () => {
+  const clearSearchInput = () => {
     /* eslint-disable-next-line */
-    const searchInput = document.querySelector("#books-search-input")
-    searchInput.value = ""
+    document.querySelector("#books-search-input").value = ""
   }
 
   const handleYearFilter = filter => {
-    handleClearSearchInput()
+    clearSearchInput()
     setBooks(allBooks)
     setBooks(
       allBooks.filter(
