@@ -24,6 +24,7 @@ module.exports = {
       options: {
         useAutoGen: true,
         exclude: [`/dev-404-page`, `/offline-plugin-app-shell-fallback`],
+        crumbLabelUpdates: [{ pathname: "/book", crumbLabel: "Books" }],
       },
     },
     `gatsby-plugin-emotion`,
