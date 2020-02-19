@@ -1116,15 +1116,15 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.148.5":
-  version "1.148.5"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.148.5.tgz#1c8662430017addf3fd4fe9d27e4dd2fe917b3b3"
-  integrity sha512-ABe4gN3tUllnbLLJrpNUjosl7r2LbCYOWhcTxDo1u/8qXabGWYTFSerE9X209JfOGNkJnatXSGB3x/H+Y7oqxQ==
+"@sanity/desk-tool@1.148.6":
+  version "1.148.6"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.148.6.tgz#041e073e27fd472b89353f7a09588fa6dbf1b080"
+  integrity sha512-5C/sZ4pe7lGiWec+zfTFKCUGkDCoccHOguWByXPQDQ7RUFf7u5/Pulqg2KISDoRxFxJ6D3PpNcNig5XBo8IfVg==
   dependencies:
     "@reach/auto-id" "^0.7.2"
     "@sanity/base" "1.148.5"
     "@sanity/data-aspects" "1.148.1"
-    "@sanity/form-builder" "1.148.5"
+    "@sanity/form-builder" "1.148.6"
     "@sanity/generate-help-url" "1.148.1"
     "@sanity/mutator" "1.148.5"
     "@sanity/react-hooks" "1.148.5"
@@ -1174,10 +1174,10 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@1.148.5":
-  version "1.148.5"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.148.5.tgz#4d158fd43a83e0baaf6e22c43988bc9f35264881"
-  integrity sha512-sVREDYErqzwaqqjv8s9wQYQoZvpGNvNUsIB7WVEDEkbsla7Zw1wJRzP/3Hk5k0RmSnaw/ha2JAEB0P9DnwBKzQ==
+"@sanity/form-builder@1.148.6":
+  version "1.148.6"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.148.6.tgz#088fa86ac70d5f3e0952b7866f3e434faa2b30da"
+  integrity sha512-0TaWT4Ohp4kR5tDBGCPrhmgoyJEwt6aXZNvz6JZmEleQV0WeeGOGSFS6LTPD5sDzHUz3i22qWBGQ4bvsB0W/7A==
   dependencies:
     "@sanity/block-tools" "1.148.3"
     "@sanity/generate-help-url" "1.148.1"
