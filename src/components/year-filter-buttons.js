@@ -34,17 +34,22 @@ const ButtonText = styled.span`
   align-items: center;
 `
 
-const YearFilterButtons = ({ yearFilters, onYearFilter }) => (
-  <YearFilterButtonsWrapper>
-    {yearFilters.map(filter => (
-      <Button key={filter} type="button" onClick={() => onYearFilter(filter)}>
-        <ButtonText>
-          {filter.charAt(0).toUpperCase() + filter.slice(1)}
-        </ButtonText>
-      </Button>
-    ))}
-  </YearFilterButtonsWrapper>
-)
+const YearFilterButtons = ({ yearFilters, onYearFilter }) => {
+  const yearButtons = yearFilters.sort().slice(0, -1)
+  const allButton = yearFilters.slice(-1)
+  const filterBy = [...allButton, ...yearButtons]
+  return (
+    <YearFilterButtonsWrapper>
+      {filterBy.map(filter => (
+        <Button key={filter} type="button" onClick={() => onYearFilter(filter)}>
+          <ButtonText>
+            {filter.charAt(0).toUpperCase() + filter.slice(1)}
+          </ButtonText>
+        </Button>
+      ))}
+    </YearFilterButtonsWrapper>
+  )
+}
 
 YearFilterButtons.defaultProps = {
   yearFilters: [],
