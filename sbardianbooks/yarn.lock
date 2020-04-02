@@ -918,10 +918,10 @@
   resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
   integrity sha512-Om3A3FSyQW2nfkskgNLhItdoCOPCRCsmzlwu26qemu6DwiJLNVUBWlBuXhWgMmys/q3hRx3eRYFrzSLl8uheTA==
 
-"@sanity/base@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.7.tgz#0a52692011d75001d3992866af4f455f0ac0a67a"
-  integrity sha512-O2NWLb2Nwh/4k8Y7m8xZC0yStwLPIvNCJscq9lH0or5CPi0ePYE0K02yVmJRA8SsyUKlseydh77IS/IuP0ypmw==
+"@sanity/base@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.8.tgz#54caab90f5a6ecee67050207bef47a90f30bdf25"
+  integrity sha512-y7Lp3GsG7bJuOdP46yMCamwin5v0V5zzF6B6BbewAJE+moJYeyjMJ41qlABgOrGRe6hdtVR/2Q8hUCB0dgTjYA==
   dependencies:
     "@sanity/client" "1.149.7"
     "@sanity/generate-help-url" "1.149.0"
@@ -983,12 +983,12 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.7.tgz#9e6849da8ded7633bbae4236f00d0beefbe80dde"
-  integrity sha512-AhMQ0r2SA0X/yppH/IGlbzDEihMcm+ResrQzM70T7m9AU5t+k2m9/vt/1VjJRoMFp07adK3k8kDf2T1D2FG3Hw==
+"@sanity/components@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.8.tgz#10eef046e30709b7ab4dae529fe92bdbd5777b5d"
+  integrity sha512-GItD/6N3091vR9wuOzugOdTy+EXXVsmA6qyVu7xlcG2UtF0sq+nS/3jgaBFbKhw4zkYwewT2EUr9VZIk+46ZAg==
   dependencies:
-    "@sanity/base" "1.149.7"
+    "@sanity/base" "1.149.8"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -1014,10 +1014,10 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.7.tgz#897c4a246cbe62fdfa4ae149d729b50845e92945"
-  integrity sha512-fEijwq2dpxEbJAMA+5QEQH9wILhAXRZoFMzHfBImyloGSRH+88LLhHvE1ralMt5cRMCDMenp/aC2VIXm7duWTQ==
+"@sanity/core@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.8.tgz#fac547aa9597359475aab7b84ff6b60a1d073ba7"
+  integrity sha512-IpfvZoXNvBdu6sS6G3tBD/qMQrTBGomBlCK5ooywT7wIxXP/XwIyD99Cd+p1QmiC85CoJPFpQjw8sJSPLs7lgQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
@@ -1025,7 +1025,7 @@
     "@babel/preset-typescript" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "1.149.7"
-    "@sanity/export" "1.149.7"
+    "@sanity/export" "1.149.8"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/import" "1.149.7"
     "@sanity/mutator" "1.149.0"
@@ -1093,12 +1093,12 @@
     "@sanity/generate-help-url" "1.149.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.7.tgz#79ccd93f15fb5872db0d89eddfc98dc2039331e9"
-  integrity sha512-/Ful11D28TQbETAzU3NM9b3OdLukZB8EUO0MHhhHyk26H7tJW1L4c3zxFV9qgMccvoDttQGeXRlFUCn4DR8uAw==
+"@sanity/default-layout@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.8.tgz#cfc18bf3c0b8167f677292842c6a345cf01fee9d"
+  integrity sha512-u0i3om1AXGBfuqVU1cgtXvJiAtiKxozRNLqVdBb5Tu8XYfAtASBjQzesUaMxHkGrZ1JWau5GJYT/zR1bjazWQQ==
   dependencies:
-    "@sanity/base" "1.149.7"
+    "@sanity/base" "1.149.8"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -1117,18 +1117,18 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.7.tgz#dacf4a402ecfd37b80a7ca8225111f344acaf19c"
-  integrity sha512-7Fwmdh+lCKBd2z84pChVtdXHP9Z5F8f5EtylffktvwZ4rQ23LEt9CJkMUMRn5HxNONDx57zJ5SmnvI3p5cRfYQ==
+"@sanity/desk-tool@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.8.tgz#da21d94fc87d6552fa499d83376c425609ca9138"
+  integrity sha512-JloEk81xCQ1D0wwKGdsISsbXn8oqMcm2EvQHJzDKW13l7CIpsYn8G6LI3m/ga+wqTaEHtOJD8o5RHGeLg1iTug==
   dependencies:
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.149.7"
+    "@sanity/base" "1.149.8"
     "@sanity/data-aspects" "1.149.7"
     "@sanity/form-builder" "1.149.7"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
-    "@sanity/react-hooks" "1.149.7"
+    "@sanity/react-hooks" "1.149.8"
     "@sanity/structure" "1.149.7"
     "@sanity/uuid" "1.149.0"
     "@sanity/validation" "1.149.0"
@@ -1160,10 +1160,10 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.7.tgz#a2c35b352e41f0613c8de74f2398a8d5c4bb7dce"
-  integrity sha512-fIla6zC9Ln+91PO38HKIPv479a19oWVz/1aFBzoLHy/rj7EjUEcEMmvZpnQA8G8wlkYZ+cdJBH5lF6HRQv1+hg==
+"@sanity/export@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.8.tgz#2d14b0038e18476388a7a56ed3f0e9e1eedb8431"
+  integrity sha512-147GtVq+HGtt0Y2JY9Rq03GAjAGdjJGjk//d+X8OSGNVbm6ew49rt/DsMpsLxWgmKaZCovuPNMMbDypnXcvp9A==
   dependencies:
     agentkeepalive "^4.1.0"
     archiver "^2.1.1"
@@ -1314,12 +1314,12 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.7.tgz#168eaff2ced591d7d9803ef5be78b1fb04a4cfd0"
-  integrity sha512-jji5Hsa+H4P2w7HAin4CzeTpCKTBzK5o71eVXr2+/k5D/WdURMb3FASwRmenxUn/b/M/LibvEs7t1nJFO9R8PQ==
+"@sanity/react-hooks@1.149.8":
+  version "1.149.8"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.8.tgz#18883e949dc9eb7993bf1617377db976591340a3"
+  integrity sha512-Ylcfs/EaQF4/w6VJtgVhon6GZyN63csuJr+Ps+PHX+aXDdtg0rn0FEVYzRChIH9dgOaJdkbPulS2YrXZFBxc6A==
   dependencies:
-    "@sanity/base" "1.149.7"
+    "@sanity/base" "1.149.8"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
