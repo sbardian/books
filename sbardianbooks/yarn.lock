@@ -918,10 +918,10 @@
   resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
   integrity sha512-Om3A3FSyQW2nfkskgNLhItdoCOPCRCsmzlwu26qemu6DwiJLNVUBWlBuXhWgMmys/q3hRx3eRYFrzSLl8uheTA==
 
-"@sanity/base@1.149.8":
-  version "1.149.8"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.8.tgz#54caab90f5a6ecee67050207bef47a90f30bdf25"
-  integrity sha512-y7Lp3GsG7bJuOdP46yMCamwin5v0V5zzF6B6BbewAJE+moJYeyjMJ41qlABgOrGRe6hdtVR/2Q8hUCB0dgTjYA==
+"@sanity/base@1.149.10":
+  version "1.149.10"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.10.tgz#4b813600b707f4ddc0ea579189d125258d434b49"
+  integrity sha512-88F3CXHTQ9oy8Tvs9mNOGT5hkIIDINQbBsxTk1X/nTw8eMB/yz7po1JZXf3fZLYhyeDQJQm5F/4IVtljp0p9UQ==
   dependencies:
     "@sanity/client" "1.149.7"
     "@sanity/generate-help-url" "1.149.0"
@@ -983,12 +983,12 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.149.8":
-  version "1.149.8"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.8.tgz#10eef046e30709b7ab4dae529fe92bdbd5777b5d"
-  integrity sha512-GItD/6N3091vR9wuOzugOdTy+EXXVsmA6qyVu7xlcG2UtF0sq+nS/3jgaBFbKhw4zkYwewT2EUr9VZIk+46ZAg==
+"@sanity/components@1.149.10":
+  version "1.149.10"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.10.tgz#b674eb8262a3e26404f07e2bbe553ceb38b08d22"
+  integrity sha512-1zPyr7WfkZZiJ92fYe/QyZN+iljmPpXKYhfMjgU1rugnFQVnkJmsIpUWDWHuzMNYUB/UVPZPbbiJIcGNgLbtuw==
   dependencies:
-    "@sanity/base" "1.149.8"
+    "@sanity/base" "1.149.10"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -1093,12 +1093,12 @@
     "@sanity/generate-help-url" "1.149.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@1.149.8":
-  version "1.149.8"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.8.tgz#cfc18bf3c0b8167f677292842c6a345cf01fee9d"
-  integrity sha512-u0i3om1AXGBfuqVU1cgtXvJiAtiKxozRNLqVdBb5Tu8XYfAtASBjQzesUaMxHkGrZ1JWau5GJYT/zR1bjazWQQ==
+"@sanity/default-layout@1.149.10":
+  version "1.149.10"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.10.tgz#82893c604c49884d1828ffd8c5ca484c56f69707"
+  integrity sha512-MLkaCNWkPSKZtKDXkutGXbtKw+paxjQWQqA16WHFEBNnoS71kqiIKxNK6nmlo46Zc5AxMlNnHxPEwYXGl3sX/g==
   dependencies:
-    "@sanity/base" "1.149.8"
+    "@sanity/base" "1.149.10"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -1117,18 +1117,18 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.149.8":
-  version "1.149.8"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.8.tgz#da21d94fc87d6552fa499d83376c425609ca9138"
-  integrity sha512-JloEk81xCQ1D0wwKGdsISsbXn8oqMcm2EvQHJzDKW13l7CIpsYn8G6LI3m/ga+wqTaEHtOJD8o5RHGeLg1iTug==
+"@sanity/desk-tool@1.149.10":
+  version "1.149.10"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.10.tgz#c274c531d9773c8fa327ce87e96b52b05bea4e95"
+  integrity sha512-G0cZY6ejoUtcRNmEwhLNbTp3PS6PeHgrQlArLIvEo6kflOG6oW1GWW+iwTBb1Vv5PAYEQFQLsnuggjhgW0gA5Q==
   dependencies:
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.149.8"
+    "@sanity/base" "1.149.10"
     "@sanity/data-aspects" "1.149.7"
     "@sanity/form-builder" "1.149.7"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
-    "@sanity/react-hooks" "1.149.8"
+    "@sanity/react-hooks" "1.149.10"
     "@sanity/structure" "1.149.7"
     "@sanity/uuid" "1.149.0"
     "@sanity/validation" "1.149.0"
@@ -1314,12 +1314,12 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.149.8":
-  version "1.149.8"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.8.tgz#18883e949dc9eb7993bf1617377db976591340a3"
-  integrity sha512-Ylcfs/EaQF4/w6VJtgVhon6GZyN63csuJr+Ps+PHX+aXDdtg0rn0FEVYzRChIH9dgOaJdkbPulS2YrXZFBxc6A==
+"@sanity/react-hooks@1.149.10":
+  version "1.149.10"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.10.tgz#07dddeded163ff2adc7b85917550893f2d18bbe2"
+  integrity sha512-caxKjAGqQI4RBT+tx7rnicox/F5zgpsmDZpxldw/MIEhNdRPih4UkLcnaA3kJGnEogFoaNYEE2ANRoWW2Y7FgA==
   dependencies:
-    "@sanity/base" "1.149.8"
+    "@sanity/base" "1.149.10"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
