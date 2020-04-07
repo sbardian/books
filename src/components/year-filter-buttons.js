@@ -19,6 +19,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0px 1px 2px 0px rgba(26, 25, 26, 1);
+  max-height: 41px;
   &:active {
     box-shadow: none;
   }
