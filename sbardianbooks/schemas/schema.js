@@ -64,6 +64,11 @@ export default createSchema({
           type: "image",
         },
         {
+          title: "Short Description",
+          name: "shortDescription",
+          type: "string",
+        },
+        {
           title: "Tags",
           name: "tagsSet",
           type: "array",

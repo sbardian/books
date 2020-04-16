@@ -46,7 +46,9 @@ const BookPage = ({
             `)}
           `}
         >
-          <h1>{book.node.title}</h1>
+          <h1>
+            {book.node.title}: {book.node.shortDescription}
+          </h1>
           <div
             css={css`
               display: grid;
@@ -141,6 +143,7 @@ BookPage.propTypes = {
             id: PropTypes.string,
             amazonUrl: PropTypes.string,
             author: PropTypes.string,
+            shortDescription: PropTypes.string,
             description: PropTypes.string,
             isbn: PropTypes.string,
             imageUrl: PropTypes.string,
@@ -211,6 +214,7 @@ export const bookQuery = graphql`
           amazonUrl
           title
           isbn
+          shortDescription
           description
           author
           amazonUrl

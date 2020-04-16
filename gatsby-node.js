@@ -13,6 +13,7 @@ exports.createPages = async ({ actions, graphql }) => {
             amazonUrl
             title
             isbn
+            shortDescription
             description
             author
             amazonUrl
@@ -29,13 +30,13 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
     const books = result.data.allSanityBook.edges
 
-    books.forEach(book => {
+    books.forEach((book) => {
       createPage({
         path: `/book/${book.node.id}`,
         component: bookPageTemplate,
