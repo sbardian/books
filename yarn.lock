@@ -3385,10 +3385,10 @@ babel-preset-gatsby@0.4.0, babel-preset-gatsby@^0.4.0:
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
     gatsby-core-utils "^1.2.0"
 
-babel-preset-gatsby@^0.2.20:
-  version "0.2.36"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.36.tgz#cce0f77be03f7d411a890c4c9c35fa2f42073db6"
-  integrity sha512-vmqN6ht4B28dHlK7Qsau3JseHwTEkLjf2QkUcUKlYCuVk7skZkbN2B6O8QeJQTQ30V/6uUKiNMU/U0nc0RYMNQ==
+babel-preset-gatsby@^0.3.0:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.3.6.tgz#98f0df47c1ab8df2ce13c1c0ea68d4a1598f5bbc"
+  integrity sha512-3BZhFENS8KxP5Y0Y+XX8hntdfFkG3MRg5upwAeeM/P+k7wO0mBrUMNl+6ekYV1yEQabfMJq1sJG00w58r0KCMA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
@@ -3402,7 +3402,7 @@ babel-preset-gatsby@^0.2.20:
     babel-plugin-dynamic-import-node "^2.3.0"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^1.0.34"
+    gatsby-core-utils "^1.1.4"
 
 babel-preset-jest@^25.2.6:
   version "25.2.6"
@@ -7187,16 +7187,7 @@ gatsby-cli@^2.12.4:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.34:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.1.1.tgz#3ebe4c6fe277ef8d91e1b708bd65ef4f7dc0928b"
-  integrity sha512-EboPcBx37YQVUKN9JH753S54nDxjRmOefbR0i08KTmaVgQ1lZnDXJr8JfrImmMqupZlOkPQX1mWlXfp+r1jGhA==
-  dependencies:
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    node-object-hash "^2.0.0"
-
-gatsby-core-utils@^1.2.0:
+gatsby-core-utils@^1.1.4, gatsby-core-utils@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.2.0.tgz#3289b2183d3b0172356cf403bfc2bbf99adae670"
   integrity sha512-JBsVbniXObn26Hms8Je1vJdhMW04GesochBVLcaTraZC5dfqZDExPix65jrye/voC0YfFtXIngm59yspYZm1OQ==
@@ -7244,14 +7235,14 @@ gatsby-page-utils@^0.2.0:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-breadcrumb@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-9.0.1.tgz#b2ac3150ed873f555b95f8bb1676739d3f306640"
-  integrity sha512-s8WFmBv4HjNHDajIzjJznJbqy/ZYyK7zIG+4DBnY2Lm0v80/hItk7q50DGY/hSNPsCyQyTrN4G4mKB+Xx5PWVQ==
+gatsby-plugin-breadcrumb@9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-9.0.2.tgz#afd6ece8fd4524345bb59e64be4f884076a30e8d"
+  integrity sha512-USAJTXIdjIIC2fXHyqK/9o6jIEczw1447NHwTdhM9SNcjmmmLXJhAXydL+ogPj9ew+xxEzQzol3h5Kg6DxA7ew==
   dependencies:
     "@babel/runtime" "^7.3.4"
     babel-jest "^25.0.0"
-    babel-preset-gatsby "^0.2.20"
+    babel-preset-gatsby "^0.3.0"
     identity-obj-proxy "^3.0.0"
     prop-types "^15.7.2"
 
