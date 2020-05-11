@@ -802,11 +802,15 @@
   version "0.7.4"
   resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.7.4.tgz#c20bf6db87ef2f34b1bfb4bf450d675524a368c1"
 
-"@sanity/base@1.149.10":
-  version "1.149.10"
-  resolved "https://registry.npmjs.org/@sanity/base/-/base-1.149.10.tgz#4b813600b707f4ddc0ea579189d125258d434b49"
+"@rexxars/eventsource-polyfill@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
+
+"@sanity/base@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.13.tgz#2d36c71e836271739e6c875517353468871019e3"
   dependencies:
-    "@sanity/client" "1.149.7"
+    "@sanity/client" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/image-url" "0.140.15"
     "@sanity/initial-value-templates" "1.149.7"
@@ -819,7 +823,7 @@
     "@sanity/transaction-collator" "1.149.7"
     "@sanity/util" "1.149.7"
     "@sanity/uuid" "1.149.0"
-    "@sanity/validation" "1.149.0"
+    "@sanity/validation" "1.149.13"
     history "^4.6.3"
     lodash "^4.17.15"
     nano-pubsub "^1.0.2"
@@ -851,23 +855,23 @@
     fs-extra "^6.0.1"
     promise-props-recursive "^1.0.0"
 
-"@sanity/client@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.npmjs.org/@sanity/client/-/client-1.149.7.tgz#117f870cedc5fa51ee36e5003bfb491c51b9f1da"
+"@sanity/client@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-1.149.13.tgz#c4ce89c46143d1bde5fe5657623f300904bdc8e7"
   dependencies:
-    "@sanity/eventsource" "1.149.0"
+    "@sanity/eventsource" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/observable" "1.149.0"
     deep-assign "^2.0.0"
-    get-it "^5.0.0"
+    get-it "^5.0.3"
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.149.10":
-  version "1.149.10"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.10.tgz#b674eb8262a3e26404f07e2bbe553ceb38b08d22"
+"@sanity/components@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.13.tgz#3c5350b457deef6f56f8f9a91a62b40add1e6d64"
   dependencies:
-    "@sanity/base" "1.149.10"
+    "@sanity/base" "1.149.13"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -893,9 +897,9 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@1.149.12":
-  version "1.149.12"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.12.tgz#36a8f7f88ce10918ae2f73c6f95f4516292c3f1d"
+"@sanity/core@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.13.tgz#b0ca3e4277422fa4727290d2235d0dc3b5c0ae25"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
@@ -903,14 +907,14 @@
     "@babel/preset-typescript" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "1.149.7"
-    "@sanity/export" "1.149.11"
+    "@sanity/export" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
-    "@sanity/import" "1.149.9"
+    "@sanity/import" "1.149.13"
     "@sanity/mutator" "1.149.0"
     "@sanity/plugin-loader" "1.149.7"
     "@sanity/resolver" "1.149.7"
     "@sanity/schema" "1.149.4"
-    "@sanity/server" "1.149.7"
+    "@sanity/server" "1.149.13"
     "@sanity/util" "1.149.7"
     "@sanity/uuid" "1.149.0"
     "@sanity/webpack-integration" "1.149.7"
@@ -971,11 +975,11 @@
     "@sanity/generate-help-url" "1.149.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@1.149.10":
-  version "1.149.10"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.10.tgz#82893c604c49884d1828ffd8c5ca484c56f69707"
+"@sanity/default-layout@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.13.tgz#6ac3f07adc1fd6cbeef03789bbe9b94c39f18f2f"
   dependencies:
-    "@sanity/base" "1.149.10"
+    "@sanity/base" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -993,20 +997,20 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.149.10":
-  version "1.149.10"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.10.tgz#c274c531d9773c8fa327ce87e96b52b05bea4e95"
+"@sanity/desk-tool@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.13.tgz#ddb0175641d9431e9bdd2d1ccc97f0897845d9d1"
   dependencies:
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.149.10"
+    "@sanity/base" "1.149.13"
     "@sanity/data-aspects" "1.149.7"
-    "@sanity/form-builder" "1.149.7"
+    "@sanity/form-builder" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
-    "@sanity/react-hooks" "1.149.10"
+    "@sanity/react-hooks" "1.149.13"
     "@sanity/structure" "1.149.7"
     "@sanity/uuid" "1.149.0"
-    "@sanity/validation" "1.149.0"
+    "@sanity/validation" "1.149.13"
     boundless-arrow-key-navigation "^1.1.0"
     classnames "^2.2.5"
     date-fns "^1.29.0"
@@ -1027,16 +1031,16 @@
     shallow-equals "^1.0.0"
     use-onclickoutside "^0.3.1"
 
-"@sanity/eventsource@1.149.0":
-  version "1.149.0"
-  resolved "https://registry.npmjs.org/@sanity/eventsource/-/eventsource-1.149.0.tgz#ac4b517268976980e958223ba537a15ac6339f50"
+"@sanity/eventsource@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/eventsource/-/eventsource-1.149.13.tgz#2a4669472bfa4c41715eeb8a06936dac76e3225f"
   dependencies:
+    "@rexxars/eventsource-polyfill" "^1.0.0"
     eventsource "^1.0.6"
-    eventsource-polyfill "^0.9.6"
 
-"@sanity/export@1.149.11":
-  version "1.149.11"
-  resolved "https://registry.npmjs.org/@sanity/export/-/export-1.149.11.tgz#f627f82f23cfa12eb4cb5228be89cd8d2de20b4b"
+"@sanity/export@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.13.tgz#c00737f4848ef01ee609c452f8e8af2c29d6a365"
   dependencies:
     agentkeepalive "^4.1.0"
     archiver "^2.1.1"
@@ -1048,9 +1052,9 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-1.149.7.tgz#9208ba5e1baa684c5ed272f063ec844e67d45319"
+"@sanity/form-builder@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.149.13.tgz#06c67989b5a30a8d33a6be91d0dfc8f69384ba15"
   dependencies:
     "@sanity/block-tools" "1.149.4"
     "@sanity/generate-help-url" "1.149.0"
@@ -1105,9 +1109,9 @@
     dom-event "1.0.0"
     lodash "^4.17.15"
 
-"@sanity/import@1.149.9":
-  version "1.149.9"
-  resolved "https://registry.npmjs.org/@sanity/import/-/import-1.149.9.tgz#01be99080f2babfc57ffac2b2eaec1332af20be4"
+"@sanity/import@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/import/-/import-1.149.13.tgz#662b90e538353edbe7c9a7e832b843335e4baae6"
   dependencies:
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
@@ -1177,11 +1181,11 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.149.10":
-  version "1.149.10"
-  resolved "https://registry.npmjs.org/@sanity/react-hooks/-/react-hooks-1.149.10.tgz#07dddeded163ff2adc7b85917550893f2d18bbe2"
+"@sanity/react-hooks@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.13.tgz#eb7e63f6fed6bae8a90c64c18504c01d0b9cd600"
   dependencies:
-    "@sanity/base" "1.149.10"
+    "@sanity/base" "1.149.13"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
@@ -1209,9 +1213,9 @@
     lodash "^4.17.15"
     object-inspect "^1.6.0"
 
-"@sanity/server@1.149.7":
-  version "1.149.7"
-  resolved "https://registry.npmjs.org/@sanity/server/-/server-1.149.7.tgz#c6f27f29b0392ee7d1db7b2b35b730217cfd242c"
+"@sanity/server@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/server/-/server-1.149.13.tgz#89be74f6a5ef2d43070d4e9e9c29cb7c6900db42"
   dependencies:
     "@babel/core" "^7.7.4"
     "@babel/plugin-proposal-class-properties" "^7.7.4"
@@ -1221,7 +1225,7 @@
     "@babel/register" "^7.7.4"
     "@hot-loader/react-dom" "^16.9.0-4.12.11"
     "@sanity/css-loader" "^0.28.12"
-    "@sanity/eventsource" "1.149.0"
+    "@sanity/eventsource" "1.149.13"
     "@sanity/resolver" "1.149.7"
     "@sanity/webpack-integration" "1.149.7"
     "@sanity/webpack-loader" "1.149.7"
@@ -1293,9 +1297,9 @@
   dependencies:
     uuid "3.1.0"
 
-"@sanity/validation@1.149.0":
-  version "1.149.0"
-  resolved "https://registry.npmjs.org/@sanity/validation/-/validation-1.149.0.tgz#0350b3534066202024087d32ae366316dbfab35e"
+"@sanity/validation@1.149.13":
+  version "1.149.13"
+  resolved "https://registry.yarnpkg.com/@sanity/validation/-/validation-1.149.13.tgz#45dba48eb31f03dfed23d42fe258a712d8dd365d"
   dependencies:
     clone-deep "^2.0.1"
     es6-error "^4.0.2"
@@ -3510,9 +3514,9 @@ get-document@1:
   version "1.0.0"
   resolved "https://registry.npmjs.org/get-document/-/get-document-1.0.0.tgz#4821bce66f1c24cb0331602be6cb6b12c4f01c4b"
 
-get-it@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/get-it/-/get-it-5.0.2.tgz#4839e7160d206fbd1353950ebce721b47292eb9c"
+get-it@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/get-it/-/get-it-5.0.3.tgz#482a72d91b482ccf64ecf0499b5456952b1ca9d0"
   dependencies:
     "@sanity/timed-out" "^4.0.2"
     create-error-class "^3.0.2"
