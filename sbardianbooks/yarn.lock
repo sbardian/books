@@ -806,9 +806,9 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/base@1.149.13":
-  version "1.149.13"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.13.tgz#2d36c71e836271739e6c875517353468871019e3"
+"@sanity/base@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.149.15.tgz#47dc275619b67166a80b6c7448f3a175b37e5c8f"
   dependencies:
     "@sanity/client" "1.149.13"
     "@sanity/generate-help-url" "1.149.0"
@@ -867,11 +867,11 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.149.13":
-  version "1.149.13"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.13.tgz#3c5350b457deef6f56f8f9a91a62b40add1e6d64"
+"@sanity/components@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.149.15.tgz#6d51d058bd6671a85ceebc1759ba74e0fa9f9fe9"
   dependencies:
-    "@sanity/base" "1.149.13"
+    "@sanity/base" "1.149.15"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
     chance "^1.0.4"
@@ -975,11 +975,11 @@
     "@sanity/generate-help-url" "1.149.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@1.149.13":
-  version "1.149.13"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.13.tgz#6ac3f07adc1fd6cbeef03789bbe9b94c39f18f2f"
+"@sanity/default-layout@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.149.15.tgz#4238f309ce3287ec45f5bc6a10e296130549c227"
   dependencies:
-    "@sanity/base" "1.149.13"
+    "@sanity/base" "1.149.15"
     "@sanity/generate-help-url" "1.149.0"
     is-hotkey "^0.1.4"
     lodash "^4.17.15"
@@ -997,17 +997,17 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.149.14":
-  version "1.149.14"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.14.tgz#330e62bbccb7e092bf9cf7c9838e2dccf929a121"
+"@sanity/desk-tool@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.149.15.tgz#87d58833bd16aecd1ffa15afe1be6bbd5d90a827"
   dependencies:
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.149.13"
+    "@sanity/base" "1.149.15"
     "@sanity/data-aspects" "1.149.7"
-    "@sanity/form-builder" "1.149.14"
+    "@sanity/form-builder" "1.149.15"
     "@sanity/generate-help-url" "1.149.0"
     "@sanity/mutator" "1.149.0"
-    "@sanity/react-hooks" "1.149.13"
+    "@sanity/react-hooks" "1.149.15"
     "@sanity/structure" "1.149.7"
     "@sanity/uuid" "1.149.0"
     "@sanity/validation" "1.149.13"
@@ -1052,9 +1052,9 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@1.149.14":
-  version "1.149.14"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.149.14.tgz#c39820ce8364513ac82e06166f6a3bae3fbd57c1"
+"@sanity/form-builder@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.149.15.tgz#99f411a6e90d293cc4f6805fce0d82f6a2e2cbbf"
   dependencies:
     "@sanity/block-tools" "1.149.4"
     "@sanity/generate-help-url" "1.149.0"
@@ -1181,11 +1181,11 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.149.13":
-  version "1.149.13"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.13.tgz#eb7e63f6fed6bae8a90c64c18504c01d0b9cd600"
+"@sanity/react-hooks@1.149.15":
+  version "1.149.15"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.149.15.tgz#f6cea79cf562caf18db33773e53530626874b929"
   dependencies:
-    "@sanity/base" "1.149.13"
+    "@sanity/base" "1.149.15"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
