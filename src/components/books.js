@@ -41,7 +41,7 @@ const BookButton = styled.button`
   padding: 20px;
   border: none;
   background: #222831;
-  /* box-shadow: 0px 1px 1px 0px rgba(26, 25, 26, 1); */
+  box-shadow: 0px 5px 5px 0px rgba(26, 25, 26, 1);
   &:hover {
     background: #30475e;
     cursor: pointer;
