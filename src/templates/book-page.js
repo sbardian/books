@@ -27,7 +27,7 @@ const BookPage = ({
         css={css`
           display: grid;
           grid-gap: 20px;
-          grid-template-rows: auto 1fr auto;
+          grid-template-rows: auto auto min-content;
           background: #dce0e6;
           box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
         `}
@@ -36,7 +36,7 @@ const BookPage = ({
           css={css`
             display: grid;
             grid-gap: 20px;
-            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr auto;
             align-items: center;
             background: #567ebb;
             padding: 0 20px 0 20px;
@@ -46,17 +46,23 @@ const BookPage = ({
             `)}
           `}
         >
-          <h1>
+          <h1
+            css={css`
+              font-size: 3rem;
+            `}
+          >
             {book.node.title}: {book.node.shortDescription}
           </h1>
           <div
             css={css`
               display: grid;
-              grid-template-rows: 1fr 1fr;
+              grid-gap: 20px;
+              grid-template-columns: 1fr 1fr;
               justify-content: center;
               ${mq.sm(css`
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 grid-template-rows: none;
+                padding-bottom: 20px;
               `)}
             `}
           >
@@ -83,7 +89,7 @@ const BookPage = ({
                 justify-self: center;
               `}
             >
-              {book.node.yearRead}
+              Read in: {book.node.yearRead}
             </span>
           </div>
         </div>
