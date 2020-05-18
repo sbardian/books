@@ -16,7 +16,7 @@ const BookWrapper = styled.div`
 const BooksWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   color: #1f1f20;
   ${mq.xl(
