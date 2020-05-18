@@ -20,14 +20,14 @@ const SearchInput = styled.input`
   border: none;
   background: transparent;
   border-bottom: 2px solid gray;
-  color: #dce0e6;
+  color: #c1a57b;
   min-width: 100px;
 `
 
 const InputLabel = styled.label`
   font-size: 18pt;
   align-self: end;
-  color: "#d3dbe8";
+  color: #c1a57b;
 `
 
 const SearchBox = ({ onSearch }) => {

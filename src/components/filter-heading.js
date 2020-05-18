@@ -17,6 +17,7 @@ const FilterCount = styled.span`
   align-self: center;
   justify-self: center;
   font-size: 1.4rem;
+  color: #c1a57b;
 `
 
 const Filters = ({ filterHeading, count }) => {

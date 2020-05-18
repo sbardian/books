@@ -38,7 +38,7 @@ const BookPage = ({
             grid-gap: 20px;
             grid-template-rows: 1fr auto;
             align-items: center;
-            background: #567ebb;
+            background: #30475e;
             padding: 0 20px 0 20px;
             ${mq.sm(css`
               grid-template-columns: 1fr;
@@ -49,6 +49,7 @@ const BookPage = ({
           <h1
             css={css`
               font-size: 3rem;
+              color: #ececec;
             `}
           >
             {book.node.title}: {book.node.shortDescription}
@@ -87,6 +88,7 @@ const BookPage = ({
               css={css`
                 align-self: center;
                 justify-self: center;
+                color: #ececec;
               `}
             >
               Read in: {book.node.yearRead}

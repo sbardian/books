@@ -10,8 +10,8 @@ const YearFilterButtonsWrapper = styled.div`
 `
 
 const Button = styled.button`
-  background: #4b4545b3;
-  color: #c2c2c2;
+  background: #c1a57b;
+  color: #e2e2e2;
   padding: 7px;
   text-align: center;
   align-items: center;
@@ -41,7 +41,7 @@ const YearFilterButtons = ({ yearFilters, onYearFilter }) => {
   const filterBy = [...allButton, ...yearButtons]
   return (
     <YearFilterButtonsWrapper>
-      {filterBy.map(filter => (
+      {filterBy.map((filter) => (
         <Button key={filter} type="button" onClick={() => onYearFilter(filter)}>
           <ButtonText>
             {filter.charAt(0).toUpperCase() + filter.slice(1)}

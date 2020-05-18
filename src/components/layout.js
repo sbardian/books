@@ -10,6 +10,7 @@ import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import Footer from "./footer"
 import mq from "./media-queries"
 import "normalize.css"
+import "../style/breadcrumb.css"
 
 const PageContainer = styled.div`
   display: grid;
@@ -18,7 +19,8 @@ const PageContainer = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
   justify-content: center;
-  background: #636080;
+  background: #222831;
+  color: #666;
 `
 
 const PageTitleWrapper = styled.div`
@@ -87,10 +89,10 @@ const Layout = ({ children, crumbs, crumbLabel }) => {
       <Global
         styles={css`
           body {
-            color: #d3dbe8;
+            color: #ececec;
           }
           a {
-            color: #dce0e6;
+            color: #ececec;
           }
         `}
       />

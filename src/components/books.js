@@ -6,13 +6,6 @@ import { css } from "@emotion/core"
 import BookImage from "./book-image"
 import mq from "./media-queries"
 
-const BookWrapper = styled.div`
-  display: grid;
-  grid-gap: 20px;
-  grid-template-rows: 1fr;
-  align-content: start;
-`
-
 const BooksWrapper = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -29,8 +22,15 @@ const BooksWrapper = styled.div`
   `)};
 `
 
+const BookWrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr;
+  align-content: start;
+`
+
 const BookTitle = styled.h3`
-  color: white;
+  color: #ececec;
   font-size: 1.5rem;
 `
 
@@ -40,10 +40,10 @@ const BookButton = styled.button`
   align-content: start;
   padding: 20px;
   border: none;
-  background: #606d80;
-  box-shadow: 0px 1px 1px 0px rgba(26, 25, 26, 1);
+  background: #222831;
+  /* box-shadow: 0px 1px 1px 0px rgba(26, 25, 26, 1); */
   &:hover {
-    background: #607d80;
+    background: #30475e;
     cursor: pointer;
   }
 `
