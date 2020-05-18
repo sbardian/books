@@ -42,7 +42,6 @@ const BookButton = styled.button`
   border: none;
   background: #606d80;
   box-shadow: 0px 1px 1px 0px rgba(26, 25, 26, 1);
-  min-height: 100%;
   &:hover {
     background: #607d80;
     cursor: pointer;
