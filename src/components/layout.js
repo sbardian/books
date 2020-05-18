@@ -17,7 +17,7 @@ const PageContainer = styled.div`
   grid-gap: 20px;
   min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto auto auto;
   justify-content: center;
   background: #222831;
   color: #666;
@@ -58,6 +58,7 @@ const MainWrapper = styled.div`
   margin: 0.67em 2em;
   display: grid;
   grid-template-columns: minmax(200px, 1200px);
+  grid-template-rows: auto auto auto 1fr;
   justify-content: center;
   ${mq.sm(css`
     margin: 0 0.67em 0 0.67em;
