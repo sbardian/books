@@ -50,6 +50,9 @@ const BookPage = ({
             css={css`
               font-size: 3rem;
               color: #ececec;
+              ${mq.sm(css`
+                font-size: 1.5rem;
+              `)}
             `}
           >
             {book.node.title}: {book.node.shortDescription}
