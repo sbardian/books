@@ -24,14 +24,6 @@ const IndexPage = ({
     default: allSanityBook.edges,
   })
 
-  const yearFiltersState = selector({
-    key: "yearFiltersState",
-    get: ({ get }) => {
-      const years = get(booksState).map((book) => book.node.yearRead)
-      return [...new Set([ALL, ...years])]
-    },
-  })
-
   const filterState = atom({
     key: "booksFilterState",
     default: ALL,
@@ -45,9 +37,9 @@ const IndexPage = ({
 
       return books.filter(
         (book) =>
+          filter === ALL ||
           book.node.yearRead === filter ||
           book.node.tagsSet.some((tag) => tag === filter) ||
-          filter === ALL ||
           book.node.title.toLowerCase().includes(filter.toLowerCase()) ||
           book.node.author.toLowerCase().includes(filter.toLowerCase()) ||
           book.node.tagsSet.some((tag) =>
@@ -57,9 +49,17 @@ const IndexPage = ({
     },
   })
 
+  const yearFiltersState = selector({
+    key: "yearFiltersState",
+    get: ({ get }) => {
+      const years = get(booksState).map((book) => book.node.yearRead)
+      return [...new Set([ALL, ...years])]
+    },
+  })
+
   const [filter, setFilter] = useRecoilState(filterState)
   const [filteredBooks] = useRecoilState(filteredBooksState)
-  const [filters] = useRecoilState(yearFiltersState)
+  const [yearButtons] = useRecoilState(yearFiltersState)
 
   const clearSearchInput = () => {
     /* eslint-disable-next-line */
@@ -83,14 +83,13 @@ const IndexPage = ({
   React.useEffect(() => {
     if (location && location.state && location.state.filterState) {
       handleYearFilter(location.state.filterState)
-      setFilter(location.state.filterState)
     }
   }, [location])
 
   return (
     <Layout crumbs={crumbs}>
       <YearFilterButtons
-        yearFilters={filters}
+        yearFilters={yearButtons}
         onYearFilter={handleYearFilter}
       />
       <SearchBox onSearch={handleSearch} />
