@@ -98,6 +98,7 @@ const BookPage = ({
             <span
               css={css`
                 align-self: center;
+                font-size: 1.2rem;
                 justify-self: center;
                 color: #ececec;
               `}
