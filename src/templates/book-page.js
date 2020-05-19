@@ -55,7 +55,8 @@ const BookPage = ({
               `)}
             `}
           >
-            {book.node.title}:
+            {book.node.title}
+            {book.node.shortDescription ? ":" : null}
             <pre
               css={css`
                 font-size: 1.2rem;
