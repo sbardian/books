@@ -55,7 +55,15 @@ const BookPage = ({
               `)}
             `}
           >
-            {book.node.title}: {book.node.shortDescription}
+            {book.node.title}:
+            <pre
+              css={css`
+                font-size: 1.2rem;
+                color: #c1a57b;
+              `}
+            >
+              {book.node.shortDescription}
+            </pre>
           </h1>
           <div
             css={css`
