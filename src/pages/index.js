@@ -3,7 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { jsx } from "@emotion/core"
-import { atom, selector, useRecoilState } from "recoil"
+import { atom, selector, useRecoilState, useRecoilValue } from "recoil"
 import Layout from "../components/layout"
 import Books from "../components/books"
 import SearchBox from "../components/search-box"
@@ -49,7 +49,7 @@ const IndexPage = ({
     },
   })
 
-  const yearFiltersState = selector({
+  const yearFilters = selector({
     key: "yearFiltersState",
     get: ({ get }) => {
       const years = get(booksState).map((book) => book.node.yearRead)
@@ -58,8 +58,8 @@ const IndexPage = ({
   })
 
   const [filter, setFilter] = useRecoilState(filterState)
-  const [filteredBooks] = useRecoilState(filteredBooksState)
-  const [yearButtons] = useRecoilState(yearFiltersState)
+  const filteredBooks = useRecoilValue(filteredBooksState)
+  const yearButtons = useRecoilValue(yearFilters)
 
   const clearSearchInput = () => {
     /* eslint-disable-next-line */
