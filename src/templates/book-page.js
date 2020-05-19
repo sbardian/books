@@ -61,6 +61,8 @@ const BookPage = ({
               css={css`
                 font-size: 1.2rem;
                 color: #c1a57b;
+                word-wrap: wrap;
+                white-space: pre-wrap;
               `}
             >
               {book.node.shortDescription}
