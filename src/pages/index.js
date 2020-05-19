@@ -43,24 +43,17 @@ const IndexPage = ({
       const filter = get(filterState)
       const books = get(booksState)
 
-      switch (filter) {
-        case ALL: {
-          return books
-        }
-        default: {
-          return books.filter(
-            (book) =>
-              book.node.yearRead === filter ||
-              book.node.tagsSet.some((tag) => tag === filter) ||
-              filter === ALL ||
-              book.node.title.toLowerCase().includes(filter.toLowerCase()) ||
-              book.node.author.toLowerCase().includes(filter.toLowerCase()) ||
-              book.node.tagsSet.some((tag) =>
-                tag.toLowerCase().includes(filter.toLowerCase())
-              )
+      return books.filter(
+        (book) =>
+          book.node.yearRead === filter ||
+          book.node.tagsSet.some((tag) => tag === filter) ||
+          filter === ALL ||
+          book.node.title.toLowerCase().includes(filter.toLowerCase()) ||
+          book.node.author.toLowerCase().includes(filter.toLowerCase()) ||
+          book.node.tagsSet.some((tag) =>
+            tag.toLowerCase().includes(filter.toLowerCase())
           )
-        }
-      }
+      )
     },
   })
 
