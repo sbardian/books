@@ -36,8 +36,8 @@ const ButtonText = styled.span`
 `
 
 const YearFilterButtons = ({ yearFilters, onYearFilter }) => {
-  const yearButtons = yearFilters.sort().slice(0, -1)
-  const allButton = yearFilters.slice(-1)
+  const yearButtons = Array.from(yearFilters).sort().slice(0, -1)
+  const allButton = Array.from(yearFilters).slice(-1)
   const filterBy = [...allButton, ...yearButtons]
   return (
     <YearFilterButtonsWrapper>

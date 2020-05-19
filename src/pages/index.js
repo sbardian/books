@@ -3,6 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { jsx } from "@emotion/core"
+import { atom, selector, useRecoilState } from "recoil"
 import Layout from "../components/layout"
 import Books from "../components/books"
 import SearchBox from "../components/search-box"
@@ -10,7 +11,6 @@ import YearFilterButtons from "../components/year-filter-buttons"
 import Filters from "../components/filter-heading"
 
 const ALL = "All"
-const SEARCH = "Search"
 
 const IndexPage = ({
   pageContext: {
@@ -19,60 +19,78 @@ const IndexPage = ({
   data: { allSanityBook },
   location,
 }) => {
-  const [books, setBooks] = React.useState(allSanityBook.edges)
-  const [filterHeading, setFilterHeading] = React.useState(ALL)
-  const allBooks = allSanityBook.edges
+  const booksState = atom({
+    key: "bookState",
+    default: allSanityBook.edges,
+  })
 
-  const years = allBooks.map(book => book.node.yearRead)
+  const yearFiltersState = selector({
+    key: "yearFiltersState",
+    get: ({ get }) => {
+      const years = get(booksState).map((book) => book.node.yearRead)
+      return [...new Set([ALL, ...years])]
+    },
+  })
 
-  const filters = [...new Set([ALL, ...years])]
+  const filterState = atom({
+    key: "booksFilterState",
+    default: ALL,
+  })
+
+  const filteredBooksState = selector({
+    key: "filteredBooksState",
+    get: ({ get }) => {
+      const filter = get(filterState)
+      const books = get(booksState)
+
+      switch (filter) {
+        case ALL: {
+          return books
+        }
+        default: {
+          return books.filter(
+            (book) =>
+              book.node.yearRead === filter ||
+              book.node.tagsSet.some((tag) => tag === filter) ||
+              filter === ALL ||
+              book.node.title.toLowerCase().includes(filter.toLowerCase()) ||
+              book.node.author.toLowerCase().includes(filter.toLowerCase()) ||
+              book.node.tagsSet.some((tag) =>
+                tag.toLowerCase().includes(filter.toLowerCase())
+              )
+          )
+        }
+      }
+    },
+  })
+
+  const [filter, setFilter] = useRecoilState(filterState)
+  const [filteredBooks] = useRecoilState(filteredBooksState)
+  const [filters] = useRecoilState(yearFiltersState)
 
   const clearSearchInput = () => {
     /* eslint-disable-next-line */
     document.querySelector("#books-search-input").value = ""
   }
 
-  const handleYearFilter = filter => {
+  const handleYearFilter = (yearFilter) => {
     clearSearchInput()
-    setBooks(allBooks)
-    setBooks(
-      allBooks.filter(
-        book =>
-          book.node.yearRead === filter ||
-          book.node.tagsSet.some(tag => tag === filter) ||
-          filter === "All"
-      )
-    )
-    setFilterHeading(filter)
+    setFilter(yearFilter)
   }
 
   const handleSearch = ({ target: search }) => {
-    setFilterHeading(SEARCH)
+    setFilter(ALL)
     if (!search.value || search.value === "") {
-      setFilterHeading(ALL)
-      setBooks(allBooks)
+      setFilter(ALL)
     } else {
-      setBooks(
-        allBooks.filter(
-          book =>
-            book.node.title
-              .toLowerCase()
-              .includes(search.value.toLowerCase()) ||
-            book.node.author
-              .toLowerCase()
-              .includes(search.value.toLowerCase()) ||
-            book.node.tagsSet.some(tag =>
-              tag.toLowerCase().includes(search.value.toLowerCase())
-            )
-        )
-      )
+      setFilter(search.value)
     }
   }
 
   React.useEffect(() => {
     if (location && location.state && location.state.filterState) {
       handleYearFilter(location.state.filterState)
-      setFilterHeading(location.state.filterState)
+      setFilter(location.state.filterState)
     }
   }, [location])
 
@@ -83,10 +101,10 @@ const IndexPage = ({
         onYearFilter={handleYearFilter}
       />
       <SearchBox onSearch={handleSearch} />
-      {filterHeading && (
-        <Filters filterHeading={filterHeading} count={books.length} />
+      {filter && (
+        <Filters filterHeading={filter} count={filteredBooks.length} />
       )}
-      <Books books={books} />
+      <Books books={filteredBooks} />
     </Layout>
   )
 }
