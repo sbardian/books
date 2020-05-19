@@ -17,7 +17,7 @@ const PageContainer = styled.div`
   grid-gap: 20px;
   min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 5% 5% auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   justify-content: center;
   background: #222831;
   color: #666;
