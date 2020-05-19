@@ -17,7 +17,6 @@ module.exports = {
         theme_color: "#606d80",
         display: "standalone",
         icon: "src/images/gatsby-icon.png",
-        cache_busting_mode: "name",
       },
     },
     {
