@@ -23,18 +23,7 @@ const IndexPage = ({
   const setBookState = useSetRecoilState(booksState)
   const [filter, setFilter] = useRecoilState(filterState)
 
-  const clearSearchInput = () => {
-    /* eslint-disable-next-line */
-    document.querySelector("#books-search-input").value = ""
-  }
-
-  const handleYearFilter = (yearFilter) => {
-    clearSearchInput()
-    setFilter(yearFilter)
-  }
-
   const handleSearch = ({ target: search }) => {
-    setFilter(ALL)
     if (!search.value || search.value === "") {
       setFilter(ALL)
     } else {
@@ -46,7 +35,7 @@ const IndexPage = ({
     setBookState(allSanityBook.edges)
 
     if (location && location.state && location.state.filterState) {
-      handleYearFilter(location.state.filterState)
+      setFilter(location.state.filterState)
     }
   }, [location])
 
