@@ -13,7 +13,7 @@ export const filterState = atom({
   default: ALL,
 })
 
-// export const singleBookId = atom({
+// export const bookIdState = atom({
 //   key: "singleBookId",
 //   default: null,
 // })
@@ -42,7 +42,7 @@ export const filteredBooksState = selector({
   },
 })
 
-// export const singleBookState = selector({
+// export const singleBookIdState = selector({
 //   key: "singleBookState",
 //   get: ({ get }) => {
 //     const books = get(booksState)
@@ -51,7 +51,7 @@ export const filteredBooksState = selector({
 //   },
 // })
 
-export const yearFilters = selector({
+export const yearFiltersState = selector({
   key: "yearFiltersState",
   get: ({ get }) => {
     const years = get(booksState).map((book) => book.node.yearRead)

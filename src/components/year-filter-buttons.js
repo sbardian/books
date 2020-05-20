@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { yearFilters, filterState } from "./state"
+import { yearFiltersState, filterState } from "./state"
 
 const YearFilterButtonsWrapper = styled.div`
   display: grid;
@@ -37,9 +37,9 @@ const ButtonText = styled.span`
 `
 
 const YearFilterButtons = () => {
-  const yearFiltersState = useRecoilValue(yearFilters)
+  const yearFilters = useRecoilValue(yearFiltersState)
   const setYearFilter = useSetRecoilState(filterState)
-  const filters = Array.from(yearFiltersState)
+  const filters = Array.from(yearFilters)
   const yearButtons = filters.sort().slice(0, -1)
   const allButton = filters.slice(-1)
   const filterBy = [...allButton, ...yearButtons]
