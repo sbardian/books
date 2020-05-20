@@ -1,10 +1,11 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import { navigate } from "gatsby"
 import { css } from "@emotion/core"
+import { useRecoilValue } from "recoil"
 import BookImage from "./book-image"
 import mq from "./media-queries"
+import { filteredBooksState } from "./state"
 
 const BooksWrapper = styled.div`
   display: grid;
@@ -48,37 +49,26 @@ const BookButton = styled.button`
   }
 `
 
-const Book = ({ books }) => (
-  <BooksWrapper>
-    {books.map((book) => {
-      return (
-        <BookWrapper key={book.node.id}>
-          <BookButton
-            type="button"
-            onClick={() => navigate(`/book/${book.node.id}`)}
-          >
-            <BookTitle>{book.node.title}</BookTitle>
-            <BookImage book={book.node} />
-          </BookButton>
-        </BookWrapper>
-      )
-    })}
-  </BooksWrapper>
-)
+const Book = () => {
+  const { books } = useRecoilValue(filteredBooksState)
 
-Book.propTypes = {
-  books: PropTypes.arrayOf(
-    PropTypes.shape({
-      node: PropTypes.shape({
-        book: PropTypes.shape({
-          node: PropTypes.shape({
-            id: PropTypes.string.isRequired,
-            tagsSet: PropTypes.arrayOf(PropTypes.string),
-          }),
-        }),
-      }),
-    })
-  ).isRequired,
+  return (
+    <BooksWrapper>
+      {books.map((book) => {
+        return (
+          <BookWrapper key={book.node.id}>
+            <BookButton
+              type="button"
+              onClick={() => navigate(`/book/${book.node.id}`)}
+            >
+              <BookTitle>{book.node.title}</BookTitle>
+              <BookImage book={book.node} />
+            </BookButton>
+          </BookWrapper>
+        )
+      })}
+    </BooksWrapper>
+  )
 }
 
 export default Book

@@ -3,12 +3,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { jsx } from "@emotion/core"
-import { atom, selector, useRecoilState, useRecoilValue } from "recoil"
+import { useRecoilState, useSetRecoilState } from "recoil"
 import Layout from "../components/layout"
 import Books from "../components/books"
 import SearchBox from "../components/search-box"
 import YearFilterButtons from "../components/year-filter-buttons"
 import Filters from "../components/filter-heading"
+import { booksState, filterState } from "../components/state"
 
 const ALL = "All"
 
@@ -19,47 +20,8 @@ const IndexPage = ({
   data: { allSanityBook },
   location,
 }) => {
-  const booksState = atom({
-    key: "bookState",
-    default: allSanityBook.edges,
-  })
-
-  const filterState = atom({
-    key: "booksFilterState",
-    default: ALL,
-  })
-
-  const filteredBooksState = selector({
-    key: "filteredBooksState",
-    get: ({ get }) => {
-      const filter = get(filterState)
-      const books = get(booksState)
-
-      return books.filter(
-        (book) =>
-          filter === ALL ||
-          book.node.yearRead === filter ||
-          book.node.tagsSet.some((tag) => tag === filter) ||
-          book.node.title.toLowerCase().includes(filter.toLowerCase()) ||
-          book.node.author.toLowerCase().includes(filter.toLowerCase()) ||
-          book.node.tagsSet.some((tag) =>
-            tag.toLowerCase().includes(filter.toLowerCase())
-          )
-      )
-    },
-  })
-
-  const yearFilters = selector({
-    key: "yearFiltersState",
-    get: ({ get }) => {
-      const years = get(booksState).map((book) => book.node.yearRead)
-      return [...new Set([ALL, ...years])]
-    },
-  })
-
+  const setBookState = useSetRecoilState(booksState)
   const [filter, setFilter] = useRecoilState(filterState)
-  const filteredBooks = useRecoilValue(filteredBooksState)
-  const yearButtons = useRecoilValue(yearFilters)
 
   const clearSearchInput = () => {
     /* eslint-disable-next-line */
@@ -81,6 +43,8 @@ const IndexPage = ({
   }
 
   React.useEffect(() => {
+    setBookState(allSanityBook.edges)
+
     if (location && location.state && location.state.filterState) {
       handleYearFilter(location.state.filterState)
     }
@@ -88,15 +52,10 @@ const IndexPage = ({
 
   return (
     <Layout crumbs={crumbs}>
-      <YearFilterButtons
-        yearFilters={yearButtons}
-        onYearFilter={handleYearFilter}
-      />
+      <YearFilterButtons />
       <SearchBox onSearch={handleSearch} />
-      {filter && (
-        <Filters filterHeading={filter} count={filteredBooks.length} />
-      )}
-      <Books books={filteredBooks} />
+      {filter && <Filters />}
+      <Books />
     </Layout>
   )
 }

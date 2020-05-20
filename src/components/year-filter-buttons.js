@@ -1,6 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "@emotion/styled"
+import { useRecoilValue, useSetRecoilState } from "recoil"
+import { yearFilters, filterState } from "./state"
 
 const YearFilterButtonsWrapper = styled.div`
   display: grid;
@@ -35,15 +36,21 @@ const ButtonText = styled.span`
   align-items: center;
 `
 
-const YearFilterButtons = ({ yearFilters, onYearFilter }) => {
-  const filters = Array.from(yearFilters)
+const YearFilterButtons = () => {
+  const yearFiltersState = useRecoilValue(yearFilters)
+  const setYearFilter = useSetRecoilState(filterState)
+  const filters = Array.from(yearFiltersState)
   const yearButtons = filters.sort().slice(0, -1)
   const allButton = filters.slice(-1)
   const filterBy = [...allButton, ...yearButtons]
   return (
     <YearFilterButtonsWrapper>
       {filterBy.map((filter) => (
-        <Button key={filter} type="button" onClick={() => onYearFilter(filter)}>
+        <Button
+          key={filter}
+          type="button"
+          onClick={() => setYearFilter(filter)}
+        >
           <ButtonText>
             {filter.charAt(0).toUpperCase() + filter.slice(1)}
           </ButtonText>
@@ -51,16 +58,6 @@ const YearFilterButtons = ({ yearFilters, onYearFilter }) => {
       ))}
     </YearFilterButtonsWrapper>
   )
-}
-
-YearFilterButtons.defaultProps = {
-  yearFilters: [],
-  onYearFilter: () => {},
-}
-
-YearFilterButtons.propTypes = {
-  yearFilters: PropTypes.arrayOf(PropTypes.string),
-  onYearFilter: PropTypes.func,
 }
 
 export default YearFilterButtons

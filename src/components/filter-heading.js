@@ -1,7 +1,8 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
+import { useRecoilValue } from "recoil"
+import { filterState, filteredBooksState } from "./state"
 
 const FilterHeadingWrapper = styled.div`
   display: grid;
@@ -20,7 +21,9 @@ const FilterCount = styled.span`
   color: #ececec;
 `
 
-const Filters = ({ filterHeading, count }) => {
+const Filters = () => {
+  const filterHeading = useRecoilValue(filterState)
+  const { count } = useRecoilValue(filteredBooksState)
   return (
     <FilterHeadingWrapper>
       <FilterHeading>
@@ -29,16 +32,6 @@ const Filters = ({ filterHeading, count }) => {
       <FilterCount>({count})</FilterCount>
     </FilterHeadingWrapper>
   )
-}
-
-Filters.defaultProps = {
-  filterHeading: "",
-  count: 0,
-}
-
-Filters.propTypes = {
-  filterHeading: PropTypes.string,
-  count: PropTypes.number,
 }
 
 export default Filters
