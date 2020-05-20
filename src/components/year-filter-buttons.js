@@ -37,6 +37,11 @@ const ButtonText = styled.span`
 `
 
 const YearFilterButtons = () => {
+  const clearSearchInput = () => {
+    /* eslint-disable-next-line */
+    document.querySelector("#books-search-input").value = ""
+  }
+
   const yearFilters = useRecoilValue(yearFiltersState)
   const setYearFilter = useSetRecoilState(filterState)
   const filters = Array.from(yearFilters)
@@ -49,7 +54,10 @@ const YearFilterButtons = () => {
         <Button
           key={filter}
           type="button"
-          onClick={() => setYearFilter(filter)}
+          onClick={() => {
+            clearSearchInput()
+            setYearFilter(filter)
+          }}
         >
           <ButtonText>
             {filter.charAt(0).toUpperCase() + filter.slice(1)}
