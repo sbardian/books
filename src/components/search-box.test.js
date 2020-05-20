@@ -7,11 +7,11 @@ const onSearch = jest.fn()
 
 describe("Tags Tests", () => {
   it("should render search label and input", () => {
-    const { getByLabelText, getByTestId } = render(
+    const { queryByLabelText, queryByTestId } = render(
       <SearchBox onSearch={onSearch} />
     )
-    const searchButton = getByLabelText("Search")
-    const searchInput = getByTestId("books-search-input-testid")
+    const searchButton = queryByLabelText("Search")
+    const searchInput = queryByTestId("books-search-input-testid")
     expect(searchButton).toBeTruthy()
     expect(searchInput).toBeTruthy()
     fireEvent.change(searchInput, { target: { value: "a" } })

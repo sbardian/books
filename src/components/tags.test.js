@@ -10,10 +10,10 @@ const tags = ["Fantasy", "Development", "Fiction", "History"]
 
 describe("Tags Tests", () => {
   it("should render an array of tags", () => {
-    const { getByText } = render(<Tags tags={tags} />)
-    tags.forEach(tag => {
-      expect(getByText(`#${tag}`)).toBeTruthy()
-      expect(getByText(`#${tag}`)).toHaveAttribute("class")
+    const { queryByText } = render(<Tags tags={tags} />)
+    tags.forEach((tag) => {
+      expect(queryByText(`#${tag}`)).toBeTruthy()
+      expect(queryByText(`#${tag}`)).toHaveAttribute("class")
     })
   })
   it("should click a tag", () => {

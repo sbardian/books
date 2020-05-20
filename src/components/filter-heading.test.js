@@ -2,20 +2,23 @@ import React from "react"
 import { render } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect"
 import FilterHeading from "./filter-heading"
+import {
+  RecoilRootWrapper,
+  FilterHeadingWrapper,
+} from "./test-component-wrappers"
 
 jest.mock("gatsby")
 
 describe("Filter heading tests", () => {
   it("should render filter heading link", () => {
-    const { getByText } = render(
-      <FilterHeading filterHeading="Test Heading" count={3} />
+    const { queryByText } = render(
+      <RecoilRootWrapper>
+        <FilterHeadingWrapper>
+          <FilterHeading />
+        </FilterHeadingWrapper>
+      </RecoilRootWrapper>
     )
-    expect(getByText("Test Heading")).toBeTruthy()
-    expect(getByText("(3)")).toBeTruthy()
-  })
-  it("should render empty filter heading link", () => {
-    const { queryByText } = render(<FilterHeading />)
     expect(queryByText("Test Heading")).toBeNull()
-    expect(queryByText("(3)")).toBeNull()
+    expect(queryByText("All")).toBeTruthy()
   })
 })

@@ -4,8 +4,8 @@ import Footer from "./footer"
 
 describe("Footer test", () => {
   it("should return footer link", () => {
-    const { getByTestId } = render(<Footer />)
-    const link = getByTestId("footer-link-test")
+    const { queryByTestId } = render(<Footer />)
+    const link = queryByTestId("footer-link-test")
     expect(link).toHaveAttribute("href", "https://gatsbyjs.org")
   })
 })
