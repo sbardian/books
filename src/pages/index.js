@@ -20,12 +20,11 @@ const IndexPage = ({
   data: { allSanityBook },
   location,
 }) => {
-  // our recoil state
   const setBookState = useSetRecoilState(booksState)
   const [filter, setFilter] = useRecoilState(filterState)
 
-  // filter results based on search
   const handleSearch = ({ target: search }) => {
+    // if search input is cleared reset filters
     if (!search.value || search.value === "") {
       setFilter(ALL)
     } else {
@@ -33,11 +32,11 @@ const IndexPage = ({
     }
   }
 
-  // set recoil book state on mount
-  // set filter if returning from previously filtered results
   React.useEffect(() => {
+    // set recoil book state on mount
     setBookState(allSanityBook.edges)
 
+    // set filter if returning from previously filtered results
     if (location && location.state && location.state.filterState) {
       setFilter(location.state.filterState)
     }
