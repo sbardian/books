@@ -3,6 +3,7 @@ import { atom, selector } from "recoil"
 
 const ALL = "All"
 
+// atom homding all books
 export const booksState = atom({
   key: "bookState",
   default: [],
@@ -13,11 +14,13 @@ export const booksState = atom({
 //   default: null,
 // })
 
+// atom holding current filter value
 export const filterState = atom({
   key: "booksFilterState",
   default: ALL,
 })
 
+// return array of filtered books
 export const filteredBooksState = selector({
   key: "filteredBooksState",
   get: ({ get }) => {
@@ -42,7 +45,7 @@ export const filteredBooksState = selector({
   },
 })
 
-// return a reduced list of filter buttons
+// return a reduced array of filter buttons
 export const yearFiltersState = selector({
   key: "yearFiltersState",
   get: ({ get }) => {
@@ -54,6 +57,7 @@ export const yearFiltersState = selector({
   },
 })
 
+// array of all available tags
 export const fullpageTagsState = selector({
   key: "tagsState",
   get: ({ get }) => {
