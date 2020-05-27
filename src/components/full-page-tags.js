@@ -1,7 +1,8 @@
 import React from "react"
-import Proptypes from "prop-types"
 import styled from "@emotion/styled"
 import { navigate } from "gatsby"
+import { useRecoilValue } from "recoil"
+import { fullpageTagsState } from "./state"
 
 const FullPageTagWrapper = styled.div`
   display: grid;
@@ -30,10 +31,12 @@ const FullPageTagButton = styled.button`
   }
 `
 
-const FullPageTags = ({ tags }) => {
+const FullPageTags = () => {
+  const tags = useRecoilValue(fullpageTagsState)
+
   return (
     <FullPageTagWrapper>
-      {tags.map(tag => (
+      {tags.map((tag) => (
         <FullPageTagButton
           key={tag.id}
           onClick={() => navigate("/", { state: { filterState: tag } })}
@@ -43,10 +46,6 @@ const FullPageTags = ({ tags }) => {
       ))}
     </FullPageTagWrapper>
   )
-}
-
-FullPageTags.propTypes = {
-  tags: Proptypes.arrayOf(Proptypes.string).isRequired,
 }
 
 export default FullPageTags

@@ -8,15 +8,15 @@ export const booksState = atom({
   default: [],
 })
 
+// export const bookIdState = atom({
+//   key: "bookIdState",
+//   default: null,
+// })
+
 export const filterState = atom({
   key: "booksFilterState",
   default: ALL,
 })
-
-// export const bookIdState = atom({
-//   key: "singleBookId",
-//   default: null,
-// })
 
 export const filteredBooksState = selector({
   key: "filteredBooksState",
@@ -42,15 +42,6 @@ export const filteredBooksState = selector({
   },
 })
 
-// export const singleBookIdState = selector({
-//   key: "singleBookState",
-//   get: ({ get }) => {
-//     const books = get(booksState)
-//     const id = get(singleBookId)
-//     return books.filter((book) => id === book.node.id)
-//   },
-// })
-
 // return a reduced list of filter buttons
 export const yearFiltersState = selector({
   key: "yearFiltersState",
@@ -62,3 +53,48 @@ export const yearFiltersState = selector({
     return [...allButton, ...yearButtons]
   },
 })
+
+export const fullpageTagsState = selector({
+  key: "tagsState",
+  get: ({ get }) => {
+    const tagSets = get(booksState).map((book) => book.node.tagsSet)
+
+    const tags = []
+    tagSets.forEach((currentTag) =>
+      currentTag.forEach((tag) => {
+        tags.push(tag)
+      })
+    )
+    return [...new Set([...tags])]
+  },
+})
+
+// export const specificBookTags = selector({
+//   key: "specificBookTags",
+//   get: ({ get }) => {
+//     const bookId = get(bookIdState)
+//     if (!bookId) {
+//       throw new Error("Book ID state is null.")
+//     }
+//     const allBooks = get(booksState)
+//     const currentBook = allBooks.filter(
+//       (book) => {
+//         if (book.node.id === bookId) {
+//           return book
+//         }
+//       }
+//       // TODO: deal with bad ID's. . . forward to 404?
+//   },
+//   set: ({ set }, id) => {
+//     set(bookIdState, id)
+//   },
+// })
+
+// export const singleBookIdState = selector({
+//   key: "singleBookState",
+//   get: ({ get }) => {
+//     const books = get(booksState)
+//     const id = get(singleBookId)
+//     return books.filter((book) => id === book.node.id)
+//   },
+// })
