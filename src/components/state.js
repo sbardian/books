@@ -51,10 +51,14 @@ export const filteredBooksState = selector({
 //   },
 // })
 
+// return a reduced list of filter buttons
 export const yearFiltersState = selector({
   key: "yearFiltersState",
   get: ({ get }) => {
     const years = get(booksState).map((book) => book.node.yearRead)
-    return [...new Set([ALL, ...years])]
+    const filtersSetReduced = [...new Set([ALL, ...years])]
+    const yearButtons = filtersSetReduced.sort().slice(0, -1)
+    const allButton = filtersSetReduced.slice(-1)
+    return [...allButton, ...yearButtons]
   },
 })

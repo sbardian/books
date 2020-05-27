@@ -42,15 +42,12 @@ const YearFilterButtons = () => {
     document.querySelector("#books-search-input").value = ""
   }
 
-  const yearFilters = useRecoilValue(yearFiltersState)
+  const buttonFilters = useRecoilValue(yearFiltersState)
   const setYearFilter = useSetRecoilState(filterState)
-  const filters = Array.from(yearFilters)
-  const yearButtons = filters.sort().slice(0, -1)
-  const allButton = filters.slice(-1)
-  const filterBy = [...allButton, ...yearButtons]
+
   return (
     <YearFilterButtonsWrapper>
-      {filterBy.map((filter) => (
+      {buttonFilters.map((filter) => (
         <Button
           key={filter}
           type="button"
