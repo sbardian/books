@@ -40,8 +40,8 @@ const TitleLink = styled.a`
 `
 
 const BreadcrumbWrapper = styled.div`
-  margin: 0.67em 2em;
-  ${mq.md} {
+  margin: 0.67em;
+  ${mq.sm} {
     margin: 0.67em auto;
   }
 `
