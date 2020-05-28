@@ -6,14 +6,14 @@ import { fullpageTagsState } from "./state"
 
 const FullPageTagWrapper = styled.div`
   display: grid;
-  grid-gap: 1.2em;
+  gap: 1.2em;
   grid-template-columns: repeat(auto-fit, 350px);
   justify-content: center;
 `
 
 const FullPageTagButton = styled.button`
   display: grid;
-  grid-gap: 2rem;
+  gap: 2rem;
   grid-template-rows: repeat(auto-fit, 150px);
   align-items: center;
   padding: 0.5em;

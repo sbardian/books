@@ -5,9 +5,86 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Tags from "../components/tags"
 import mq from "../components/media-queries"
+
+const BookPageWrapper = styled.div`
+  display: grid;
+  gap: 0.67rem;
+  grid-template-rows: auto auto min-content;
+  background: #dce0e6;
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
+`
+
+const BookPageHeader = styled.div`
+  display: grid;
+  gap: 0.67rem;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background: #30475e;
+  padding: 0 0.67rem 0 0.67rem;
+  ${mq.md} {
+    grid-template-columns: 1fr auto;
+  }
+`
+
+const BookPageTitle = styled.h1`
+  font-size: 1.5rem;
+  margin: 1.2rem 1.2rem 0 1.2rem;
+  color: #ececec;
+  ${mq.md} {
+    font-size: 3rem;
+  }
+`
+
+const BookPageShortDescription = styled.pre`
+  font-size: 1.2rem;
+  color: #c1a57b;
+  word-wrap: wrap;
+  white-space: pre-wrap;
+`
+
+const BookPageAmazonYearReadWrapper = styled.div`
+  display: grid;
+  gap: 0.67rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  ${mq.md} {
+    grid-template-columns: 1fr;
+  }
+`
+
+const BookPageAmazonIconLink = styled.a`
+  text-decoration: none;
+  padding: 0 0 0.67rem;
+  align-self: center;
+  justify-self: center;
+`
+
+const BookPageReadIn = styled.span`
+  align-self: center;
+  font-size: 1.2rem;
+  justify-self: center;
+  color: #ececec;
+`
+
+const BookPageBodyWrapper = styled.div`
+  display: grid;
+  gap: 0.67rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+  color: #1f1f20;
+  padding: 0 0.67rem 0.67rem 0.67rem;
+  ${mq.md} {
+    grid-template-columns: minmax(300px, 300px) minmax(300px, 1fr);
+  }
+`
+
+const BookPageBookDescription = styled.span`
+  font-size: 1.5em;
+`
 
 const BookPage = ({
   pageContext: {
@@ -23,73 +100,17 @@ const BookPage = ({
 
   return (
     <Layout location="header" crumbs={crumbs} crumbLabel={book.node.title}>
-      <div
-        css={css`
-          display: grid;
-          grid-gap: 20px;
-          grid-template-rows: auto auto min-content;
-          background: #dce0e6;
-          box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.2);
-        `}
-      >
-        <div
-          css={css`
-            display: grid;
-            grid-gap: 20px;
-            grid-template-rows: 1fr auto;
-            align-items: center;
-            background: #30475e;
-            padding: 0 20px 0 20px;
-            ${mq.sm(css`
-              grid-template-columns: 1fr;
-              grid-gap: 0px;
-            `)}
-          `}
-        >
-          <h1
-            css={css`
-              font-size: 3rem;
-              color: #ececec;
-              ${mq.sm(css`
-                font-size: 1.5rem;
-              `)}
-            `}
-          >
+      <BookPageWrapper>
+        <BookPageHeader>
+          <BookPageTitle>
             {book.node.title}
             {book.node.shortDescription ? ":" : null}
-            <pre
-              css={css`
-                font-size: 1.2rem;
-                color: #c1a57b;
-                word-wrap: wrap;
-                white-space: pre-wrap;
-              `}
-            >
+            <BookPageShortDescription>
               {book.node.shortDescription}
-            </pre>
-          </h1>
-          <div
-            css={css`
-              display: grid;
-              grid-gap: 20px;
-              grid-template-columns: 1fr 1fr;
-              justify-content: center;
-              ${mq.sm(css`
-                grid-template-columns: 1fr;
-                grid-template-rows: none;
-                padding-bottom: 20px;
-              `)}
-            `}
-          >
-            <a
-              css={css`
-                text-decoration: none;
-                padding: 20px;
-                align-self: center;
-                justify-self: center;
-              `}
-              href={book.node.amazonUrl}
-            >
+            </BookPageShortDescription>
+          </BookPageTitle>
+          <BookPageAmazonYearReadWrapper>
+            <BookPageAmazonIconLink href={book.node.amazonUrl}>
               <Img
                 css={css`
                   width: 40px;
@@ -97,38 +118,11 @@ const BookPage = ({
                 fluid={amazonImage.node.image.asset.fluid}
                 alt="amazon"
               />
-            </a>
-            <span
-              css={css`
-                align-self: center;
-                font-size: 1.2rem;
-                justify-self: center;
-                color: #ececec;
-              `}
-            >
-              Read in: {book.node.yearRead}
-            </span>
-          </div>
-        </div>
-        <div
-          css={css`
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: minmax(300px, 300px) minmax(300px, 1fr);
-            grid-gap: 20px;
-            align-items: start;
-            color: #1f1f20;
-            padding: 0 20px 20px 20px;
-            ${mq.md(css`
-              grid-template-columns: 1fr;
-            `)};
-            ${mq.lg(
-              css`
-                maxheight: "460px";
-              `
-            )}
-          `}
-        >
+            </BookPageAmazonIconLink>
+            <BookPageReadIn>Read in: {book.node.yearRead}</BookPageReadIn>
+          </BookPageAmazonYearReadWrapper>
+        </BookPageHeader>
+        <BookPageBodyWrapper>
           <Img
             fluid={book.node.image.asset.fluid}
             fadeIn
@@ -136,13 +130,15 @@ const BookPage = ({
             imgStyle={{ objectFit: "contain" }}
           />
           <div>
-            <h2 css={css(`margin-top: 0;`)}>Author: {book.node.author}</h2>
+            <h2>Author: {book.node.author}</h2>
             <h3>ISBN: {book.node.isbn}</h3>
-            <h3>{book.node.description}</h3>
+            <BookPageBookDescription>
+              {book.node.description}
+            </BookPageBookDescription>
           </div>
-        </div>
+        </BookPageBodyWrapper>
         <Tags tags={book.node.tagsSet} />
-      </div>
+      </BookPageWrapper>
     </Layout>
   )
 }

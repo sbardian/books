@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { navigate } from "gatsby"
-import { css } from "@emotion/core"
 import { useRecoilValue } from "recoil"
 import BookImage from "./book-image"
 import mq from "./media-queries"
@@ -9,30 +8,19 @@ import { filteredBooksState } from "./state"
 
 const BooksWrapper = styled.div`
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.67rem;
+  grid-template-columns: 1fr;
   justify-content: center;
-  color: #1f1f20;
-  ${mq.xl(
-    css`
-      grid-template-columns: repeat(auto-fit, 300px);
-    `
-  )};
-  ${mq.sm(css`
-    grid-template-columns: 1fr;
-  `)};
+  ${mq.sm} {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
 `
 
 const BookWrapper = styled.div`
   display: grid;
-  grid-gap: 20px;
+  gap: 0.67rem;
   grid-template-rows: 1fr;
   align-content: start;
-`
-
-const BookTitle = styled.h3`
-  color: #ececec;
-  font-size: 1.5rem;
 `
 
 const BookButton = styled.button`
@@ -47,6 +35,10 @@ const BookButton = styled.button`
     background: #30475e;
     cursor: pointer;
   }
+`
+const BookTitle = styled.h3`
+  color: #ececec;
+  font-size: 1.5rem;
 `
 
 const Book = () => {

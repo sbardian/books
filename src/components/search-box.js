@@ -7,7 +7,7 @@ import styled from "@emotion/styled"
 
 const SearchWrapper = styled.div`
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: center;

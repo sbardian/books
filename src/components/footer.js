@@ -7,7 +7,7 @@ import gatsby from "../images/gatsby-icon.png"
 
 const Footer = styled.div`
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;

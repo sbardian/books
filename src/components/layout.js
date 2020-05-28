@@ -14,11 +14,10 @@ import "../style/breadcrumb.css"
 
 const PageContainer = styled.div`
   display: grid;
-  grid-gap: 20px;
+  gap: 0.67rem;
   min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
-  justify-content: center;
   background: #222831;
   color: #666;
 `
@@ -26,17 +25,14 @@ const PageContainer = styled.div`
 const PageTitleWrapper = styled.div`
   background: #1f1f20;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
-  align-content: start;
-  padding: 0.67em 2em;
-  ${mq.sm(css`
-    padding: 0 0.67em 0 0.67em;
-  `)};
+  padding: 0 0.67rem 0 0.67rem;
+  ${mq.md} {
+    padding: 0.67rem 2rem;
+  }
 `
 
 const Title = styled.h1`
-  margin: 0.67em auto;
+  margin: 0.67rem auto;
 `
 
 const TitleLink = styled.a`
@@ -44,25 +40,20 @@ const TitleLink = styled.a`
 `
 
 const BreadcrumbWrapper = styled.div`
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr;
-  align-content: start;
-  margin: 0.67em auto;
-  ${mq.sm(css`
-    margin: 0.67em 2em;
-  `)};
+  margin: 0.67em 2em;
+  ${mq.md} {
+    margin: 0.67em auto;
+  }
 `
 
 const MainWrapper = styled.div`
   margin: 0.67em 2em;
   display: grid;
+  gap: 0.67rem;
   grid-template-columns: minmax(200px, 1200px);
   grid-template-rows: auto auto auto 1fr;
   justify-content: center;
-  ${mq.sm(css`
-    margin: 0 0.67em 0 0.67em;
-  `)};
+  margin: 0 0.67em 0 0.67em;
 `
 
 const Layout = ({ children, crumbs, crumbLabel }) => {

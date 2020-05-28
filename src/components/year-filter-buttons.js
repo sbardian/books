@@ -5,7 +5,7 @@ import { yearFiltersState, filterState } from "./state"
 
 const YearFilterButtonsWrapper = styled.div`
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
   justify-content: center;
 `
