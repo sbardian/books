@@ -11,8 +11,8 @@ const BooksWrapper = styled.div`
   grid-gap: 0.67rem;
   grid-template-columns: 1fr;
   justify-content: center;
-  ${mq.sm} {
-    grid-template-columns: repeat(auto-fill, 300px);
+  ${mq.md} {
+    grid-template-columns: repeat(auto-fit, 300px);
   }
 `
 
