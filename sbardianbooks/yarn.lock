@@ -907,10 +907,10 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@1.149.16":
-  version "1.149.16"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.16.tgz#b06e4070709f4edd2e526240b9b345dce550bfb1"
-  integrity sha512-p6G0BJUL72zVy2M1xNr4c2vxsjtqeT8ZKVI6wMQQ/VzIAQzZyn1XjItCTHzrkt7lQ3/BTNrqjDF8bxH4kHZY9Q==
+"@sanity/core@1.149.17":
+  version "1.149.17"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.17.tgz#6c7c0c2071caabe5906f6f98e9ca42246a320a4b"
+  integrity sha512-4VmdznaRBNJIqyw7odg6Op9almpYcGftx7SOcm+IF8oovlFcxICzMUo4hINB4Y5Jl9Wrr6mCNwkmtmKHYq1aFA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
@@ -918,7 +918,7 @@
     "@babel/preset-typescript" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "1.149.16"
-    "@sanity/export" "1.149.16"
+    "@sanity/export" "1.149.17"
     "@sanity/generate-help-url" "1.149.16"
     "@sanity/import" "1.149.16"
     "@sanity/mutator" "1.149.16"
@@ -1054,10 +1054,10 @@
     "@rexxars/eventsource-polyfill" "^1.0.0"
     eventsource "^1.0.6"
 
-"@sanity/export@1.149.16":
-  version "1.149.16"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.16.tgz#2de1db2070e2d48777b112ec56ffce459645a085"
-  integrity sha512-/z0wHe7Aw73cVBbfLuYLzGYVFwNzyHrcSxZPFNZgyIZ1VlCH2P/Mf2jPlKWQp9BRhW0vTkCQtPS20CnHp0t75A==
+"@sanity/export@1.149.17":
+  version "1.149.17"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-1.149.17.tgz#8714b6c0c2ad6852986a97b8f4c271c0efb20ea7"
+  integrity sha512-JhuGRosajt9hUMooXHI00XTCwFCiLcZsd2o9zfEugMW7ftAVwvUpr/G0tJ7QZYPHD0QKa80tpYbaiL5H5JUWiQ==
   dependencies:
     agentkeepalive "^4.1.0"
     archiver "^2.1.1"
