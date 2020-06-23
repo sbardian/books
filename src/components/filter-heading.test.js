@@ -2,10 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect"
 import FilterHeading from "./filter-heading"
-import {
-  RecoilRootWrapper,
-  FilterHeadingWrapper,
-} from "./test-component-wrappers"
+import { RecoilRootWrapper, FilterHeadingWrapper } from "../test-utils"
 
 jest.mock("gatsby")
 

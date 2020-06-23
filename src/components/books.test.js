@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect"
 import Book from "./books"
 import { navigate } from "../../__mocks__/gatsby"
-import { RecoilRootWrapper, BooksWrapper } from "./test-component-wrappers"
+import { RecoilRootWrapper, BooksWrapper } from "../test-utils"
 
 jest.mock("gatsby")
 

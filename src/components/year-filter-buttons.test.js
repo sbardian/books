@@ -2,10 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import "@testing-library/jest-dom/extend-expect"
 import YearFilterButtons from "./year-filter-buttons"
-import {
-  RecoilRootWrapper,
-  YearFilterButtonsWrapper,
-} from "./test-component-wrappers"
+import { RecoilRootWrapper, YearFilterButtonsWrapper } from "../test-utils"
 
 jest.mock("gatsby")
 
