@@ -1,11 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useSetRecoilState } from "recoil"
+import { useSetRecoilState, useRecoilValue } from "recoil"
 import { booksState, bookIdState } from "./state"
 
 const usePopulateData = (bookId = null) => {
   const setBookIdState = useSetRecoilState(bookIdState)
   const setBookState = useSetRecoilState(booksState)
+  const books = useRecoilValue(booksState)
 
   const { allSanityBook } = useStaticQuery(graphql`
     query {
@@ -36,7 +37,12 @@ const usePopulateData = (bookId = null) => {
   `)
 
   React.useEffect(() => {
-    setBookState(allSanityBook.edges)
+    if (!books.length) {
+      setBookState(allSanityBook.edges)
+    }
+  }, [])
+
+  React.useEffect(() => {
     if (bookId) {
       setBookIdState(bookId)
     }
