@@ -9,10 +9,10 @@ export const booksState = atom({
   default: [],
 })
 
-// export const bookIdState = atom({
-//   key: "bookIdState",
-//   default: null,
-// })
+export const bookIdState = atom({
+  key: "bookIdState",
+  default: null,
+})
 
 // atom holding current filter value
 export const filterState = atom({
@@ -94,11 +94,11 @@ export const fullpageTagsState = selector({
 //   },
 // })
 
-// export const singleBookIdState = selector({
-//   key: "singleBookState",
-//   get: ({ get }) => {
-//     const books = get(booksState)
-//     const id = get(singleBookId)
-//     return books.filter((book) => id === book.node.id)
-//   },
-// })
+export const singleBookIdState = selector({
+  key: "singleBookState",
+  get: ({ get }) => {
+    const books = get(booksState)
+    const id = get(bookIdState)
+    return books.filter((book) => id === book.node.id)
+  },
+})

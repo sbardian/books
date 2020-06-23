@@ -6,9 +6,12 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { useRecoilValue } from "recoil"
 import Layout from "../components/layout"
 import Tags from "../components/tags"
+import usePopulateData from "../components/use-populate-data"
 import mq from "../components/media-queries"
+import { singleBookIdState } from "../components/state"
 
 const BookPageWrapper = styled.div`
   display: grid;
@@ -89,57 +92,60 @@ const BookPageBookDescription = styled.span`
 const BookPage = ({
   pageContext: {
     breadcrumb: { crumbs },
+    id,
   },
-  data: {
-    allSanityBook: { edges },
-    allSanitySiteImage,
-  },
+  data: { allSanitySiteImage },
 }) => {
-  const [book] = edges
   const [amazonImage] = allSanitySiteImage.edges
+  usePopulateData(id)
+  const [book] = useRecoilValue(singleBookIdState)
 
   return (
-    <Layout location="header" crumbs={crumbs} crumbLabel={book.node.title}>
-      <BookPageWrapper>
-        <BookPageHeader>
-          <BookPageTitle>
-            {book.node.title}
-            {book.node.shortDescription ? ":" : null}
-            <BookPageShortDescription>
-              {book.node.shortDescription}
-            </BookPageShortDescription>
-          </BookPageTitle>
-          <BookPageAmazonYearReadWrapper>
-            <BookPageAmazonIconLink href={book.node.amazonUrl}>
+    <>
+      {book && (
+        <Layout crumbs={crumbs} crumbLabel={book.node.title}>
+          <BookPageWrapper>
+            <BookPageHeader>
+              <BookPageTitle>
+                {book.node.title}
+                {book.node.shortDescription ? ":" : null}
+                <BookPageShortDescription>
+                  {book.node.shortDescription}
+                </BookPageShortDescription>
+              </BookPageTitle>
+              <BookPageAmazonYearReadWrapper>
+                <BookPageAmazonIconLink href={book.node.amazonUrl}>
+                  <Img
+                    css={css`
+                      width: 40px;
+                    `}
+                    fluid={amazonImage.node.image.asset.fluid}
+                    alt="amazon"
+                  />
+                </BookPageAmazonIconLink>
+                <BookPageReadIn>Read in: {book.node.yearRead}</BookPageReadIn>
+              </BookPageAmazonYearReadWrapper>
+            </BookPageHeader>
+            <BookPageBodyWrapper>
               <Img
-                css={css`
-                  width: 40px;
-                `}
-                fluid={amazonImage.node.image.asset.fluid}
-                alt="amazon"
+                fluid={book.node.image.asset.fluid}
+                fadeIn
+                alt={book.node.title}
+                imgStyle={{ objectFit: "contain" }}
               />
-            </BookPageAmazonIconLink>
-            <BookPageReadIn>Read in: {book.node.yearRead}</BookPageReadIn>
-          </BookPageAmazonYearReadWrapper>
-        </BookPageHeader>
-        <BookPageBodyWrapper>
-          <Img
-            fluid={book.node.image.asset.fluid}
-            fadeIn
-            alt={book.node.title}
-            imgStyle={{ objectFit: "contain" }}
-          />
-          <div>
-            <h2>Author: {book.node.author}</h2>
-            <h3>ISBN: {book.node.isbn}</h3>
-            <BookPageBookDescription>
-              {book.node.description}
-            </BookPageBookDescription>
-          </div>
-        </BookPageBodyWrapper>
-        <Tags tags={book.node.tagsSet} />
-      </BookPageWrapper>
-    </Layout>
+              <div>
+                <h2>Author: {book.node.author}</h2>
+                <h3>ISBN: {book.node.isbn}</h3>
+                <BookPageBookDescription>
+                  {book.node.description}
+                </BookPageBookDescription>
+              </div>
+            </BookPageBodyWrapper>
+            <Tags tags={book.node.tagsSet} />
+          </BookPageWrapper>
+        </Layout>
+      )}
+    </>
   )
 }
 
@@ -153,38 +159,9 @@ BookPage.propTypes = {
         })
       ).isRequired,
     }),
+    id: PropTypes.string.isRequired,
   }).isRequired,
   data: PropTypes.shape({
-    allSanityBook: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            id: PropTypes.string,
-            amazonUrl: PropTypes.string,
-            author: PropTypes.string,
-            shortDescription: PropTypes.string,
-            description: PropTypes.string,
-            isbn: PropTypes.string,
-            imageUrl: PropTypes.string,
-            yearRead: PropTypes.string,
-            image: PropTypes.shape({
-              asset: PropTypes.shape({
-                fixed: PropTypes.shape({
-                  base64: PropTypes.string,
-                  aspectRatio: PropTypes.number,
-                  src: PropTypes.string,
-                  srcSet: PropTypes.string,
-                  srcWebp: PropTypes.string,
-                  srcSetWebp: PropTypes.string,
-                  width: PropTypes.number,
-                  height: PropTypes.number,
-                }),
-              }),
-            }),
-          }),
-        })
-      ),
-    }),
     allSanitySiteImage: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
@@ -210,7 +187,7 @@ BookPage.propTypes = {
 }
 
 export const bookQuery = graphql`
-  query($id: String) {
+  query {
     allSanitySiteImage(filter: { name: { eq: "amazonLogo" } }) {
       edges {
         node {
@@ -219,30 +196,6 @@ export const bookQuery = graphql`
               assetId
               label
               fluid(maxWidth: 40) {
-                ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
-      }
-    }
-    allSanityBook(filter: { id: { eq: $id } }) {
-      edges {
-        node {
-          id
-          amazonUrl
-          title
-          isbn
-          shortDescription
-          description
-          author
-          amazonUrl
-          imageUrl
-          yearRead
-          tagsSet
-          image {
-            asset {
-              fluid {
                 ...GatsbySanityImageFluid
               }
             }
