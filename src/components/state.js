@@ -59,7 +59,7 @@ export const yearFiltersState = selector({
 
 // array of all available tags
 export const fullpageTagsState = selector({
-  key: "tagsState",
+  key: "fullpageTagsState",
   get: ({ get }) => {
     const tagSets = get(booksState).map((book) => book.node.tagsSet)
 
@@ -72,27 +72,6 @@ export const fullpageTagsState = selector({
     return [...new Set([...tags])]
   },
 })
-
-// export const specificBookTags = selector({
-//   key: "specificBookTags",
-//   get: ({ get }) => {
-//     const bookId = get(bookIdState)
-//     if (!bookId) {
-//       throw new Error("Book ID state is null.")
-//     }
-//     const allBooks = get(booksState)
-//     const currentBook = allBooks.filter(
-//       (book) => {
-//         if (book.node.id === bookId) {
-//           return book
-//         }
-//       }
-//       // TODO: deal with bad ID's. . . forward to 404?
-//   },
-//   set: ({ set }, id) => {
-//     set(bookIdState, id)
-//   },
-// })
 
 export const singleBookIdState = selector({
   key: "singleBookState",
