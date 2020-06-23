@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { navigate } from "gatsby"
 import { useRecoilValue } from "recoil"
-import { fullpageTagsState } from "./state"
+import { fullpageTagsState } from "../state"
 
 const FullPageTagWrapper = styled.div`
   display: grid;

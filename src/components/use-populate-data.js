@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { useSetRecoilState, useRecoilValue } from "recoil"
-import { booksState, bookIdState } from "./state"
+import { booksState, bookIdState } from "../state"
 
 const usePopulateData = (bookId = null) => {
   const setBookIdState = useSetRecoilState(bookIdState)

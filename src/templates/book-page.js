@@ -11,7 +11,7 @@ import Layout from "../components/layout"
 import Tags from "../components/tags"
 import usePopulateData from "../components/use-populate-data"
 import mq from "../components/media-queries"
-import { singleBookIdState } from "../components/state"
+import { singleBookIdState } from "../state"
 
 const BookPageWrapper = styled.div`
   display: grid;

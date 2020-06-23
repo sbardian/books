@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { RecoilRoot, useSetRecoilState } from "recoil"
-import { booksState } from "./state"
+import { booksState } from "../state"
 
 export const RecoilRootWrapper = ({ children }) => {
   return <RecoilRoot>{children}</RecoilRoot>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useRecoilValue } from "recoil"
 import Layout from "../components/layout"
 import FullPageTags from "../components/full-page-tags"
-import { fullpageTagsState } from "../components/state"
+import { fullpageTagsState } from "../state"
 import usePopulateData from "../components/use-populate-data"
 
 const TagsPage = ({

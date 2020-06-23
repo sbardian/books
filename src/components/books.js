@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 import { useRecoilValue } from "recoil"
 import BookImage from "./book-image"
 import mq from "./media-queries"
-import { filteredBooksState } from "./state"
+import { filteredBooksState } from "../state"
 
 const BooksWrapper = styled.div`
   display: grid;

@@ -9,7 +9,7 @@ import SearchBox from "../components/search-box"
 import YearFilterButtons from "../components/year-filter-buttons"
 import Filters from "../components/filter-heading"
 import usePopulateData from "../components/use-populate-data"
-import { filterState } from "../components/state"
+import { filterState } from "../state"
 
 const ALL = "All"
 

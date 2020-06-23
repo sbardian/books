@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { yearFiltersState, filterState } from "./state"
+import { yearFiltersState, filterState } from "../state"
 
 const YearFilterButtonsWrapper = styled.div`
   display: grid;

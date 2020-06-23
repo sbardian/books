@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import { useRecoilValue } from "recoil"
-import { filterState, filteredBooksState } from "./state"
+import { filterState, filteredBooksState } from "../state"
 
 const FilterHeadingWrapper = styled.div`
   display: grid;
