@@ -51,7 +51,7 @@ const Book = () => {
           <BookWrapper key={book.node.id}>
             <BookButton
               type="button"
-              onClick={() => navigate(`/book/${book.node.id}`)}
+              onClick={() => navigate(`/book/${book.node.title}`)}
             >
               <BookTitle>{book.node.title}</BookTitle>
               <BookImage book={book.node} />
