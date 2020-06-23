@@ -51,7 +51,6 @@ const MainWrapper = styled.div`
   display: grid;
   gap: 0.67rem;
   grid-template-columns: minmax(200px, 1235px);
-  grid-template-rows: auto auto auto 1fr;
   justify-content: center;
   align-content: start;
   margin: 0 0.67em 0 0.67em;
