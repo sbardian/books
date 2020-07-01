@@ -10,7 +10,9 @@ const usePopulateData = (bookId = null) => {
 
   const { allSanityBook } = useStaticQuery(graphql`
     query {
-      allSanityBook(sort: { fields: author, order: ASC }) {
+      allSanityBook(
+        sort: { fields: [author, shortDescription], order: [ASC, ASC] }
+      ) {
         edges {
           node {
             id
