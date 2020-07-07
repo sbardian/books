@@ -20,6 +20,7 @@ const usePopulateData = (bookId = null) => {
             title
             isbn
             description
+            shortDescription
             author
             amazonUrl
             imageUrl
