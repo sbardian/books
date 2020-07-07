@@ -1,5 +1,5 @@
 /** @jsx jsx */
-// eslint-disable-next-line
+/* eslint-disable react/no-danger, no-unused-vars */
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useRecoilValue } from "recoil"
+import he from "he"
 import Layout from "../components/layout"
 import Tags from "../components/tags"
 import usePopulateData from "../components/use-populate-data"
@@ -100,6 +101,12 @@ const BookPage = ({
   usePopulateData(id)
   const [book] = useRecoilValue(singleBookIdState)
 
+  function createMarkup(value) {
+    return { __html: value }
+  }
+
+  console.log("book: ", book?.node?.shortDescription)
+
   return (
     <>
       {book && (
@@ -137,7 +144,11 @@ const BookPage = ({
                 <h2>Author: {book.node.author}</h2>
                 <h3>ISBN: {book.node.isbn}</h3>
                 <BookPageBookDescription>
-                  {book.node.description}
+                  <div
+                    dangerouslySetInnerHTML={createMarkup(
+                      he.decode(book.node.description)
+                    )}
+                  />
                 </BookPageBookDescription>
               </div>
             </BookPageBodyWrapper>
