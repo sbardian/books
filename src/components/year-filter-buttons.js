@@ -2,12 +2,16 @@ import React from "react"
 import styled from "@emotion/styled"
 import { useRecoilValue, useSetRecoilState } from "recoil"
 import { yearFiltersState, filterState } from "../state"
+import mq from "./media-queries"
 
 const YearFilterButtonsWrapper = styled.div`
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  grid-template-columns: 1fr;
   justify-content: center;
+  ${mq.md} {
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  }
 `
 
 const Button = styled.button`
