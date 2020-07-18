@@ -55,7 +55,7 @@
     "babel-preset-gatsby": "0.5.2",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
-    "eslint": "7.4.0",
+    "eslint": "7.5.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-emotion": "10.0.27",
