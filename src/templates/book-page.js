@@ -105,8 +105,6 @@ const BookPage = ({
     return { __html: value }
   }
 
-  console.log("book: ", book?.node?.shortDescription)
-
   return (
     <>
       {book && (
