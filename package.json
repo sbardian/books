@@ -51,7 +51,7 @@
     "@testing-library/jest-dom": "5.11.2",
     "@testing-library/react": "10.4.8",
     "babel-eslint": "10.1.0",
-    "babel-jest": "26.2.2",
+    "babel-jest": "26.3.0",
     "babel-preset-gatsby": "0.5.5",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
@@ -65,7 +65,7 @@
     "eslint-plugin-react": "7.20.5",
     "husky": "4.2.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "26.2.2",
+    "jest": "26.3.0",
     "jest-axe": "3.5.0",
     "lint-staged": "10.2.11",
     "prettier": "2.0.5"
