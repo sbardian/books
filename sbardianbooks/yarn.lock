@@ -955,43 +955,6 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/base@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.1.tgz#8365278405bad379b1365b811c1fcd8756bad65c"
-  integrity sha512-IKGWbpHW/0ZUmdwOlf0aRFnPiVxbigjbiVRZ0DyMctjBlGng9aqh6IUp/VaMjV0r+UUyWAObo3mW8fsyJ4Dk0Q==
-  dependencies:
-    "@sanity/bifur-client" "0.0.4"
-    "@sanity/client" "1.150.1"
-    "@sanity/components" "1.150.1"
-    "@sanity/generate-help-url" "1.150.1"
-    "@sanity/image-url" "^0.140.19"
-    "@sanity/initial-value-templates" "1.150.1"
-    "@sanity/mutator" "1.150.1"
-    "@sanity/observable" "1.150.1"
-    "@sanity/preview" "1.150.1"
-    "@sanity/schema" "1.150.1"
-    "@sanity/state-router" "1.150.1"
-    "@sanity/structure" "1.150.1"
-    "@sanity/transaction-collator" "1.150.1"
-    "@sanity/util" "1.150.1"
-    "@sanity/uuid" "1.150.1"
-    "@sanity/validation" "1.150.1"
-    history "^4.6.3"
-    lodash "^4.17.15"
-    nano-pubsub "^1.0.2"
-    nanoid "^3.1.9"
-    observable-callback "^1.0.1"
-    oneline "^1.0.3"
-    promise-props "^1.0.0"
-    react-fast-compare "^2.0.2"
-    react-icon-base "^2.1.2"
-    react-icons "^2.2.7"
-    react-intl "^2.2.2"
-    react-props-stream "^1.0.0"
-    rxjs "^6.5.3"
-    semver-compare "^1.0.0"
-    shallow-equals "^1.0.0"
-
 "@sanity/base@1.150.3":
   version "1.150.3"
   resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.3.tgz#fa368aa02e82fd33d886500b9cbbb067a18f0eac"
@@ -1028,13 +991,6 @@
     rxjs "^6.5.3"
     semver-compare "^1.0.0"
     shallow-equals "^1.0.0"
-
-"@sanity/bifur-client@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@sanity/bifur-client/-/bifur-client-0.0.4.tgz#3857eee4faa99464760490fd42a88db103b0117c"
-  integrity sha512-7C/cJ22/ZtfnmDeml2+rCZhXltzq15uYwmYUNf0ovg1Zkrj7ct4f9Z5s/7jFMoGE+TaZmLd+0qYK2SszIZTcfw==
-  dependencies:
-    nanoid "^3.1.3"
 
 "@sanity/bifur-client@^0.0.5":
   version "0.0.5"
@@ -1096,38 +1052,6 @@
     get-it "^5.0.3"
     make-error "^1.3.0"
     object-assign "^4.1.1"
-
-"@sanity/components@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.150.1.tgz#bd53ab2fe6e8efcf376b3c3e74dfd2afd62e0118"
-  integrity sha512-W6JuZfTp9ELzxfFdKqKx654MyjB2LSEeYUEuQ15dTxv9GQqWcZ6CgNzJ+HOLbCwUhFn4uLdUJCwlDseonpuvBw==
-  dependencies:
-    "@juggle/resize-observer" "3.1.3"
-    "@sanity/base" "1.150.1"
-    "@sanity/util" "1.150.1"
-    attr-accept "^1.1.0"
-    boundless-arrow-key-navigation "^1.1.0"
-    chance "^1.0.4"
-    chroma-js "^2.0.4"
-    circular-at "^1.0.3"
-    classnames "^2.2.5"
-    date-fns "^1.29.0"
-    dom-scroll-into-view "^1.2.1"
-    element-resize-detector "^1.1.14"
-    exif-component "^1.0.1"
-    lodash "^4.17.15"
-    nano-pubsub "^1.0.2"
-    palx "^1.0.3"
-    popper.js "^1.16.1"
-    react-animate-height "^2.0.6"
-    react-click-outside "^3.0.0"
-    react-motion "^0.5.2"
-    react-popper "^1.0.2"
-    react-sortable-hoc "^0.6.3"
-    react-split-pane "^0.1.84"
-    react-tippy "^1.2.3"
-    rxjs "^6.5.3"
-    string-hash "^1.1.3"
 
 "@sanity/components@1.150.3":
   version "1.150.3"
@@ -1267,10 +1191,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.150.3":
-  version "1.150.3"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.150.3.tgz#66953d6a57cc414459d061af9d965daf52372afc"
-  integrity sha512-MBs/bSuHV6mr3TqQyHAz75kOE3k+KG2VcC2yktFxPPnhy85Da11mEQ6BN7FsJhl91sF4bnUmfJLaFvjxmZhs+A==
+"@sanity/desk-tool@1.150.4":
+  version "1.150.4"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.150.4.tgz#98abaa8655480e4071bcbd653a00a644e5ba6137"
+  integrity sha512-BAsazEVYq3diJQyPP0IAEOGkPyQiKLZSEQKucww4BWltIzA4KTGKFRfrcRuP9f0xwKVMQh0tHh4u1s7FvrrbPg==
   dependencies:
     "@juggle/resize-observer" "3.1.3"
     "@reach/auto-id" "^0.7.2"
@@ -1280,7 +1204,7 @@
     "@sanity/form-builder" "1.150.3"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/mutator" "1.150.1"
-    "@sanity/react-hooks" "1.150.1"
+    "@sanity/react-hooks" "1.150.4"
     "@sanity/structure" "1.150.1"
     "@sanity/util" "1.150.1"
     "@sanity/uuid" "1.150.1"
@@ -1507,12 +1431,12 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.150.1.tgz#76932f2b0db1c1827504659235218084bd91b3d1"
-  integrity sha512-mPeHrJXcP6UzjOEPXS12GVqRTetD48BD3wcyjhvuxzXBPcpiA7imY//KmAmlSPXgmgFzkRjIEnTU9+7KcFCUlQ==
+"@sanity/react-hooks@1.150.4":
+  version "1.150.4"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.150.4.tgz#6322f258b3d203698ebd7e510e4b1f32baa270b0"
+  integrity sha512-vmzJb3/0Wz38ykVp3+gLEtQzaXVaM1wBkchZsKTXpRq6v8edjhiS3nyoVvfmo9SdzE2ImT8Mis75L1ML4MAvpw==
   dependencies:
-    "@sanity/base" "1.150.1"
+    "@sanity/base" "1.150.3"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
@@ -1528,19 +1452,6 @@
     lodash "^4.17.15"
     path-exists "^3.0.0"
     promise-props-recursive "^1.0.0"
-
-"@sanity/schema@1.150.1":
-  version "1.150.1"
-  resolved "https://registry.yarnpkg.com/@sanity/schema/-/schema-1.150.1.tgz#f76ea32b8dfb41ceacb63b8e002b491aaba49fb8"
-  integrity sha512-CHZbYu3nGbtamPPhob5llxbj1Hv+CQ4q5PESdsX6GjesC+bkcaah5XNzhW5B/+29zJgFXgh2vY1x36x+wFJHdA==
-  dependencies:
-    "@sanity/generate-help-url" "1.150.1"
-    arrify "^1.0.1"
-    humanize-list "^1.0.1"
-    json-reduce "^1.0.0"
-    leven "^2.1.0"
-    lodash "^4.17.15"
-    object-inspect "^1.6.0"
 
 "@sanity/schema@1.150.3":
   version "1.150.3"
@@ -5873,7 +5784,7 @@ pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
 
-popper.js@1.16.1, popper.js@^1.11.1, popper.js@^1.14.4, popper.js@^1.16.1:
+popper.js@1.16.1, popper.js@^1.11.1, popper.js@^1.14.4:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
@@ -6823,12 +6734,6 @@ react-tippy@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/react-tippy/-/react-tippy-1.4.0.tgz#e8a8b4085ec985e5c94fe128918b733b588a1465"
   integrity sha512-r/hM5XK9Ztr2ZY7IWKuRmISTlUPS/R6ddz6PO2EuxCgW+4JBcGZRPU06XcVPRDCOIiio8ryBQFrXMhFMhsuaHA==
-  dependencies:
-    popper.js "^1.11.1"
-
-react-tippy@^1.2.3:
-  version "1.3.4"
-  resolved "https://registry.npmjs.org/react-tippy/-/react-tippy-1.3.4.tgz#9db14375ef696017d33aaf24b444b3dbb0168b2a"
   dependencies:
     popper.js "^1.11.1"
 
