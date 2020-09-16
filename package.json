@@ -29,7 +29,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
-    "recoil": "0.0.11"
+    "recoil": "0.0.13"
   },
   "keywords": [
     "gatsby"
