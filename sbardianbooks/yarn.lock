@@ -955,14 +955,14 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/base@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.7.tgz#64b529f19f0d3aad8dc17e45b1409574c57ee8b2"
-  integrity sha512-GkVwP/g8G65g/fDvCgcRo1M606ztHGl6pA2mqb1vmz6vi31M+DKwW0keT1jNUQsu0bVGEZo/ePYu5+MsdR+QdQ==
+"@sanity/base@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-1.150.8.tgz#4f27c51a7af70ab5c62c4fbe03000e6452641737"
+  integrity sha512-vkTXhdOHUqrcN8AQ0IvMHN7mxQtTonPgDk3ZuNq+iPBdxGuPExMRkd7oZyjFXrW5ifnctJHytjMlh2IndluuXA==
   dependencies:
     "@sanity/bifur-client" "^0.0.5"
     "@sanity/client" "1.150.7"
-    "@sanity/components" "1.150.7"
+    "@sanity/components" "1.150.8"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/image-url" "^0.140.19"
     "@sanity/initial-value-templates" "1.150.1"
@@ -1045,14 +1045,14 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/components@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.150.7.tgz#d964b3396669986d18628959e25c4f63e660b53a"
-  integrity sha512-wL9qtAu9H1VY7nK8ryam67tOXdn2H4Mr8c1MVCOA/mZW/TsEV3qnLD37/OE70M67gAcB7fBlgTeAMglTAKGRew==
+"@sanity/components@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/components/-/components-1.150.8.tgz#c9ddcd204ceef18995b985c94465fa23e88040c3"
+  integrity sha512-rLwTHXFY2xGnvUp43KEG2P0QOnrsZ1r6awM3ngiJxpNHogmhg/f5qxs0m6VPiF02ug1dpnvWAxB7tDr2iFRgEg==
   dependencies:
     "@juggle/resize-observer" "3.1.3"
     "@reach/auto-id" "^0.10.5"
-    "@sanity/base" "1.150.7"
+    "@sanity/base" "1.150.8"
     "@sanity/util" "1.150.1"
     attr-accept "^1.1.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1158,13 +1158,13 @@
     "@sanity/generate-help-url" "1.150.1"
     lodash "^4.17.15"
 
-"@sanity/default-layout@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.150.7.tgz#7dd68a5c44ec0106f7ff110d02957035574ceeab"
-  integrity sha512-Bt43/5BCEzln017p74sqXMKZRcQwvAlhS1+Zptb4wZX2+/8RWmKYaBfJyhZbfXSr9SuqUWEIYOIGN5LS1a+Ngw==
+"@sanity/default-layout@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-1.150.8.tgz#32872e4fa0074a02f0e605422b36b9a7e136fc60"
+  integrity sha512-TY3ZlR38sXP6FKPMmu2qZn8fYHD2DtZR0YnK9D3fHJl1Y091o1hGtIaHzRz7o8ZklEsxHVKjlfKdmy7A6/9GNA==
   dependencies:
-    "@sanity/base" "1.150.7"
-    "@sanity/components" "1.150.7"
+    "@sanity/base" "1.150.8"
+    "@sanity/components" "1.150.8"
     "@sanity/generate-help-url" "1.150.1"
     classnames "^2.2.5"
     is-hotkey "^0.1.4"
@@ -1183,20 +1183,20 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.150.7.tgz#aad2f70de4d60422c61e6b0508554d43afa51f73"
-  integrity sha512-cavIihIE+6npLiSVGmlCd+9WfW+Rncg4XjBzgM/IF7K+Rsxxilq+RmsbU6xNpTbOXjBNqpwe4+BWAptNMBgotg==
+"@sanity/desk-tool@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-1.150.8.tgz#5d5b84d5502dc043b6b499368cc3a1d3f4fab81c"
+  integrity sha512-2weo0VYGnjH+WghSnqRZbCo1yNnY4yfUAfq+jIONoZPw1u4UIRFe49W+Q5CIPbfGLZr2LwLIsUVdN4HMivNPhA==
   dependencies:
     "@juggle/resize-observer" "3.1.3"
     "@reach/auto-id" "^0.7.2"
-    "@sanity/base" "1.150.7"
-    "@sanity/components" "1.150.7"
+    "@sanity/base" "1.150.8"
+    "@sanity/components" "1.150.8"
     "@sanity/data-aspects" "1.150.1"
-    "@sanity/form-builder" "1.150.7"
+    "@sanity/form-builder" "1.150.8"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/mutator" "1.150.1"
-    "@sanity/react-hooks" "1.150.7"
+    "@sanity/react-hooks" "1.150.8"
     "@sanity/structure" "1.150.1"
     "@sanity/util" "1.150.1"
     "@sanity/uuid" "1.150.1"
@@ -1250,14 +1250,14 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/form-builder@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.150.7.tgz#3b7cc3419934a472d515a50a7fbd14562afe8abc"
-  integrity sha512-6VU6x009DQY7PX4hkZ5tEOXK6fMwztrkzxfak+xl+z749R/tYNzF3/aRd5W+bnXrteBgo9b5iRD/RFqQnqFnHw==
+"@sanity/form-builder@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-1.150.8.tgz#9d5d7e782b4b7fd351670e6017452d8afb87238a"
+  integrity sha512-6HEY00V26UlKGJymtiwQoQ2ngqPcU9w60DAgrJ3UimNUAUxguj9aAa94RXkvYauwHnXdI92s7DdIXHenR/oNKw==
   dependencies:
-    "@sanity/base" "1.150.7"
+    "@sanity/base" "1.150.8"
     "@sanity/block-tools" "1.150.6"
-    "@sanity/components" "1.150.7"
+    "@sanity/components" "1.150.8"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/imagetool" "1.150.1"
     "@sanity/mutator" "1.150.1"
@@ -1417,12 +1417,12 @@
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
 
-"@sanity/react-hooks@1.150.7":
-  version "1.150.7"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.150.7.tgz#9c8d51149a41249a70db493504a575fa24336a61"
-  integrity sha512-HnPGdPaq1eBD+dx8mJ6Rj+rsO8TkGQ9UK17D3w+qs0JLJdJfrGpX8qkFilL+1NI8R3xieGlfzjCEktLoVmuhhw==
+"@sanity/react-hooks@1.150.8":
+  version "1.150.8"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-1.150.8.tgz#dcc4ec1197bb82b33b834edc7a65016d9c898037"
+  integrity sha512-mYt3hQCKLG81y5MCy8/m6Qxp1BDPaVrXXVJI3sZg/Ufb0iylCQm24zvK2K3QbZiua8KOSBADK48Y1Dw2OPt+4A==
   dependencies:
-    "@sanity/base" "1.150.7"
+    "@sanity/base" "1.150.8"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
