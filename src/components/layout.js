@@ -2,7 +2,7 @@
 // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-import { jsx, css, Global } from "@emotion/core"
+import { jsx, css, Global } from "@emotion/react"
 import styled from "@emotion/styled"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"

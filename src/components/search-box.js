@@ -2,7 +2,7 @@
 // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-import { jsx } from "@emotion/core"
+import { jsx } from "@emotion/react"
 import styled from "@emotion/styled"
 
 const SearchWrapper = styled.div`

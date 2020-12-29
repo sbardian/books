@@ -1,7 +1,7 @@
 /** @jsx jsx */
 // eslint-disable-next-line
 import React from "react"
-import { jsx } from "@emotion/core"
+import { jsx } from "@emotion/react"
 import styled from "@emotion/styled"
 import gatsby from "../images/gatsby-icon.png"
 

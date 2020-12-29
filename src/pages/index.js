@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import PropTypes from "prop-types"
-import { jsx } from "@emotion/core"
+import { jsx } from "@emotion/react"
 import { useRecoilState } from "recoil"
 import Layout from "../components/layout"
 import Books from "../components/books"

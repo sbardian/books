@@ -2,7 +2,7 @@
 // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-import { jsx, css } from "@emotion/core"
+import { jsx, css } from "@emotion/react"
 import Layout from "../components/layout"
 
 const NotFoundPage = ({
