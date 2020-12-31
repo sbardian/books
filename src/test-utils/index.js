@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import { RecoilRoot, useSetRecoilState } from "recoil"
 import { booksState } from "../state"
 
-export const RecoilRootWrapper = ({ children }) => {
-  return <RecoilRoot>{children}</RecoilRoot>
-}
+export const RecoilRootWrapper = ({ children }) => (
+  <RecoilRoot>{children}</RecoilRoot>
+)
 
 RecoilRootWrapper.propTypes = {
   children: PropTypes.node.isRequired,

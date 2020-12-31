@@ -29,21 +29,19 @@ const TagButton = styled.button`
   cursor: pointer;
 `
 
-const Tags = ({ tags }) => {
-  return (
-    <TagWrapper>
-      {tags.map((tag) => (
-        <Tag key={`${tag}`}>
-          <TagButton
-            onClick={() => navigate("/", { state: { filterState: tag } })}
-          >
-            #{tag}
-          </TagButton>
-        </Tag>
-      ))}
-    </TagWrapper>
-  )
-}
+const Tags = ({ tags }) => (
+  <TagWrapper>
+    {tags.map((tag) => (
+      <Tag key={`${tag}`}>
+        <TagButton
+          onClick={() => navigate("/", { state: { filterState: tag } })}
+        >
+          #{tag}
+        </TagButton>
+      </Tag>
+    ))}
+  </TagWrapper>
+)
 
 Tags.propTypes = {
   tags: Proptypes.arrayOf(Proptypes.string).isRequired,

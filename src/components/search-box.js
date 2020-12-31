@@ -30,19 +30,17 @@ const InputLabel = styled.label`
   color: #c1a57b;
 `
 
-const SearchBox = ({ onSearch }) => {
-  return (
-    <SearchWrapper>
-      <SearchInput
-        id="books-search-input"
-        data-testid="books-search-input-testid"
-        type="text"
-        onChange={onSearch}
-      />
-      <InputLabel htmlFor="books-search-input">Search</InputLabel>
-    </SearchWrapper>
-  )
-}
+const SearchBox = ({ onSearch }) => (
+  <SearchWrapper>
+    <SearchInput
+      id="books-search-input"
+      data-testid="books-search-input-testid"
+      type="text"
+      onChange={onSearch}
+    />
+    <InputLabel htmlFor="books-search-input">Search</InputLabel>
+  </SearchWrapper>
+)
 
 SearchBox.propTypes = {
   onSearch: PropTypes.func.isRequired,

@@ -46,19 +46,17 @@ const Book = () => {
 
   return (
     <BooksWrapper>
-      {books.map((book) => {
-        return (
-          <BookWrapper key={book.node.id}>
-            <BookButton
-              type="button"
-              onClick={() => navigate(`/book/${book.node.title}`)}
-            >
-              <BookTitle>{book.node.title}</BookTitle>
-              <BookImage book={book.node} />
-            </BookButton>
-          </BookWrapper>
-        )
-      })}
+      {books.map((book) => (
+        <BookWrapper key={book.node.id}>
+          <BookButton
+            type="button"
+            onClick={() => navigate(`/book/${book.node.title}`)}
+          >
+            <BookTitle>{book.node.title}</BookTitle>
+            <BookImage book={book.node} />
+          </BookButton>
+        </BookWrapper>
+      ))}
     </BooksWrapper>
   )
 }
