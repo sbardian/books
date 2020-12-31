@@ -6194,6 +6194,11 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
+eslint-plugin-emotion@11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-emotion/-/eslint-plugin-emotion-11.0.0.tgz#67782d427dd4cb6787d00106a6c64331acb98992"
+  integrity sha512-SKYyFYRFgOQTtBetn1mTKC2V1J6sbTnJh2/giWzg/OaTBSvJFwew8OkoxA3R9IhyaXYyPE+1TWzRhUJvVvBjVA==
+
 eslint-plugin-flowtype@^3.13.0:
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.13.0.tgz#e241ebd39c0ce519345a3f074ec1ebde4cf80f2c"
