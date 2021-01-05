@@ -23,8 +23,6 @@ module.exports = {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
-        // TODO: remove excludes they are not needed
-        exclude: [`/dev-404-page`, `/offline-plugin-app-shell-fallback`],
         crumbLabelUpdates: [{ pathname: "/book", crumbLabel: "Books" }],
       },
     },
