@@ -23,7 +23,7 @@
     "gatsby-plugin-offline": "3.8.0",
     "gatsby-plugin-react-helmet": "3.8.0",
     "gatsby-plugin-sharp": "2.12.1",
-    "gatsby-source-sanity": "6.0.4",
+    "gatsby-source-sanity": "6.0.5",
     "he": "1.2.0",
     "normalize.css": "8.0.1",
     "prop-types": "15.7.2",

@@ -2050,7 +2050,7 @@
   resolved "https://registry.yarnpkg.com/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
   integrity sha512-YnrybIoM9WFqmeK1D8p/gutqjJnmXCVFWAU3ucka9M7Dzpen3f2Dy4KsC6k1wDHrCtHQuUHHwZovh3i5UPDaZw==
 
-"@sanity/client@^1.149.13", "@sanity/client@^1.149.16":
+"@sanity/client@^1.149.13":
   version "1.150.7"
   resolved "https://registry.yarnpkg.com/@sanity/client/-/client-1.150.7.tgz#e05eec38becd5fc8db0ba11d30e406d17013b9de"
   integrity sha512-tqIi2MDE8MTJU6N2su0Ct7n+fioYe+tI9ZM2xVrvIUxU1wPxlBEs4f01rRdCttLRp6CoXUmRC7F0j68ZQWMcdA==
@@ -2058,6 +2058,19 @@
     "@sanity/eventsource" "1.150.1"
     "@sanity/generate-help-url" "1.150.1"
     "@sanity/observable" "1.150.1"
+    deep-assign "^2.0.0"
+    get-it "^5.0.3"
+    make-error "^1.3.0"
+    object-assign "^4.1.1"
+
+"@sanity/client@^2.0.1":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-2.1.4.tgz#89f64d4ec706b6c9e70605c2249677c22cab984e"
+  integrity sha512-3S5+9Q0StcDUN9M2a+YJqnbTshV0Zx/9f3fig/DC3FJQp8stdplwZ3b5nQ+D9G5fciT0UsaS2DuAK+OXXGfpLw==
+  dependencies:
+    "@sanity/eventsource" "2.1.4"
+    "@sanity/generate-help-url" "2.1.4"
+    "@sanity/observable" "2.0.9"
     deep-assign "^2.0.0"
     get-it "^5.0.3"
     make-error "^1.3.0"
@@ -2071,10 +2084,23 @@
     "@rexxars/eventsource-polyfill" "^1.0.0"
     eventsource "^1.0.6"
 
+"@sanity/eventsource@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/eventsource/-/eventsource-2.1.4.tgz#d5ee5b3d66279a06e2905fcb36b4524d655d83ad"
+  integrity sha512-EGcVBLAFpUX2l9PeH/9Xhj0P7y9BBkvR3JoxNBkQL3lavYZOOoJ77bewaajY5DbMpRPNFjyUTLLOwpElRV4o1A==
+  dependencies:
+    "@rexxars/eventsource-polyfill" "^1.0.0"
+    eventsource "^1.0.6"
+
 "@sanity/generate-help-url@1.150.1":
   version "1.150.1"
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-1.150.1.tgz#bc0bda74cd0980e2194d275369e0ebc7970a0a81"
   integrity sha512-IK54U7j161Ks6l/4eIg8d9LV4UW968vZr+SsYTa2pzXb3ktDPKcerCx12eDX6HkWGsETZsp0J48QHP3ocVzo9A==
+
+"@sanity/generate-help-url@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-2.1.4.tgz#515df06e2e2ea27268afc2fa568a82499dc394d7"
+  integrity sha512-zMpTeTnd9615/s5DeH54PKU/KShPIkulIeNHRVLeL4EYNGlf2qcfUfbg4LddBEHlvg4ZPMb2MoBFjU8jSqWqQw==
 
 "@sanity/image-url@^0.140.19":
   version "0.140.19"
@@ -2083,20 +2109,28 @@
   dependencies:
     "@sanity/client" "^1.149.13"
 
-"@sanity/mutator@^1.149.16":
-  version "1.150.1"
-  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-1.150.1.tgz#3b66136fd5d2d24dc8de07cd68f668fe68c1d1ae"
-  integrity sha512-yCpQ01xR7z1GUAxxE5EaFJ9JdqUC0DlMrzPHS79ui7AIIiHmJ0IiTyJiPwB0sLg9NwLoClAAJzL1NqnUPxTS8Q==
+"@sanity/mutator@^2.0.1":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/mutator/-/mutator-2.1.4.tgz#89de9d4babc2293d5880d36c45e4126930c81958"
+  integrity sha512-lKOWRVplXKwmhNtbsAmglq8moKVM83lTfyUAuTBrW/RP8MlUAjP5rRdW1nO7pvBFTpc8i0PdmgoPVzfhgFdkNg==
   dependencies:
     "@types/diff-match-patch" "^1.0.32"
-    debug "^4.1.1"
-    diff-match-patch "^1.0.0"
+    debug "^3.1.0"
+    diff-match-patch "^1.0.4"
     lodash "^4.17.15"
 
 "@sanity/observable@1.150.1":
   version "1.150.1"
   resolved "https://registry.yarnpkg.com/@sanity/observable/-/observable-1.150.1.tgz#e077a7da3d85a863b80023bcc1a13470dba2ac11"
   integrity sha512-GXlXsNOJZ6p4aoMManRQnaL9qy1uXEcS5X1bGZCpKgcX5Rbyku6vYvxNFSGyrRRJRJKLwtUBrLNAjm92jpHFMQ==
+  dependencies:
+    object-assign "^4.1.1"
+    rxjs "^6.5.3"
+
+"@sanity/observable@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@sanity/observable/-/observable-2.0.9.tgz#587d6847b8814a32be1d6c1f2d135df521d09329"
+  integrity sha512-IUpzsEbhOhofTBUu2tiQ4Ymbkmhr6oe4UC4Ds1khZ9Td4t4mzzPGmGQIr5SBEDawz0UD7ZgZAb4LeEzV3hUrtA==
   dependencies:
     object-assign "^4.1.1"
     rxjs "^6.5.3"
@@ -3256,7 +3290,7 @@ axe-core@^4.0.1, axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.0.2.tgz#c7cf7378378a51fcd272d3c09668002a4990b1cb"
   integrity sha512-arU1h31OGFu+LPrOLGZ7nB45v940NMDMEJeNmbutu57P+UFDVnkZg3e+J1I2HJRZ9hT7gO8J91dn/PMrAiKakA==
 
-axios@^0.19.0, axios@^0.19.2:
+axios@^0.19.0:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -3267,6 +3301,13 @@ axios@^0.20.0:
   version "0.20.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
   integrity sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+  dependencies:
+    follow-redirects "^1.10.0"
+
+axios@^0.21.0:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -5672,7 +5713,7 @@ devcert@^1.1.3:
     tmp "^0.0.33"
     tslib "^1.10.0"
 
-diff-match-patch@^1.0.0:
+diff-match-patch@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/diff-match-patch/-/diff-match-patch-1.0.5.tgz#abb584d5f10cd1196dfc55aa03701592ae3f7b37"
   integrity sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==
@@ -7627,24 +7668,24 @@ gatsby-recipes@^0.7.1:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-sanity@6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-6.0.4.tgz#5b3ff7f872edde10df6ae8ccc3d4c0dad86ae847"
-  integrity sha512-Nq8te8ZDIQpBabduZmbWQUX9eEATHQEk5YrgMO5RnpMKUJJTohiyi6K+NfjjDmacf9pI9fWbspAYOj2G7Huvzg==
+gatsby-source-sanity@6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-6.0.5.tgz#58fd5f502fafc07860bcc856a86726779fe9b01f"
+  integrity sha512-nJt7J9TY6ZbL2pqX0hTzL1/nmnRD1yblyFShTLKKu9TCJm1hFk/EHxlrW2Rk+yiaCN4oNYJyiw9/sWIyi50LSw==
   dependencies:
-    "@sanity/client" "^1.149.16"
+    "@sanity/client" "^2.0.1"
     "@sanity/image-url" "^0.140.19"
-    "@sanity/mutator" "^1.149.16"
+    "@sanity/mutator" "^2.0.1"
     "@types/url-parse" "^1.4.3"
-    axios "^0.19.2"
-    debug "^4.1.0"
+    axios "^0.21.0"
+    debug "^4.2.0"
     fs-extra "^9.0.1"
     get-stream "^5.1.0"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
     oneline "^1.0.2"
     pump "^3.0.0"
-    rxjs "^6.5.5"
-    split2 "^3.1.1"
+    rxjs "^6.6.3"
+    split2 "^3.2.2"
     through2 "^3.0.1"
     url-parse "^1.4.4"
 
@@ -13794,7 +13835,7 @@ rx-lite@*, rx-lite@^4.0.8:
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
   integrity sha1-Cx4Rr4vESDbwSmQH6S2kJGe3lEQ=
 
-rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.5.5, rxjs@^6.6.0, rxjs@^6.6.3:
+rxjs@^6.4.0, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@^6.6.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
@@ -14477,7 +14518,7 @@ split2@^2.0.0:
   dependencies:
     through2 "^2.0.2"
 
-split2@^3.1.1:
+split2@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/split2/-/split2-3.2.2.tgz#bf2cf2a37d838312c249c89206fd7a17dd12365f"
   integrity sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==
