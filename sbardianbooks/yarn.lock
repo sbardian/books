@@ -1141,10 +1141,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
   integrity sha512-wVNhZ/W0ktlvHUzUrCuJMY9YtSls3PU+p5iQko8+P2R0HhEJfBCeTMTdqCe4BY/AfzVb4tn3/xr6XRRBKEL+AA==
 
-"@sanity/base@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.3.2.tgz#fc54b54c5f565f059c6fdc261b9ea1175be7807d"
-  integrity sha512-+ed4RTslFfUm6KDMtlWk1GU2flbFdlbJEYzjAQk/kKw5y832UpE9+D/WgUO7vTup+xe/zlXx9NOtv20BvkgpSw==
+"@sanity/base@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.3.3.tgz#aed4ccdd38f8ac5ec87574764082381ab1d93fad"
+  integrity sha512-7+uqK2hgANLoPWK5ou3LMiT5DGPIb3DUb3zD3GW63zjij+1H3wccibsoUYfkNka/VhfiXgRtrYv9pPREFtnKag==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
@@ -1260,10 +1260,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/components/-/components-2.2.6.tgz#d1d6d1017a53ebb413ef026eabd5dd0b4a1bcdad"
   integrity sha512-KK+6eJgrgHEd9Hq+LbRamdAI64cNXYoVn/f/Dn3ES1GA55AvQyKQUay4T/zZ1yEITKSyIZgETQjpAl/Hg+72eQ==
 
-"@sanity/core@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.2.6.tgz#f865c49dabbf05471983dca062b1fc95e2c5a57c"
-  integrity sha512-wR8ihJTl811bctBu1ykHTL8GerEe4BpCkQY+Awv5+sVfUryJA/PX4AOQR0wvm3uGAHwbr+ITOSaDNv1+t44xQA==
+"@sanity/core@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.3.3.tgz#835d95c58c449aafe1eb440a43d97f74e02682cc"
+  integrity sha512-KDqvICwpoafys5HNZfidh5fKpPLZLsGWaf8BWvjZCDct2Q4AqB9hsn2iKEJa9w7cYDu0umupk29psM4B5wB1gQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1342,12 +1342,12 @@
     "@sanity/generate-help-url" "2.2.6"
     lodash "^4.17.15"
 
-"@sanity/default-layout@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.2.tgz#b5a0986d8c1dbb158b69d774a751ffc9219431a5"
-  integrity sha512-cUEwop9/BcjIqcy2RB3+q/hfJHsS2sbvkqWT+NARXhJPZRwViw/c0mlrm24PLrGu4ltvXgV9FiipfqF7bxuQyg==
+"@sanity/default-layout@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.3.tgz#9b6818920d36f1853cecbcf344c80eaecf970867"
+  integrity sha512-DXjbnGf1iLS/5z70HUqgVdANNVTj3Ej+vnlxPl42VHZ18WXEJYBN6psp1fnCYIu/CxlTvIaaION7EkLbqeS4Pg==
   dependencies:
-    "@sanity/base" "2.3.2"
+    "@sanity/base" "2.3.3"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/ui" "^0.33.0"
     "@sanity/util" "2.2.6"
@@ -1368,18 +1368,18 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.3.2.tgz#b648361e76d7495592dd436c14a3172c08675957"
-  integrity sha512-CWSI+COiwKuSSw8mY+y6EanhsFkmJG1+aaKx8BSMNT94luovmmHBWoHAhqK8wiDz4no+foF1weIPgeNw1xelkA==
+"@sanity/desk-tool@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.3.3.tgz#9b40bf11945f2bbfe335c89e8484f5b0b40735af"
+  integrity sha512-vmlxmF75QRqN/61sr4KdcYlvg6Vy74fcpl14UM2AOp+rFpyPzNCmNlHo6s7H/trjLsPK319FCqlaxttyqHQikw==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
-    "@sanity/base" "2.3.2"
+    "@sanity/base" "2.3.3"
     "@sanity/data-aspects" "2.2.6"
     "@sanity/diff" "2.2.6"
-    "@sanity/field" "2.3.2"
-    "@sanity/form-builder" "2.3.2"
+    "@sanity/field" "2.3.3"
+    "@sanity/form-builder" "2.3.3"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/mutator" "2.2.6"
     "@sanity/react-hooks" "2.2.6"
@@ -1446,13 +1446,13 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.3.2.tgz#96fe0698b8f62e7614b189344ece997fb86de2e5"
-  integrity sha512-373SZMtFAlKzaJWeIXeH2oMVQSBKrErT3JYJkzjNz0c8e6iN5zNVw/iryLMnjL/u1L5QgwvZsstQCfmMeyKF8Q==
+"@sanity/field@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.3.3.tgz#8594a16e50f6a6f5525465484f858734f41895b8"
+  integrity sha512-UBvUkxZK5HaElQjDqqKUjn6Aw22yjATvmSYirKG0koot6ZKRXY6PXQjmVrmcuFWK3ZtuRB7Tj9OcNZy1ZNZ43w==
   dependencies:
     "@sanity/asset-utils" "^1.1.2"
-    "@sanity/base" "2.3.2"
+    "@sanity/base" "2.3.3"
     "@sanity/diff" "2.2.6"
     "@sanity/react-hooks" "2.2.6"
     "@sanity/types" "2.2.6"
@@ -1462,12 +1462,12 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
-"@sanity/form-builder@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.3.2.tgz#64c8a194e74554774c918aeb94086e76e282371a"
-  integrity sha512-9ANl8RLP05v4bh9hdN2GwlzTwzY20ZfJz+dDCHrpzI+JVVmNgbjd1RJhPTDGxEg1hTvnKKHjbs8nvYgIvqT14Q==
+"@sanity/form-builder@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.3.3.tgz#96be79991b5569923b7de26393d8103cc22fe67e"
+  integrity sha512-6oO8PjZwAsFpjsIwgqJlJXiQ9iUNeKhOSVD9D+NclOevKV5DUSk0v9VZlab4rlrv+3jfdrTB1UNVPBZgXDaKZA==
   dependencies:
-    "@sanity/base" "2.3.2"
+    "@sanity/base" "2.3.3"
     "@sanity/block-tools" "2.2.6"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/icons" "^1.0.1"
