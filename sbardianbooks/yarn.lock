@@ -1113,12 +1113,12 @@
     "@reach/utils" "0.10.5"
     tslib "^2.0.0"
 
-"@reach/auto-id@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.12.1.tgz#2e4a7250d2067ec16a9b4ea732695bc75572405c"
-  integrity sha512-s8cdY6dF0hEBB/28BbidB2EX6JfEBVIWLP6S2Jg0Xqq2H3xijL+zrsjL40jACwXRkignjuP+CvYsuFuO0+/GRA==
+"@reach/auto-id@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.13.0.tgz#0dfa4c1af46d1ad68d8282c786c03362ae35e335"
+  integrity sha512-yU0Mp+xvbq8hmNz8UfvbJEmy6cHnPJ8SwlXg6WuPsJA9sOJdlCyMfkbwqyz1KFVs2ISCR+wVVLT3j/TuuvS60w==
   dependencies:
-    "@reach/utils" "0.12.1"
+    "@reach/utils" "0.13.0"
     tslib "^2.0.0"
 
 "@reach/utils@0.10.5":
@@ -1130,10 +1130,10 @@
     tslib "^2.0.0"
     warning "^4.0.3"
 
-"@reach/utils@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.12.1.tgz#02b9c15ba5cddf23e16f2d2ca77aef98a9702607"
-  integrity sha512-5uH4OgO+GupAzZuf3b6Wv/9uC6NdMBlxS6FSKD6YqSxP4QJ0vjD34RVon6N/RMRORacCLyD/aaZIA7283YgeOg==
+"@reach/utils@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.13.0.tgz#2da775a910d8894bb34e1e94fe95842674f71844"
+  integrity sha512-dypxuyA1Qy3LHxzzyS7jFGPgCCR04b8UEn+Tv/aj6y9V578dULQqkcCyobrdEa+OI8lxH7dFFHa+jH8M/noBrQ==
   dependencies:
     "@types/warning" "^3.0.0"
     tslib "^2.0.0"
@@ -1148,10 +1148,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
   integrity sha512-wVNhZ/W0ktlvHUzUrCuJMY9YtSls3PU+p5iQko8+P2R0HhEJfBCeTMTdqCe4BY/AfzVb4tn3/xr6XRRBKEL+AA==
 
-"@sanity/base@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.3.5.tgz#1f0f6abd1e81f131db114a566659547cfe22bf48"
-  integrity sha512-BB+3n5P/sBVK2x+VfVI5mwKyT7z4nbWE7ipJYvPVK6IfB1wxrVp+eEjK3MbMubDODDpz98RBDYi3tdgwrrSq5Q==
+"@sanity/base@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.3.6.tgz#8a21cbd250f64ce460cd4f0584a60edccda48efa"
+  integrity sha512-Fpj4bneBroiXxWLCs60FmYumeGBPQiORMVVU/uesqHyHO1c2ARAIfpnPdV9Boybtng3eSpmdufizKuyHwvodTw==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
@@ -1168,7 +1168,7 @@
     "@sanity/structure" "2.2.6"
     "@sanity/transaction-collator" "2.2.6"
     "@sanity/types" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     "@sanity/validation" "2.2.6"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1350,14 +1350,14 @@
     "@sanity/generate-help-url" "2.2.6"
     lodash "^4.17.15"
 
-"@sanity/default-layout@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.5.tgz#b8c5e438d8ccd1816ef0e636d8bdc31a2d8e2535"
-  integrity sha512-Y3N6er0kZrI1OvxZL63u1GOzGsY6VMG8LUnWKW3QLtEP/2s+5OA/nBCKCIXlqCm3KT8woUSk9ytYtHAqQeP1rA==
+"@sanity/default-layout@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.6.tgz#326fcf39d1bcca8fd6cf86727c6b335289edcf06"
+  integrity sha512-kK7eUJAui55XMDt2Z8JqZvkjIDhKTeUn/PiIaX/KV4wuV5wriwx2FD6py2MDyxWlg47sXPZPoUXqqnBrVAU3EQ==
   dependencies:
-    "@sanity/base" "2.3.5"
+    "@sanity/base" "2.3.6"
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     classnames "^2.2.5"
     is-hotkey "^0.1.4"
@@ -1376,24 +1376,24 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.3.5.tgz#39637f5c75f4d0c83036acc3ce3c45744708a720"
-  integrity sha512-6ty3snKbPK3LI1OgrvY4Br+szVcMaObuyIm2UM981rb93wZUMlIBsRTpZamvsvzkspgtAz5QRIR/5h3yuoWxbQ==
+"@sanity/desk-tool@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.3.6.tgz#1269af2e3806a6250e2e1092dca736aa08e0ee93"
+  integrity sha512-Tu0eDkH5SUTpcfOxhHg9ucNy5Ypo6x2tZVU8pYcwqszYsxK65XGzJtzH6reJVRIhEOKAO9KXiZxsMyepNwoO0g==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.10.5"
-    "@sanity/base" "2.3.5"
+    "@sanity/base" "2.3.6"
     "@sanity/data-aspects" "2.2.6"
     "@sanity/diff" "2.2.6"
-    "@sanity/field" "2.3.5"
-    "@sanity/form-builder" "2.3.5"
+    "@sanity/field" "2.3.6"
+    "@sanity/form-builder" "2.3.6"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/mutator" "2.2.6"
     "@sanity/react-hooks" "2.2.6"
     "@sanity/structure" "2.2.6"
     "@sanity/types" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     "@sanity/uuid" "^3.0.1"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1454,28 +1454,28 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.3.5.tgz#48b209772d49495fc6e5ade1ada22d8fbd0c54d7"
-  integrity sha512-6d47Pf3DyaDeAYbfs0u8SKvw8XipYLfjlfe7/uc1pKHs3WaEreZP7kuWK+vDqUdTB+WmAV5iZax/tUCyfKWaRw==
+"@sanity/field@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.3.6.tgz#50b0389c9a848b7bf718fbd6d196c607b5e55b88"
+  integrity sha512-yJNfaPs3fJRW6i1uTDHnzZZ5+ZDDNWFlVy9w+7lFissCGg9IcwlQzo5uREZ5wYWeMsmBcWFQM4x+WXkmd003vQ==
   dependencies:
     "@sanity/asset-utils" "^1.1.2"
-    "@sanity/base" "2.3.5"
+    "@sanity/base" "2.3.6"
     "@sanity/diff" "2.2.6"
     "@sanity/react-hooks" "2.2.6"
     "@sanity/types" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     date-fns "^2.16.1"
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
-"@sanity/form-builder@2.3.5":
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.3.5.tgz#0d731b2aaec082d342a4298987be0dcfe2c8fa9a"
-  integrity sha512-twxcv1wz8Ro4a/9aL+yjqA7vo0qWFvMf3kF2mBzYJ70aEchJFO1pGnKlT3YJF+ZCAHvYdOMaiziG1MzBXtH+wg==
+"@sanity/form-builder@2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.3.6.tgz#836013df45b4b5e199994a7d79f83a00f0053d96"
+  integrity sha512-Xy0Oq77JVOqBnkt1lvLp/LmtJh/IWVdaeWVgImQn7IAVvMZAnGZsBQjWvYJP4q18I0sUSBLWAZJDvw52hmQxUw==
   dependencies:
-    "@sanity/base" "2.3.5"
+    "@sanity/base" "2.3.6"
     "@sanity/block-tools" "2.2.6"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/icons" "^1.0.1"
@@ -1483,7 +1483,7 @@
     "@sanity/mutator" "2.2.6"
     "@sanity/portable-text-editor" "0.1.25"
     "@sanity/types" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     "@sanity/uuid" "^3.0.1"
     attr-accept "^1.1.0"
@@ -1793,17 +1793,17 @@
   dependencies:
     "@types/react" "^17.0.0"
 
-"@sanity/ui@^0.33.0":
-  version "0.33.0"
-  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.0.tgz#3296b1ae9354441cae305bff923e363643cb4ef7"
-  integrity sha512-vAmP38BB5Tcrw0kU4Vb4xyr1V0I136zYY28qCNcUF5UdHviuKzoPsAx1rdU01pm2iWINvS2SrQUNk7ExIC5P3w==
+"@sanity/ui@^0.33.1":
+  version "0.33.1"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.1.tgz#ca637de1ab7f5750ef4cb591a55f15e45217f91f"
+  integrity sha512-8UDM3GCdycIuaxjxnB6FAXv8cfgOQQG7SOK97y6QLLIHzHHMTOWBBKI4zfIYxA8i6wZwSwfuJ8PCKqpVnVJVYA==
   dependencies:
     "@juggle/resize-observer" "^3.2.0"
     "@popperjs/core" "^2.6.0"
-    "@reach/auto-id" "^0.12.1"
+    "@reach/auto-id" "^0.13.0"
     "@sanity/color" "^2.0.12"
     "@sanity/icons" "^1.0.2"
-    framer-motion "^3.2.1"
+    framer-motion "^3.3.0"
     popper-max-size-modifier "^0.2.0"
     react-is "^17.0.1"
     react-popper "^2.2.4"
@@ -4211,10 +4211,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.2.1.tgz#66eeb883a0b5c425dd7767ecacdeac451c184cdb"
-  integrity sha512-5AWrh4JElgFAXWLqk0u8lVcdkigyuofyEy2LSsjuCxKbAb1hHqRn3PPdrV0KgPrysTHq95QO1bHFTLA7/Q8g+Q==
+framer-motion@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.3.0.tgz#e355824369f03c8cd07a87ef59b7a8348c33fafd"
+  integrity sha512-bjUrwXfMJZ6D+HSMDiXbMGKmlWGnUux8HotWgORTZkdPTgKAndlRXjeC2ikCgNVo2ifmRvEla5ckP9JaZc7JKA==
   dependencies:
     framesync "^5.0.0"
     hey-listen "^1.0.8"
