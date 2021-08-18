@@ -1223,10 +1223,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
   integrity sha512-wVNhZ/W0ktlvHUzUrCuJMY9YtSls3PU+p5iQko8+P2R0HhEJfBCeTMTdqCe4BY/AfzVb4tn3/xr6XRRBKEL+AA==
 
-"@sanity/base@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.15.0.tgz#cb7fa5508cc5d5c58543b1551fa45ad3df424634"
-  integrity sha512-cYJvzuPAn2+9OPyjXUZueh40Zqw7aAAB94zdFT8MliDNyOry2V9szI6GGWyZXv2n2dgUNVXf+iZERhTSRQrplg==
+"@sanity/base@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.15.1.tgz#8899d781dae12be5ff879e962874a2aea6d20428"
+  integrity sha512-m6+7UWq4CX15VCnxNSf2wcCQ3FUhU9zwSvKrFtU1wZLynKaj4lJMy8EcXVhdP3C9bxj/xNetlH//O7g2LupByQ==
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     "@popperjs/core" "^2.5.4"
@@ -1422,13 +1422,13 @@
     "@sanity/generate-help-url" "2.15.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.15.0.tgz#bace925eed3fcb7063c7bc6f806180e452e4bb91"
-  integrity sha512-hkxphYZGH+adcLia5LpGRPSIgiO/AxeU3C69NFXU74dd+SkYxoNvE9/ZwFXhHPs16VJnbrPne6DrCmtN4mYHJA==
+"@sanity/default-layout@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.15.1.tgz#1b47b4e6e4cbff3144c4788da0b933249d6b51eb"
+  integrity sha512-bpP/KukHi3IqV7C/WspLuzK9h+PCqedHvGdv5OUdhMMewFFxfzTQVE4RTSctSaP4MxcyLWxoeX6DpFhPeo7hbA==
   dependencies:
     "@reach/auto-id" "^0.13.2"
-    "@sanity/base" "2.15.0"
+    "@sanity/base" "2.15.1"
     "@sanity/client" "2.15.0"
     "@sanity/generate-help-url" "2.15.0"
     "@sanity/ui" "^0.36.0"
@@ -1453,19 +1453,19 @@
     rxjs "^6.5.3"
     styled-components "^5.2.1"
 
-"@sanity/desk-tool@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.15.0.tgz#068d75cc96179ded2df283f955e4afb9bcec4057"
-  integrity sha512-RtCP7O5rqCBgpny3DHlRlwQiee7rPIBiguEHUjU8G1+EFrlhwqV04OrL4ZDb1ISDlJ8GbAt37BQHlhXJEZJAsQ==
+"@sanity/desk-tool@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.15.1.tgz#5e83998d0ab45aa9b3d872d693ce19af2f3cb302"
+  integrity sha512-lzYoZCSiGRSu/s+bpqcKg06dEkwAj/lVoJM88e0xQUieww0XX0kbDqJDv9ykJs1hqvM1uzj3kQ1M51bL+D0mRQ==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.13.2"
-    "@sanity/base" "2.15.0"
+    "@sanity/base" "2.15.1"
     "@sanity/client" "2.15.0"
     "@sanity/data-aspects" "2.15.0"
     "@sanity/diff" "2.15.0"
-    "@sanity/field" "2.15.0"
-    "@sanity/form-builder" "2.15.0"
+    "@sanity/field" "2.15.1"
+    "@sanity/form-builder" "2.15.1"
     "@sanity/generate-help-url" "2.15.0"
     "@sanity/icons" "^1.1.4"
     "@sanity/react-hooks" "2.15.0"
@@ -1528,13 +1528,13 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.15.0.tgz#6ba2b66a143b1c8897c460440b149e749896dc4a"
-  integrity sha512-4Iv3vAHadMKNn2q06aUYtfNie9F/jevbD2B9tqDcVqcvFFY7g7DTSKMDNI1A6ibK3UFTNLwxnEsAsGrO2TvQ3A==
+"@sanity/field@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.15.1.tgz#60d483d985dd893ebf87ffbcd1bd12e7b9f0805e"
+  integrity sha512-WKZZTS/64adB320iQUXWXJuYvorJFnKHJlI7c3QGAowdq326UxU8ZCD+Kyug38K0aYEJkDiZOKA1rGE46JjvQw==
   dependencies:
     "@sanity/asset-utils" "^1.1.2"
-    "@sanity/base" "2.15.0"
+    "@sanity/base" "2.15.1"
     "@sanity/client" "2.15.0"
     "@sanity/color" "^2.1.4"
     "@sanity/diff" "2.15.0"
@@ -1549,13 +1549,13 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
-"@sanity/form-builder@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.15.0.tgz#c262a804af82790d5f55476806212877e1b5787a"
-  integrity sha512-hLaXh6arvki6o916lZas6IZjCxhj3IKHGJwR0GshWEJy6daDIlIXItburNMMTHHhUVU3mLcxYnspJdGm8LZ+fQ==
+"@sanity/form-builder@2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.15.1.tgz#64f904173a3b2d5dfb9ac66b794e52ddf4a1465d"
+  integrity sha512-hqJov9jExtbzoytGQwt1zUdIbOl63RDVc9mdeLXYRerleCaGURjNh4gm2vgchm9AsSd3H+nQaHahwUt5POTgMA==
   dependencies:
     "@reach/auto-id" "^0.13.2"
-    "@sanity/base" "2.15.0"
+    "@sanity/base" "2.15.1"
     "@sanity/block-tools" "2.15.0"
     "@sanity/client" "2.15.0"
     "@sanity/color" "^2.1.4"
