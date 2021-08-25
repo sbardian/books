@@ -1446,10 +1446,10 @@
     rxjs "^6.5.3"
     styled-components "^5.2.1"
 
-"@sanity/desk-tool@2.16.0":
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.16.0.tgz#24d3ea65eef097f05cbc2c5d7984de66e7f02ac2"
-  integrity sha512-LkLXj0lxnfwrJrAjZN7rSbv9eAJU068Njsu6oxwCYEejgMad8CSJNXJlXL664CtDd03ROLTJphw+3LgGDdwIbA==
+"@sanity/desk-tool@2.16.1":
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.16.1.tgz#16b4d6802c0c245b606d370cc035717d58fb099c"
+  integrity sha512-ELtCK1bOTkKGG6xtDBLktI0sLeBJyn3+QydvEINzt4tM9EuEP4gULkUgFlVuR35v+QHS905ywynglbZw4hToIg==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.13.2"
@@ -1458,7 +1458,7 @@
     "@sanity/data-aspects" "2.15.0"
     "@sanity/diff" "2.15.0"
     "@sanity/field" "2.16.0"
-    "@sanity/form-builder" "2.16.0"
+    "@sanity/form-builder" "2.16.1"
     "@sanity/generate-help-url" "2.15.0"
     "@sanity/icons" "^1.1.4"
     "@sanity/react-hooks" "2.16.0"
@@ -1542,10 +1542,10 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
-"@sanity/form-builder@2.16.0":
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.16.0.tgz#d6c4ab8a96fd658188aab0d2414bfe5f9270e5e0"
-  integrity sha512-FYnYySeM9ldQq1J66fgzlWCciKcbs4/z9GKZMwwzThHEYY8i6xmEmzziWmqnIRuc0HCmP7gHonCJtRtTxYthKw==
+"@sanity/form-builder@2.16.1":
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.16.1.tgz#ebf247d356e38e83dc0ff80b8020dd0ad28b8ee3"
+  integrity sha512-Z+oAQapAcwdiYyWwrwMB8GZVebpACIaHjH4/yDOmgQ/idcJeOWcm1/MdbHyptFpbluameMfnZibeYb8/Iw8Yng==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/base" "2.16.0"
