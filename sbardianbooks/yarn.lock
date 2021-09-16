@@ -1381,10 +1381,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.19.0":
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.19.0.tgz#4addb1a411292de3e096aec0576530d97c662b74"
-  integrity sha512-fXr3dEXh4luj0Nnzw4ZVEuV3lcmdcUyKLTPM7vm+v6fqZ3yfJSiZFq3Buh6l8/rNIPy61o8/OmnZv6TgMMdkUw==
+"@sanity/desk-tool@2.19.3":
+  version "2.19.3"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.19.3.tgz#c454efca131302b52f247176958f4b0e35ddb524"
+  integrity sha512-pF8kVW3W9eFztOYIP/tvB/OVshyMCkBQk9nAgEWDmXvSLlh08ME4fOyod1JKsOdZ4YCpkJ2qjcgPzEcuuBvOjQ==
   dependencies:
     "@popperjs/core" "^2.5.4"
     "@reach/auto-id" "^0.13.2"
@@ -1393,7 +1393,7 @@
     "@sanity/data-aspects" "2.18.0"
     "@sanity/diff" "2.18.0"
     "@sanity/field" "2.19.0"
-    "@sanity/form-builder" "2.19.0"
+    "@sanity/form-builder" "2.19.3"
     "@sanity/generate-help-url" "2.18.0"
     "@sanity/icons" "^1.1.7"
     "@sanity/react-hooks" "2.19.0"
@@ -1467,10 +1467,10 @@
     lodash "^4.17.15"
     sanity-diff-patch "^1.0.9"
 
-"@sanity/form-builder@2.19.0":
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.19.0.tgz#d480bbc28838097f19458acf9729f1b64a5291fe"
-  integrity sha512-oRfsk+sGZX91YkFQMpO0qaRCtNlLLY4VrJw19bvUiOlO6VmAOkoTbnD5Wzt5H41N0NqhzkSvawJCzJreiC1CWg==
+"@sanity/form-builder@2.19.3":
+  version "2.19.3"
+  resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.19.3.tgz#88f182118a929f850e50d9bb45e6f7f22de7244c"
+  integrity sha512-CV4+JEiILxEeqfZEi2luVe64GEfVNr3HCBzhMHAM6m572vY2QAD7mQYQUydmO3GoLh9yC3UXoXmeH5HWSTQxuw==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/base" "2.19.0"
