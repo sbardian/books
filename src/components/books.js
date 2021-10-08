@@ -26,7 +26,7 @@ const BookWrapper = styled.div`
 const BookButton = styled.button`
   display: grid;
   grid-template-rows: auto 1fr;
-  align-content: start;
+  align-items: center;
   padding: 20px;
   border: none;
   background: #222831;
