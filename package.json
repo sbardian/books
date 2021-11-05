@@ -6,7 +6,7 @@
   "scripts": {
     "cm": "git-cz",
     "build": "gatsby build",
-    "lint": "eslint .",
+    "lint": "eslint",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "jest"
