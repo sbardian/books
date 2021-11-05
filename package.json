@@ -46,8 +46,8 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "14.1.0",
+    "@commitlint/config-conventional": "14.1.0",
     "@emotion/eslint-plugin": "11.5.0",
     "@testing-library/dom": "7.31.2",
     "@testing-library/jest-dom": "5.15.0",
