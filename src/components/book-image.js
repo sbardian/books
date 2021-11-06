@@ -1,10 +1,11 @@
 // eslint-disable-next-line
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const BookImage = ({ book }) => (
-  <Img fluid={book.image.asset.fluid} fadeIn alt={book.title} />
+  // eslint-disable-next-line
+  <GatsbyImage image={book.image.asset.gatsbyImageData} alt={book.name} />
 )
 
 BookImage.propTypes = {
@@ -17,15 +18,7 @@ BookImage.propTypes = {
     amazonUrl: PropTypes.string,
     image: PropTypes.shape({
       asset: PropTypes.shape({
-        fluid: PropTypes.shape({
-          base64: PropTypes.string,
-          aspectRatio: PropTypes.number,
-          src: PropTypes.string,
-          srcSet: PropTypes.string,
-          srcWebp: PropTypes.string,
-          srcSetWebp: PropTypes.string,
-          sizes: PropTypes.string,
-        }),
+        gatsbyImageData: PropTypes.arrayOf(PropTypes.any),
       }),
     }),
   }),

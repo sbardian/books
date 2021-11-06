@@ -3,7 +3,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { jsx, css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { useRecoilValue } from "recoil"
@@ -106,7 +106,8 @@ const BookPage = ({
   }
 
   return (
-    <>
+    // eslint-disable-next-line
+    <React.Fragment>
       {book && (
         <Layout crumbs={crumbs} crumbLabel={book.node.title}>
           <BookPageWrapper>
@@ -120,23 +121,21 @@ const BookPage = ({
               </BookPageTitle>
               <BookPageAmazonYearReadWrapper>
                 <BookPageAmazonIconLink href={book.node.amazonUrl}>
-                  <Img
+                  <GatsbyImage
+                    image={amazonImage.node.image.asset.gatsbyImageData}
+                    alt="Amazon"
                     css={css`
                       width: 40px;
                     `}
-                    fluid={amazonImage.node.image.asset.fluid}
-                    alt="amazon"
                   />
                 </BookPageAmazonIconLink>
                 <BookPageReadIn>Read in: {book.node.yearRead}</BookPageReadIn>
               </BookPageAmazonYearReadWrapper>
             </BookPageHeader>
             <BookPageBodyWrapper>
-              <Img
-                fluid={book.node.image.asset.fluid}
-                fadeIn
-                alt={book.node.title}
-                imgStyle={{ objectFit: "contain" }}
+              <GatsbyImage
+                image={book.node.image.asset.gatsbyImageData}
+                alt={book.node.name}
               />
               <div>
                 <h2>Author: {book.node.author}</h2>
@@ -154,7 +153,7 @@ const BookPage = ({
           </BookPageWrapper>
         </Layout>
       )}
-    </>
+    </React.Fragment>
   )
 }
 
@@ -204,9 +203,7 @@ export const bookQuery = graphql`
             asset {
               assetId
               label
-              fluid(maxWidth: 40) {
-                ...GatsbySanityImageFluid
-              }
+              gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
             }
           }
         }

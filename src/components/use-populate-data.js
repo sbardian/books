@@ -28,9 +28,7 @@ const usePopulateData = (bookId = null) => {
             tagsSet
             image {
               asset {
-                fluid {
-                  ...GatsbySanityImageFluid
-                }
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
               }
             }
           }

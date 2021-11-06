@@ -21,9 +21,7 @@ exports.createPages = async ({ actions, graphql }) => {
             yearRead
             image {
               asset {
-                fluid {
-                  src
-                }
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
               }
             }
           }
