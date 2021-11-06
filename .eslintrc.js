@@ -1,6 +1,6 @@
 module.exports = {
   extends: ["airbnb", "prettier"],
-  plugins: ["@emotion", "prettier"],
+  plugins: ["@emotion", "react", "prettier"],
   env: {
     jest: true,
   },
