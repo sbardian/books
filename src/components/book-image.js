@@ -18,7 +18,7 @@ BookImage.propTypes = {
     amazonUrl: PropTypes.string,
     image: PropTypes.shape({
       asset: PropTypes.shape({
-        gatsbyImageData: PropTypes.arrayOf(PropTypes.any),
+        gatsbyImageData: PropTypes.objectOf(PropTypes.any),
       }),
     }),
   }),
