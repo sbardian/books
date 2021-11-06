@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const BookImage = ({ book }) => (
   // eslint-disable-next-line
-  <GatsbyImage image={book.image.asset.gatsbyImageData} alt={book.name} />
+  <GatsbyImage image={book.image.asset.gatsbyImageData} alt={book.title} />
 )
 
 BookImage.propTypes = {

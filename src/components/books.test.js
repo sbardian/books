@@ -16,11 +16,7 @@ describe("Book tests", () => {
         </BooksWrapper>
       </RecoilRootWrapper>
     )
-    expect(
-      queryByAltText(
-        "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"
-      )
-    ).toBeTruthy()
+    expect(queryByAltText("Enlightenment Now")).toBeTruthy()
   })
   it("should click image button", () => {
     const { container } = render(
