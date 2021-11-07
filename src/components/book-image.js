@@ -1,11 +1,20 @@
 // eslint-disable-next-line
 import React from "react"
+import { css } from "@emotion/react"
 import PropTypes from "prop-types"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const BookImage = ({ book }) => (
   // eslint-disable-next-line
-  <GatsbyImage image={book.image.asset.gatsbyImageData} alt={book.title} />
+  <GatsbyImage
+    image={book.image.asset.gatsbyImageData}
+    alt={book.title}
+    css={css`
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    `}
+  />
 )
 
 BookImage.propTypes = {
