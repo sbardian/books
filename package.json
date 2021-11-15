@@ -15,7 +15,7 @@
     "@emotion/core": "11.0.0",
     "@emotion/react": "11.6.0",
     "@emotion/styled": "11.6.0",
-    "gatsby": "4.1.4",
+    "gatsby": "4.1.5",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-breadcrumb": "12.2.0",
     "gatsby-plugin-emotion": "7.1.0",
