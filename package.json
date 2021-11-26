@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@emotion/core": "11.0.0",
-    "@emotion/react": "11.6.0",
+    "@emotion/react": "11.7.0",
     "@emotion/styled": "11.6.0",
     "gatsby": "4.2.0",
     "gatsby-image": "3.11.0",
@@ -51,7 +51,7 @@
     "@babel/eslint-parser": "7.16.3",
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
-    "@emotion/eslint-plugin": "11.5.0",
+    "@emotion/eslint-plugin": "11.7.0",
     "@testing-library/dom": "8.11.1",
     "@testing-library/jest-dom": "5.15.1",
     "@testing-library/react": "12.1.2",
