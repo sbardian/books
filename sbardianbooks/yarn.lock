@@ -1353,10 +1353,10 @@
     "@sanity/generate-help-url" "2.18.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@2.22.4":
-  version "2.22.4"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.22.4.tgz#6381ea4136bdfe7797240c4642f8fc3df10d8a08"
-  integrity sha512-u46c7t7xFqDbdoYioOeGA2ZNxJ8c3iM+WjJIxvoEpu4p4kw8qJp3dxDMgAP93TdjsmhlucYc5OHX/k66zcIQtw==
+"@sanity/default-layout@2.22.5":
+  version "2.22.5"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.22.5.tgz#02ba42f550dec34a778d180250a29558e8f9f5c2"
+  integrity sha512-f7kgJL5/uj8JGrLP8D+XQ5ZYx5nY75b084w6AwL6Ie8tc0aEOxNYXn3y/4sXZiPLZvXTujV3d+QooqiA0cuk3Q==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/base" "2.22.3"
@@ -1380,10 +1380,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.22.3":
-  version "2.22.3"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.22.3.tgz#a56e260d1d0c2af405f714bd8b772374806c1180"
-  integrity sha512-26pFo7yNDPATcwZZkci/boWQWL+ckN1k6PRYK60O+0o57qetlhNCZqcM0NrqArk7/MqqZzzlHyN41kvLV6HrfA==
+"@sanity/desk-tool@2.22.5":
+  version "2.22.5"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.22.5.tgz#9c4a328bb4f2463a20652863f1c6ee986a0b3ad7"
+  integrity sha512-GahzmlKAq5XvN5p0nfMkPkq+1l40dhALodd9FRDsKlrlnVqHaFBQKPSIfRCGrq9HUnFckVRojk4CrNbHMebcIw==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/client" "2.22.3"
