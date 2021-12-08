@@ -7538,10 +7538,10 @@ gatsby-recipes@^1.3.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-sanity@7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-7.3.0.tgz#6c0303c632983f592f8907237b716f5b6f984aea"
-  integrity sha512-kZest7J9falIpjgpn7E4GW5nj/JQa9lKZrx4AUkKms95wHRxDFJF2yliPt+miGUe3NOo3OK6dvv70Hqkk1yMBA==
+gatsby-source-sanity@7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-7.3.1.tgz#74e13841b47ab846cb197f20706b0ca08b22f9bd"
+  integrity sha512-IlUy9YSYxZhWpsTNaXXAeIAShzARfgbJabs1OIEeG7pM4S4uS6FkxCmsNJk0x1TW4Hbg3/ECQHjPC3KlAsM7Jw==
   dependencies:
     "@sanity/client" "^2.21.3"
     "@sanity/image-url" "^0.140.19"
@@ -7549,12 +7549,14 @@ gatsby-source-sanity@7.3.0:
     "@types/url-parse" "^1.4.4"
     axios "^0.24.0"
     debug "^4.3.2"
+    gatsby-core-utils "^3.3.0"
     gatsby-plugin-utils "^2.0.0"
     get-stream "^6.0.1"
     lodash "^4.17.21"
     oneline "^1.0.3"
     pumpify "^2.0.1"
     rxjs "^6.6.3"
+    semver "^7.3.5"
     split2 "^4.1.0"
     through2 "^4.0.2"
     url-parse "^1.5.3"
