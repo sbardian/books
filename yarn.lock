@@ -7283,13 +7283,13 @@ gatsby-page-utils@^2.4.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-breadcrumb@12.2.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.2.0.tgz#db44e0b2ffc4a83fa2039f94fab5e8ce7f2820aa"
-  integrity sha512-FGsyfT4IUu7xD1830nkcP3kiqNbwW0gGkxXQ+6Bqg5gSkdZ5T32P7uS0g4TWxtbZNkNbPA1yTsUBnc/XcyWBtQ==
+gatsby-plugin-breadcrumb@12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.3.0.tgz#944f6c13f6eec5820f6f219a1b42d6490bbd511c"
+  integrity sha512-GQU2BvmWKauwDNBmV4rwYzjx54eLrqS2egF21agcMi3oaOioqOFNzxawhVzoZH3EtGiArY549D7qu8LXAPRVkQ==
   dependencies:
     identity-obj-proxy "3.0.0"
-    prop-types "15.7.2"
+    prop-types "15.8.0"
     wildcard-match "5.1.2"
 
 gatsby-plugin-emotion@7.4.0:
@@ -12069,15 +12069,6 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.7.2, prop-types@^15.6.1, prop-types@^15.7.2:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
-
 prop-types@15.8.0:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.0.tgz#d237e624c45a9846e469f5f31117f970017ff588"
@@ -12086,6 +12077,15 @@ prop-types@15.8.0:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+prop-types@^15.6.1, prop-types@^15.7.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
 
 proper-lockfile@^4.1.2:
   version "4.1.2"
