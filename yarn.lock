@@ -7330,13 +7330,13 @@ gatsby-page-utils@^2.5.2:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-breadcrumb@12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.3.0.tgz#944f6c13f6eec5820f6f219a1b42d6490bbd511c"
-  integrity sha512-GQU2BvmWKauwDNBmV4rwYzjx54eLrqS2egF21agcMi3oaOioqOFNzxawhVzoZH3EtGiArY549D7qu8LXAPRVkQ==
+gatsby-plugin-breadcrumb@12.3.1:
+  version "12.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.3.1.tgz#6e7f735a9ad88be4256723aa785224957c81ea0d"
+  integrity sha512-XvlcRxOfCv3sTXdnuk8oj98B63QRoAGR5/tiU55ZMqSiGEiVWEBJ82/jtymNNlHfiAsjGNd5vZrOZKWuvZa9Aw==
   dependencies:
     identity-obj-proxy "3.0.0"
-    prop-types "15.8.0"
+    prop-types "15.8.1"
     wildcard-match "5.1.2"
 
 gatsby-plugin-emotion@7.5.0:
@@ -11913,15 +11913,6 @@ prompts@^2.4.2:
   dependencies:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
-
-prop-types@15.8.0:
-  version "15.8.0"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.0.tgz#d237e624c45a9846e469f5f31117f970017ff588"
-  integrity sha512-fDGekdaHh65eI3lMi5OnErU6a8Ighg2KjcjQxO7m8VHyWjcPyj5kiOgV1LQDOOOgVy3+5FgjXvdSSX7B8/5/4g==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.13.1"
 
 prop-types@15.8.1:
   version "15.8.1"
