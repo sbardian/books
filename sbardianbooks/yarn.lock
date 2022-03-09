@@ -1270,10 +1270,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/components/-/components-2.14.0.tgz#840d8e98fd55f35e2db2b211310c983b9f78cac4"
   integrity sha512-D8t7l+exvw1cg80m8yDZDRboAI6L827FeCacGjTOdElvgrR2shtsbepYui7ODfRgx9ynAceNDsQ1VSNnUgIHug==
 
-"@sanity/core@2.28.0":
-  version "2.28.0"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.28.0.tgz#0cc55429d0b46de7b6c31c5d2376ef073e06b071"
-  integrity sha512-pF6bxsHTh3Pqd62Yg14oRnP2lyd2NpDcCpfTm/01VxYpoDBeunLsu776HOdFinUT9BhsikwCOc01YE5Il5Bo6Q==
+"@sanity/core@2.28.1":
+  version "2.28.1"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.28.1.tgz#456ffcd18b0bb4159d60c70ecdb0cac6c94655ea"
+  integrity sha512-KnpQAgeFqttjkS6QH4h0kPWlErl31sADBMJFouuXwbEDdzCv3U0Uc4JJR8xND3zzMt2oI88ofes/kgmA79Ad8A==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1281,7 +1281,7 @@
     "@babel/preset-typescript" "^7.10.4"
     "@babel/register" "^7.7.4"
     "@sanity/eventsource" "^3.0.1"
-    "@sanity/export" "2.23.1"
+    "@sanity/export" "2.28.1"
     "@sanity/generate-help-url" "^3.0.0"
     "@sanity/import" "2.28.0"
     "@sanity/plugin-loader" "2.28.0"
@@ -1378,10 +1378,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.28.0":
-  version "2.28.0"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.28.0.tgz#91faae8cbdfcfe9a00ff8f6aa9a05c275724cf27"
-  integrity sha512-n/4x9M97PHYHSaUxOvUczm3VBroKSKP9sNwKR1/suarMNOluvEuG9Huc3+9mPJIOI65Vx9jVhU0YgQQsYM1meg==
+"@sanity/desk-tool@2.28.1":
+  version "2.28.1"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.28.1.tgz#79ef6890b2d75744478adef1769b07e5e120e0a1"
+  integrity sha512-BxFmMzp7art1w7HrzkPBzcMWXT20WPoeXNY8FmPHWsku1D1HoyaNOXYwZBPmuKjf9QAY9Ogl4T9Ab+wFI15ZvA==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/client" "^3.2.0"
@@ -1426,10 +1426,10 @@
     event-source-polyfill "^1.0.25"
     eventsource "^1.0.6"
 
-"@sanity/export@2.23.1":
-  version "2.23.1"
-  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-2.23.1.tgz#df1c4fd6ca0e60c408c6dad4d7dec38f6e755b43"
-  integrity sha512-muohq7XB8432eqhOt6L/CpLKzbA4bA793Y9TkKZbNJHWnJgoBALPFlpOrtq4aeYTCeqNRbZHVWBgR43aJOYK/w==
+"@sanity/export@2.28.1":
+  version "2.28.1"
+  resolved "https://registry.yarnpkg.com/@sanity/export/-/export-2.28.1.tgz#8f84b3b9d0cc8692564d12685ffa44bd8a8dafb6"
+  integrity sha512-f0HQnJhNEVjERBrHCMczCdkN/hzTz1kgyy6FCm/SYnXyAPGQD150+/CiO2IEWqcsoB9j6xVOwvo+yT07nd6VIQ==
   dependencies:
     archiver "^5.0.0"
     debug "^3.2.7"
