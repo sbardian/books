@@ -7579,10 +7579,10 @@ gatsby-sharp@^0.5.0:
     "@types/sharp" "^0.29.5"
     sharp "^0.30.1"
 
-gatsby-source-sanity@7.4.1:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-7.4.1.tgz#b641491b51763d358467c6e6054b1f3228e5b4d3"
-  integrity sha512-ARU7xn49L21pwadhVuXTR5TpNk+/kbt/fNIsZSUKw4A4iL17YWTB9KZnTVHZC7rGZylslhz7VXqAmh2hR4uHUQ==
+gatsby-source-sanity@7.4.2:
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-sanity/-/gatsby-source-sanity-7.4.2.tgz#b9838a9e3f8581558fc318993cb8660d6d091075"
+  integrity sha512-SwzK4q8Nz2Nlr4LZYEB9zGd3GTrm5q6MUbBGjHNzoTbLCfyFrPnN5m4x/f8cYN1UziWHe+zCBaMlPFns1MgpVw==
   dependencies:
     "@sanity/client" "^2.21.3"
     "@sanity/image-url" "^0.140.19"
