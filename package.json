@@ -54,7 +54,7 @@
     "@emotion/eslint-plugin": "11.7.0",
     "@testing-library/dom": "8.13.0",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "12.1.4",
+    "@testing-library/react": "12.1.5",
     "babel-jest": "27.5.1",
     "babel-preset-gatsby": "2.6.0",
     "commitizen": "4.2.4",
