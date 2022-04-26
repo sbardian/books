@@ -1364,10 +1364,10 @@
     "@sanity/generate-help-url" "^3.0.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@2.29.5":
-  version "2.29.5"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.29.5.tgz#02743ffe6e4191770b678e0d21c6e9c9db9f389c"
-  integrity sha512-zqni5Dp/k6faO95Ugg480Hj3IDwrfbH+Cq3L1091RSjIHkeZ+/Fc1ohlRPeGRXu6vJ9BV0wBuc2eM/6UxmHFAQ==
+"@sanity/default-layout@2.29.7":
+  version "2.29.7"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.29.7.tgz#7ffe57e7cea1839bf469d49cd36a83a9274e1182"
+  integrity sha512-AmvYYAQZ7WOCpa1+HUBJkGFEIUL2UXW2lu1QzXsBDcvgZVOq0iVMDCXzr7wpMdVfC9loSkudGETmwO/PIT/OAA==
   dependencies:
     "@portabletext/react" "^1.0.0"
     "@sanity/asset-utils" "^1.2.0"
@@ -1396,10 +1396,10 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@2.29.6":
-  version "2.29.6"
-  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.29.6.tgz#14c632914be977539e9d749aadf7894a4d19f786"
-  integrity sha512-KFKnUCfv9TXXZ7oib9GKZAIlgIJWdg3CbXrL04nByeTK86EaqzhwsOyI+VBsOu7gWqRvLCXpMAbmbd+3ZFvVog==
+"@sanity/desk-tool@2.29.7":
+  version "2.29.7"
+  resolved "https://registry.yarnpkg.com/@sanity/desk-tool/-/desk-tool-2.29.7.tgz#389283c58c08be3aba179e731b79fe33f345b404"
+  integrity sha512-fy9MjCCVJqynRw2Ges57vWydBJAiN3JfVUrGK/fMf248iFvDqiaKaTFl4YqqKUSQpDAozwiLxMfA12C9xlidlA==
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/client" "^3.2.0"
