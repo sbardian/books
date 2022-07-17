@@ -57,7 +57,7 @@
     "@testing-library/react": "12.1.5",
     "babel-jest": "27.5.1",
     "babel-preset-gatsby": "2.6.0",
-    "commitizen": "4.2.4",
+    "commitizen": "4.2.5",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.20.0",
     "eslint-config-airbnb": "18.2.1",
