@@ -1330,10 +1330,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/components/-/components-2.14.0.tgz#840d8e98fd55f35e2db2b211310c983b9f78cac4"
   integrity sha512-D8t7l+exvw1cg80m8yDZDRboAI6L827FeCacGjTOdElvgrR2shtsbepYui7ODfRgx9ynAceNDsQ1VSNnUgIHug==
 
-"@sanity/core@2.35.5":
-  version "2.35.5"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.35.5.tgz#8603d455bd1789074a200a95332d35335d1dc0a7"
-  integrity sha512-QvB3OQCmoSENSsAjNfE18A1rf68rgPcOWpUS5WWFzHZun3qYDNBX6umGPSLK3DVbM82jOiL+uPxK1wtdVs9l+w==
+"@sanity/core@2.35.6":
+  version "2.35.6"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.35.6.tgz#0d2393666c82d6c875e03697562defcb95154182"
+  integrity sha512-WqrcGvXlCTWwenvw7iUMTSbwhpCd07eSr4XobssiHq70iKwiVNZ0C1GOIdRZ/4n78nGnvZknCf/tdMh7x5dmlg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1366,7 +1366,7 @@
     jsdom "^12.0.0"
     jsdom-global "^3.0.2"
     json-lexer "^1.1.1"
-    json5 "^1.0.1"
+    json5 "^2.2.3"
     lodash "^4.17.15"
     log-symbols "^2.2.0"
     oneline "^1.0.3"
@@ -5252,6 +5252,11 @@ json5@^2.1.2:
   resolved "https://registry.npmjs.org/json5/-/json5-2.1.3.tgz#c9b0f7fa9233bfe5807fe66fcf3a5617ed597d43"
   dependencies:
     minimist "^1.2.5"
+
+json5@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
 jsonfile@^4.0.0:
   version "4.0.0"
