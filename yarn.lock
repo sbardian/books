@@ -7775,10 +7775,10 @@ gatsby-page-utils@^2.6.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-breadcrumb@12.3.1:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.3.1.tgz#6e7f735a9ad88be4256723aa785224957c81ea0d"
-  integrity sha512-XvlcRxOfCv3sTXdnuk8oj98B63QRoAGR5/tiU55ZMqSiGEiVWEBJ82/jtymNNlHfiAsjGNd5vZrOZKWuvZa9Aw==
+gatsby-plugin-breadcrumb@12.3.2:
+  version "12.3.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-breadcrumb/-/gatsby-plugin-breadcrumb-12.3.2.tgz#784ac5c186aa6bcef1dcbeffc1d525bfd5bcf853"
+  integrity sha512-MOIziBA+sAQPNJMC5aRsHO+734CPxaPhOqMUAXBN7v6lKv4kp99QXHb5RCocN5X4sSDZrFWDOJc3oTFqEqfDEQ==
   dependencies:
     identity-obj-proxy "3.0.0"
     prop-types "15.8.1"
