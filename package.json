@@ -70,7 +70,7 @@
     "husky": "7.0.4",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
-    "jest-axe": "5.0.1",
+    "jest-axe": "7.0.1",
     "lint-staged": "11.2.6",
     "prettier": "2.8.8"
   }
