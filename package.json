@@ -49,8 +49,8 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.24.6",
-    "@commitlint/cli": "14.1.0",
-    "@commitlint/config-conventional": "14.1.0",
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
     "@emotion/eslint-plugin": "11.11.0",
     "@testing-library/dom": "8.20.1",
     "@testing-library/jest-dom": "5.17.0",
